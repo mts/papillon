@@ -1,0 +1,61 @@
+// CSS styling configuration implementing a theme
+// containing font and color choices
+
+// font family
+$font-family-primary: 'metabold_roman', arial;
+
+// font size
+$font-size-large: 30px;
+$font-size-medium: 16px;
+$font-size-small: 14px;
+$font-size-tiny: 8px;
+
+// colors
+$color-white: #fff;
+$color-grey: #c6c6c6;
+$color-blue: #114780;
+$color-blue-grey: #6699cc;
+$color-black: #1f1f1f;
+
+.label {
+    display: inline-block;
+    padding: 0;
+    text-align: left;
+    font-family: $font-family-primary;
+    background-color: $color-white;
+    user-select: none;
+
+    &--grey {
+        color: $color-grey;
+    }
+
+    &--black {
+        color: $color-black;
+    }
+
+    &--blue {
+        color: $color-blue;
+    }
+
+    &--tiny {
+        font-size: $font-size-tiny;
+    }
+
+    &--small {
+        font-size: $font-size-small;
+    }
+
+    &--medium {
+        font-size: $font-size-medium;
+    }
+
+    &--large {
+        font-size: $font-size-large;
+    }
+
+    &--highlighted {
+      color: lighten($color-black, 20);
+      background-color: darken($color-white, 20);
+    }
+
+}
