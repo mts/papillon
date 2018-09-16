@@ -17,18 +17,17 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "classnames": "^2.2.6",
     "css-loader": "^1.0.0",
     "lerna": "^3.3.2",
     "node-sass": "^4.9.3",
+    "octicons": "^8.1.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-loader": "^3.0.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.0"
-  },
-  "dependencies": {
-    "classnames": "^2.2.6",
     "prop-types": "^15.6.2",
     "react": "^16.5.1",
-    "react-dom": "^16.5.1"
+    "react-dom": "^16.5.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0"
   }
 }
