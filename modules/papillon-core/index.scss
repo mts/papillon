@@ -1,7 +1,7 @@
-@import "../papillon-support/index.scss";
+@import "papillon-support/index.scss";
 
 // Core modules
-@import "../papillon-base/index.scss";
+@import "papillon-base/index.scss";
 
 // Utilities always go last so that they can override components
-@import "../papillon-utilities/index.scss";
+@import "papillon-utilities/index.scss";
