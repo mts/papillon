@@ -47,32 +47,33 @@ storiesOf('Label', module)
       <Label className="Counter Counter--gray-light" text="64"/>
     </React.Fragment>
   ))
+  .add('Counter in tabs', () => (
+    <div class="tabnav">
+      <nav class="tabnav-tabs" aria-label="Foo bar">
+        <a href="#url" class="tabnav-tab selected" aria-current="page">Foo tab <Label className="Counter" text="23"/></a>
+        <a href="#url" class="tabnav-tab ml-1">Bar tab</a>
+      </nav>
+    </div>
+  ))
+  .add('Counter in Box headers', () => (
+    <div class="Box">
+      <div class="Box-header">
+        <h3 class="Box-title">
+          Box title
+          <Label className="Counter Counter--gray ml-1" text="3"/>
+        </h3>
+      </div>
+      <ul>
+        <li class="Box-row">
+          Box row one
+        </li>
+        <li class="Box-row">
+          Box row two
+        </li>
+        <li class="Box-row">
+          Box row three
+        </li>
+      </ul>
+    </div>
+  ))
 ;
-
-// TODO
-// <div class="tabnav">
-//   <nav class="tabnav-tabs" aria-label="Foo bar">
-//     <a href="#url" class="tabnav-tab selected" aria-current="page">Foo tab <span class="Counter">23</a>
-//     <a href="#url" class="tabnav-tab">Bar tab</a>
-//   </nav>
-// </div>
-
-// <div class="Box">
-//   <div class="Box-header">
-//     <h3 class="Box-title">
-//       Box title
-//       <span class="Counter Counter--gray">3</span>
-//     </h3>
-//   </div>
-//   <ul>
-//     <li class="Box-row">
-//       Box row one
-//     </li>
-//     <li class="Box-row">
-//       Box row two
-//     </li>
-//     <li class="Box-row">
-//       Box row three
-//     </li>
-//   </ul>
-// </div>
