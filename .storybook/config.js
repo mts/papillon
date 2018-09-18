@@ -5,7 +5,9 @@ import '../modules/papillon/index.scss'
 import { version } from '../modules/papillon/package.json'
 
 setOptions({
-  name: `Papillon v${version}`
+  name: `Papillon v${version}`,
+  url: 'https://github.com/mts/papillon',
+  showDownPanel: false
 })
 
 addDecorator(story => (
