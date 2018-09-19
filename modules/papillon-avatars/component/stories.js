@@ -4,6 +4,7 @@ import Avatar from './Avatar';
 import AvatarParentChild from './AvatarParentChild';
 import CircleBadgeIcon from './CircleBadgeIcon';
 import CircleBadgeImage from './CircleBadgeImage';
+import CircleBadgeDashedConnection from './CircleBadgeDashedConnection';
 
 const srcBasic = "https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png";
 
@@ -105,32 +106,22 @@ storiesOf('Avatar', module)
     </a>
   ))
   .add('DashedConnection', () => (
-    <div class="DashedConnection">
-      <ul class="d-flex list-style-none flex-justify-between" aria-label="A sample GitHub workflow">
-        <li class="CircleBadge CircleBadge--small" aria-label="GitHub">
-          <CircleBadgeImage
-            src="https://user-images.githubusercontent.com/334891/30004619-adc8ca86-90a0-11e7-8ccc-2322261d2ab1.png"
-            className="CircleBadge-icon"
-            alt=""
-          />
-        </li>
-
-        <li class="CircleBadge CircleBadge--small" aria-label="Slack">
-          <CircleBadgeImage
-            src="https://user-images.githubusercontent.com/334891/30004619-adc8ca86-90a0-11e7-8ccc-2322261d2ab1.png"
-            className="CircleBadge-icon"
-            alt=""
-          />
-        </li>
-
-        <li class="CircleBadge CircleBadge--small" aria-label="Travis CI">
-            <CircleBadgeImage
-              src="https://user-images.githubusercontent.com/334891/30004619-adc8ca86-90a0-11e7-8ccc-2322261d2ab1.png"
-              className="CircleBadge-icon"
-              alt=""
-            />
-        </li>
-      </ul>
-    </div>
+    <CircleBadgeDashedConnection>
+      <CircleBadgeImage
+        src="https://user-images.githubusercontent.com/334891/30004619-adc8ca86-90a0-11e7-8ccc-2322261d2ab1.png"
+        className="CircleBadge-icon"
+        alt=""
+      />
+      <CircleBadgeImage
+        src="https://user-images.githubusercontent.com/334891/30004619-adc8ca86-90a0-11e7-8ccc-2322261d2ab1.png"
+        className="CircleBadge-icon"
+        alt=""
+      />
+      <CircleBadgeImage
+        src="https://user-images.githubusercontent.com/334891/30004619-adc8ca86-90a0-11e7-8ccc-2322261d2ab1.png"
+        className="CircleBadge-icon"
+        alt=""
+      />
+    </CircleBadgeDashedConnection>
   ))
 ;
