@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import Avatar from './Avatar';
+import AvatarParentChild from './AvatarParentChild';
 import CircleBadgeIcon from './CircleBadgeIcon';
 import CircleBadgeImage from './CircleBadgeImage';
 
@@ -14,10 +15,10 @@ storiesOf('Avatar', module)
     <Avatar className="avatar avatar-small" alt="small" src={srcBasic} width={32} height={32} />
   ))
   .add('avatar-parent-child', () => (
-    <div class="avatar-parent-child float-left">
+    <AvatarParentChild className="avatar-parent-child float-left">
       <Avatar className="avatar" alt="parent" src={srcBasic} width={48} height={48} />
       <Avatar className="avatar avatar-child" alt="child" src={srcBasic} width={20} height={20} />
-    </div>
+    </AvatarParentChild>
   ))
   .add('avatar-stack-more', () => (
     <div class="AvatarStack AvatarStack--three-plus">
