@@ -12,10 +12,10 @@ const srcCircleBadge = "https://user-images.githubusercontent.com/334891/3000461
 
 storiesOf('Avatar', module)
   .add('avatar', () => (
-    <Avatar className="avatar" alt="basic" src={srcAvatar} width={72} height={72} />
+    <Avatar alt="basic" src={srcAvatar} width={72} height={72} />
   ))
   .add('avatar-small', () => (
-    <Avatar className="avatar avatar-small" alt="small" src={srcAvatar} width={32} height={32} />
+    <Avatar className="avatar-small" alt="small" src={srcAvatar} width={32} height={32} />
   ))
   .add('avatar-parent-child', () => (
     <AvatarParentChild className="avatar-parent-child float-left">
