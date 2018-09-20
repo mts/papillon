@@ -18,9 +18,9 @@ storiesOf('Avatar', module)
     <Avatar className="avatar-small" alt="small" src={srcAvatar} width={32} height={32} />
   ))
   .add('avatar-parent-child', () => (
-    <AvatarParentChild className="avatar-parent-child float-left">
-      <Avatar className="avatar" alt="parent" src={srcAvatar} width={48} height={48} />
-      <Avatar className="avatar avatar-child" alt="child" src={srcAvatar} width={20} height={20} />
+    <AvatarParentChild className="float-left">
+      <Avatar alt="parent" src={srcAvatar} width={48} height={48} />
+      <Avatar className="avatar-child" alt="child" src={srcAvatar} width={20} height={20} />
     </AvatarParentChild>
   ))
   .add('avatar-stack-more', () => (
