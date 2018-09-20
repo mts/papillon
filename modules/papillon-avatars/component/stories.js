@@ -26,21 +26,21 @@ storiesOf('Avatar', module)
   .add('avatar-stack-more', () => (
     <div class="AvatarStack AvatarStack--three-plus">
       <div class="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat, octocat, octocat, octocat, and octocat">
-        <Avatar className="avatar" height="20" alt="@octocat" src={srcAvatar} width="20" />
-        <Avatar className="avatar" height="20" alt="@octocat" src={srcAvatar} width="20" />
+        <Avatar height="20" alt="@octocat" src={srcAvatar} width="20" />
+        <Avatar height="20" alt="@octocat" src={srcAvatar} width="20" />
         <div class="avatar avatar-more"></div>
-        <Avatar className="avatar" height="20" alt="@octocat" src={srcAvatar} width="20" />
-        <Avatar className="avatar" height="20" alt="@octocat" src={srcAvatar} width="20" />
-        <Avatar className="avatar" height="20" alt="@octocat" src={srcAvatar} width="20" />
+        <Avatar height="20" alt="@octocat" src={srcAvatar} width="20" />
+        <Avatar height="20" alt="@octocat" src={srcAvatar} width="20" />
+        <Avatar height="20" alt="@octocat" src={srcAvatar} width="20" />
       </div>
     </div>
   ))
   .add('avatar-stack-three-plus', () => (
     <div class="AvatarStack AvatarStack--three-plus">
       <div class="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat, octocat, and octocat">
-        <Avatar className="avatar" alt="@octocat" src={srcAvatar} width={20} height={20} />
-        <Avatar className="avatar" alt="@octocat" src={srcAvatar} width={20} height={20} />
-        <Avatar className="avatar" alt="@octocat" src={srcAvatar} width={20} height={20} />
+        <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
+        <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
+        <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
       </div>
     </div>
   ))
@@ -59,9 +59,9 @@ storiesOf('Avatar', module)
   .add('avatar-stack-right', () => (
     <div class="AvatarStack AvatarStack--three-plus AvatarStack--right">
       <div class="AvatarStack-body tooltipped tooltipped-sw tooltipped-align-right-1" aria-label="octocat, octocat, and octocat">
-        <Avatar className="avatar" alt="@octocat" src={srcAvatar} width={20} height={20} />
-        <Avatar className="avatar" alt="@octocat" src={srcAvatar} width={20} height={20} />
-        <Avatar className="avatar" alt="@octocat" src={srcAvatar} width={20} height={20} />
+        <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
+        <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
+        <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
       </div>
     </div>
   ))
