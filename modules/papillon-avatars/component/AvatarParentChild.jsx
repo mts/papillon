@@ -2,10 +2,18 @@ import '../index.scss';
 import React from 'react';
 import {string, node} from 'prop-types';
 
-const AvatarParentChild = ({className, children}) => <div class={className}> {children}</div>;
+const AvatarParentChild = ({className, children}) => (
+  <div className={`avatar-parent-child ${className}`}>
+    {children}
+  </div>
+);
+
+AvatarParentChild.defaultProps = {
+  className: ''
+};
 
 AvatarParentChild.propTypes = {
-  className: string.isRequired,
+  className: string,
   children: node.isRequired
 };
 

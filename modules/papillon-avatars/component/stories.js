@@ -12,35 +12,35 @@ const srcCircleBadge = "https://user-images.githubusercontent.com/334891/3000461
 
 storiesOf('Avatar', module)
   .add('avatar', () => (
-    <Avatar className="avatar" alt="basic" src={srcAvatar} width={72} height={72} />
+    <Avatar alt="basic" src={srcAvatar} width={72} height={72} />
   ))
   .add('avatar-small', () => (
-    <Avatar className="avatar avatar-small" alt="small" src={srcAvatar} width={32} height={32} />
+    <Avatar className="avatar-small" alt="small" src={srcAvatar} width={32} height={32} />
   ))
   .add('avatar-parent-child', () => (
-    <AvatarParentChild className="avatar-parent-child float-left">
-      <Avatar className="avatar" alt="parent" src={srcAvatar} width={48} height={48} />
-      <Avatar className="avatar avatar-child" alt="child" src={srcAvatar} width={20} height={20} />
+    <AvatarParentChild className="float-left">
+      <Avatar alt="parent" src={srcAvatar} width={48} height={48} />
+      <Avatar className="avatar-child" alt="child" src={srcAvatar} width={20} height={20} />
     </AvatarParentChild>
   ))
   .add('avatar-stack-more', () => (
     <div class="AvatarStack AvatarStack--three-plus">
       <div class="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat, octocat, octocat, octocat, and octocat">
-        <Avatar className="avatar" height="20" alt="@octocat" src={srcAvatar} width="20" />
-        <Avatar className="avatar" height="20" alt="@octocat" src={srcAvatar} width="20" />
+        <Avatar height="20" alt="@octocat" src={srcAvatar} width="20" />
+        <Avatar height="20" alt="@octocat" src={srcAvatar} width="20" />
         <div class="avatar avatar-more"></div>
-        <Avatar className="avatar" height="20" alt="@octocat" src={srcAvatar} width="20" />
-        <Avatar className="avatar" height="20" alt="@octocat" src={srcAvatar} width="20" />
-        <Avatar className="avatar" height="20" alt="@octocat" src={srcAvatar} width="20" />
+        <Avatar height="20" alt="@octocat" src={srcAvatar} width="20" />
+        <Avatar height="20" alt="@octocat" src={srcAvatar} width="20" />
+        <Avatar height="20" alt="@octocat" src={srcAvatar} width="20" />
       </div>
     </div>
   ))
   .add('avatar-stack-three-plus', () => (
     <div class="AvatarStack AvatarStack--three-plus">
       <div class="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat, octocat, and octocat">
-        <Avatar className="avatar" alt="@octocat" src={srcAvatar} width={20} height={20} />
-        <Avatar className="avatar" alt="@octocat" src={srcAvatar} width={20} height={20} />
-        <Avatar className="avatar" alt="@octocat" src={srcAvatar} width={20} height={20} />
+        <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
+        <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
+        <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
       </div>
     </div>
   ))
@@ -59,9 +59,9 @@ storiesOf('Avatar', module)
   .add('avatar-stack-right', () => (
     <div class="AvatarStack AvatarStack--three-plus AvatarStack--right">
       <div class="AvatarStack-body tooltipped tooltipped-sw tooltipped-align-right-1" aria-label="octocat, octocat, and octocat">
-        <Avatar className="avatar" alt="@octocat" src={srcAvatar} width={20} height={20} />
-        <Avatar className="avatar" alt="@octocat" src={srcAvatar} width={20} height={20} />
-        <Avatar className="avatar" alt="@octocat" src={srcAvatar} width={20} height={20} />
+        <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
+        <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
+        <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
       </div>
     </div>
   ))
