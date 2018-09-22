@@ -10,7 +10,6 @@ const FlashAlert = ({className, children, icon}) => (
   </div>
 );
 
-
 FlashAlert.defaultProps = {
   className: '',
   icon: ''
