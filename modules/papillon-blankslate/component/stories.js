@@ -10,7 +10,7 @@ storiesOf('Blankslate', module)
       <p>Use it to provide information when no dynamic content exists.</p>
     </BlankSlate>
   ))
-  .add('blankslate-with-octicons', () => (
+  .add('blankslate-icon', () => (
     <BlankSlate icons={['git-commit', 'tag', 'git-branch']}>
       <h3>This is a blank slate</h3>
       <p>Use it to provide information when no dynamic content exists.</p>
@@ -24,6 +24,12 @@ storiesOf('Blankslate', module)
   ))
    .add('blankslate-capped', () => (
     <BlankSlate className="blankslate-capped">
+      <h3>This is a blank slate</h3>
+      <p>Use it to provide information when no dynamic content exists.</p>
+    </BlankSlate>
+  ))
+   .add('blankslate-spacious', () => (
+    <BlankSlate className="blankslate-spacious">
       <h3>This is a blank slate</h3>
       <p>Use it to provide information when no dynamic content exists.</p>
     </BlankSlate>
