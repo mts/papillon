@@ -5,8 +5,8 @@ import Octicon, {getIconByName} from '@githubprimer/octicons-react'
 
 const BlankSlate = ({className, children, icons}) => (
   <div className={`blankslate ${className}`}>
-    {icons && icons.map((icon) => (
-      <span className="blankslate-icon">
+    {icons && icons.map((icon, index) => (
+      <span key={index} className="blankslate-icon">
         <Octicon size='small' icon={getIconByName(icon)} />
       </span>
     ))}
