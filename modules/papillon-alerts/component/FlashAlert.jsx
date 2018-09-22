@@ -11,15 +11,12 @@ const FlashAlert = ({className, children, icon}) => (
 );
 
 FlashAlert.defaultProps = {
+  className: '',
   icon: ''
 };
 
-FlashAlert.defaultProps = {
-  className: ''
-};
-
 FlashAlert.propTypes = {
-  className: string.isRequired,
+  className: string,
   children: node.isRequired,
   icon: string
 };
