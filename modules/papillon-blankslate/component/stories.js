@@ -4,14 +4,20 @@ import BlankSlate from './BlankSlate';
 import Octicon, {getIconByName} from '@githubprimer/octicons-react'
 
 storiesOf('Blankslate', module)
-  .add('Basic', () => (
+  .add('blankslate', () => (
     <BlankSlate>
       <h3>This is a blank slate</h3>
       <p>Use it to provide information when no dynamic content exists.</p>
     </BlankSlate>
   ))
-  .add('With Octicons', () => (
+  .add('blankslate-with-octicons', () => (
     <BlankSlate icons={['git-commit', 'tag', 'git-branch']}>
+      <h3>This is a blank slate</h3>
+      <p>Use it to provide information when no dynamic content exists.</p>
+    </BlankSlate>
+  ))
+  .add('blankslate-narrow', () => (
+    <BlankSlate className="blankslate-narrow">
       <h3>This is a blank slate</h3>
       <p>Use it to provide information when no dynamic content exists.</p>
     </BlankSlate>
