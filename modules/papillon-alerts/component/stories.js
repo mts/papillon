@@ -58,6 +58,7 @@ storiesOf('Flash alerts', module)
     </div>
   ))
   .add('with-dismiss', () => (
+    // mts ~ js-flash-close does not exist
     <div className='p-4'>
       <FlashAlert>
           <button
