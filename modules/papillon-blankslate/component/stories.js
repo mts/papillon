@@ -34,4 +34,10 @@ storiesOf('Blankslate', module)
       <p>Use it to provide information when no dynamic content exists.</p>
     </BlankSlate>
   ))
+   .add('blankslate-clean-background', () => (
+    <BlankSlate className="blankslate-clean-background">
+      <h3>This is a blank slate</h3>
+      <p>Use it to provide information when no dynamic content exists.</p>
+    </BlankSlate>
+  ))
 ;
