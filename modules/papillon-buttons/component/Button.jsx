@@ -22,5 +22,4 @@ Button.propTypes = {
   children: node.isRequired
 };
 
-
 export default Button;
