@@ -19,9 +19,11 @@ storiesOf('Button', module)
     </div>
   ))
   .add('btn-danger', () => (
-    <div>
-      <Button variant="button" className="btn-danger mr-6">Danger button</Button>
-      <Button variant="button" className="btn btn-sm btn-danger">Small danger button</Button>
-    </div>
-  ))
+    <div className='p-4 d-flex flex-justify-between'>
+      <Button variant="button" className="btn-danger">Button</Button>
+      <Button variant="button" className="btn-danger hover">hover</Button>
+      <Button variant="button" className="btn-danger focus">focus</Button>
+      <Button variant="button" className="btn-danger selected">selected</Button>
+      <Button variant="button" className="btn-danger disabled">disabled</Button>
+    </div>  ))
 ;
