@@ -45,4 +45,13 @@ storiesOf('Button', module)
       <Button variant="button" className="btn-outline disabled">disabled</Button>
     </div>
   ))
+  .add('btn-blue', () => (
+    <div className='p-4 d-flex flex-justify-between'>
+      <Button variant="button" className="btn-blue">Button</Button>
+      <Button variant="button" className="btn-blue hover">hover</Button>
+      <Button variant="button" className="btn-blue focus">focus</Button>
+      <Button variant="button" className="btn-blue selected">selected</Button>
+      <Button variant="button" className="btn-blue disabled">disabled</Button>
+    </div>
+  ))
 ;
