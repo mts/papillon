@@ -5,8 +5,12 @@ import Button from './Button';
 storiesOf('Button', module)
   .add('btn', () => (
     <div>
-      <Button variant="button" className="mr-6">Button button</Button>
-      <Button variant="link">Link button</Button>
+      <Button variant="button">Button</Button>
+    </div>
+  ))
+  .add('link', () => (
+    <div>
+      <Button variant="link">Button</Button>
     </div>
   ))
   .add('btn-primary', () => (
@@ -52,6 +56,26 @@ storiesOf('Button', module)
       <Button variant="button" className="btn-blue focus">focus</Button>
       <Button variant="button" className="btn-blue selected">selected</Button>
       <Button variant="button" className="btn-blue disabled">disabled</Button>
+    </div>
+  ))
+  .add('btn-purple', () => (
+    <div className='p-4 d-flex flex-justify-between'>
+      <Button variant="button" className="btn-purple">Button</Button>
+      <Button variant="button" className="btn-purple hover">hover</Button>
+      <Button variant="button" className="btn-purple focus">focus</Button>
+      <Button variant="button" className="btn-purple selected">selected</Button>
+      <Button variant="button" className="btn-purple disabled">disabled</Button>
+    </div>
+  ))
+  .add('btn-large', () => (
+    <div className='f3 p-4'>
+      <Button variant="link"className="btn-large btn-purple mr-6">Large link button</Button>
+      <Button variant="button"className="btn-large btn-outline-blue">Large button button</Button>
+    </div>
+  ))
+  .add('btn-link', () => (
+    <div className='p-4 d-flex flex-justify-between'>
+      <Button variant="button-link">Button Link</Button>
     </div>
   ))
 ;
