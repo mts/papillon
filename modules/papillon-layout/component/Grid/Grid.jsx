@@ -2,6 +2,8 @@ import '../../index.scss';
 import React from 'react';
 import {string, node} from 'prop-types';
 
+// mts ~ block-blue does not exist
+
 const Grid = () => (
   <div className="container">
     <div className="columns mb-1">
