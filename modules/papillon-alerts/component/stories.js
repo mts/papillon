@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import FlashAlert from './FlashAlert';
 import FlashMessages from './FlashMessages';
-import Octicon, {getIconByName} from '@githubprimer/octicons-react'
+import Octicon, {getIconByName} from '@githubprimer/octicons-react';
 
 storiesOf('Flash alerts', module)
   .add('Default', () => (
@@ -62,7 +62,7 @@ storiesOf('Flash alerts', module)
     <div className='p-4'>
       <FlashAlert>
           <button
-            class="flash-close js-flash-close"
+            className="flash-close js-flash-close"
             type="button"
           >
             <Octicon size='small' icon={getIconByName('x')} />
@@ -74,14 +74,14 @@ storiesOf('Flash alerts', module)
   .add('with-action-button', () => (
     <div className='p-4'>
       <FlashAlert>
-        <button type="submit" class="btn btn-sm primary flash-action">Complete action</button>
+        <button type="submit" className="btn btn-sm primary flash-action">Complete action</button>
         Flash message with action here.
       </FlashAlert>
     </div>
   ))
   .add('full-width-flash', () => (
     <div className='p-4'>
-        <div class="container-lg">
+        <div className="container-lg">
           <FlashAlert className="flash-full">
             Full width flash message.
           </FlashAlert>
