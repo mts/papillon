@@ -48,29 +48,29 @@ storiesOf('Label', module)
     </React.Fragment>
   ))
   .add('Counter in tabs', () => (
-    <div class="tabnav">
-      <nav class="tabnav-tabs" aria-label="Foo bar">
-        <a href="#url" class="tabnav-tab selected" aria-current="page">Foo tab <Label type="counter" text="23"/></a>
-        <a href="#url" class="tabnav-tab ml-1">Bar tab</a>
+    <div className="tabnav">
+      <nav className="tabnav-tabs" aria-label="Foo bar">
+        <a href="#url" className="tabnav-tab selected" aria-current="page">Foo tab <Label type="counter" text="23"/></a>
+        <a href="#url" className="tabnav-tab ml-1">Bar tab</a>
       </nav>
     </div>
   ))
   .add('Counter in Box headers', () => (
-    <div class="Box">
-      <div class="Box-header">
-        <h3 class="Box-title">
+    <div className="Box">
+      <div className="Box-header">
+        <h3 className="Box-title">
           Box title
           <Label type="counter" className="Counter--gray ml-1" text="3"/>
         </h3>
       </div>
       <ul>
-        <li class="Box-row">
+        <li className="Box-row">
           Box row one
         </li>
-        <li class="Box-row">
+        <li className="Box-row">
           Box row two
         </li>
-        <li class="Box-row">
+        <li className="Box-row">
           Box row three
         </li>
       </ul>

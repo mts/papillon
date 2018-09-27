@@ -16,9 +16,13 @@ const Label = ({type, className, text, icon}) => (
   </span>
 );
 
+Label.defaultProps = {
+  className: ''
+};
+
 Label.propTypes = {
   type: oneOf(['label', 'state', 'counter']).isRequired,
-  className: string.isRequired,
+  className: string,
   text: string.isRequired,
   icon: string
 };

@@ -10,13 +10,13 @@ const Breadcrumb = ({items, selectedIndex}) => (
 
         if (index !== selectedIndex) {
           return (
-            <li key={index} class="breadcrumb-item text-small">
+            <li key={index} className="breadcrumb-item text-small">
               <a href={href}>{text}</a>
             </li>
           )
         } else {
           return (
-            <li key={index} class="breadcrumb-item breadcrumb-item-selected text-small text-gray" aria-current="page">
+            <li key={index} className="breadcrumb-item breadcrumb-item-selected text-small text-gray" aria-current="page">
               {text}
             </li>
           )
