@@ -31,7 +31,7 @@ Breadcrumb.propTypes = {
     href: string,
     text: string
   })).isRequired,
-  selectedIndex: number
+  selectedIndex: number.isRequired
 };
 
 export default Breadcrumb;

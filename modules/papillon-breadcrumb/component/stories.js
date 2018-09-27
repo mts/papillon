@@ -11,7 +11,7 @@ storiesOf('Breadcrumb', module)
     ];
 
     return(
-      <Breadcrumb items={items} selectedIndex={2}/>
+      <Breadcrumb items={items} selectedIndex={2} />
     )
   })
 ;
