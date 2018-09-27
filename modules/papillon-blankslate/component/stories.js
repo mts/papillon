@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import BlankSlate from './BlankSlate';
-import Octicon, {getIconByName} from '@githubprimer/octicons-react'
+import Octicon, {getIconByName} from '@githubprimer/octicons-react';
 
 storiesOf('Blankslate', module)
   .add('blankslate', () => (

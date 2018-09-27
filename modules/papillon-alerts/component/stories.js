@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import FlashAlert from './FlashAlert';
 import FlashMessages from './FlashMessages';
-import Octicon, {getIconByName} from '@githubprimer/octicons-react'
+import Octicon, {getIconByName} from '@githubprimer/octicons-react';
 
 storiesOf('Flash alerts', module)
   .add('Default', () => (
