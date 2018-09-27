@@ -1,4 +1,3 @@
-import '../index.scss';
 import React from 'react';
 import {arrayOf, shape, string, number} from 'prop-types';
 import MenuItem from './MenuItem';

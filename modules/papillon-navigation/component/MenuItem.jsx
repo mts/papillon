@@ -1,4 +1,3 @@
-import '../index.scss';
 import React from 'react';
 import {string, shape, node} from 'prop-types';
 
@@ -13,7 +12,7 @@ const MenuItem = ({className, aria, href, children}) => {
     );
   } else {
     return (
-      <a className="menu-item selected" href={href} aria-current={aria.current}>{children}</a>
+      <a className={`menu-item ${className}`} href={href} aria-current={aria.current}>{children}</a>
     );
   }
 };
