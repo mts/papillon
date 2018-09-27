@@ -1,4 +1,3 @@
-import '../index.scss';
 import React from 'react';
 import {string, node, arrayOf} from 'prop-types';
 import Octicon, {getIconByName} from '@githubprimer/octicons-react'
