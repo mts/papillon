@@ -6,7 +6,9 @@
   margin-bottom: 15px;
   list-style: none;
   background-color: $bg-white;
+  // mts ~ possible to use $border here from modules/papillon-support/lib/variables/misc.scss
   border: 1px solid $gray-300;
+
   border-radius: 3px;
 }
 

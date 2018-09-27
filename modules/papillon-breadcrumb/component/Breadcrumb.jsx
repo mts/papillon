@@ -1,4 +1,3 @@
-import '../index.scss';
 import React from 'react';
 import {arrayOf, shape, string, number} from 'prop-types';
 
@@ -31,7 +30,7 @@ Breadcrumb.propTypes = {
     href: string,
     text: string
   })).isRequired,
-  selectedIndex: number
+  selectedIndex: number.isRequired
 };
 
 export default Breadcrumb;
