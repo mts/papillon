@@ -24,20 +24,20 @@ storiesOf('Avatar', module)
     </AvatarParentChild>
   ))
   .add('avatar-stack-more', () => (
-    <div class="AvatarStack AvatarStack--three-plus">
-      <div class="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat, octocat, octocat, octocat, and octocat">
-        <Avatar height="20" alt="@octocat" src={srcAvatar} width="20" />
-        <Avatar height="20" alt="@octocat" src={srcAvatar} width="20" />
-        <div class="avatar avatar-more"></div>
-        <Avatar height="20" alt="@octocat" src={srcAvatar} width="20" />
-        <Avatar height="20" alt="@octocat" src={srcAvatar} width="20" />
-        <Avatar height="20" alt="@octocat" src={srcAvatar} width="20" />
+    <div className="AvatarStack AvatarStack--three-plus">
+      <div className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat, octocat, octocat, octocat, and octocat">
+        <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
+        <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
+        <div className="avatar avatar-more"></div>
+        <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
+        <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
+        <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
       </div>
     </div>
   ))
   .add('avatar-stack-three-plus', () => (
-    <div class="AvatarStack AvatarStack--three-plus">
-      <div class="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat, octocat, and octocat">
+    <div className="AvatarStack AvatarStack--three-plus">
+      <div className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat, octocat, and octocat">
         <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
         <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
         <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
@@ -45,20 +45,20 @@ storiesOf('Avatar', module)
     </div>
   ))
   .add('avatar-stack-two', () => (
-    <div class="AvatarStack AvatarStack--two">
-      <div class="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat and octocat">
-        <a href="#" class="avatar">
+    <div className="AvatarStack AvatarStack--two">
+      <div className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat and octocat">
+        <a href="#" className="avatar">
           <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
         </a>
-        <a href="#" class="avatar">
+        <a href="#" className="avatar">
           <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
         </a>
       </div>
     </div>
   ))
   .add('avatar-stack-right', () => (
-    <div class="AvatarStack AvatarStack--three-plus AvatarStack--right">
-      <div class="AvatarStack-body tooltipped tooltipped-sw tooltipped-align-right-1" aria-label="octocat, octocat, and octocat">
+    <div className="AvatarStack AvatarStack--three-plus AvatarStack--right">
+      <div className="AvatarStack-body tooltipped tooltipped-sw tooltipped-align-right-1" aria-label="octocat, octocat, and octocat">
         <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
         <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
         <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
