@@ -4,8 +4,8 @@ import {string, node} from 'prop-types';
 // mts ~ block-blue does not exist
 
 const Centered = () => (
-  <div class="columns">
-    <div class="one-half column centered block-blue border p-3">
+  <div className="columns">
+    <div className="one-half column centered block-blue border p-3">
       .one-half
     </div>
   </div>
