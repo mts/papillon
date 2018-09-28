@@ -8,15 +8,21 @@ const Menu = ({className, aria, items, selectedIndex}) => {
   return (
     <nav className="menu" aria-label={label}>
       {items.map((item, index) => {
-        const {href, text} = item;
+        const {href, text, icon, html} = item;
 
         if (index !== selectedIndex) {
           return (
-            <MenuItem key={index} href={href}>{text}</MenuItem>
+            <MenuItem key={index} href={href} icon={icon}>
+              {html ? html: null}
+              {text}
+            </MenuItem>
           )
         } else {
           return (
-            <MenuItem key={index} className="selected" aria={aria} href={href}>{text}</MenuItem>
+            <MenuItem key={index} className="selected" aria={aria} href={href} icon={icon}>
+              {html ? html: null}
+              {text}
+            </MenuItem>
           )
         }
       })}
