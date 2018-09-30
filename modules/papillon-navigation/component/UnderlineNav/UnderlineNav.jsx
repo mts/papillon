@@ -1,60 +1,47 @@
 import React from 'react';
 import {arrayOf, shape, string, number} from 'prop-types';
-import MenuItem from './MenuItem';
-import {isEmptyObject} from './utility';
+import UnderlineNavItem from './UnderlineNavItem';
 
-const Menu = ({className, aria, heading, items, selectedIndex}) => {
-  const {label, current, labelledby} = aria;
-  const {title} = heading;
-
+const UnderlineNav = ({className, items, selectedIndex}) => {
   return (
-    <nav className="menu" aria-label={label} aria-labelledby={labelledby}>
-      {!isEmptyObject(heading) && (
-        <span className="menu-heading" id="menu-heading">{title}</span>
-      )}
+    <nav className="UnderlineNav">
+      <div className="UnderlineNav-body">
       {items.map((item, index) => {
-        const {href, text, icon, html} = item;
+        const {href, role, title, text} = item;
 
         if (index !== selectedIndex) {
           return (
-            <MenuItem key={index} href={href} icon={icon}>
-              {html ? html: null}
+            <UnderlineNavItem key={index} href={href} role={role} title={title}>
               {text}
-            </MenuItem>
+            </UnderlineNavItem>
           )
         } else {
           return (
-            <MenuItem key={index} className="selected" aria={aria} href={href} icon={icon}>
-              {html ? html: null}
+            <UnderlineNavItem key={index} href={href} role={role} title={title} className="selected">
               {text}
-            </MenuItem>
+            </UnderlineNavItem>
           )
         }
       })}
+      </div>
     </nav>
   );
 };
 
-Menu.defaultProps = {
+UnderlineNav.defaultProps = {
   className: '',
-  heading: {}
 };
 
-Menu.propTypes = {
+UnderlineNav.propTypes = {
   className: string,
-  aria: shape({
-    label: string,
-    current: string
-  }).isRequired,
-  heading: shape({
-    text: string
-  }),
   items: arrayOf(shape({
     href: string,
+    role: string,
+    title: string,
     text: string
   })).isRequired,
   selectedIndex: number.isRequired
 };
 
-export default Menu;
+export default UnderlineNav;
 
