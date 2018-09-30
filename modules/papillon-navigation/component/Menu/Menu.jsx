@@ -51,7 +51,9 @@ Menu.propTypes = {
   }),
   items: arrayOf(shape({
     href: string,
-    text: string
+    text: string,
+    icon: string,
+    html: string
   })).isRequired,
   selectedIndex: number.isRequired
 };
