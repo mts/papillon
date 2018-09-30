@@ -4,7 +4,7 @@ import {string} from 'prop-types';
 const CircleBadgeImage = ({src, className, alt}) => (
   <img
     src={src}
-    className={`CircleBadge-icon ${className}`}
+    className={`CircleBadge-icon ${className}`.trim()}
     alt={alt}
   />
 );

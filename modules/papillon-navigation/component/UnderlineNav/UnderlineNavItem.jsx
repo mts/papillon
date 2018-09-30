@@ -3,7 +3,14 @@ import {string, node} from 'prop-types';
 
 const UnderlineNavItem = ({className, href, role, title, children}) => {
   return (
-    <a href={href} role={role} title={title} className={`UnderlineNav-item ${className}`}>{children}</a>
+    <a
+      href={href}
+      role={role}
+      title={title}
+      className={`UnderlineNav-item ${className}`.trim()}
+    >
+      {children}
+    </a>
   )
 };
 

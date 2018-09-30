@@ -6,7 +6,7 @@ const UnderlineNav = ({className, aria, items, html, selectedIndex}) => {
   const {label} = aria;
 
   return (
-    <nav className={`UnderlineNav ${className}`} aria-label={label}>
+    <nav className={`UnderlineNav ${className}`.trim()} aria-label={label}>
       {className.includes('UnderlineNav--right') && html ? html : null}
       <div className="UnderlineNav-body">
       {items.map((item, index) => {
