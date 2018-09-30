@@ -45,4 +45,13 @@ storiesOf('Navigation', module)
       />
     )
   })
+  .add('UnderlineNav--right', () => {
+    return (
+      <UnderlineNav
+        className="UnderlineNav--right"
+        items={items}
+        selectedIndex={0}
+      />
+    )
+  })
 ;
