@@ -1,5 +1,5 @@
 import React from 'react';
-import {arrayOf, shape, string, number} from 'prop-types';
+import {arrayOf, shape, string, number, node} from 'prop-types';
 import MenuItem from './MenuItem';
 import {isEmptyObject} from './utility';
 
@@ -53,7 +53,7 @@ Menu.propTypes = {
     href: string,
     text: string,
     icon: string,
-    html: string
+    html: node
   })).isRequired,
   selectedIndex: number.isRequired
 };
