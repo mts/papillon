@@ -3,6 +3,10 @@ import {string, node} from 'prop-types';
 import Octicon, {getIconByName} from '@githubprimer/octicons-react';
 import cx from 'classnames';
 
+// mts ~ UnderlineNav-octicon does not apply in example
+// modules/primer-navigation/README.md
+// ```html title="UnderlineNav with Counter"
+
 const UnderlineNavItem = ({className, href, role, title, icon, counter, children}) => {
   return (
     <a
