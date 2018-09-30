@@ -4,7 +4,7 @@ import UnderlineNavItem from './UnderlineNavItem';
 
 const UnderlineNav = ({className, items, html, selectedIndex}) => {
   return (
-    <nav className="UnderlineNav">
+    <nav className={`UnderlineNav ${className}`}>
       <div className="UnderlineNav-body">
       {items.map((item, index) => {
         const {href, role, title, text} = item;
