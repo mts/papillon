@@ -3,9 +3,9 @@ import {string, node, oneOf} from 'prop-types';
 
 const Button = ({variant, className, children}) => {
   if (variant === 'button') {
-    return <button className={`btn ${className}`} type="button">{children}</button>
+    return <button className={`btn ${className}`.trim()} type="button">{children}</button>
   } else if (variant === 'link') {
-    return <a className={`btn ${className}`} href="#url" role="button">{children}</a>
+    return <a className={`btn ${className}`.trim()} href="#url" role="button">{children}</a>
   } else if (variant === 'button-link') {
     return <button className="btn-link">Button</button>
   }

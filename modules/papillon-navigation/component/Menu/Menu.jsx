@@ -1,5 +1,5 @@
 import React from 'react';
-import {arrayOf, shape, string, number} from 'prop-types';
+import {arrayOf, shape, string, number, node} from 'prop-types';
 import MenuItem from './MenuItem';
 import {isEmptyObject} from './utility';
 
@@ -10,7 +10,7 @@ const Menu = ({className, aria, heading, items, selectedIndex}) => {
   return (
     <nav className="menu" aria-label={label} aria-labelledby={labelledby}>
       {!isEmptyObject(heading) && (
-        <span class="menu-heading" id="menu-heading">{title}</span>
+        <span className="menu-heading" id="menu-heading">{title}</span>
       )}
       {items.map((item, index) => {
         const {href, text, icon, html} = item;
@@ -51,7 +51,9 @@ Menu.propTypes = {
   }),
   items: arrayOf(shape({
     href: string,
-    text: string
+    text: string,
+    icon: string,
+    html: node
   })).isRequired,
   selectedIndex: number.isRequired
 };

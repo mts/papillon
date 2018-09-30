@@ -1,6 +1,6 @@
 import React from 'react';
 import {string, shape, node} from 'prop-types';
-import Octicon, {getIconByName} from '@githubprimer/octicons-react'
+import Octicon, {getIconByName} from '@githubprimer/octicons-react';
 import cx from 'classnames';
 import {isEmptyObject} from './utility';
 
@@ -14,7 +14,7 @@ const MenuItem = ({className, aria, href, icon, children}) => {
     );
   } else {
     return (
-      <a className={`menu-item ${className}`} href={href} aria-current={aria.current}>
+      <a className={`menu-item ${className}`.trim()} href={href} aria-current={aria.current}>
         {icon ? <Octicon size='small' icon={getIconByName(icon)} /> : null}
         <span className={cx({'ml-1': icon !== ''})}>{children}</span>
       </a>

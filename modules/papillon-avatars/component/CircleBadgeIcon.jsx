@@ -6,7 +6,7 @@ const CircleBadgeIcon = ({className, icon}) => (
   <Octicon
     icon={getIconByName(icon)}
     scale={1}
-    className={`CircleBadge-icon ${className}`}
+    className={`CircleBadge-icon ${className}`.trim()}
   />
 );
 

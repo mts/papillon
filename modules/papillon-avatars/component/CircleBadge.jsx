@@ -3,7 +3,7 @@ import {string, node} from 'prop-types';
 
 const CircleBadge = ({size, className, children}) => (
   <a
-    className={`CircleBadge CircleBadge--${size} ${className}`}
+    className={`CircleBadge CircleBadge--${size} ${className}`.trim()}
     title="title"
     href="href"
   >

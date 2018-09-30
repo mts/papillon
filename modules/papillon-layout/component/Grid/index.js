@@ -1,3 +1,3 @@
-import Grid from './jsx/Grid';
+import Grid from './Grid';
 
 export default Grid;

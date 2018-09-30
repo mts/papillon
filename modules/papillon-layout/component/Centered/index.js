@@ -1,3 +1,3 @@
-import Centered from './jsx/Centered';
+import Centered from './Centered';
 
 export default Centered;

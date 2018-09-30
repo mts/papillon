@@ -1,3 +1,3 @@
-import BlankSlate from './jsx/BlankSlate';
+import BlankSlate from './BlankSlate';
 
 export default BlankSlate;
