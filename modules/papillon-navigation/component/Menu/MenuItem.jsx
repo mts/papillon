@@ -1,6 +1,6 @@
 import React from 'react';
 import {string, shape, node} from 'prop-types';
-import Octicon, {getIconByName} from '@githubprimer/octicons-react'
+import Octicon, {getIconByName} from '@githubprimer/octicons-react';
 import cx from 'classnames';
 import {isEmptyObject} from './utility';
 
