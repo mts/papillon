@@ -2,7 +2,7 @@ import React from 'react';
 import {arrayOf, shape, string, number} from 'prop-types';
 import UnderlineNavItem from './UnderlineNavItem';
 
-const UnderlineNav = ({className, items, selectedIndex}) => {
+const UnderlineNav = ({className, items, html, selectedIndex}) => {
   return (
     <nav className="UnderlineNav">
       <div className="UnderlineNav-body">
@@ -24,12 +24,14 @@ const UnderlineNav = ({className, items, selectedIndex}) => {
         }
       })}
       </div>
+      {html ? html: null}
     </nav>
   );
 };
 
 UnderlineNav.defaultProps = {
   className: '',
+  html: '',
 };
 
 UnderlineNav.propTypes = {
@@ -40,6 +42,7 @@ UnderlineNav.propTypes = {
     title: string,
     text: string
   })).isRequired,
+  html: string,
   selectedIndex: number.isRequired
 };
 
