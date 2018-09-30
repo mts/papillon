@@ -1,7 +1,9 @@
 import React from 'react';
 import {string, node} from 'prop-types';
+import Octicon, {getIconByName} from '@githubprimer/octicons-react';
+import cx from 'classnames';
 
-const UnderlineNavItem = ({className, href, role, title, children}) => {
+const UnderlineNavItem = ({className, href, role, title, icon, counter, children}) => {
   return (
     <a
       href={href}
@@ -9,13 +11,17 @@ const UnderlineNavItem = ({className, href, role, title, children}) => {
       title={title}
       className={`UnderlineNav-item ${className}`.trim()}
     >
+      {icon ? <Octicon className='UnderlineNav-octicon mr-1' size='small' icon={getIconByName(icon)} /> : null}
       {children}
+      {counter ? <span className='ml-1'>{counter}</span> : null}
     </a>
   )
 };
 
 UnderlineNavItem.defaultProps = {
-  className: ''
+  className: '',
+  icon: '',
+  counter: React.ReactNode
 };
 
 UnderlineNavItem.propTypes = {
@@ -23,6 +29,8 @@ UnderlineNavItem.propTypes = {
   href: string.isRequired,
   role: string.isRequired,
   title: string.isRequired,
+  icon: string,
+  counter: node,
   children: node.isRequired
 };
 
