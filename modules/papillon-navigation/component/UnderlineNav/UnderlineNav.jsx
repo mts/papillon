@@ -1,10 +1,13 @@
 import React from 'react';
-import {arrayOf, shape, string, number} from 'prop-types';
+import {arrayOf, shape, string, number, node} from 'prop-types';
 import UnderlineNavItem from './UnderlineNavItem';
 
-const UnderlineNav = ({className, items, html, selectedIndex}) => {
+const UnderlineNav = ({className, aria, items, html, selectedIndex}) => {
+  const {label} = aria;
+
   return (
-    <nav className={`UnderlineNav ${className}`}>
+    <nav className={`UnderlineNav ${className}`} aria-label={label}>
+      {className.includes('UnderlineNav--right') && html ? html : null}
       <div className="UnderlineNav-body">
       {items.map((item, index) => {
         const {href, role, title, text} = item;
@@ -24,17 +27,23 @@ const UnderlineNav = ({className, items, html, selectedIndex}) => {
         }
       })}
       </div>
-      {html ? html: null}
+      {!className.includes('UnderlineNav--right') && html ? html : null}
     </nav>
   );
 };
 
 UnderlineNav.defaultProps = {
+  aria: {
+    label: ''
+  },
   className: '',
-  html: '',
+  html: React.ReactNode,
 };
 
 UnderlineNav.propTypes = {
+  aria: shape({
+    label: string
+  }),
   className: string,
   items: arrayOf(shape({
     href: string,
@@ -42,7 +51,7 @@ UnderlineNav.propTypes = {
     title: string,
     text: string
   })).isRequired,
-  html: string,
+  html: node,
   selectedIndex: number.isRequired
 };
 
