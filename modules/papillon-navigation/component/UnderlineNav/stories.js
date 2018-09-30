@@ -2,6 +2,10 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import UnderlineNav from './UnderlineNav';
 
+const aria = {
+  label: 'Foo bar'
+};
+
 const items = [
   { href: '#url',
     role: 'tab',
@@ -25,7 +29,7 @@ const items = [
   }
 ];
 
-const html =  <div class="UnderlineNav-actions"><a class="btn">Button</a></div>;
+const html = <div className="UnderlineNav-actions"><a className="btn">Button</a></div>;
 
 storiesOf('Navigation', module)
   .add('UnderlineNav', () => {
@@ -39,6 +43,7 @@ storiesOf('Navigation', module)
   .add('UnderlineNav-actions', () => {
     return (
       <UnderlineNav
+        aria={aria}
         items={items}
         html={html}
         selectedIndex={0}
@@ -50,6 +55,16 @@ storiesOf('Navigation', module)
       <UnderlineNav
         className="UnderlineNav--right"
         items={items}
+        selectedIndex={0}
+      />
+    )
+  })
+  .add('UnderlineNav--right with actions', () => {
+    return (
+      <UnderlineNav
+        className="UnderlineNav--right"
+        items={items}
+        html={html}
         selectedIndex={0}
       />
     )
