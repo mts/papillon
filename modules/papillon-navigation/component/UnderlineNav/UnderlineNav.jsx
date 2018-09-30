@@ -10,17 +10,32 @@ const UnderlineNav = ({className, aria, items, action, selectedIndex}) => {
       {className.includes('UnderlineNav--right') && action ? action : null}
       <div className="UnderlineNav-body">
       {items.map((item, index) => {
-        const {href, role, title, text} = item;
+        const {href, role, title, text, icon, counter} = item;
 
         if (index !== selectedIndex) {
           return (
-            <UnderlineNavItem key={index} href={href} role={role} title={title}>
+            <UnderlineNavItem
+              key={index}
+              href={href}
+              role={role}
+              title={title}
+              icon={icon}
+              counter={counter}
+            >
               {text}
             </UnderlineNavItem>
           )
         } else {
           return (
-            <UnderlineNavItem key={index} href={href} role={role} title={title} className="selected">
+            <UnderlineNavItem
+              key={index}
+              href={href}
+              role={role}
+              title={title}
+              icon={icon}
+              counter={counter}
+              className="selected"
+            >
               {text}
             </UnderlineNavItem>
           )
@@ -37,7 +52,7 @@ UnderlineNav.defaultProps = {
     label: ''
   },
   className: '',
-  action: React.ReactNode,
+  action: React.ReactNode
 };
 
 UnderlineNav.propTypes = {
@@ -49,7 +64,8 @@ UnderlineNav.propTypes = {
     href: string,
     role: string,
     title: string,
-    text: string
+    text: string,
+    icon: string
   })).isRequired,
   action: node,
   selectedIndex: number.isRequired
