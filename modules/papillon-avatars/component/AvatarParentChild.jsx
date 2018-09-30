@@ -2,7 +2,7 @@ import React from 'react';
 import {string, node} from 'prop-types';
 
 const AvatarParentChild = ({className, children}) => (
-  <div className={`avatar-parent-child ${className}`}>
+  <div className={`avatar-parent-child ${className}`.trim()}>
     {children}
   </div>
 );

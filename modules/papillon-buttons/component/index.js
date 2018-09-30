@@ -1,3 +1,3 @@
-import Button from './jsx/Button';
+import Button from './Button';
 
 export default Button;

@@ -47,7 +47,7 @@ storiesOf('Navigation', module)
         href: '#url',
         text: 'Notifications',
         icon: 'radio-tower',
-        html: <span class="Counter">3</span>
+        html: <span className="Counter">3</span>
       },
     ];
 

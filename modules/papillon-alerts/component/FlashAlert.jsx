@@ -3,7 +3,7 @@ import {string, node} from 'prop-types';
 import Octicon, {getIconByName} from '@githubprimer/octicons-react'
 
 const FlashAlert = ({className, children, icon}) => (
-  <div className={`flash ${className}`}>
+  <div className={`flash ${className}`.trim()}>
     {icon ? <span className="mr-3"><Octicon size='small' icon={getIconByName(icon)} /></span> : null}
     {children}
   </div>
