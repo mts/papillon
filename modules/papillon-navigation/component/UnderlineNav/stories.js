@@ -29,7 +29,7 @@ const items = [
   }
 ];
 
-const html = <div className="UnderlineNav-actions"><a className="btn">Button</a></div>;
+const button = <div className="UnderlineNav-actions"><a className="btn">Button</a></div>;
 
 storiesOf('Navigation', module)
   .add('UnderlineNav', () => {
@@ -45,7 +45,7 @@ storiesOf('Navigation', module)
       <UnderlineNav
         aria={aria}
         items={items}
-        html={html}
+        action={button}
         selectedIndex={0}
       />
     )
@@ -62,9 +62,10 @@ storiesOf('Navigation', module)
   .add('UnderlineNav--right with actions', () => {
     return (
       <UnderlineNav
+        aria={aria}
         className="UnderlineNav--right"
         items={items}
-        html={html}
+        action={button}
         selectedIndex={0}
       />
     )
