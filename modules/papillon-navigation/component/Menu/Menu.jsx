@@ -10,7 +10,7 @@ const Menu = ({className, aria, heading, items, selectedIndex}) => {
   return (
     <nav className="menu" aria-label={label} aria-labelledby={labelledby}>
       {!isEmptyObject(heading) && (
-        <span class="menu-heading" id="menu-heading">{title}</span>
+        <span className="menu-heading" id="menu-heading">{title}</span>
       )}
       {items.map((item, index) => {
         const {href, text, icon, html} = item;
