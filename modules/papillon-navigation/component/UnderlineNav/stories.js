@@ -29,7 +29,7 @@ const items = [
   }
 ];
 
-const counter = <span class="Counter">10</span>;
+const counter = <span className="Counter">10</span>;
 
 const itemsWithIcons = [
   { href: '#url',
