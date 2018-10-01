@@ -1,6 +1,7 @@
 import React from 'react';
 import FlashAlert from './FlashAlert';
 import FlashMessages from './FlashMessages';
+import Octicon, {getIconByName} from '@githubprimer/octicons-react';
 
 const flashAlertDefault = (
   <div className='p-4'>
@@ -61,6 +62,21 @@ const flashIcon = (
   </div>
 );
 
+const withDismiss = (
+  // mts ~ js-flash-close does not exist
+  <div className='p-4'>
+    <FlashAlert>
+        <button
+          className="flash-close js-flash-close"
+          type="button"
+        >
+          <Octicon size='small' icon={getIconByName('x')} />
+        </button>
+        Dismissable flash message goes here.
+    </FlashAlert>
+  </div>
+);
+
 export {
   flashAlertDefault,
   multipleParagraphs,
@@ -68,5 +84,6 @@ export {
   flashWarn,
   flashError,
   flashSuccess,
-  flashIcon
+  flashIcon,
+  withDismiss
 };

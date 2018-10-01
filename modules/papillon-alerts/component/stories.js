@@ -2,7 +2,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import FlashAlert from './FlashAlert';
 import FlashMessages from './FlashMessages';
-import Octicon, {getIconByName} from '@githubprimer/octicons-react';
 
 import {
   flashAlertDefault,
@@ -11,7 +10,8 @@ import {
   flashWarn,
   flashError,
   flashSuccess,
-  flashIcon
+  flashIcon,
+  withDismiss
 } from './flavors';
 
 storiesOf('Flash alerts', module)
@@ -22,20 +22,7 @@ storiesOf('Flash alerts', module)
   .add('flash-error', () => flashError)
   .add('flash-success', () => flashSuccess)
   .add('flash-icon', () => flashIcon)
-  .add('with-dismiss', () => (
-    // mts ~ js-flash-close does not exist
-    <div className='p-4'>
-      <FlashAlert>
-          <button
-            className="flash-close js-flash-close"
-            type="button"
-          >
-            <Octicon size='small' icon={getIconByName('x')} />
-          </button>
-          Dismissable flash message goes here.
-      </FlashAlert>
-    </div>
-  ))
+  .add('with-dismiss', () => withDismiss)
   .add('with-action-button', () => (
     <div className='p-4'>
       <FlashAlert>
