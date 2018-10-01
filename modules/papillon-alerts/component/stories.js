@@ -7,20 +7,15 @@ import Octicon, {getIconByName} from '@githubprimer/octicons-react';
 import {
   flashAlertDefault,
   multipleParagraphs,
-  flashMessages
+  flashMessages,
+  flashWarn
 } from './flavors';
 
 storiesOf('Flash alerts', module)
   .add('Default', () => flashAlertDefault)
   .add('Multiple paragraphs', () => multipleParagraphs)
   .add('Flash messages', () => flashMessages)
-  .add('flash-warn', () => (
-  <div className='p-4'>
-    <FlashAlert className="flash-warn">
-      Flash message goes here.
-    </FlashAlert>
-  </div>
-  ))
+  .add('flash-warn', () => flashWarn)
   .add('flash-error', () => (
   <div className='p-4'>
     <FlashAlert className="flash-error">

@@ -4,7 +4,8 @@ import { shallow } from 'enzyme';
 import {
   flashAlertDefault,
   multipleParagraphs,
-  flashMessages
+  flashMessages,
+  flashWarn
 } from './flavors';
 
 const renderShallow = () => {
@@ -32,6 +33,10 @@ describe('<FlashAlert />', () => {
 
     test('must match flashMessages', () => {
       expect(global.renderToJSON(flashMessages)).toMatchSnapshot();
+    });
+
+    test('must match flashWarn', () => {
+      expect(global.renderToJSON(flashWarn)).toMatchSnapshot();
     });
   });
 });

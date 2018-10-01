@@ -29,8 +29,17 @@ const flashMessages = (
   </div>
 );
 
+const flashWarn = (
+  <div className='p-4'>
+    <FlashAlert className="flash-warn">
+      Flash message goes here.
+    </FlashAlert>
+  </div>
+);
+
 export {
   flashAlertDefault,
   multipleParagraphs,
-  flashMessages
+  flashMessages,
+  flashWarn
 };
