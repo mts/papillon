@@ -1,0 +1,15 @@
+{
+  "testRegex": ".tests\\.js$",
+  "roots": [
+    "modules/"
+  ],
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "babel-jest"
+  },
+  "collectCoverageFrom": [
+    "modules/**/*.js",
+    "!modules/**/*.stories.js",
+    "!modules/**/index.js"
+  ],
+  "setupTestFrameworkScriptFile": "<rootDir>/jest.config.js"
+}
