@@ -9,7 +9,8 @@ import {
   multipleParagraphs,
   flashMessages,
   flashWarn,
-  flashError
+  flashError,
+  flashSuccess
 } from './flavors';
 
 storiesOf('Flash alerts', module)
@@ -18,13 +19,7 @@ storiesOf('Flash alerts', module)
   .add('Flash messages', () => flashMessages)
   .add('flash-warn', () => flashWarn)
   .add('flash-error', () => flashError)
-  .add('flash-success', () => (
-  <div className='p-4'>
-    <FlashAlert className="flash-success">
-      Flash message goes here.
-    </FlashAlert>
-  </div>
-  ))
+  .add('flash-success', () => flashSuccess)
   .add('flash-icon', () => (
     <div className='p-4'>
       <FlashAlert icon="alert">

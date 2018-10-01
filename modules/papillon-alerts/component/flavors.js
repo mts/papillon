@@ -45,10 +45,19 @@ const flashError = (
   </div>
 );
 
+const flashSuccess = (
+  <div className='p-4'>
+    <FlashAlert className="flash-success">
+      Flash message goes here.
+    </FlashAlert>
+  </div>
+);
+
 export {
   flashAlertDefault,
   multipleParagraphs,
   flashMessages,
   flashWarn,
-  flashError
+  flashError,
+  flashSuccess
 };
