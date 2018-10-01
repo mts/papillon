@@ -12,7 +12,23 @@ exports[`<FlashAlert /> Snaphot must match flashAlertDefault 1`] = `
 </div>
 `;
 
-exports[`<FlashAlert /> Snaphot must match flashAlertMultipleParagraphs 1`] = `
+exports[`<FlashAlert /> Snaphot must match flashMessages 1`] = `
+<div
+  className="p-4"
+>
+  <div
+    className="flash-messages"
+  >
+    <div
+      className="flash"
+    >
+      Flash message goes here.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<FlashAlert /> Snaphot must match multipleParagraphs 1`] = `
 <div
   className="p-4"
 >

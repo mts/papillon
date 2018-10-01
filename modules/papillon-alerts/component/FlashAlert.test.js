@@ -2,7 +2,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import {
   flashAlertDefault,
-  flashAlertMultipleParagraphs
+  multipleParagraphs,
+  flashMessages
 } from './stories';
 
 const renderShallow = () => {
@@ -23,8 +24,13 @@ describe('<FlashAlert />', () => {
     test('must match flashAlertDefault', () => {
       expect(global.renderToJSON(flashAlertDefault)).toMatchSnapshot();
     });
-    test('must match flashAlertMultipleParagraphs', () => {
-      expect(global.renderToJSON(flashAlertMultipleParagraphs)).toMatchSnapshot();
+
+    test('must match multipleParagraphs', () => {
+      expect(global.renderToJSON(multipleParagraphs)).toMatchSnapshot();
+    });
+
+    test('must match flashMessages', () => {
+      expect(global.renderToJSON(flashMessages)).toMatchSnapshot();
     });
   });
 });

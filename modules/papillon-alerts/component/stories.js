@@ -12,7 +12,7 @@ const flashAlertDefault = (
   </div>
 );
 
-const flashAlertMultipleParagraphs = (
+const multipleParagraphs = (
   <div className='p-4'>
     <FlashAlert>
       <p>This is a longer flash message in it's own paragraph. It ends up looking something like this. If we keep adding more text, it'll eventually wrap to a new line.</p>
@@ -21,10 +21,7 @@ const flashAlertMultipleParagraphs = (
   </div>
 );
 
-storiesOf('Flash alerts', module)
-  .add('Default', () => flashAlertDefault)
-  .add('Multiple paragraphs', () => flashAlertMultipleParagraphs)
-  .add('Flash messages', () => (
+const flashMessages = (
   <div className='p-4'>
     <FlashMessages>
       <FlashAlert>
@@ -32,7 +29,12 @@ storiesOf('Flash alerts', module)
       </FlashAlert>
     </FlashMessages>
   </div>
-  ))
+);
+
+storiesOf('Flash alerts', module)
+  .add('Default', () => flashAlertDefault)
+  .add('Multiple paragraphs', () => multipleParagraphs)
+  .add('Flash messages', () => flashMessages)
   .add('flash-warn', () => (
   <div className='p-4'>
     <FlashAlert className="flash-warn">
@@ -96,5 +98,6 @@ storiesOf('Flash alerts', module)
 
 export {
   flashAlertDefault,
-  flashAlertMultipleParagraphs
+  multipleParagraphs,
+  flashMessages
 };
