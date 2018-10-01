@@ -14,8 +14,8 @@ import {
   fullWidthFlash
 } from './flavors';
 
-const renderShallow = () => {
-  return shallow(flashAlertDefault);
+const renderShallow = (component) => {
+  return shallow(component);
 };
 
 describe('<FlashAlert />', () => {
@@ -23,8 +23,13 @@ describe('<FlashAlert />', () => {
 
   describe('Instance', () => {
     test('must be an instance of FlashAlert', () => {
-      wrapper = renderShallow();
-      expect(wrapper.find('FlashAlert')).toBeTruthy();
+      wrapper = renderShallow(flashAlertDefault);
+      expect(wrapper.find('FlashAlert')).toHaveLength(1);
+    });
+
+    test('must be an instance of FlashAlert', () => {
+      wrapper = renderShallow(flashMessages);
+      expect(wrapper.find('FlashMessages')).toHaveLength(1);
     });
   });
 
