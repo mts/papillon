@@ -4,22 +4,26 @@ import FlashAlert from './FlashAlert';
 import FlashMessages from './FlashMessages';
 import Octicon, {getIconByName} from '@githubprimer/octicons-react';
 
-storiesOf('Flash alerts', module)
-  .add('Default', () => (
+const flashAlertDefault = (
   <div className='p-4'>
     <FlashAlert>
       Flash message goes here.
     </FlashAlert>
   </div>
-  ))
-  .add('Multiple paragraphs', () => (
+);
+
+const flashAlertMultipleParagraphs = (
   <div className='p-4'>
     <FlashAlert>
       <p>This is a longer flash message in it's own paragraph. It ends up looking something like this. If we keep adding more text, it'll eventually wrap to a new line.</p>
       <p>And this is another paragraph.</p>
     </FlashAlert>
   </div>
-  ))
+);
+
+storiesOf('Flash alerts', module)
+  .add('Default', () => flashAlertDefault)
+  .add('Multiple paragraphs', () => flashAlertMultipleParagraphs)
   .add('Flash messages', () => (
   <div className='p-4'>
     <FlashMessages>
@@ -89,3 +93,8 @@ storiesOf('Flash alerts', module)
     </div>
   ))
 ;
+
+export {
+  flashAlertDefault,
+  flashAlertMultipleParagraphs
+};

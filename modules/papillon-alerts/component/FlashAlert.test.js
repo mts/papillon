@@ -1,18 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-
-import FlashAlert from './FlashAlert';
-
-const getComponent = () => (
-  <div className='p-4'>
-    <FlashAlert>
-      Flash message goes here.
-    </FlashAlert>
-  </div>
-);
+import {
+  flashAlertDefault,
+  flashAlertMultipleParagraphs
+} from './stories';
 
 const renderShallow = () => {
-  return shallow(getComponent());
+  return shallow(flashAlertDefault);
 };
 
 describe('<FlashAlert />', () => {
@@ -26,8 +20,11 @@ describe('<FlashAlert />', () => {
   });
 
   describe('Snaphot', () => {
-    test('must match h1', () => {
-      expect(global.renderToJSON(getComponent())).toMatchSnapshot();
+    test('must match flashAlertDefault', () => {
+      expect(global.renderToJSON(flashAlertDefault)).toMatchSnapshot();
+    });
+    test('must match flashAlertMultipleParagraphs', () => {
+      expect(global.renderToJSON(flashAlertMultipleParagraphs)).toMatchSnapshot();
     });
   });
 });
