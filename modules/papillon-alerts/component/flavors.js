@@ -37,9 +37,18 @@ const flashWarn = (
   </div>
 );
 
+const flashError = (
+  <div className='p-4'>
+    <FlashAlert className="flash-error">
+      Flash message goes here.
+    </FlashAlert>
+  </div>
+);
+
 export {
   flashAlertDefault,
   multipleParagraphs,
   flashMessages,
-  flashWarn
+  flashWarn,
+  flashError
 };

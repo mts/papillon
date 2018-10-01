@@ -5,7 +5,8 @@ import {
   flashAlertDefault,
   multipleParagraphs,
   flashMessages,
-  flashWarn
+  flashWarn,
+  flashError
 } from './flavors';
 
 const renderShallow = () => {
@@ -37,6 +38,10 @@ describe('<FlashAlert />', () => {
 
     test('must match flashWarn', () => {
       expect(global.renderToJSON(flashWarn)).toMatchSnapshot();
+    });
+
+    test('must match flashError', () => {
+      expect(global.renderToJSON(flashError)).toMatchSnapshot();
     });
   });
 });
