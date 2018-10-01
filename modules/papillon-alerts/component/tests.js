@@ -7,7 +7,8 @@ import {
   flashMessages,
   flashWarn,
   flashError,
-  flashSuccess
+  flashSuccess,
+  flashIcon
 } from './flavors';
 
 const renderShallow = () => {
@@ -47,6 +48,10 @@ describe('<FlashAlert />', () => {
 
     test('must match flashSuccess', () => {
       expect(global.renderToJSON(flashSuccess)).toMatchSnapshot();
+    });
+
+    test('must match flashIcon', () => {
+      expect(global.renderToJSON(flashIcon)).toMatchSnapshot();
     });
   });
 });

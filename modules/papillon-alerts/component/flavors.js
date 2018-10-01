@@ -53,11 +53,20 @@ const flashSuccess = (
   </div>
 );
 
+const flashIcon = (
+  <div className='p-4'>
+    <FlashAlert icon="alert">
+      Flash message with an icon goes here.
+    </FlashAlert>
+  </div>
+);
+
 export {
   flashAlertDefault,
   multipleParagraphs,
   flashMessages,
   flashWarn,
   flashError,
-  flashSuccess
+  flashSuccess,
+  flashIcon
 };

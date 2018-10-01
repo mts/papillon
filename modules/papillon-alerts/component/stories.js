@@ -10,7 +10,8 @@ import {
   flashMessages,
   flashWarn,
   flashError,
-  flashSuccess
+  flashSuccess,
+  flashIcon
 } from './flavors';
 
 storiesOf('Flash alerts', module)
@@ -20,13 +21,7 @@ storiesOf('Flash alerts', module)
   .add('flash-warn', () => flashWarn)
   .add('flash-error', () => flashError)
   .add('flash-success', () => flashSuccess)
-  .add('flash-icon', () => (
-    <div className='p-4'>
-      <FlashAlert icon="alert">
-        Flash message with an icon goes here.
-      </FlashAlert>
-    </div>
-  ))
+  .add('flash-icon', () => flashIcon)
   .add('with-dismiss', () => (
     // mts ~ js-flash-close does not exist
     <div className='p-4'>
