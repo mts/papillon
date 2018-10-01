@@ -101,6 +101,22 @@ exports[`<FlashAlert /> Snaphot must match flashWarn 1`] = `
 </div>
 `;
 
+exports[`<FlashAlert /> Snaphot must match fullWidthFlash 1`] = `
+<div
+  className="p-4"
+>
+  <div
+    className="container-lg"
+  >
+    <div
+      className="flash flash-full"
+    >
+      Full width flash message.
+    </div>
+  </div>
+</div>
+`;
+
 exports[`<FlashAlert /> Snaphot must match multipleParagraphs 1`] = `
 <div
   className="p-4"

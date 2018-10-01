@@ -10,7 +10,8 @@ import {
   flashSuccess,
   flashIcon,
   withDismiss,
-  withActionButton
+  withActionButton,
+  fullWidthFlash
 } from './flavors';
 
 const renderShallow = () => {
@@ -62,6 +63,10 @@ describe('<FlashAlert />', () => {
 
     test('must match withActionButton', () => {
       expect(global.renderToJSON(withActionButton)).toMatchSnapshot();
+    });
+
+    test('must match fullWidthFlash', () => {
+      expect(global.renderToJSON(fullWidthFlash)).toMatchSnapshot();
     });
   });
 });

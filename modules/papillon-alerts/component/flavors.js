@@ -86,6 +86,16 @@ const withActionButton = (
   </div>
 );
 
+const fullWidthFlash = (
+  <div className='p-4'>
+      <div className="container-lg">
+        <FlashAlert className="flash-full">
+          Full width flash message.
+        </FlashAlert>
+      </div>
+  </div>
+);
+
 export {
   flashAlertDefault,
   multipleParagraphs,
@@ -95,5 +105,6 @@ export {
   flashSuccess,
   flashIcon,
   withDismiss,
-  withActionButton
+  withActionButton,
+  fullWidthFlash
 };

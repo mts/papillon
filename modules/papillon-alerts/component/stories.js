@@ -12,7 +12,8 @@ import {
   flashSuccess,
   flashIcon,
   withDismiss,
-  withActionButton
+  withActionButton,
+  fullWidthFlash
 } from './flavors';
 
 storiesOf('Flash alerts', module)
@@ -25,13 +26,5 @@ storiesOf('Flash alerts', module)
   .add('flash-icon', () => flashIcon)
   .add('with-dismiss', () => withDismiss)
   .add('with-action-button', () => withActionButton)
-  .add('full-width-flash', () => (
-    <div className='p-4'>
-        <div className="container-lg">
-          <FlashAlert className="flash-full">
-            Full width flash message.
-          </FlashAlert>
-        </div>
-    </div>
-  ))
+  .add('full-width-flash', () => fullWidthFlash)
 ;
