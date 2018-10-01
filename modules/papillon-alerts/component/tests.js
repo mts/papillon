@@ -1,10 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+
 import {
   flashAlertDefault,
   multipleParagraphs,
   flashMessages
-} from './stories';
+} from './flavors';
 
 const renderShallow = () => {
   return shallow(flashAlertDefault);
