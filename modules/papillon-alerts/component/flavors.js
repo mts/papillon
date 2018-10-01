@@ -77,6 +77,15 @@ const withDismiss = (
   </div>
 );
 
+const withActionButton = (
+  <div className='p-4'>
+    <FlashAlert>
+      <button type="submit" className="btn btn-sm primary flash-action">Complete action</button>
+      Flash message with action here.
+    </FlashAlert>
+  </div>
+);
+
 export {
   flashAlertDefault,
   multipleParagraphs,
@@ -85,5 +94,6 @@ export {
   flashError,
   flashSuccess,
   flashIcon,
-  withDismiss
+  withDismiss,
+  withActionButton
 };

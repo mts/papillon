@@ -9,7 +9,8 @@ import {
   flashError,
   flashSuccess,
   flashIcon,
-  withDismiss
+  withDismiss,
+  withActionButton
 } from './flavors';
 
 const renderShallow = () => {
@@ -57,6 +58,10 @@ describe('<FlashAlert />', () => {
 
     test('must match withDismiss', () => {
       expect(global.renderToJSON(withDismiss)).toMatchSnapshot();
+    });
+
+    test('must match withActionButton', () => {
+      expect(global.renderToJSON(withActionButton)).toMatchSnapshot();
     });
   });
 });

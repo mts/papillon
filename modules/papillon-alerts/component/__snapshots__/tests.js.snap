@@ -118,6 +118,24 @@ exports[`<FlashAlert /> Snaphot must match multipleParagraphs 1`] = `
 </div>
 `;
 
+exports[`<FlashAlert /> Snaphot must match withActionButton 1`] = `
+<div
+  className="p-4"
+>
+  <div
+    className="flash"
+  >
+    <button
+      className="btn btn-sm primary flash-action"
+      type="submit"
+    >
+      Complete action
+    </button>
+    Flash message with action here.
+  </div>
+</div>
+`;
+
 exports[`<FlashAlert /> Snaphot must match withDismiss 1`] = `
 <div
   className="p-4"

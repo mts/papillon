@@ -11,7 +11,8 @@ import {
   flashError,
   flashSuccess,
   flashIcon,
-  withDismiss
+  withDismiss,
+  withActionButton
 } from './flavors';
 
 storiesOf('Flash alerts', module)
@@ -23,14 +24,7 @@ storiesOf('Flash alerts', module)
   .add('flash-success', () => flashSuccess)
   .add('flash-icon', () => flashIcon)
   .add('with-dismiss', () => withDismiss)
-  .add('with-action-button', () => (
-    <div className='p-4'>
-      <FlashAlert>
-        <button type="submit" className="btn btn-sm primary flash-action">Complete action</button>
-        Flash message with action here.
-      </FlashAlert>
-    </div>
-  ))
+  .add('with-action-button', () => withActionButton)
   .add('full-width-flash', () => (
     <div className='p-4'>
         <div className="container-lg">
