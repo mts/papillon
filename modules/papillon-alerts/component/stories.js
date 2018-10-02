@@ -2,7 +2,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import FlashAlert from './FlashAlert';
 import FlashMessages from './FlashMessages';
-
 import {
   flashAlertDefault,
   multipleParagraphs,
