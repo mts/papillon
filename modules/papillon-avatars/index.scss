@@ -1,7 +1,3 @@
-@import "papillon-support/index.scss";
-
-// Avatars
-@import "./lib/avatar.scss";
-@import "./lib/avatar-parent-child.scss";
-@import "./lib/avatar-stack.scss";
-@import "./lib/circle-badge.scss";
+// https://www.npmjs.com/package/primer-avatars
+// https://github.com/primer/primer/tree/master/modules/primer-avatars
+@import "primer-avatars/index.scss";
