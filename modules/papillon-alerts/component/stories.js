@@ -14,16 +14,17 @@ import {
   withActionButton,
   fullWidthFlash
 } from './flavors';
+import { withInfo } from '@storybook/addon-info';
 
 storiesOf('Flash alerts', module)
-  .add('Default', () => flashAlertDefault)
-  .add('Multiple paragraphs', () => multipleParagraphs)
-  .add('Flash messages', () => flashMessages)
-  .add('flash-warn', () => flashWarn)
-  .add('flash-error', () => flashError)
-  .add('flash-success', () => flashSuccess)
-  .add('flash-icon', () => flashIcon)
-  .add('with-dismiss', () => withDismiss)
-  .add('with-action-button', () => withActionButton)
-  .add('full-width-flash', () => fullWidthFlash)
+  .add('Default', withInfo('Default')(() => flashAlertDefault))
+  .add('Multiple paragraphs', withInfo('Multiple paragraphs')(() => multipleParagraphs))
+  .add('Flash messages', withInfo('Flash messages')(() => flashMessages))
+  .add('flash-warn', withInfo('flash-warn')(() => flashWarn))
+  .add('flash-error', withInfo('flash-error')(() => flashError))
+  .add('flash-success', withInfo('flash-success')(() => flashSuccess))
+  .add('flash-icon', withInfo('flash-icon')(() => flashIcon))
+  .add('with-dismiss', withInfo('with-dismiss')(() => withDismiss))
+  .add('with-action-button', withInfo('with-action-button')(() => withActionButton))
+  .add('full-width-flash', withInfo('full-width-flash')(() => fullWidthFlash))
 ;
