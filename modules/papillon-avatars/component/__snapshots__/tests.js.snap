@@ -91,6 +91,39 @@ exports[`<Avatar /> Snaphot must match avatar-stack-more 1`] = `
 </div>
 `;
 
+exports[`<Avatar /> Snaphot must match avatar-stack-right 1`] = `
+<div
+  className="AvatarStack AvatarStack--three-plus AvatarStack--right"
+>
+  <div
+    aria-label="octocat, octocat, and octocat"
+    className="AvatarStack-body tooltipped tooltipped-sw tooltipped-align-right-1"
+  >
+    <img
+      alt="@octocat"
+      className="avatar"
+      height={20}
+      src="https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png"
+      width={20}
+    />
+    <img
+      alt="@octocat"
+      className="avatar"
+      height={20}
+      src="https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png"
+      width={20}
+    />
+    <img
+      alt="@octocat"
+      className="avatar"
+      height={20}
+      src="https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png"
+      width={20}
+    />
+  </div>
+</div>
+`;
+
 exports[`<Avatar /> Snaphot must match avatar-stack-three-plus 1`] = `
 <div
   className="AvatarStack AvatarStack--three-plus"
@@ -120,6 +153,42 @@ exports[`<Avatar /> Snaphot must match avatar-stack-three-plus 1`] = `
       src="https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png"
       width={20}
     />
+  </div>
+</div>
+`;
+
+exports[`<Avatar /> Snaphot must match avatar-stack-two 1`] = `
+<div
+  className="AvatarStack AvatarStack--two"
+>
+  <div
+    aria-label="octocat and octocat"
+    className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1"
+  >
+    <a
+      className="avatar"
+      href="#"
+    >
+      <img
+        alt="@octocat"
+        className="avatar"
+        height={20}
+        src="https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png"
+        width={20}
+      />
+    </a>
+    <a
+      className="avatar"
+      href="#"
+    >
+      <img
+        alt="@octocat"
+        className="avatar"
+        height={20}
+        src="https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png"
+        width={20}
+      />
+    </a>
   </div>
 </div>
 `;

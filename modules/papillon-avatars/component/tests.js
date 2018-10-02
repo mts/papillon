@@ -4,7 +4,9 @@ import {
   avatarSmall,
   avatarParentChild,
   avatarStackMore,
-  avatarStackThreePlus
+  avatarStackThreePlus,
+  avatarStackTwo,
+  avatarStackRight
 } from './flavors';
 
 describe('<Avatar />', () => {
@@ -41,6 +43,14 @@ describe('<Avatar />', () => {
 
     test('must match avatar-stack-three-plus', () => {
       expect(global.renderToJSON(avatarStackThreePlus)).toMatchSnapshot();
+    });
+
+    test('must match avatar-stack-two', () => {
+      expect(global.renderToJSON(avatarStackTwo)).toMatchSnapshot();
+    });
+
+    test('must match avatar-stack-right', () => {
+      expect(global.renderToJSON(avatarStackRight)).toMatchSnapshot();
     });
   });
 });

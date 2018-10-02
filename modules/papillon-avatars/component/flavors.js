@@ -43,10 +43,35 @@ const avatarStackThreePlus = (
     </div>
 );
 
+const avatarStackTwo = (
+  <div className="AvatarStack AvatarStack--two">
+    <div className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat and octocat">
+      <a href="#" className="avatar">
+        <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
+      </a>
+      <a href="#" className="avatar">
+        <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
+      </a>
+    </div>
+  </div>
+);
+
+const avatarStackRight = (
+  <div className="AvatarStack AvatarStack--three-plus AvatarStack--right">
+    <div className="AvatarStack-body tooltipped tooltipped-sw tooltipped-align-right-1" aria-label="octocat, octocat, and octocat">
+      <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
+      <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
+      <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
+    </div>
+  </div>
+);
+
 export {
   avatar,
   avatarSmall,
   avatarParentChild,
   avatarStackMore,
-  avatarStackThreePlus
+  avatarStackThreePlus,
+  avatarStackTwo,
+  avatarStackRight
 };

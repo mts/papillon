@@ -11,7 +11,9 @@ import {
   avatarSmall,
   avatarParentChild,
   avatarStackMore,
-  avatarStackThreePlus
+  avatarStackThreePlus,
+  avatarStackTwo,
+  avatarStackRight
 } from './flavors';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
@@ -30,27 +32,10 @@ storiesOf('Avatar', module)
       (withInfo('avatar-stack-more')(() => avatarStackMore)))
   .add('avatar-stack-three-plus', withNotes('Must render Avatar ~ avatar-stack-three-plus')
       (withInfo('avatar-stack-three-plus')(() => avatarStackThreePlus)))
-  .add('avatar-stack-two', () => (
-    <div className="AvatarStack AvatarStack--two">
-      <div className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat and octocat">
-        <a href="#" className="avatar">
-          <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
-        </a>
-        <a href="#" className="avatar">
-          <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
-        </a>
-      </div>
-    </div>
-  ))
-  .add('avatar-stack-right', () => (
-    <div className="AvatarStack AvatarStack--three-plus AvatarStack--right">
-      <div className="AvatarStack-body tooltipped tooltipped-sw tooltipped-align-right-1" aria-label="octocat, octocat, and octocat">
-        <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
-        <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
-        <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
-      </div>
-    </div>
-  ))
+  .add('avatar-stack-two', withNotes('Must render Avatar ~ avatar-stack-two')
+      (withInfo('avatar-stack-two')(() => avatarStackTwo)))
+  .add('avatar-stack-right', withNotes('Must render Avatar ~ avatar-stack-right')
+      (withInfo('avatar-stack-right')(() => avatarStackRight)))
   .add('CircleBadge-small-icon', () => (
     <CircleBadge size="small" className="bg-yellow" title="Zap this!" href="#small">
       <CircleBadgeIcon className="text-white" icon="zap" />
