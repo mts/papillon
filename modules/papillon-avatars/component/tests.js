@@ -6,7 +6,8 @@ import {
   avatarStackMore,
   avatarStackThreePlus,
   avatarStackTwo,
-  avatarStackRight
+  avatarStackRight,
+  circleBadgeSmallIcon
 } from './flavors';
 
 describe('<Avatar />', () => {
@@ -21,6 +22,16 @@ describe('<Avatar />', () => {
     test('must be an instance of AvatarParentChild', () => {
       wrapper = renderMount(avatarParentChild);
       expect(wrapper.find('AvatarParentChild')).toHaveLength(1);
+    });
+
+    test('must be an instance of CircleBadge', () => {
+      wrapper = renderMount(circleBadgeSmallIcon);
+      expect(wrapper.find('CircleBadge')).toHaveLength(1);
+    });
+
+    test('must be an instance of CircleBadgeIcon', () => {
+      wrapper = renderMount(circleBadgeSmallIcon);
+      expect(wrapper.find('CircleBadgeIcon')).toHaveLength(1);
     });
   });
 
@@ -51,6 +62,10 @@ describe('<Avatar />', () => {
 
     test('must match avatar-stack-right', () => {
       expect(global.renderToJSON(avatarStackRight)).toMatchSnapshot();
+    });
+
+    test('must match CircleBadge-small-icon', () => {
+      expect(global.renderToJSON(circleBadgeSmallIcon)).toMatchSnapshot();
     });
   });
 });
