@@ -10,7 +10,8 @@ import {
   avatar,
   avatarSmall,
   avatarParentChild,
-  avatarStackMore
+  avatarStackMore,
+  avatarStackThreePlus
 } from './flavors';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
@@ -27,15 +28,8 @@ storiesOf('Avatar', module)
       (withInfo('avatar-parent-child')(() => avatarParentChild)))
   .add('avatar-stack-more', withNotes('Must render Avatar ~ avatar-stack-more')
       (withInfo('avatar-stack-more')(() => avatarStackMore)))
-  .add('avatar-stack-three-plus', () => (
-    <div className="AvatarStack AvatarStack--three-plus">
-      <div className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat, octocat, and octocat">
-        <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
-        <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
-        <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
-      </div>
-    </div>
-  ))
+  .add('avatar-stack-three-plus', withNotes('Must render Avatar ~ avatar-stack-three-plus')
+      (withInfo('avatar-stack-three-plus')(() => avatarStackThreePlus)))
   .add('avatar-stack-two', () => (
     <div className="AvatarStack AvatarStack--two">
       <div className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat and octocat">
