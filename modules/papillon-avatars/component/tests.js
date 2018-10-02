@@ -12,7 +12,8 @@ import {
   circleBadgeMediumIcon,
   circleBadgeMediumImage,
   circleBadgeLargeIcon,
-  circleBadgeLargeImage
+  circleBadgeLargeImage,
+  circleBadgeDashedConnection
 } from './flavors';
 
 describe('<Avatar />', () => {
@@ -42,6 +43,11 @@ describe('<Avatar />', () => {
     test('must be an instance of CircleBadgeImage', () => {
       wrapper = renderMount(circleBadgeSmallImage);
       expect(wrapper.find('CircleBadgeImage')).toHaveLength(1);
+    });
+
+    test('must be an instance of CircleBadgeDashedConnection', () => {
+      wrapper = renderMount(circleBadgeDashedConnection);
+      expect(wrapper.find('CircleBadgeDashedConnection')).toHaveLength(1);
     });
   });
 
@@ -96,6 +102,10 @@ describe('<Avatar />', () => {
 
     test('must match CircleBadge-large-image', () => {
       expect(global.renderToJSON(circleBadgeLargeImage)).toMatchSnapshot();
+    });
+
+    test('must match CircleBadgeDashedConnection', () => {
+      expect(global.renderToJSON(circleBadgeDashedConnection)).toMatchSnapshot();
     });
   });
 });
