@@ -2,6 +2,7 @@ import React from 'react';
 import FlashAlert from './FlashAlert';
 import FlashMessages from './FlashMessages';
 import Octicon, {getIconByName} from '@githubprimer/octicons-react';
+import { action } from '@storybook/addon-actions';
 
 const flashAlertDefault = (
   <div className='p-4'>
@@ -69,6 +70,7 @@ const withDismiss = (
         <button
           className="flash-close js-flash-close"
           type="button"
+          onClick={action('withDismiss-button-click')}
         >
           <Octicon size='small' icon={getIconByName('x')} />
         </button>
@@ -80,7 +82,13 @@ const withDismiss = (
 const withActionButton = (
   <div className='p-4'>
     <FlashAlert>
-      <button type="submit" className="btn btn-sm primary flash-action">Complete action</button>
+      <button
+        type="submit"
+        className="btn btn-sm primary flash-action"
+        onClick={action('withAction-button-click')}
+      >
+        Complete action
+      </button>
       Flash message with action here.
     </FlashAlert>
   </div>

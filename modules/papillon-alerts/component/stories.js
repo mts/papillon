@@ -2,7 +2,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import FlashAlert from './FlashAlert';
 import FlashMessages from './FlashMessages';
-
 import {
   flashAlertDefault,
   multipleParagraphs,
@@ -15,16 +14,28 @@ import {
   withActionButton,
   fullWidthFlash
 } from './flavors';
+import { withInfo } from '@storybook/addon-info';
+import { withNotes } from '@storybook/addon-notes';
 
 storiesOf('Flash alerts', module)
-  .add('Default', () => flashAlertDefault)
-  .add('Multiple paragraphs', () => multipleParagraphs)
-  .add('Flash messages', () => flashMessages)
-  .add('flash-warn', () => flashWarn)
-  .add('flash-error', () => flashError)
-  .add('flash-success', () => flashSuccess)
-  .add('flash-icon', () => flashIcon)
-  .add('with-dismiss', () => withDismiss)
-  .add('with-action-button', () => withActionButton)
-  .add('full-width-flash', () => fullWidthFlash)
+  .add('Default', withNotes('Must render FlashAlert ~ Default')
+      (withInfo('Default')(() => flashAlertDefault)))
+  .add('Multiple paragraphs', withNotes('Must render FlashAlert ~ Multiple paragraphs')
+      (withInfo('Multiple paragraphs')(() => multipleParagraphs)))
+  .add('Flash messages', withNotes('Must render FlashMessages ~ Flash messages')
+      (withInfo('Flash messages')(() => flashMessages)))
+  .add('flash-warn', withNotes('Must render FlashAlert ~ flash-warn')
+    (withInfo('flash-warn')(() => flashWarn)))
+  .add('flash-error', withNotes('Must render FlashAlert ~ flash-error')
+    (withInfo('flash-error')(() => flashError)))
+  .add('flash-success', withNotes('Must render FlashAlert ~ flash-success')
+    (withInfo('flash-success')(() => flashSuccess)))
+  .add('flash-icon', withNotes('Must render FlashAlert ~ flash-icon')
+    (withInfo('flash-icon')(() => flashIcon)))
+  .add('with-dismiss', withNotes('Must render FlashAlert ~ flash-dismiss')
+    (withInfo('with-dismiss')(() => withDismiss)))
+  .add('with-action-button', withNotes('Must render FlashAlert ~ with-action-button')
+    (withInfo('with-action-button')(() => withActionButton)))
+  .add('full-width-flash', withNotes('Must render FlashAlert ~ full-width-flash')
+    (withInfo('full-width-flash')(() => fullWidthFlash)))
 ;
