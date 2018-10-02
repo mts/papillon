@@ -8,6 +8,8 @@ import CircleBadgeImage from './CircleBadgeImage';
 import CircleBadgeDashedConnection from './CircleBadgeDashedConnection';
 import {
   avatar,
+  avatarSmall,
+  avatarParentChild
 } from './flavors';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
@@ -18,15 +20,10 @@ const srcCircleBadge = "https://user-images.githubusercontent.com/334891/3000461
 storiesOf('Avatar', module)
   .add('avatar', withNotes('Must render Avatar ~ avatar')
       (withInfo('avatar')(() => avatar)))
-  .add('avatar-small', () => (
-    <Avatar className="avatar-small" alt="small" src={srcAvatar} width={32} height={32} />
-  ))
-  .add('avatar-parent-child', () => (
-    <AvatarParentChild className="float-left">
-      <Avatar alt="parent" src={srcAvatar} width={48} height={48} />
-      <Avatar className="avatar-child" alt="child" src={srcAvatar} width={20} height={20} />
-    </AvatarParentChild>
-  ))
+  .add('avatar-small', withNotes('Must render Avatar ~ avatar-small')
+      (withInfo('avatar-small')(() => avatarSmall)))
+  .add('avatar-parent-child', withNotes('Must render Avatar ~ avatar-parent-child')
+      (withInfo('avatar-parent-child')(() => avatarParentChild)))
   .add('avatar-stack-more', () => (
     <div className="AvatarStack AvatarStack--three-plus">
       <div className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat, octocat, octocat, octocat, and octocat">
