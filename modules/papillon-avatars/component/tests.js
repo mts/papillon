@@ -7,7 +7,8 @@ import {
   avatarStackThreePlus,
   avatarStackTwo,
   avatarStackRight,
-  circleBadgeSmallIcon
+  circleBadgeSmallIcon,
+  circleBadgeSmallImage
 } from './flavors';
 
 describe('<Avatar />', () => {
@@ -66,6 +67,10 @@ describe('<Avatar />', () => {
 
     test('must match CircleBadge-small-icon', () => {
       expect(global.renderToJSON(circleBadgeSmallIcon)).toMatchSnapshot();
+    });
+
+    test('must match CircleBadge-small-image', () => {
+      expect(global.renderToJSON(circleBadgeSmallImage)).toMatchSnapshot();
     });
   });
 });

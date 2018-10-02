@@ -14,7 +14,8 @@ import {
   avatarStackThreePlus,
   avatarStackTwo,
   avatarStackRight,
-  circleBadgeSmallIcon
+  circleBadgeSmallIcon,
+  circleBadgeSmallImage
 } from './flavors';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
@@ -37,13 +38,10 @@ storiesOf('Avatar', module)
       (withInfo('avatar-stack-two')(() => avatarStackTwo)))
   .add('avatar-stack-right', withNotes('Must render Avatar ~ avatar-stack-right')
       (withInfo('avatar-stack-right')(() => avatarStackRight)))
-  .add('CircleBadge-small-icon', withNotes('Must render Avatar ~ CircleBadge-small-icon')
+  .add('CircleBadge-small-icon', withNotes('Must render CircleBadge ~ CircleBadge-small-icon')
       (withInfo('CircleBadge-small-icon')(() => circleBadgeSmallIcon)))
-  .add('CircleBadge-small-image', () => (
-    <CircleBadge size="small" className="float-left mr-2" title="Travis CI" href="#small">
-      <CircleBadgeImage src={srcCircleBadge} alt="" />
-    </CircleBadge>
-  ))
+  .add('CircleBadge-small-image', withNotes('Must render CircleBadge ~ CircleBadge-small-image')
+      (withInfo('CircleBadge-small-image')(() => circleBadgeSmallImage)))
   .add('CircleBadge-medium-icon', () => (
     <CircleBadge size="medium" className="bg-gray-dark" title="Zap this!" href="#medium">
       <CircleBadgeIcon className="text-white" icon="zap" />
