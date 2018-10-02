@@ -1,6 +1,5 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-
 import {
   flashAlertDefault,
   multipleParagraphs,
@@ -27,7 +26,7 @@ describe('<FlashAlert />', () => {
       expect(wrapper.find('FlashAlert')).toHaveLength(1);
     });
 
-    test('must be an instance of FlashAlert', () => {
+    test('must be an instance of FlashMessages', () => {
       wrapper = renderShallow(flashMessages);
       expect(wrapper.find('FlashMessages')).toHaveLength(1);
     });
