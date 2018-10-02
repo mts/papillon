@@ -2,7 +2,8 @@ import React from 'react';
 import {
   avatar,
   avatarSmall,
-  avatarParentChild
+  avatarParentChild,
+  avatarStackMore
 } from './flavors';
 
 describe('<Avatar />', () => {
@@ -31,6 +32,10 @@ describe('<Avatar />', () => {
 
     test('must match avatar-parent-child', () => {
       expect(global.renderToJSON(avatarParentChild)).toMatchSnapshot();
+    });
+
+    test('must match avatar-stack-more', () => {
+      expect(global.renderToJSON(avatarStackMore)).toMatchSnapshot();
     });
   });
 });

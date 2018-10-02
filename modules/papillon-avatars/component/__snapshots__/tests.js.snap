@@ -40,3 +40,53 @@ exports[`<Avatar /> Snaphot must match avatar-small 1`] = `
   width={32}
 />
 `;
+
+exports[`<Avatar /> Snaphot must match avatar-stack-more 1`] = `
+<div
+  className="AvatarStack AvatarStack--three-plus"
+>
+  <div
+    aria-label="octocat, octocat, octocat, octocat, and octocat"
+    className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1"
+  >
+    <img
+      alt="@octocat"
+      className="avatar"
+      height={20}
+      src="https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png"
+      width={20}
+    />
+    <img
+      alt="@octocat"
+      className="avatar"
+      height={20}
+      src="https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png"
+      width={20}
+    />
+    <div
+      className="avatar avatar-more"
+    />
+    <img
+      alt="@octocat"
+      className="avatar"
+      height={20}
+      src="https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png"
+      width={20}
+    />
+    <img
+      alt="@octocat"
+      className="avatar"
+      height={20}
+      src="https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png"
+      width={20}
+    />
+    <img
+      alt="@octocat"
+      className="avatar"
+      height={20}
+      src="https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png"
+      width={20}
+    />
+  </div>
+</div>
+`;

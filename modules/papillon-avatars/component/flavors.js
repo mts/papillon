@@ -20,8 +20,22 @@ const avatarParentChild = (
   </AvatarParentChild>
 );
 
+const avatarStackMore = (
+  <div className="AvatarStack AvatarStack--three-plus">
+    <div className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat, octocat, octocat, octocat, and octocat">
+      <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
+      <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
+      <div className="avatar avatar-more"></div>
+      <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
+      <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
+      <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
+    </div>
+  </div>
+);
+
 export {
   avatar,
   avatarSmall,
-  avatarParentChild
+  avatarParentChild,
+  avatarStackMore
 };

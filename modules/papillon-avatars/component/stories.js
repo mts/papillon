@@ -9,7 +9,8 @@ import CircleBadgeDashedConnection from './CircleBadgeDashedConnection';
 import {
   avatar,
   avatarSmall,
-  avatarParentChild
+  avatarParentChild,
+  avatarStackMore
 } from './flavors';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
@@ -24,18 +25,8 @@ storiesOf('Avatar', module)
       (withInfo('avatar-small')(() => avatarSmall)))
   .add('avatar-parent-child', withNotes('Must render Avatar ~ avatar-parent-child')
       (withInfo('avatar-parent-child')(() => avatarParentChild)))
-  .add('avatar-stack-more', () => (
-    <div className="AvatarStack AvatarStack--three-plus">
-      <div className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat, octocat, octocat, octocat, and octocat">
-        <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
-        <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
-        <div className="avatar avatar-more"></div>
-        <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
-        <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
-        <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
-      </div>
-    </div>
-  ))
+  .add('avatar-stack-more', withNotes('Must render Avatar ~ avatar-stack-more')
+      (withInfo('avatar-stack-more')(() => avatarStackMore)))
   .add('avatar-stack-three-plus', () => (
     <div className="AvatarStack AvatarStack--three-plus">
       <div className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat, octocat, and octocat">
