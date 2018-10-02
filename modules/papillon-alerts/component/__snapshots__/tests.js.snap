@@ -143,6 +143,7 @@ exports[`<FlashAlert /> Snaphot must match withActionButton 1`] = `
   >
     <button
       className="btn btn-sm primary flash-action"
+      onClick={[Function]}
       type="submit"
     >
       Complete action
@@ -161,6 +162,7 @@ exports[`<FlashAlert /> Snaphot must match withDismiss 1`] = `
   >
     <button
       className="flash-close js-flash-close"
+      onClick={[Function]}
       type="button"
     >
       <svg

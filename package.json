@@ -5,7 +5,7 @@
     "start": "start-storybook -p 8000 -c .storybook",
     "storybook": "build-storybook -o build",
     "test": "jest --config jest.config.json --no-cache --silent --runInBand",
-    "test:watchAll:silent": "clear && jest --config jest.config.json --watchAll --silent",
+    "test:watchAll:silent": "clear && jest --config jest.config.json --watchAll --silent --verbose",
     "test:watchAll:loud": "clear && jest --config jest.config.json --watchAll",
     "test:watchChanged:silent": "clear && jest --config jest.config.json --watch --onlyChanged --silent --verbose",
     "test:watchChanged:loud": "clear && jest --config jest.config.json --watch --onlyChanged  --verbose",
