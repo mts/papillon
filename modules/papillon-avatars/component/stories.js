@@ -15,7 +15,11 @@ import {
   avatarStackTwo,
   avatarStackRight,
   circleBadgeSmallIcon,
-  circleBadgeSmallImage
+  circleBadgeSmallImage,
+  circleBadgeMediumIcon,
+  circleBadgeMediumImage,
+  circleBadgeLargeIcon,
+  circleBadgeLargeImage
 } from './flavors';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
@@ -42,26 +46,14 @@ storiesOf('Avatar', module)
       (withInfo('CircleBadge-small-icon')(() => circleBadgeSmallIcon)))
   .add('CircleBadge-small-image', withNotes('Must render CircleBadge ~ CircleBadge-small-image')
       (withInfo('CircleBadge-small-image')(() => circleBadgeSmallImage)))
-  .add('CircleBadge-medium-icon', () => (
-    <CircleBadge size="medium" className="bg-gray-dark" title="Zap this!" href="#medium">
-      <CircleBadgeIcon className="text-white" icon="zap" />
-    </CircleBadge>
-  ))
-  .add('CircleBadge-medium-image', () => (
-    <CircleBadge size="medium" className="float-left mr-2" title="Travis CI" href="#medium">
-      <CircleBadgeImage src={srcCircleBadge} alt="" />
-    </CircleBadge>
-  ))
-  .add('CircleBadge-large-icon', () => (
-    <CircleBadge size="large" className="bg-gray-dark" title="Zap this!" href="#large">
-      <CircleBadgeIcon className="text-white" icon="zap" />
-    </CircleBadge>
-  ))
-  .add('CircleBadge-large-image', () => (
-    <CircleBadge size="large" className="float-left mr-2" title="Travis CI" href="#large">
-      <CircleBadgeImage src={srcCircleBadge} alt="" />
-    </CircleBadge>
-  ))
+  .add('CircleBadge-medium-icon', withNotes('Must render CircleBadge ~ CircleBadge-medium-icon')
+      (withInfo('CircleBadge-medium-icon')(() => circleBadgeMediumIcon)))
+  .add('CircleBadge-medium-image', withNotes('Must render CircleBadge ~ CircleBadge-medium-image')
+      (withInfo('CircleBaMediumIedium-image')(() => circleBadgeMediumImage)))
+  .add('CircleBadge-large-icon', withNotes('Must render CircleBadge ~ CircleBadge-large-icon')
+      (withInfo('CircleBadge-large-icon')(() => circleBadgeLargeIcon)))
+  .add('CircleBadge-large-image', withNotes('Must render CircleBadge ~ CircleBadge-large-image')
+      (withInfo('CircleBadge-large-image')(() => circleBadgeLargeImage)))
   .add('DashedConnection', () => (
     <CircleBadgeDashedConnection>
       <CircleBadgeImage src={srcCircleBadge} alt="" />

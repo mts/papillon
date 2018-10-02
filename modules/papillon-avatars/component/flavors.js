@@ -82,6 +82,30 @@ const circleBadgeSmallImage = (
   </CircleBadge>
 );
 
+const circleBadgeMediumIcon = (
+  <CircleBadge size="medium" className="bg-gray-dark" title="Zap this!" href="#medium">
+    <CircleBadgeIcon className="text-white" icon="zap" />
+  </CircleBadge>
+);
+
+const circleBadgeMediumImage = (
+  <CircleBadge size="medium" className="float-left mr-2" title="Travis CI" href="#medium">
+    <CircleBadgeImage src={srcCircleBadge} alt="" />
+  </CircleBadge>
+);
+
+const circleBadgeLargeIcon = (
+  <CircleBadge size="large" className="bg-gray-dark" title="Zap this!" href="#large">
+    <CircleBadgeIcon className="text-white" icon="zap" />
+  </CircleBadge>
+);
+
+const circleBadgeLargeImage = (
+  <CircleBadge size="large" className="float-left mr-2" title="Travis CI" href="#large">
+    <CircleBadgeImage src={srcCircleBadge} alt="" />
+  </CircleBadge>
+);
+
 export {
   avatar,
   avatarSmall,
@@ -91,5 +115,9 @@ export {
   avatarStackTwo,
   avatarStackRight,
   circleBadgeSmallIcon,
-  circleBadgeSmallImage
+  circleBadgeSmallImage,
+  circleBadgeMediumIcon,
+  circleBadgeMediumImage,
+  circleBadgeLargeIcon,
+  circleBadgeLargeImage
 };

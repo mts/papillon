@@ -1,5 +1,93 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Avatar /> Snaphot must match CircleBadge-large-icon 1`] = `
+<a
+  className="CircleBadge CircleBadge--large bg-gray-dark"
+  href="href"
+  title="title"
+>
+  <svg
+    aria-hidden="true"
+    className="CircleBadge-icon text-white"
+    height={16}
+    role="img"
+    style={
+      Object {
+        "display": "inline-block",
+        "fill": "currentColor",
+        "userSelect": "none",
+        "verticalAlign": "text-bottom",
+      }
+    }
+    viewBox="0 0 10 16"
+    width={10}
+  >
+    <path
+      d="M10 7H6l3-7-9 9h4l-3 7 9-9z"
+      fillRule="evenodd"
+    />
+  </svg>
+</a>
+`;
+
+exports[`<Avatar /> Snaphot must match CircleBadge-large-image 1`] = `
+<a
+  className="CircleBadge CircleBadge--large float-left mr-2"
+  href="href"
+  title="title"
+>
+  <img
+    alt=""
+    className="CircleBadge-icon"
+    src="https://user-images.githubusercontent.com/334891/30004619-adc8ca86-90a0-11e7-8ccc-2322261d2ab1.png"
+  />
+</a>
+`;
+
+exports[`<Avatar /> Snaphot must match CircleBadge-medium-icon 1`] = `
+<a
+  className="CircleBadge CircleBadge--medium bg-gray-dark"
+  href="href"
+  title="title"
+>
+  <svg
+    aria-hidden="true"
+    className="CircleBadge-icon text-white"
+    height={16}
+    role="img"
+    style={
+      Object {
+        "display": "inline-block",
+        "fill": "currentColor",
+        "userSelect": "none",
+        "verticalAlign": "text-bottom",
+      }
+    }
+    viewBox="0 0 10 16"
+    width={10}
+  >
+    <path
+      d="M10 7H6l3-7-9 9h4l-3 7 9-9z"
+      fillRule="evenodd"
+    />
+  </svg>
+</a>
+`;
+
+exports[`<Avatar /> Snaphot must match CircleBadge-medium-image 1`] = `
+<a
+  className="CircleBadge CircleBadge--medium float-left mr-2"
+  href="href"
+  title="title"
+>
+  <img
+    alt=""
+    className="CircleBadge-icon"
+    src="https://user-images.githubusercontent.com/334891/30004619-adc8ca86-90a0-11e7-8ccc-2322261d2ab1.png"
+  />
+</a>
+`;
+
 exports[`<Avatar /> Snaphot must match CircleBadge-small-icon 1`] = `
 <a
   className="CircleBadge CircleBadge--small bg-yellow"

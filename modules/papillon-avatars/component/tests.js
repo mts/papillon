@@ -8,7 +8,11 @@ import {
   avatarStackTwo,
   avatarStackRight,
   circleBadgeSmallIcon,
-  circleBadgeSmallImage
+  circleBadgeSmallImage,
+  circleBadgeMediumIcon,
+  circleBadgeMediumImage,
+  circleBadgeLargeIcon,
+  circleBadgeLargeImage
 } from './flavors';
 
 describe('<Avatar />', () => {
@@ -76,6 +80,22 @@ describe('<Avatar />', () => {
 
     test('must match CircleBadge-small-image', () => {
       expect(global.renderToJSON(circleBadgeSmallImage)).toMatchSnapshot();
+    });
+
+    test('must match CircleBadge-medium-icon', () => {
+      expect(global.renderToJSON(circleBadgeMediumIcon)).toMatchSnapshot();
+    });
+
+    test('must match CircleBadge-medium-image', () => {
+      expect(global.renderToJSON(circleBadgeMediumImage)).toMatchSnapshot();
+    });
+
+    test('must match CircleBadge-large-icon', () => {
+      expect(global.renderToJSON(circleBadgeLargeIcon)).toMatchSnapshot();
+    });
+
+    test('must match CircleBadge-large-image', () => {
+      expect(global.renderToJSON(circleBadgeLargeImage)).toMatchSnapshot();
     });
   });
 });
