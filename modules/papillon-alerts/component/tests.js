@@ -1,5 +1,4 @@
 import React from 'react';
-import { shallow } from 'enzyme';
 import {
   flashAlertDefault,
   multipleParagraphs,
@@ -12,10 +11,6 @@ import {
   withActionButton,
   fullWidthFlash
 } from './flavors';
-
-const renderShallow = (component) => {
-  return shallow(component);
-};
 
 describe('<FlashAlert />', () => {
   let wrapper;
