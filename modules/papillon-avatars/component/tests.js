@@ -34,6 +34,11 @@ describe('<Avatar />', () => {
       wrapper = renderMount(circleBadgeSmallIcon);
       expect(wrapper.find('CircleBadgeIcon')).toHaveLength(1);
     });
+
+    test('must be an instance of CircleBadgeImage', () => {
+      wrapper = renderMount(circleBadgeSmallImage);
+      expect(wrapper.find('CircleBadgeImage')).toHaveLength(1);
+    });
   });
 
   describe('Snaphot', () => {
