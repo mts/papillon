@@ -26,6 +26,19 @@ exports[`<Blankslate /> Snaphot must match blankslateCapped 1`] = `
 </div>
 `;
 
+exports[`<Blankslate /> Snaphot must match blankslateCleanBackground 1`] = `
+<div
+  className="blankslate blankslate-clean-background"
+>
+  <h3>
+    This is a blank slate
+  </h3>
+  <p>
+    Use it to provide information when no dynamic content exists.
+  </p>
+</div>
+`;
+
 exports[`<Blankslate /> Snaphot must match blankslateIcon 1`] = `
 <div
   className="blankslate"
