@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Breadcrumb /> Snaphot must match breadcrumb 1`] = `
+<nav
+  aria-label="Breadcrumb"
+>
+  <ol>
+    <li
+      className="breadcrumb-item text-small"
+    >
+      <a
+        href="/business"
+      >
+        Business
+      </a>
+    </li>
+    <li
+      className="breadcrumb-item text-small"
+    >
+      <a
+        href="/business/customer"
+      >
+        Customers
+      </a>
+    </li>
+    <li
+      aria-current="page"
+      className="breadcrumb-item breadcrumb-item-selected text-small text-gray"
+    >
+      MailChimp
+    </li>
+  </ol>
+</nav>
+`;
