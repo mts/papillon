@@ -82,6 +82,12 @@ const btnLarge = (
   </div>
 );
 
+const btnLink = (
+  <div className='p-4 d-flex flex-justify-between'>
+    <Button variant="button-link">Button Link</Button>
+  </div>
+);
+
 export {
   btn,
   link,
@@ -92,4 +98,5 @@ export {
   btnBlue,
   btnPurple,
   btnLarge,
+  btnLink
 };

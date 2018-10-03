@@ -105,6 +105,18 @@ exports[`<Button /> Snaphot must match btnLarge 1`] = `
 </div>
 `;
 
+exports[`<Button /> Snaphot must match btnLink 1`] = `
+<div
+  className="p-4 d-flex flex-justify-between"
+>
+  <button
+    className="btn-link"
+  >
+    Button
+  </button>
+</div>
+`;
+
 exports[`<Button /> Snaphot must match btnOutline 1`] = `
 <div
   className="p-4 d-flex flex-justify-between"

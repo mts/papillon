@@ -10,6 +10,7 @@ import {
   btnBlue,
   btnPurple,
   btnLarge,
+  btnLink
 } from './flavor';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
@@ -34,9 +35,6 @@ storiesOf('Button', module)
       (withInfo('btn-purple')(() => btnPurple)))
   .add('btn-large', withNotes('Must render Button ~ btn-large')
       (withInfo('btn-large')(() => btnLarge)))
-  .add('btn-link', () => (
-    <div className='p-4 d-flex flex-justify-between'>
-      <Button variant="button-link">Button Link</Button>
-    </div>
-  ))
+  .add('btn-link', withNotes('Must render Button ~ btn-link')
+      (withInfo('btn-link')(() => btnLink)))
 ;
