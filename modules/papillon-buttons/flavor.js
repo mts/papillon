@@ -54,11 +54,22 @@ const btnOutline = (
   </div>
 );
 
+const btnBlue = (
+  <div className='p-4 d-flex flex-justify-between'>
+    <Button variant="button" className="btn-blue">Button</Button>
+    <Button variant="button" className="btn-blue hover">hover</Button>
+    <Button variant="button" className="btn-blue focus">focus</Button>
+    <Button variant="button" className="btn-blue selected">selected</Button>
+    <Button variant="button" className="btn-blue disabled">disabled</Button>
+  </div>
+);
+
 export {
   btn,
   link,
   btnPrimary,
   btnSecondary,
   btnDanger,
-  btnOutline
+  btnOutline,
+  btnBlue,
 };

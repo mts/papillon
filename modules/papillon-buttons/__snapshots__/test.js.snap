@@ -11,6 +11,43 @@ exports[`<Button /> Snaphot must match btn 1`] = `
 </div>
 `;
 
+exports[`<Button /> Snaphot must match btnBlue 1`] = `
+<div
+  className="p-4 d-flex flex-justify-between"
+>
+  <button
+    className="btn btn-blue"
+    type="button"
+  >
+    Button
+  </button>
+  <button
+    className="btn btn-blue hover"
+    type="button"
+  >
+    hover
+  </button>
+  <button
+    className="btn btn-blue focus"
+    type="button"
+  >
+    focus
+  </button>
+  <button
+    className="btn btn-blue selected"
+    type="button"
+  >
+    selected
+  </button>
+  <button
+    className="btn btn-blue disabled"
+    type="button"
+  >
+    disabled
+  </button>
+</div>
+`;
+
 exports[`<Button /> Snaphot must match btnDanger 1`] = `
 <div
   className="p-4 d-flex flex-justify-between"
