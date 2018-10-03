@@ -13,7 +13,7 @@ import {
   withDismiss,
   withActionButton,
   fullWidthFlash
-} from './flavors';
+} from './flavor';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
 
