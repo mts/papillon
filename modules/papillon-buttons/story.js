@@ -1,13 +1,15 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import {
+  btn
+} from './flavor';
+import { withInfo } from '@storybook/addon-info';
+import { withNotes } from '@storybook/addon-notes';
 import Button from './Button';
 
 storiesOf('Button', module)
-  .add('btn', () => (
-    <div>
-      <Button variant="button">Button</Button>
-    </div>
-  ))
+  .add('btn', withNotes('Must render Button ~ btn')
+      (withInfo('btn')(() => btn)))
   .add('link', () => (
     <div>
       <Button variant="link">Button</Button>

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> Snaphot must match btn 1`] = `
+<div>
+  <button
+    className="btn"
+    type="button"
+  >
+    Button
+  </button>
+</div>
+`;
