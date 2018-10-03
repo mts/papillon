@@ -4,6 +4,7 @@ import {
   link,
   btnPrimary,
   btnSecondary,
+  btnDanger,
 } from './flavor';
 
 describe('<Button />', () => {
@@ -31,6 +32,10 @@ describe('<Button />', () => {
 
     test('must match btnSecondary', () => {
       expect(global.renderToJSON(btnSecondary)).toMatchSnapshot();
+    });
+
+    test('must match btnDanger', () => {
+      expect(global.renderToJSON(btnDanger)).toMatchSnapshot();
     });
   });
 });
