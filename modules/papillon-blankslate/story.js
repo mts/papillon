@@ -7,6 +7,7 @@ import {
   blankslateIcon,
   blankslateNarrow,
   blankslateCapped,
+  blankslateLarge,
 } from './flavor';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
@@ -20,12 +21,8 @@ storiesOf('Blankslate', module)
       (withInfo('blankslate-narrow')(() => blankslateNarrow)))
   .add('blankslate-capped', withNotes('Must render FlashAlert ~ blankslate-capped')
       (withInfo('blankslate-capped')(() => blankslateCapped)))
-   .add('blankslate-large', () => (
-    <Blankslate className="blankslate-large">
-      <h3>This is a blank slate</h3>
-      <p>Use it to provide information when no dynamic content exists.</p>
-    </Blankslate>
-  ))
+  .add('blankslate-large', withNotes('Must render FlashAlert ~ blankslate-large')
+      (withInfo('blankslate-large')(() => blankslateLarge)))
    .add('blankslate-clean-background', () => (
     <Blankslate className="blankslate-clean-background">
       <h3>This is a blank slate</h3>

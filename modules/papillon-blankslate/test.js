@@ -4,6 +4,7 @@ import {
   blankslateIcon,
   blankslateNarrow,
   blankslateCapped,
+  blankslateLarge,
 } from './flavor';
 
 describe('<Blankslate />', () => {
@@ -31,6 +32,10 @@ describe('<Blankslate />', () => {
 
     test('must match blankslateCapped', () => {
       expect(global.renderToJSON(blankslateCapped)).toMatchSnapshot();
+    });
+
+    test('must match blankslateLarge', () => {
+      expect(global.renderToJSON(blankslateLarge)).toMatchSnapshot();
     });
   });
 });
