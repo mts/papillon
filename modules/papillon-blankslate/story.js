@@ -1,43 +1,44 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import BlankSlate from './BlankSlate';
+import Blankslate from './Blankslate';
 import Octicon, {getIconByName} from '@githubprimer/octicons-react';
+import {
+  blankslate
+} from './flavor';
+import { withInfo } from '@storybook/addon-info';
+import { withNotes } from '@storybook/addon-notes';
 
 storiesOf('Blankslate', module)
-  .add('blankslate', () => (
-    <BlankSlate>
-      <h3>This is a blank slate</h3>
-      <p>Use it to provide information when no dynamic content exists.</p>
-    </BlankSlate>
-  ))
+  .add('blankslate', withNotes('Must render FlashAlert ~ blankslate')
+      (withInfo('blankslate')(() => blankslate)))
   .add('blankslate-icon', () => (
-    <BlankSlate icons={['git-commit', 'tag', 'git-branch']}>
+    <Blankslate icons={['git-commit', 'tag', 'git-branch']}>
       <h3>This is a blank slate</h3>
       <p>Use it to provide information when no dynamic content exists.</p>
-    </BlankSlate>
+    </Blankslate>
   ))
   .add('blankslate-narrow', () => (
-    <BlankSlate className="blankslate-narrow">
+    <Blankslate className="blankslate-narrow">
       <h3>This is a blank slate</h3>
       <p>Use it to provide information when no dynamic content exists.</p>
-    </BlankSlate>
+    </Blankslate>
   ))
    .add('blankslate-capped', () => (
-    <BlankSlate className="blankslate-capped">
+    <Blankslate className="blankslate-capped">
       <h3>This is a blank slate</h3>
       <p>Use it to provide information when no dynamic content exists.</p>
-    </BlankSlate>
+    </Blankslate>
   ))
    .add('blankslate-large', () => (
-    <BlankSlate className="blankslate-large">
+    <Blankslate className="blankslate-large">
       <h3>This is a blank slate</h3>
       <p>Use it to provide information when no dynamic content exists.</p>
-    </BlankSlate>
+    </Blankslate>
   ))
    .add('blankslate-clean-background', () => (
-    <BlankSlate className="blankslate-clean-background">
+    <Blankslate className="blankslate-clean-background">
       <h3>This is a blank slate</h3>
       <p>Use it to provide information when no dynamic content exists.</p>
-    </BlankSlate>
+    </Blankslate>
   ))
 ;
