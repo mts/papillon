@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Blankslate /> Snaphot must match blankslate 1`] = `
+<div
+  className="blankslate"
+>
+  <h3>
+    This is a blank slate
+  </h3>
+  <p>
+    Use it to provide information when no dynamic content exists.
+  </p>
+</div>
+`;
