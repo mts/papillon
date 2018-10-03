@@ -8,6 +8,13 @@ const btn = (
   </div>
 );
 
+const link = (
+  <div>
+    <Button variant="link">Button</Button>
+  </div>
+);
+
 export {
-  btn
+  btn,
+  link,
 };

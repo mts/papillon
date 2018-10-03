@@ -1,7 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import {
-  btn
+  btn,
+  link
 } from './flavor';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
@@ -10,11 +11,8 @@ import Button from './Button';
 storiesOf('Button', module)
   .add('btn', withNotes('Must render Button ~ btn')
       (withInfo('btn')(() => btn)))
-  .add('link', () => (
-    <div>
-      <Button variant="link">Button</Button>
-    </div>
-  ))
+  .add('link', withNotes('Must render Button ~ link')
+      (withInfo('link')(() => link)))
   .add('btn-primary', () => (
     <div className='p-4 d-flex flex-justify-between'>
       <Button variant="button" className="btn-primary">Button</Button>

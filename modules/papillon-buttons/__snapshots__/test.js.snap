@@ -10,3 +10,15 @@ exports[`<Button /> Snaphot must match btn 1`] = `
   </button>
 </div>
 `;
+
+exports[`<Button /> Snaphot must match link 1`] = `
+<div>
+  <a
+    className="btn"
+    href="#url"
+    role="button"
+  >
+    Button
+  </a>
+</div>
+`;
