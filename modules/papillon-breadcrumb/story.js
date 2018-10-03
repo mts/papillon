@@ -1,17 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Breadcrumb from './Breadcrumb';
+import {
+  breadcrumb
+} from './flavor';
+import { withInfo } from '@storybook/addon-info';
+import { withNotes } from '@storybook/addon-notes';
 
 storiesOf('Breadcrumb', module)
-  .add('Breadcrumb', () => {
-    const items = [
-      {href: '/business', text: 'Business'},
-      {href: '/business/customer', text: 'Customers'},
-      {href: '', text: 'MailChimp'}
-    ];
-
-    return(
-      <Breadcrumb items={items} selectedIndex={2} />
-    )
-  })
+  .add('Breadcrumb', withNotes('Must render Breadcrumb ~ Breadcrumb')
+      (withInfo('Breadcrumb')(() => breadcrumb)))
 ;
