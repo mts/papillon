@@ -18,7 +18,7 @@ addDecorator(story => (
 ));
 
 const contexts = [
-  require.context('../modules', true, /stories.*\.js$/),
+  require.context('../modules', true, /story.*\.js$/),
 ];
 
 configure(() => {
