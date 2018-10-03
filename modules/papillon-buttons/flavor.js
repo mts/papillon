@@ -64,6 +64,16 @@ const btnBlue = (
   </div>
 );
 
+const btnPurple = (
+  <div className='p-4 d-flex flex-justify-between'>
+    <Button variant="button" className="btn-purple">Button</Button>
+    <Button variant="button" className="btn-purple hover">hover</Button>
+    <Button variant="button" className="btn-purple focus">focus</Button>
+    <Button variant="button" className="btn-purple selected">selected</Button>
+    <Button variant="button" className="btn-purple disabled">disabled</Button>
+  </div>
+);
+
 export {
   btn,
   link,
@@ -72,4 +82,5 @@ export {
   btnDanger,
   btnOutline,
   btnBlue,
+  btnPurple,
 };

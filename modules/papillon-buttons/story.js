@@ -8,6 +8,7 @@ import {
   btnDanger,
   btnOutline,
   btnBlue,
+  btnPurple,
 } from './flavor';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
@@ -28,15 +29,8 @@ storiesOf('Button', module)
       (withInfo('btn-outline')(() => btnOutline)))
   .add('btn-blue', withNotes('Must render Button ~ btn-blue')
       (withInfo('btn-blue')(() => btnBlue)))
-  .add('btn-purple', () => (
-    <div className='p-4 d-flex flex-justify-between'>
-      <Button variant="button" className="btn-purple">Button</Button>
-      <Button variant="button" className="btn-purple hover">hover</Button>
-      <Button variant="button" className="btn-purple focus">focus</Button>
-      <Button variant="button" className="btn-purple selected">selected</Button>
-      <Button variant="button" className="btn-purple disabled">disabled</Button>
-    </div>
-  ))
+  .add('btn-purple', withNotes('Must render Button ~ btn-purple')
+      (withInfo('btn-purple')(() => btnPurple)))
   .add('btn-large', () => (
     // mts ~ btn-outline-blue does not exist
     <div className='f3 p-4'>
