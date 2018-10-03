@@ -56,55 +56,55 @@ describe('<Avatar />', () => {
       expect(global.renderToJSON(avatar)).toMatchSnapshot();
     });
 
-    test('must match avatar-small', () => {
+    test('must match avatarSmall', () => {
       expect(global.renderToJSON(avatarSmall)).toMatchSnapshot();
     });
 
-    test('must match avatar-parent-child', () => {
+    test('must match avatarParentChild', () => {
       expect(global.renderToJSON(avatarParentChild)).toMatchSnapshot();
     });
 
-    test('must match avatar-stack-more', () => {
+    test('must match avatarStackMore', () => {
       expect(global.renderToJSON(avatarStackMore)).toMatchSnapshot();
     });
 
-    test('must match avatar-stack-three-plus', () => {
+    test('must match avatarStackThreePlus', () => {
       expect(global.renderToJSON(avatarStackThreePlus)).toMatchSnapshot();
     });
 
-    test('must match avatar-stack-two', () => {
+    test('must match avatarStackTwo', () => {
       expect(global.renderToJSON(avatarStackTwo)).toMatchSnapshot();
     });
 
-    test('must match avatar-stack-right', () => {
+    test('must match avatarStackRight', () => {
       expect(global.renderToJSON(avatarStackRight)).toMatchSnapshot();
     });
 
-    test('must match CircleBadge-small-icon', () => {
+    test('must match circleBadgeSmallIcon', () => {
       expect(global.renderToJSON(circleBadgeSmallIcon)).toMatchSnapshot();
     });
 
-    test('must match CircleBadge-small-image', () => {
+    test('must match circleBadgeSmallImage', () => {
       expect(global.renderToJSON(circleBadgeSmallImage)).toMatchSnapshot();
     });
 
-    test('must match CircleBadge-medium-icon', () => {
+    test('must match circleBadgeMediumIcon', () => {
       expect(global.renderToJSON(circleBadgeMediumIcon)).toMatchSnapshot();
     });
 
-    test('must match CircleBadge-medium-image', () => {
+    test('must match circleBadgeMediumImage', () => {
       expect(global.renderToJSON(circleBadgeMediumImage)).toMatchSnapshot();
     });
 
-    test('must match CircleBadge-large-icon', () => {
+    test('must match circleBadgeLargeIcon', () => {
       expect(global.renderToJSON(circleBadgeLargeIcon)).toMatchSnapshot();
     });
 
-    test('must match CircleBadge-large-image', () => {
+    test('must match circleBadgeLargeImage', () => {
       expect(global.renderToJSON(circleBadgeLargeImage)).toMatchSnapshot();
     });
 
-    test('must match CircleBadgeDashedConnection', () => {
+    test('must match circleBadgeDashedConnection', () => {
       expect(global.renderToJSON(circleBadgeDashedConnection)).toMatchSnapshot();
     });
   });
