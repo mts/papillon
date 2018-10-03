@@ -10,7 +10,7 @@ import {
   withDismiss,
   withActionButton,
   fullWidthFlash
-} from './flavors';
+} from './flavor';
 
 describe('<FlashAlert />', () => {
   let wrapper;
