@@ -1,13 +1,3 @@
-@import "papillon-support/index.scss";
-
-// Core modules
-@import "papillon-base/index.scss";
-@import "papillon-box/index.scss";
-@import "papillon-breadcrumb/index.scss";
-@import "papillon-buttons/index.scss";
-@import "papillon-layout/index.scss";
-@import "papillon-navigation/index.scss";
-@import "papillon-tooltips/index.scss";
-
-// Utilities always go last so that they can override components
-@import "papillon-utilities/index.scss";
+// https://www.npmjs.com/package/primer-core
+// https://github.com/primer/primer/tree/master/modules/primer-core
+@import "primer-core/index.scss";
