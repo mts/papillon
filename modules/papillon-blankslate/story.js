@@ -1,6 +1,5 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Blankslate from './Blankslate';
 import Octicon, {getIconByName} from '@githubprimer/octicons-react';
 import {
   blankslate,
