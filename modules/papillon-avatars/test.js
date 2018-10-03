@@ -14,7 +14,7 @@ import {
   circleBadgeLargeIcon,
   circleBadgeLargeImage,
   circleBadgeDashedConnection
-} from './flavors';
+} from './flavor';
 
 describe('<Avatar />', () => {
   let wrapper;
