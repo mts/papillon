@@ -23,8 +23,16 @@ const blankslateNarrow = (
   </Blankslate>
 );
 
+const blankslateCapped = (
+  <Blankslate className="blankslate-capped">
+    <h3>This is a blank slate</h3>
+    <p>Use it to provide information when no dynamic content exists.</p>
+  </Blankslate>
+);
+
 export {
   blankslate,
   blankslateIcon,
   blankslateNarrow,
+  blankslateCapped,
 };

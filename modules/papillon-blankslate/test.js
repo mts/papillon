@@ -3,6 +3,7 @@ import {
   blankslate,
   blankslateIcon,
   blankslateNarrow,
+  blankslateCapped,
 } from './flavor';
 
 describe('<Blankslate />', () => {
@@ -26,6 +27,10 @@ describe('<Blankslate />', () => {
 
     test('must match blankslateNarrow', () => {
       expect(global.renderToJSON(blankslateNarrow)).toMatchSnapshot();
+    });
+
+    test('must match blankslateCapped', () => {
+      expect(global.renderToJSON(blankslateCapped)).toMatchSnapshot();
     });
   });
 });
