@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   blankslate,
+  blankslateIcon,
 } from './flavor';
 
 describe('<Blankslate />', () => {
@@ -16,6 +17,10 @@ describe('<Blankslate />', () => {
   describe('Snaphot', () => {
     test('must match blankslate', () => {
       expect(global.renderToJSON(blankslate)).toMatchSnapshot();
+    });
+
+    test('must match blankslateIcon', () => {
+      expect(global.renderToJSON(blankslateIcon)).toMatchSnapshot();
     });
   });
 });

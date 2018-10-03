@@ -3,7 +3,8 @@ import { storiesOf } from '@storybook/react';
 import Blankslate from './Blankslate';
 import Octicon, {getIconByName} from '@githubprimer/octicons-react';
 import {
-  blankslate
+  blankslate,
+  blankslateIcon,
 } from './flavor';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
@@ -11,12 +12,8 @@ import { withNotes } from '@storybook/addon-notes';
 storiesOf('Blankslate', module)
   .add('blankslate', withNotes('Must render FlashAlert ~ blankslate')
       (withInfo('blankslate')(() => blankslate)))
-  .add('blankslate-icon', () => (
-    <Blankslate icons={['git-commit', 'tag', 'git-branch']}>
-      <h3>This is a blank slate</h3>
-      <p>Use it to provide information when no dynamic content exists.</p>
-    </Blankslate>
-  ))
+  .add('blankslate-icon', withNotes('Must render FlashAlert ~ blankslate-icon')
+      (withInfo('blankslate-icon')(() => blankslateIcon)))
   .add('blankslate-narrow', () => (
     <Blankslate className="blankslate-narrow">
       <h3>This is a blank slate</h3>
