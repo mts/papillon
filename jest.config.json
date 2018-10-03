@@ -1,5 +1,5 @@
 {
-  "testRegex": ".tests\\.js$",
+  "testRegex": ".test\\.js$",
   "roots": [
     "modules/"
   ],
