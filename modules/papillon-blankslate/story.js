@@ -5,6 +5,7 @@ import Octicon, {getIconByName} from '@githubprimer/octicons-react';
 import {
   blankslate,
   blankslateIcon,
+  blankslateNarrow,
 } from './flavor';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
@@ -14,12 +15,8 @@ storiesOf('Blankslate', module)
       (withInfo('blankslate')(() => blankslate)))
   .add('blankslate-icon', withNotes('Must render FlashAlert ~ blankslate-icon')
       (withInfo('blankslate-icon')(() => blankslateIcon)))
-  .add('blankslate-narrow', () => (
-    <Blankslate className="blankslate-narrow">
-      <h3>This is a blank slate</h3>
-      <p>Use it to provide information when no dynamic content exists.</p>
-    </Blankslate>
-  ))
+  .add('blankslate-narrow', withNotes('Must render FlashAlert ~ blankslate-narrow')
+      (withInfo('blankslate-narrow')(() => blankslateNarrow)))
    .add('blankslate-capped', () => (
     <Blankslate className="blankslate-capped">
       <h3>This is a blank slate</h3>
