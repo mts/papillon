@@ -14,7 +14,18 @@ const link = (
   </div>
 );
 
+const btnPrimary = (
+  <div className='p-4 d-flex flex-justify-between'>
+    <Button variant="button" className="btn-primary">Button</Button>
+    <Button variant="button" className="btn-primary hover">hover</Button>
+    <Button variant="button" className="btn-primary focus">focus</Button>
+    <Button variant="button" className="btn-primary selected">selected</Button>
+    <Button variant="button" className="btn-primary disabled">disabled</Button>
+  </div>
+);
+
 export {
   btn,
   link,
+  btnPrimary
 };

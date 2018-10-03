@@ -2,6 +2,7 @@ import React from 'react';
 import {
   btn,
   link,
+  btnPrimary
 } from './flavor';
 
 describe('<Button />', () => {
@@ -21,6 +22,10 @@ describe('<Button />', () => {
 
     test('must match link', () => {
       expect(global.renderToJSON(link)).toMatchSnapshot();
+    });
+
+    test('must match btnPrimary', () => {
+      expect(global.renderToJSON(btnPrimary)).toMatchSnapshot();
     });
   });
 });
