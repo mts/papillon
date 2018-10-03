@@ -85,6 +85,26 @@ exports[`<Button /> Snaphot must match btnDanger 1`] = `
 </div>
 `;
 
+exports[`<Button /> Snaphot must match btnLarge 1`] = `
+<div
+  className="f3 p-4"
+>
+  <a
+    className="btn btn-large btn-purple mr-6"
+    href="#url"
+    role="button"
+  >
+    Large link button
+  </a>
+  <button
+    className="btn btn-large btn-outline-blue"
+    type="button"
+  >
+    Large button button
+  </button>
+</div>
+`;
+
 exports[`<Button /> Snaphot must match btnOutline 1`] = `
 <div
   className="p-4 d-flex flex-justify-between"

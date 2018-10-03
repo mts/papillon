@@ -8,6 +8,7 @@ import {
   btnOutline,
   btnBlue,
   btnPurple,
+  btnLarge,
 } from './flavor';
 
 describe('<Button />', () => {
@@ -51,6 +52,10 @@ describe('<Button />', () => {
 
     test('must match btnPurple', () => {
       expect(global.renderToJSON(btnPurple)).toMatchSnapshot();
+    });
+
+    test('must match btnLarge', () => {
+      expect(global.renderToJSON(btnLarge)).toMatchSnapshot();
     });
   });
 });

@@ -74,6 +74,14 @@ const btnPurple = (
   </div>
 );
 
+const btnLarge = (
+  // mts ~ btn-outline-blue does not exist
+  <div className='f3 p-4'>
+    <Button variant="link"className="btn-large btn-purple mr-6">Large link button</Button>
+    <Button variant="button"className="btn-large btn-outline-blue">Large button button</Button>
+  </div>
+);
+
 export {
   btn,
   link,
@@ -83,4 +91,5 @@ export {
   btnOutline,
   btnBlue,
   btnPurple,
+  btnLarge,
 };
