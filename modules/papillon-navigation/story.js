@@ -1,29 +1,16 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import {
+  menu,
+} from './flavor';
+import { withInfo } from '@storybook/addon-info';
+import { withNotes } from '@storybook/addon-notes';
+
 import Menu from './Menu';
 
 storiesOf('Navigation', module)
-  .add('Menu', () => {
-    const aria = {
-      label: 'Person settings',
-      current: 'page',
-    };
-
-    const items = [
-      { href: '#url', text: 'Account' },
-      { href: '#url', text: 'Profile' },
-      { href: '#url', text: 'Emails' },
-      { href: '#url', text: 'Notifications' },
-    ];
-
-    return (
-      <Menu
-        aria={aria}
-        items={items}
-        selectedIndex={0}
-      />
-    )
-  })
+  .add('Menu', withNotes('Must render Menu ~ Menu')
+      (withInfo('Menu')(() => menu)))
   .add('Menu with octicons, avatars and counters', () => {
     const aria = {
       label: 'Person settings',

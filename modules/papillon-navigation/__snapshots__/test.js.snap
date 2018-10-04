@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navigation /> Snaphot must match menu 1`] = `
+<nav
+  aria-label="Person settings"
+  className="menu"
+>
+  <a
+    aria-current="page"
+    className="menu-item selected"
+    href="#url"
+  >
+    <span
+      className=""
+    >
+      Account
+    </span>
+  </a>
+  <a
+    className="menu-item"
+    href="#url"
+  >
+    <span
+      className=""
+    >
+      Profile
+    </span>
+  </a>
+  <a
+    className="menu-item"
+    href="#url"
+  >
+    <span
+      className=""
+    >
+      Emails
+    </span>
+  </a>
+  <a
+    className="menu-item"
+    href="#url"
+  >
+    <span
+      className=""
+    >
+      Notifications
+    </span>
+  </a>
+</nav>
+`;
