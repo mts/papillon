@@ -242,3 +242,47 @@ exports[`<Navigation /> Snaphot must match menuWithIconAvatarCounter 1`] = `
   </a>
 </nav>
 `;
+
+exports[`<Navigation /> Snaphot must match underlineNav 1`] = `
+<nav
+  aria-label=""
+  className="UnderlineNav"
+>
+  <div
+    className="UnderlineNav-body"
+  >
+    <a
+      className="UnderlineNav-item selected"
+      href="#url"
+      role="tab"
+      title="Item 1"
+    >
+      Item 1
+    </a>
+    <a
+      className="UnderlineNav-item"
+      href="#url"
+      role="tab"
+      title="Item 2"
+    >
+      Item 2
+    </a>
+    <a
+      className="UnderlineNav-item"
+      href="#url"
+      role="tab"
+      title="Item 3"
+    >
+      Item 3
+    </a>
+    <a
+      className="UnderlineNav-item"
+      href="#url"
+      role="tab"
+      title="Item 4"
+    >
+      Item 4
+    </a>
+  </div>
+</nav>
+`;

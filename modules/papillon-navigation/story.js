@@ -1,14 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import {
-  menu,
-  menuWithIconAvatarCounter,
-  menuWithHeading
-} from './flavor';
+import { menu, menuWithIconAvatarCounter, menuWithHeading } from './flavorMenu';
+import { underlineNav } from './flavorUnderlineNav';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
-
-import Menu from './Menu';
 
 storiesOf('Navigation', module)
   .add('Menu', withNotes('Must render Menu ~ Menu')
@@ -17,4 +12,6 @@ storiesOf('Navigation', module)
       (withInfo('Menu with octicons, avatars and counters')(() => menuWithIconAvatarCounter)))
   .add('Menu with heading', withNotes('Must render Menu ~ Menu with heading')
       (withInfo('Menu with heading')(() => menuWithHeading)))
+  .add('UnderlineNav', withNotes('Must render UnderlineNav ~ UnderlineNav')
+      (withInfo('UnderlineNav')(() => underlineNav)))
 ;
