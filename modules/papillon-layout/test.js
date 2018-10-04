@@ -2,6 +2,7 @@ import React from 'react';
 import {
   container,
   centered,
+  grid
 } from './flavor';
 
 describe('<Label />', () => {
@@ -17,6 +18,11 @@ describe('<Label />', () => {
       wrapper = renderMount(centered);
       expect(wrapper.find('Centered')).toHaveLength(1);
     });
+
+    test('must be an instance of Grid', () => {
+      wrapper = renderMount(grid);
+      expect(wrapper.find('Grid')).toHaveLength(1);
+    });
   });
 
   describe('Snaphot', () => {
@@ -26,6 +32,10 @@ describe('<Label />', () => {
 
     test('must match centered', () => {
       expect(global.renderToJSON(centered)).toMatchSnapshot();
+    });
+
+    test('must match grid', () => {
+      expect(global.renderToJSON(grid)).toMatchSnapshot();
     });
   });
 });
