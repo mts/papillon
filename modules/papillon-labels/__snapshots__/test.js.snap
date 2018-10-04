@@ -18,4 +18,20 @@ exports[`<Label /> Snaphot must match labelDefault 1`] = `
 </span>
 `;
 
-exports[`<Label /> Snaphot must match labelThemeGray 1`] = `null`;
+exports[`<Label /> Snaphot must match labelThemeDarkGray 1`] = `
+<span
+  className="Label Label--gray-darker"
+>
+   
+  dark gray label
+</span>
+`;
+
+exports[`<Label /> Snaphot must match labelThemeGray 1`] = `
+<span
+  className="Label Label--gray"
+>
+   
+  gray label
+</span>
+`;

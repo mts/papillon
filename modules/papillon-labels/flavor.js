@@ -10,12 +10,17 @@ const design = (
   <Label type="label" className="bg-blue ml-1" text="design label" />
 );
 
-const labeThemeGray = (
+const labelThemeGray = (
   <Label type="label" className="Label--gray" text="gray label" />
+);
+
+const labelThemeDarkGray = (
+  <Label type="label" className="Label--gray-darker" text="dark gray label" />
 );
 
 export {
   labelDefault,
   design,
-  labeThemeGray,
+  labelThemeGray,
+  labelThemeDarkGray,
 };

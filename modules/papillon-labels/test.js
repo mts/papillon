@@ -3,6 +3,7 @@ import {
   labelDefault,
   design,
   labelThemeGray,
+  labelThemeDarkGray,
 } from './flavor';
 
 describe('<Label />', () => {
@@ -26,6 +27,10 @@ describe('<Label />', () => {
 
     test('must match labelThemeGray', () => {
       expect(global.renderToJSON(labelThemeGray)).toMatchSnapshot();
+    });
+
+    test('must match labelThemeDarkGray', () => {
+      expect(global.renderToJSON(labelThemeDarkGray)).toMatchSnapshot();
     });
   });
 });
