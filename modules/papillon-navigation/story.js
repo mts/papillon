@@ -8,7 +8,8 @@ import {
 import {
   underlineNav,
   underlineNavActions,
-  underlineNavRight
+  underlineNavRight,
+  underlineNavRightWithActions
 } from './flavorUnderlineNav';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
@@ -26,4 +27,6 @@ storiesOf('Navigation', module)
       (withInfo('UnderlineNav-actions')(() => underlineNavActions)))
   .add('UnderlineNav--right', withNotes('Must render UnderlineNav ~ UnderlineNav--right')
       (withInfo('UnderlineNav--right')(() => underlineNavRight)))
+  .add('UnderlineNav--right with actions', withNotes('Must render UnderlineNav ~ UnderlineNav--right with actions')
+      (withInfo('UnderlineNav--right with actions')(() => underlineNavRightWithActions)))
 ;

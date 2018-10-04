@@ -86,8 +86,19 @@ const underlineNavRight = (
     />
 );
 
+const underlineNavRightWithActions = (
+    <UnderlineNav
+      aria={aria}
+      className="UnderlineNav--right"
+      items={items}
+      action={underlineNavAction}
+      selectedIndex={0}
+    />
+);
+
 export {
   underlineNav,
   underlineNavActions,
-  underlineNavRight
+  underlineNavRight,
+  underlineNavRightWithActions
 };

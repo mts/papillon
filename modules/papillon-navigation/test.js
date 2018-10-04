@@ -7,7 +7,8 @@ import {
 import {
   underlineNav,
   underlineNavActions,
-  underlineNavRight
+  underlineNavRight,
+  underlineNavRightWithActions
 } from './flavorUnderlineNav';
 
 describe('<Navigation />', () => {
@@ -48,6 +49,10 @@ describe('<Navigation />', () => {
 
     test('must match underlineNavRight', () => {
       expect(global.renderToJSON(underlineNavRight)).toMatchSnapshot();
+    });
+
+    test('must match underlineNavRightWithActions', () => {
+      expect(global.renderToJSON(underlineNavRightWithActions)).toMatchSnapshot();
     });
   });
 });

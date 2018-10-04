@@ -383,3 +383,56 @@ exports[`<Navigation /> Snaphot must match underlineNavRight 1`] = `
   </div>
 </nav>
 `;
+
+exports[`<Navigation /> Snaphot must match underlineNavRightWithActions 1`] = `
+<nav
+  aria-label="Foo bar"
+  className="UnderlineNav UnderlineNav--right"
+>
+  <div
+    className="UnderlineNav-actions"
+  >
+    <a
+      className="btn"
+    >
+      Button
+    </a>
+  </div>
+  <div
+    className="UnderlineNav-body"
+  >
+    <a
+      className="UnderlineNav-item selected"
+      href="#url"
+      role="tab"
+      title="Item 1"
+    >
+      Item 1
+    </a>
+    <a
+      className="UnderlineNav-item"
+      href="#url"
+      role="tab"
+      title="Item 2"
+    >
+      Item 2
+    </a>
+    <a
+      className="UnderlineNav-item"
+      href="#url"
+      role="tab"
+      title="Item 3"
+    >
+      Item 3
+    </a>
+    <a
+      className="UnderlineNav-item"
+      href="#url"
+      role="tab"
+      title="Item 4"
+    >
+      Item 4
+    </a>
+  </div>
+</nav>
+`;
