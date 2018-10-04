@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Label /> Snaphot must match centered 1`] = `
+exports[`<Layout /> Snaphot must match centered 1`] = `
 <div
   className="columns"
 >
@@ -12,7 +12,7 @@ exports[`<Label /> Snaphot must match centered 1`] = `
 </div>
 `;
 
-exports[`<Label /> Snaphot must match container 1`] = `
+exports[`<Layout /> Snaphot must match container 1`] = `
 <div
   className="container border"
 >
@@ -20,7 +20,7 @@ exports[`<Label /> Snaphot must match container 1`] = `
 </div>
 `;
 
-exports[`<Label /> Snaphot must match grid 1`] = `
+exports[`<Layout /> Snaphot must match grid 1`] = `
 <div
   className="container"
 >
