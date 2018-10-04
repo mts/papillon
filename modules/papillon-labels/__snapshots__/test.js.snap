@@ -27,6 +27,15 @@ exports[`<Label /> Snaphot must match labelOutline 1`] = `
 </span>
 `;
 
+exports[`<Label /> Snaphot must match labelOutlineGreen 1`] = `
+<span
+  className="Label Label--outline Label--outline-green"
+>
+   
+  green outlined label
+</span>
+`;
+
 exports[`<Label /> Snaphot must match labelThemeDarkGray 1`] = `
 <span
   className="Label Label--gray-darker"

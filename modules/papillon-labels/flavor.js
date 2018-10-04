@@ -26,6 +26,10 @@ const labelOutline = (
   <Label type="label" className="Label--outline" text="outlined label" />
 );
 
+const labelOutlineGreen = (
+  <Label type="label" className="Label--outline Label--outline-green" text="green outlined label" />
+);
+
 export {
   labelDefault,
   design,
@@ -33,4 +37,5 @@ export {
   labelThemeDarkGray,
   labelThemeOrange,
   labelOutline,
+  labelOutlineGreen,
 };

@@ -7,6 +7,7 @@ import {
   labelThemeDarkGray,
   labelThemeOrange,
   labelOutline,
+  labelOutlineGreen,
 } from './flavor';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
@@ -26,9 +27,8 @@ storiesOf('Label', module)
       (withInfo('Label theme orange')(() => labelThemeOrange)))
   .add('Label outline', withNotes('Must render Label ~ Label outline')
       (withInfo('Label outline')(() => labelOutline)))
-  .add('Label outline green', () => (
-    <Label type="label" className="Label--outline Label--outline-green" text="green outlined label" />
-  ))
+  .add('Label outline green', withNotes('Must render Label ~ Label outline green')
+      (withInfo('Label outline green')(() => labelOutlineGreen)))
   .add('State', () => (
     <Label type="state" text="Default" />
   ))
