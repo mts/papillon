@@ -23,6 +23,37 @@ exports[`<Label /> Snaphot must match counter 1`] = `
 </div>
 `;
 
+exports[`<Label /> Snaphot must match counterInTabs 1`] = `
+<div
+  className="tabnav"
+>
+  <nav
+    aria-label="Foo bar"
+    className="tabnav-tabs"
+  >
+    <a
+      aria-current="page"
+      className="tabnav-tab selected"
+      href="#url"
+    >
+      Foo tab 
+      <span
+        className="Counter"
+      >
+         
+        23
+      </span>
+    </a>
+    <a
+      className="tabnav-tab ml-1"
+      href="#url"
+    >
+      Bar tab
+    </a>
+  </nav>
+</div>
+`;
+
 exports[`<Label /> Snaphot must match design 1`] = `
 <span
   className="Label bg-blue ml-1"

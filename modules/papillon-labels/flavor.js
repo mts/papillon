@@ -59,6 +59,15 @@ const counter = (
   </div>
 );
 
+const counterInTabs = (
+  <div className="tabnav">
+    <nav className="tabnav-tabs" aria-label="Foo bar">
+      <a href="#url" className="tabnav-tab selected" aria-current="page">Foo tab <Label type="counter" text="23"/></a>
+      <a href="#url" className="tabnav-tab ml-1">Bar tab</a>
+    </nav>
+  </div>
+);
+
 export {
   labelDefault,
   design,
@@ -71,4 +80,5 @@ export {
   stateThemes,
   smallStates,
   counter,
+  counterInTabs,
 };

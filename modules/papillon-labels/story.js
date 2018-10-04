@@ -12,6 +12,7 @@ import {
   stateThemes,
   smallStates,
   counter,
+  counterInTabs,
 } from './flavor';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
@@ -41,14 +42,8 @@ storiesOf('Label', module)
       (withInfo('Small states')(() => smallStates)))
   .add('Counter', withNotes('Must render Label ~ Counter')
       (withInfo('Counter')(() => counter)))
-  .add('Counter in tabs', () => (
-    <div className="tabnav">
-      <nav className="tabnav-tabs" aria-label="Foo bar">
-        <a href="#url" className="tabnav-tab selected" aria-current="page">Foo tab <Label type="counter" text="23"/></a>
-        <a href="#url" className="tabnav-tab ml-1">Bar tab</a>
-      </nav>
-    </div>
-  ))
+  .add('Counter in tabs', withNotes('Must render Label ~ Counter in tabs')
+      (withInfo('Counter in tabs')(() => counterInTabs)))
   .add('Counter in Box headers', () => (
     <div className="Box">
       <div className="Box-header">
