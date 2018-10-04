@@ -1,11 +1,3 @@
-// variables
-@import "./lib/variables/typography.scss";
-@import "./lib/variables/colors.scss";
-@import "./lib/variables/layout.scss";
-@import "./lib/variables/misc.scss";
-
-// mixins
-@import "./lib/mixins/typography.scss";
-@import "./lib/mixins/layout.scss";
-@import "./lib/mixins/buttons.scss";
-@import "./lib/mixins/misc.scss";
+// https://www.npmjs.com/package/primer-support
+// https://github.com/primer/primer/tree/master/modules/primer-support
+@import "primer-support/index.scss";
