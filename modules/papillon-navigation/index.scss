@@ -1,7 +1,3 @@
-@import "papillon-support/index.scss";
-// Navigation
-@import "./lib/menu.scss";
-@import "./lib/tabnav.scss";
-@import "./lib/filter-list.scss";
-@import "./lib/subnav.scss";
-@import "./lib/underline-nav.scss";
+// https://www.npmjs.com/package/primer-navigation
+// https://github.com/primer/primer/tree/master/modules/primer-navigation
+@import "primer-navigation/index.scss";
