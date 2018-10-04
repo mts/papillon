@@ -18,8 +18,6 @@ import {
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
 
-import Label from './Label';
-
 storiesOf('Label', module)
   .add('Default', withNotes('Must render Label ~ Default')
       (withInfo('Default')(() => labelDefault)))

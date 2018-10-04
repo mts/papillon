@@ -1,5 +1,3 @@
-@import "papillon-support/index.scss";
-@import "./lib/container.scss";
-@import "./lib/columns.scss";
-@import "./lib/grid.scss";
-@import "./lib/grid-offset.scss";
+// https://www.npmjs.com/package/primer-layout
+// https://github.com/primer/primer/tree/master/modules/primer-layout
+@import "primer-layout/index.scss";

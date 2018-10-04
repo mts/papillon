@@ -8,8 +8,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "directories": {
-    "lib": "lib"
-  },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "primer-layout": "^1.4.9"
+  }
 }
