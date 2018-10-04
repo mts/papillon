@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Label /> Snaphot must match container 1`] = `
+<div
+  className="container border"
+>
+  Container
+</div>
+`;
