@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   container,
+  centered,
 } from './flavor';
 
 describe('<Label />', () => {
@@ -11,11 +12,20 @@ describe('<Label />', () => {
       wrapper = renderMount(container);
       expect(wrapper.find('Container')).toHaveLength(1);
     });
+
+    test('must be an instance of Centered', () => {
+      wrapper = renderMount(centered);
+      expect(wrapper.find('Centered')).toHaveLength(1);
+    });
   });
 
   describe('Snaphot', () => {
     test('must match container', () => {
       expect(global.renderToJSON(container)).toMatchSnapshot();
+    });
+
+    test('must match centered', () => {
+      expect(global.renderToJSON(centered)).toMatchSnapshot();
     });
   });
 });

@@ -1,5 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Label /> Snaphot must match centered 1`] = `
+<div
+  className="columns"
+>
+  <div
+    className="one-half column centered block-blue border p-3"
+  >
+    .one-half
+  </div>
+</div>
+`;
+
 exports[`<Label /> Snaphot must match container 1`] = `
 <div
   className="container border"
