@@ -60,7 +60,7 @@ const itemsWithIcons = [
   }
 ];
 
-// const action = <div className="UnderlineNav-actions"><a className="btn">Button</a></div>;
+const underlineNavAction = <div className="UnderlineNav-actions"><a className="btn">Button</a></div>;
 
 const underlineNav = (
   <UnderlineNav
@@ -69,6 +69,16 @@ const underlineNav = (
   />
 );
 
+const underlineNavActions = (
+  <UnderlineNav
+    aria={aria}
+    items={items}
+    action={underlineNavAction}
+    selectedIndex={0}
+  />
+);
+
 export {
   underlineNav,
+  underlineNavActions
 };

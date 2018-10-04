@@ -1,7 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { menu, menuWithIconAvatarCounter, menuWithHeading } from './flavorMenu';
-import { underlineNav } from './flavorUnderlineNav';
+import {
+  menu,
+  menuWithIconAvatarCounter,
+  menuWithHeading
+} from './flavorMenu';
+import {
+  underlineNav,
+  underlineNavActions
+} from './flavorUnderlineNav';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
 
@@ -14,4 +21,6 @@ storiesOf('Navigation', module)
       (withInfo('Menu with heading')(() => menuWithHeading)))
   .add('UnderlineNav', withNotes('Must render UnderlineNav ~ UnderlineNav')
       (withInfo('UnderlineNav')(() => underlineNav)))
+  .add('UnderlineNav-actions', withNotes('Must render UnderlineNav ~ UnderlineNav-actions')
+      (withInfo('UnderlineNav-actions')(() => underlineNavActions)))
 ;

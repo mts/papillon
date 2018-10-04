@@ -6,6 +6,7 @@ import {
 } from './flavorMenu';
 import {
   underlineNav,
+  underlineNavActions
 } from './flavorUnderlineNav';
 
 describe('<Navigation />', () => {
@@ -38,6 +39,10 @@ describe('<Navigation />', () => {
 
     test('must match underlineNav', () => {
       expect(global.renderToJSON(underlineNav)).toMatchSnapshot();
+    });
+
+    test('must match underlineNavActions', () => {
+      expect(global.renderToJSON(underlineNavActions)).toMatchSnapshot();
     });
   });
 });
