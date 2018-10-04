@@ -22,10 +22,15 @@ const labelThemeOrange = (
   <Label type="label" className="Label--orange" text="orange label" />
 );
 
+const labelOutline = (
+  <Label type="label" className="Label--outline" text="outlined label" />
+);
+
 export {
   labelDefault,
   design,
   labelThemeGray,
   labelThemeDarkGray,
   labelThemeOrange,
+  labelOutline,
 };

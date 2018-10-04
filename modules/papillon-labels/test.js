@@ -5,6 +5,7 @@ import {
   labelThemeGray,
   labelThemeDarkGray,
   labelThemeOrange,
+  labelOutline,
 } from './flavor';
 
 describe('<Label />', () => {
@@ -36,6 +37,10 @@ describe('<Label />', () => {
 
     test('must match labelThemeOrange', () => {
       expect(global.renderToJSON(labelThemeOrange)).toMatchSnapshot();
+    });
+
+    test('must match labelOutline', () => {
+      expect(global.renderToJSON(labelOutline)).toMatchSnapshot();
     });
   });
 });
