@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> Snaphot must match labelDefault 1`] = `
+<span
+  className="Label bg-blue"
+>
+   
+  default label
+</span>
+`;

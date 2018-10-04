@@ -1,11 +1,16 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import {
+  labelDefault,
+} from './flavor';
+import { withInfo } from '@storybook/addon-info';
+import { withNotes } from '@storybook/addon-notes';
+
 import Label from './Label';
 
 storiesOf('Label', module)
-  .add('Default', () => (
-    <Label type="label" className="bg-blue" text="default label" />
-  ))
+  .add('Default', withNotes('Must render Label ~ Default')
+      (withInfo('Default')(() => labelDefault)))
   .add('Design', () => (
     <Label type="label" className="bg-blue ml-1" text="design label" />
   ))
