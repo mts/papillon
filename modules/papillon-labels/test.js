@@ -1,9 +1,10 @@
 import React from 'react';
 import {
   labelDefault,
+  design,
 } from './flavor';
 
-describe('<Button />', () => {
+describe('<Label />', () => {
   let wrapper;
 
   describe('Instance', () => {
@@ -16,6 +17,10 @@ describe('<Button />', () => {
   describe('Snaphot', () => {
     test('must match labelDefault', () => {
       expect(global.renderToJSON(labelDefault)).toMatchSnapshot();
+    });
+
+    test('must match design', () => {
+      expect(global.renderToJSON(design)).toMatchSnapshot();
     });
   });
 });
