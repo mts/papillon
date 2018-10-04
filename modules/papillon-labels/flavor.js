@@ -35,12 +35,19 @@ const state = (
 );
 
 const stateThemes = (
-  // mts ~ Error when React.Fragment used
+  // mts ~ Error when wrapped with React.Fragment instad of div
   // Warning: Failed prop type: Invalid prop `type` of type `symbol` supplied to `PropTable`, expected `function`.
   <div>
     <Label type="state" className="State--green mr-1" text="Open" icon="git-pull-request" />
     <Label type="state" className="State--red mr-1" text="Closed" icon="git-pull-request" />
     <Label type="state" className="State--purple" text="Merged" icon="git-merge" />
+  </div>
+);
+
+const smallStates = (
+  <div>
+    <Label type="state" className="State--green State--small mr-1" text="Open" icon="issue-opened" />
+    <Label type="state" className="State--red State--small" text="Closed" icon="issue-closed" />
   </div>
 );
 
@@ -54,4 +61,5 @@ export {
   labelOutlineGreen,
   state,
   stateThemes,
+  smallStates,
 };
