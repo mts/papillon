@@ -13,6 +13,7 @@ import {
   smallStates,
   counter,
   counterInTabs,
+  counterInBoxHeaders
 } from './flavor';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
@@ -44,25 +45,6 @@ storiesOf('Label', module)
       (withInfo('Counter')(() => counter)))
   .add('Counter in tabs', withNotes('Must render Label ~ Counter in tabs')
       (withInfo('Counter in tabs')(() => counterInTabs)))
-  .add('Counter in Box headers', () => (
-    <div className="Box">
-      <div className="Box-header">
-        <h3 className="Box-title">
-          Box title
-          <Label type="counter" className="Counter--gray ml-1" text="3"/>
-        </h3>
-      </div>
-      <ul>
-        <li className="Box-row">
-          Box row one
-        </li>
-        <li className="Box-row">
-          Box row two
-        </li>
-        <li className="Box-row">
-          Box row three
-        </li>
-      </ul>
-    </div>
-  ))
+  .add('Counter in Box headers', withNotes('Must render Label ~ Counter in Box headers')
+      (withInfo('Counter in Box headers')(() => counterInBoxHeaders)))
 ;

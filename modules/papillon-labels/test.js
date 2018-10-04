@@ -12,6 +12,7 @@ import {
   smallStates,
   counter,
   counterInTabs,
+  counterInBoxHeaders
 } from './flavor';
 
 describe('<Label />', () => {
@@ -71,6 +72,10 @@ describe('<Label />', () => {
 
     test('must match counterInTabs', () => {
       expect(global.renderToJSON(counterInTabs)).toMatchSnapshot();
+    });
+
+    test('must match counterInBoxHeaders', () => {
+      expect(global.renderToJSON(counterInBoxHeaders)).toMatchSnapshot();
     });
   });
 });

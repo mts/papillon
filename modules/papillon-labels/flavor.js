@@ -68,6 +68,28 @@ const counterInTabs = (
   </div>
 );
 
+const counterInBoxHeaders = (
+  <div className="Box">
+    <div className="Box-header">
+      <h3 className="Box-title">
+        Box title
+        <Label type="counter" className="Counter--gray ml-1" text="3"/>
+      </h3>
+    </div>
+    <ul>
+      <li className="Box-row">
+        Box row one
+      </li>
+      <li className="Box-row">
+        Box row two
+      </li>
+      <li className="Box-row">
+        Box row three
+      </li>
+    </ul>
+  </div>
+);
+
 export {
   labelDefault,
   design,
@@ -81,4 +103,5 @@ export {
   smallStates,
   counter,
   counterInTabs,
+  counterInBoxHeaders
 };
