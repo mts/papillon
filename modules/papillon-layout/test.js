@@ -5,7 +5,7 @@ import {
   grid
 } from './flavor';
 
-describe('<Label />', () => {
+describe('<Layout />', () => {
   let wrapper;
 
   describe('Instance', () => {
