@@ -1,8 +1,3 @@
-// Global requirements
-@import "papillon-support/index.scss";
-
-// Product specific css modules
-@import "papillon-alerts/index.scss";
-@import "papillon-avatars/index.scss";
-@import "papillon-blankslate/index.scss";
-@import "papillon-labels/index.scss";
+// https://www.npmjs.com/package/primer-product
+// https://github.com/primer/primer/tree/master/modules/primer-product
+@import "primer-product/index.scss";
