@@ -14,7 +14,6 @@ import {
 } from './flavor';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
-import Button from './Button';
 
 storiesOf('Button', module)
   .add('btn', withNotes('Must render Button ~ btn')
