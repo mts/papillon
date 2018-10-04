@@ -79,26 +79,35 @@ const underlineNavActions = (
 );
 
 const underlineNavRight = (
-    <UnderlineNav
-      className="UnderlineNav--right"
-      items={items}
-      selectedIndex={0}
-    />
+  <UnderlineNav
+    className="UnderlineNav--right"
+    items={items}
+    selectedIndex={0}
+  />
 );
 
 const underlineNavRightWithActions = (
-    <UnderlineNav
-      aria={aria}
-      className="UnderlineNav--right"
-      items={items}
-      action={underlineNavAction}
-      selectedIndex={0}
-    />
+  <UnderlineNav
+    aria={aria}
+    className="UnderlineNav--right"
+    items={items}
+    action={underlineNavAction}
+    selectedIndex={0}
+  />
+);
+
+const underlineNavWithCounter = (
+  <UnderlineNav
+    aria={aria}
+    items={itemsWithIcons}
+    selectedIndex={0}
+  />
 );
 
 export {
   underlineNav,
   underlineNavActions,
   underlineNavRight,
-  underlineNavRightWithActions
+  underlineNavRightWithActions,
+  underlineNavWithCounter
 };
