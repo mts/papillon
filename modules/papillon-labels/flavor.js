@@ -18,9 +18,14 @@ const labelThemeDarkGray = (
   <Label type="label" className="Label--gray-darker" text="dark gray label" />
 );
 
+const labelThemeOrange = (
+  <Label type="label" className="Label--orange" text="orange label" />
+);
+
 export {
   labelDefault,
   design,
   labelThemeGray,
   labelThemeDarkGray,
+  labelThemeOrange,
 };
