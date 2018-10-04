@@ -11,6 +11,7 @@ import {
   state,
   stateThemes,
   smallStates,
+  counter,
 } from './flavor';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
@@ -38,13 +39,8 @@ storiesOf('Label', module)
       (withInfo('State themes')(() => stateThemes)))
   .add('Small states', withNotes('Must render Label ~ Small states')
       (withInfo('Small states')(() => smallStates)))
-  .add('Counter', () => (
-    <React.Fragment>
-      <Label type="counter" className="mr-1" text="16"/>
-      <Label type="counter" className="Counter--gray mr-1" text="32"/>
-      <Label type="counter" className="Counter--gray-light" text="64"/>
-    </React.Fragment>
-  ))
+  .add('Counter', withNotes('Must render Label ~ Counter')
+      (withInfo('Counter')(() => counter)))
   .add('Counter in tabs', () => (
     <div className="tabnav">
       <nav className="tabnav-tabs" aria-label="Foo bar">

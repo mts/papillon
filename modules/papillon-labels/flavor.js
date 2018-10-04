@@ -51,6 +51,14 @@ const smallStates = (
   </div>
 );
 
+const counter = (
+  <div>
+    <Label type="counter" className="mr-1" text="16"/>
+    <Label type="counter" className="Counter--gray mr-1" text="32"/>
+    <Label type="counter" className="Counter--gray-light" text="64"/>
+  </div>
+);
+
 export {
   labelDefault,
   design,
@@ -62,4 +70,5 @@ export {
   state,
   stateThemes,
   smallStates,
+  counter,
 };

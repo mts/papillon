@@ -1,5 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Label /> Snaphot must match counter 1`] = `
+<div>
+  <span
+    className="Counter mr-1"
+  >
+     
+    16
+  </span>
+  <span
+    className="Counter Counter--gray mr-1"
+  >
+     
+    32
+  </span>
+  <span
+    className="Counter Counter--gray-light"
+  >
+     
+    64
+  </span>
+</div>
+`;
+
 exports[`<Label /> Snaphot must match design 1`] = `
 <span
   className="Label bg-blue ml-1"

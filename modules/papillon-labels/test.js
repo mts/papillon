@@ -10,6 +10,7 @@ import {
   state,
   stateThemes,
   smallStates,
+  counter,
 } from './flavor';
 
 describe('<Label />', () => {
@@ -61,6 +62,10 @@ describe('<Label />', () => {
 
     test('must match smallStates', () => {
       expect(global.renderToJSON(smallStates)).toMatchSnapshot();
+    });
+
+    test('must match counter', () => {
+      expect(global.renderToJSON(counter)).toMatchSnapshot();
     });
   });
 });
