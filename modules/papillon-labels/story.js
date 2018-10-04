@@ -2,7 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import {
   labelDefault,
-  design
+  design,
+  labeThemeGray
 } from './flavor';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
@@ -14,9 +15,8 @@ storiesOf('Label', module)
       (withInfo('Default')(() => labelDefault)))
   .add('Design', withNotes('Must render Label ~ Design')
       (withInfo('Design')(() => design)))
-  .add('Label theme gray', () => (
-    <Label type="label" className="Label--gray" text="gray label" />
-  ))
+  .add('Label theme gray', withNotes('Must render Label ~ Label theme gray')
+      (withInfo('Label theme gray')(() => labeThemeGray)))
   .add('Label theme dark gray', () => (
     <Label type="label" className="Label--gray-darker" text="dark gray label" />
   ))

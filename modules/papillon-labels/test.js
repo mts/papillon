@@ -2,6 +2,7 @@ import React from 'react';
 import {
   labelDefault,
   design,
+  labelThemeGray,
 } from './flavor';
 
 describe('<Label />', () => {
@@ -21,6 +22,10 @@ describe('<Label />', () => {
 
     test('must match design', () => {
       expect(global.renderToJSON(design)).toMatchSnapshot();
+    });
+
+    test('must match labelThemeGray', () => {
+      expect(global.renderToJSON(labelThemeGray)).toMatchSnapshot();
     });
   });
 });

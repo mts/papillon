@@ -17,3 +17,5 @@ exports[`<Label /> Snaphot must match labelDefault 1`] = `
   default label
 </span>
 `;
+
+exports[`<Label /> Snaphot must match labelThemeGray 1`] = `null`;
