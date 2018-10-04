@@ -62,3 +62,12 @@ exports[`<Label /> Snaphot must match labelThemeOrange 1`] = `
   orange label
 </span>
 `;
+
+exports[`<Label /> Snaphot must match state 1`] = `
+<span
+  className="State"
+>
+   
+  Default
+</span>
+`;
