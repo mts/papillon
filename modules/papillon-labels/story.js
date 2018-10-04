@@ -9,6 +9,7 @@ import {
   labelOutline,
   labelOutlineGreen,
   state,
+  stateThemes,
 } from './flavor';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
@@ -32,13 +33,8 @@ storiesOf('Label', module)
       (withInfo('Label outline green')(() => labelOutlineGreen)))
   .add('State', withNotes('Must render Label ~ State')
       (withInfo('State')(() => state)))
-  .add('State themes', () => (
-    <React.Fragment>
-      <Label type="state" className="State--green mr-1" text="Open" icon="git-pull-request" />
-      <Label type="state" className="State--red mr-1" text="Closed" icon="git-pull-request" />
-      <Label type="state" className="State--purple" text="Merged" icon="git-merge" />
-    </React.Fragment>
-  ))
+  .add('State themes', withNotes('Must render Label ~ State themes')
+      (withInfo('State themes')(() => stateThemes)))
   .add('Small states', () => (
     <React.Fragment>
       <Label type="state" className="State--green State--small mr-1" text="Open" icon="issue-opened" />

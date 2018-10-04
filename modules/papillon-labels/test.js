@@ -8,6 +8,7 @@ import {
   labelOutline,
   labelOutlineGreen,
   state,
+  stateThemes,
 } from './flavor';
 
 describe('<Label />', () => {
@@ -51,6 +52,10 @@ describe('<Label />', () => {
 
     test('must match state', () => {
       expect(global.renderToJSON(state)).toMatchSnapshot();
+    });
+
+    test('must match stateThemes', () => {
+      expect(global.renderToJSON(stateThemes)).toMatchSnapshot();
     });
   });
 });

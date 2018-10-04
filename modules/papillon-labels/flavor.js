@@ -34,6 +34,16 @@ const state = (
   <Label type="state" text="Default" />
 );
 
+const stateThemes = (
+  // mts ~ Error when React.Fragment used
+  // Warning: Failed prop type: Invalid prop `type` of type `symbol` supplied to `PropTable`, expected `function`.
+  <div>
+    <Label type="state" className="State--green mr-1" text="Open" icon="git-pull-request" />
+    <Label type="state" className="State--red mr-1" text="Closed" icon="git-pull-request" />
+    <Label type="state" className="State--purple" text="Merged" icon="git-merge" />
+  </div>
+);
+
 export {
   labelDefault,
   design,
@@ -43,4 +53,5 @@ export {
   labelOutline,
   labelOutlineGreen,
   state,
+  stateThemes,
 };
