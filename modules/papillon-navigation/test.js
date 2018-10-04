@@ -1,7 +1,8 @@
 import React from 'react';
 import {
   menu,
-  menuWithIconAvatarCounter
+  menuWithIconAvatarCounter,
+  menuWithHeading
 } from './flavor';
 
 describe('<Navigation />', () => {
@@ -21,6 +22,10 @@ describe('<Navigation />', () => {
 
     test('must match menuWithIconAvatarCounter', () => {
       expect(global.renderToJSON(menuWithIconAvatarCounter)).toMatchSnapshot();
+    });
+
+    test('must match menuWithHeading', () => {
+      expect(global.renderToJSON(menuWithHeading)).toMatchSnapshot();
     });
   });
 });

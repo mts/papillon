@@ -60,7 +60,36 @@ const menuWithIconAvatarCounter = (() => {
   )
 })();
 
+const menuWithHeading = (() => {
+  const aria = {
+    label: 'Person settings',
+    current: 'page',
+    labelledby: 'menu-heading',
+  };
+
+  const heading = {
+    title: 'Menu heading'
+  };
+
+  const items = [
+    { href: '#url', text: 'Account' },
+    { href: '#url', text: 'Profile' },
+    { href: '#url', text: 'Emails' },
+    { href: '#url', text: 'Notifications' },
+  ];
+
+  return (
+    <Menu
+      aria={aria}
+      heading={heading}
+      items={items}
+      selectedIndex={0}
+    />
+  )
+})();
+
 export {
   menu,
-  menuWithIconAvatarCounter
+  menuWithIconAvatarCounter,
+  menuWithHeading
 };

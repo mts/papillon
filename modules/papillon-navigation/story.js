@@ -2,7 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import {
   menu,
-  menuWithIconAvatarCounter
+  menuWithIconAvatarCounter,
+  menuWithHeading
 } from './flavor';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
@@ -14,31 +15,6 @@ storiesOf('Navigation', module)
       (withInfo('Menu')(() => menu)))
   .add('Menu with octicons, avatars and counters', withNotes('Must render Menu ~ Menu with octicons, avatars and counters')
       (withInfo('Menu with octicons, avatars and counters')(() => menuWithIconAvatarCounter)))
-  .add('Menu with heading', () => {
-    const aria = {
-      label: 'Person settings',
-      current: 'page',
-      labelledby: 'menu-heading',
-    };
-
-    const heading = {
-      title: 'Menu heading'
-    };
-
-    const items = [
-      { href: '#url', text: 'Account' },
-      { href: '#url', text: 'Profile' },
-      { href: '#url', text: 'Emails' },
-      { href: '#url', text: 'Notifications' },
-    ];
-
-    return (
-      <Menu
-        aria={aria}
-        heading={heading}
-        items={items}
-        selectedIndex={0}
-      />
-    )
-  })
+  .add('Menu with heading', withNotes('Must render Menu ~ Menu with heading')
+      (withInfo('Menu with heading')(() => menuWithHeading)))
 ;
