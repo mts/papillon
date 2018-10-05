@@ -1,3 +1,7 @@
 import Menu from './Menu';
+import UnderlineNav from './UnderlineNav';
 
-export default Menu;
+export default {
+  Menu,
+  UnderlineNav,
+};
