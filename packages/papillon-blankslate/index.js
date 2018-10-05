@@ -1,3 +1,5 @@
-import BlankSlate from './BlankSlate';
+import Blankslate from './Blankslate';
 
-export default BlankSlate;
+export default {
+  Blankslate,
+};
