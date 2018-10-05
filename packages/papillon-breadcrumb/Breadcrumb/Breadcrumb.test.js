@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   breadcrumb
-} from './flavor';
+} from './Breadcrumb.render';
 
 describe('<Breadcrumb />', () => {
   let wrapper;
