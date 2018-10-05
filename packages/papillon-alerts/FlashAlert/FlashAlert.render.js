@@ -1,7 +1,7 @@
 import React from 'react';
-import FlashAlert from './FlashAlert';
-import Octicon, {getIconByName} from '@githubprimer/octicons-react';
+import Octicon, { getIconByName } from '@githubprimer/octicons-react';
 import { action } from '@storybook/addon-actions';
+import FlashAlert from './FlashAlert';
 
 const flashAlertDefault = (
   <div className='p-4'>
@@ -102,5 +102,5 @@ export {
   flashIcon,
   withDismiss,
   withActionButton,
-  fullWidthFlash
+  fullWidthFlash,
 };

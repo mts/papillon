@@ -1,5 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
+import { withNotes } from '@storybook/addon-notes';
 import {
   flashAlertDefault,
   multipleParagraphs,
@@ -9,10 +11,8 @@ import {
   flashIcon,
   withDismiss,
   withActionButton,
-  fullWidthFlash
+  fullWidthFlash,
 } from './FlashAlert.render';
-import { withInfo } from '@storybook/addon-info';
-import { withNotes } from '@storybook/addon-notes';
 
 storiesOf('Flash alerts/FlashAlert', module)
   .add('Default', withNotes('Must render FlashAlert ~ Default')

@@ -8,7 +8,7 @@ import {
   flashIcon,
   withDismiss,
   withActionButton,
-  fullWidthFlash
+  fullWidthFlash,
 } from './FlashAlert.render';
 
 describe('<FlashAlert />', () => {
