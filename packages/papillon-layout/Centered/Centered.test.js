@@ -2,7 +2,7 @@ import React from 'react';
 import {
   container,
   centered,
-  grid
+  grid,
 } from './Centered.render';
 
 describe('<Layout />', () => {
