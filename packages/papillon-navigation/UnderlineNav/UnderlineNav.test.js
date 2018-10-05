@@ -4,7 +4,7 @@ import {
   underlineNavActions,
   underlineNavRight,
   underlineNavRightWithActions,
-  underlineNavWithCounter
+  underlineNavWithCounter,
 } from './UnderlineNav.render';
 
 describe('<Navigation />', () => {
