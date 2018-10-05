@@ -1,5 +1,6 @@
 import React from 'react';
 import { node } from 'prop-types';
+import '../index.scss';
 
 const FlashMessages = ({ children }) => (
   <div className="flash-messages">

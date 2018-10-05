@@ -1,6 +1,6 @@
 {
   "name": "papillon-support",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,5 @@
   "dependencies": {
     "primer-support": "^4.6.0"
   },
-  "gitHead": "47a2e94294c826be3e303a7e326c64c202c21f74"
+  "gitHead": "d2a3869beddf7f0a231ecf9659572567f50ab0d4"
 }

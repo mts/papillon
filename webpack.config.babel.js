@@ -51,7 +51,18 @@ export default function (env) {
       ? [new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false } })]
       : [];
 
-  const jsLoaders = [{ loader: 'babel-loader' }];
+  const jsLoaders = [{
+    loader: 'babel-loader',
+    options: {
+      presets: [
+        "@babel/preset-env",
+        "@babel/react",
+      ],
+      plugins: [
+        "@babel/plugin-transform-spread",
+      ],
+    },
+  }];
   const cssLoaderConfig = [
     {
       loader: 'css-loader',
