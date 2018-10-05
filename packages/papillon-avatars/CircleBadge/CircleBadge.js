@@ -1,7 +1,7 @@
 import React from 'react';
-import {string, node} from 'prop-types';
+import { string, node } from 'prop-types';
 
-const CircleBadge = ({size, className, children}) => (
+const CircleBadge = ({ size, className, children }) => (
   <a
     className={`CircleBadge CircleBadge--${size} ${className}`.trim()}
     title="title"
@@ -12,13 +12,13 @@ const CircleBadge = ({size, className, children}) => (
 );
 
 CircleBadge.defaultProps = {
-  className: ''
+  className: '',
 };
 
 CircleBadge.propTypes = {
   size: string.isRequired,
   className: string,
-  children: node.isRequired
+  children: node.isRequired,
 };
 
 export default CircleBadge;
