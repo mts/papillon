@@ -90,6 +90,7 @@ exports[`<Navigation /> Snaphot must match underlineNavActions 1`] = `
   >
     <a
       className="btn"
+      href="https://github.com/mts/papillon/tree/master/packages/papillon-navigation/UnderlineNav"
     >
       Button
     </a>
@@ -151,6 +152,7 @@ exports[`<Navigation /> Snaphot must match underlineNavRightWithActions 1`] = `
   >
     <a
       className="btn"
+      href="https://github.com/mts/papillon/tree/master/packages/papillon-navigation/UnderlineNav"
     >
       Button
     </a>

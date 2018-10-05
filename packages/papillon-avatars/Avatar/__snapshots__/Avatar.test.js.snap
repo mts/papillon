@@ -146,7 +146,7 @@ exports[`<Avatar /> Snaphot must match avatarStackTwo 1`] = `
   >
     <a
       className="avatar"
-      href="#"
+      href="https://github.com/mts/papillon/tree/master/packages/papillon-avatars/Avatar"
     >
       <img
         alt="@octocat"
@@ -158,7 +158,7 @@ exports[`<Avatar /> Snaphot must match avatarStackTwo 1`] = `
     </a>
     <a
       className="avatar"
-      href="#"
+      href="https://github.com/mts/papillon/tree/master/packages/papillon-avatars/Avatar"
     >
       <img
         alt="@octocat"
