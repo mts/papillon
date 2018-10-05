@@ -1,7 +1,7 @@
 {
   "name": "papillon-navigation",
   "version": "1.0.1-alpha.0",
-  "main": "index.js",
+  "main": "lib/papillon-navigation.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
