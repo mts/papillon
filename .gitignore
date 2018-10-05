@@ -19,3 +19,10 @@ yarn-error.log*
 
 # Storybook
 /storybook-static
+
+# Build
+.build
+
+# Lib
+packages/**/lib/*.js
+packages/**/lib/*.js.map
