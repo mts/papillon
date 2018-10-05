@@ -1,6 +1,6 @@
 import React from 'react';
 import {arrayOf, shape, string, number, node} from 'prop-types';
-import UnderlineNavItem from './UnderlineNavItem';
+import UnderlineNavItem from '../UnderlineNavItem';
 
 const UnderlineNav = ({className, aria, items, action, selectedIndex}) => {
   const {label} = aria;

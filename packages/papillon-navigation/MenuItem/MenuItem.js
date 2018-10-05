@@ -2,7 +2,7 @@ import React from 'react';
 import {string, shape, node} from 'prop-types';
 import Octicon, {getIconByName} from '@githubprimer/octicons-react';
 import cx from 'classnames';
-import {isEmptyObject} from './utility';
+import {isEmptyObject} from '../utility';
 
 const MenuItem = ({className, aria, href, icon, children}) => {
   if (isEmptyObject(aria)) {
