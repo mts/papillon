@@ -2,7 +2,7 @@ import React from 'react';
 import {
   menu,
   menuWithIconAvatarCounter,
-  menuWithHeading
+  menuWithHeading,
 } from './Menu.render';
 
 describe('<Navigation />', () => {

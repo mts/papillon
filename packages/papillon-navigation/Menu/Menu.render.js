@@ -1,6 +1,6 @@
 import React from 'react';
-import Menu from './Menu';
 import { action } from '@storybook/addon-actions';
+import Menu from './Menu';
 
 const menu = (() => {
   const aria = {
@@ -33,21 +33,21 @@ const menuWithIconAvatarCounter = (() => {
   const items = [
     { href: '#url',
       text: 'Account',
-      icon: 'tools'
+      icon: 'tools',
     },
     { href: '#url',
       text: 'Profile',
-      icon: 'person'
+      icon: 'person',
     },
     { href: '#url',
       text: 'Emails',
-      icon: 'mail'
+      icon: 'mail',
     },
     {
       href: '#url',
       text: 'Notifications',
       icon: 'radio-tower',
-      html: <span className="Counter">3</span>
+      html: <span className="Counter">3</span>,
     },
   ];
 
@@ -68,7 +68,7 @@ const menuWithHeading = (() => {
   };
 
   const heading = {
-    title: 'Menu heading'
+    title: 'Menu heading',
   };
 
   const items = [
@@ -91,5 +91,5 @@ const menuWithHeading = (() => {
 export {
   menu,
   menuWithIconAvatarCounter,
-  menuWithHeading
+  menuWithHeading,
 };

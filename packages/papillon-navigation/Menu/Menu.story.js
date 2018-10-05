@@ -1,12 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
+import { withNotes } from '@storybook/addon-notes';
 import {
   menu,
   menuWithIconAvatarCounter,
-  menuWithHeading
+  menuWithHeading,
 } from './Menu.render';
-import { withInfo } from '@storybook/addon-info';
-import { withNotes } from '@storybook/addon-notes';
 
 storiesOf('Navigation/Menu', module)
   .add('Menu', withNotes('Must render Menu ~ Menu')
