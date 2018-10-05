@@ -40,6 +40,7 @@
     "jest": "^23.6.0",
     "jest-enzyme": "^6.1.2",
     "lerna": "^3.3.2",
+    "lint-staged": "^7.3.0",
     "node-sass": "^4.9.3",
     "octicons": "^8.1.0",
     "postcss-cssnext": "^3.1.0",
@@ -51,6 +52,8 @@
     "react-test-renderer": "^16.5.2",
     "sass-loader": "^7.1.0",
     "shortid": "^2.2.13",
-    "style-loader": "^0.23.0"
+    "style-loader": "^0.23.0",
+    "stylelint": "^9.6.0",
+    "stylelint-order": "^1.0.0"
   }
 }
