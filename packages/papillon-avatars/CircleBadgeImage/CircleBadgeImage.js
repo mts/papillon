@@ -1,7 +1,7 @@
 import React from 'react';
-import {string} from 'prop-types';
+import { string } from 'prop-types';
 
-const CircleBadgeImage = ({src, className, alt}) => (
+const CircleBadgeImage = ({ src, className, alt }) => (
   <img
     src={src}
     className={`CircleBadge-icon ${className}`.trim()}
@@ -10,13 +10,13 @@ const CircleBadgeImage = ({src, className, alt}) => (
 );
 
 CircleBadgeImage.defaultProps = {
-  className: ''
+  className: '',
 };
 
 CircleBadgeImage.propTypes = {
   src: string.isRequired,
   className: string,
-  alt: string.isRequired
+  alt: string.isRequired,
 };
 
 export default CircleBadgeImage;
