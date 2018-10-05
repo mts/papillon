@@ -1,6 +1,6 @@
 import React from 'react';
-import Avatar from './Avatar';
 import { action } from '@storybook/addon-actions';
+import Avatar from './Avatar';
 
 const srcAvatar = "https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png";
 const srcCircleBadge = "https://user-images.githubusercontent.com/334891/30004619-adc8ca86-90a0-11e7-8ccc-2322261d2ab1.png";
@@ -10,7 +10,8 @@ const avatar = (
 );
 
 const avatarSmall = (
-  <Avatar className="avatar-small" alt="small" src={srcAvatar} width={32} height={32} />
+  <Avatar className="avatar-small" alt="small" src={srcAvatar} width={32}
+height={32} />
 );
 
 const avatarStackMore = (
@@ -18,7 +19,7 @@ const avatarStackMore = (
     <div className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat, octocat, octocat, octocat, and octocat">
       <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
       <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
-      <div className="avatar avatar-more"></div>
+      <div className="avatar avatar-more" />
       <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
       <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
       <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
