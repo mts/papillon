@@ -14,11 +14,11 @@ import {
   counter,
   counterInTabs,
   counterInBoxHeaders
-} from './flavor';
+} from './Label.render';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
 
-storiesOf('Label', module)
+storiesOf('Label/Label', module)
   .add('Default', withNotes('Must render Label ~ Default')
       (withInfo('Default')(() => labelDefault)))
   .add('Design', withNotes('Must render Label ~ Design')
