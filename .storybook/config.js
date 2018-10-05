@@ -1,8 +1,8 @@
 import React from 'react'
 import { configure, addDecorator } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
-import '../modules/papillon/index.scss';
-import { version } from '../modules/papillon/package.json';
+import '../packages/papillon/index.scss';
+import { version } from '../packages/papillon/package.json';
 
 setOptions({
   name: `Papillon v${version}`,
@@ -18,7 +18,7 @@ addDecorator(story => (
 ));
 
 const contexts = [
-  require.context('../modules', true, /story.*\.js$/),
+  require.context('../packages', true, /story.*\.js$/),
 ];
 
 configure(() => {
