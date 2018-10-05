@@ -1,5 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
+import { withNotes } from '@storybook/addon-notes';
 import {
   btn,
   link,
@@ -10,10 +12,8 @@ import {
   btnBlue,
   btnPurple,
   btnLarge,
-  btnLink
+  btnLink,
 } from './Button.render';
-import { withInfo } from '@storybook/addon-info';
-import { withNotes } from '@storybook/addon-notes';
 
 storiesOf('Button/Button', module)
   .add('btn', withNotes('Must render Button ~ btn')

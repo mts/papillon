@@ -9,7 +9,7 @@ import {
   btnBlue,
   btnPurple,
   btnLarge,
-  btnLink
+  btnLink,
 } from './Button.render';
 
 describe('<Button />', () => {
