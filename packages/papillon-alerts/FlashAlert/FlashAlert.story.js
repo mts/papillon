@@ -14,7 +14,7 @@ import {
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
 
-storiesOf('Flash alerts', module)
+storiesOf('Flash alerts/FlashAlert', module)
   .add('Default', withNotes('Must render FlashAlert ~ Default')
       (withInfo('Default')(() => flashAlertDefault)))
   .add('Multiple paragraphs', withNotes('Must render FlashAlert ~ Multiple paragraphs')

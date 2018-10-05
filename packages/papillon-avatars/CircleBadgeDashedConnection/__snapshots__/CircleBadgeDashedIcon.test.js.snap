@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Avatar /> Snaphot must match circleBadgeDashedConnection 1`] = `
+<div
+  className="DashedConnection"
+>
+  <ul
+    aria-label="A sample GitHub workflow"
+    className="d-flex list-style-none flex-justify-between"
+  >
+    <li
+      aria-label="GitHub"
+      className="CircleBadge CircleBadge--small"
+    >
+      <img
+        alt=""
+        className="CircleBadge-icon"
+        src="https://user-images.githubusercontent.com/334891/30004619-adc8ca86-90a0-11e7-8ccc-2322261d2ab1.png"
+      />
+    </li>
+    <li
+      aria-label="GitHub"
+      className="CircleBadge CircleBadge--small"
+    >
+      <img
+        alt=""
+        className="CircleBadge-icon"
+        src="https://user-images.githubusercontent.com/334891/30004619-adc8ca86-90a0-11e7-8ccc-2322261d2ab1.png"
+      />
+    </li>
+    <li
+      aria-label="GitHub"
+      className="CircleBadge CircleBadge--small"
+    >
+      <img
+        alt=""
+        className="CircleBadge-icon"
+        src="https://user-images.githubusercontent.com/334891/30004619-adc8ca86-90a0-11e7-8ccc-2322261d2ab1.png"
+      />
+    </li>
+  </ul>
+</div>
+`;
