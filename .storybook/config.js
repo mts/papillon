@@ -7,8 +7,8 @@ import { version } from '../packages/papillon/package.json';
 setOptions({
   name: `Papillon v${version}`,
   url: 'https://github.com/mts/papillon',
-  showAddonPanel: true
-  // addonPanelInRight: true
+  showAddonPanel: true,
+  addonPanelInRight: false
 });
 
 addDecorator(story => (
