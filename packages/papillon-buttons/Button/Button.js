@@ -7,8 +7,10 @@ const Button = ({ variant, className, children }) => {
   } if (variant === 'link') {
     return <a className={`btn ${className}`.trim()} href="#url" role="button">{children}</a>
   } if (variant === 'button-link') {
-    return <button className="btn-link">Button</button>
+    return <button type="button" className="btn-link">Button</button>
   }
+
+  return null;
 };
 
 Button.defaultProps = {
