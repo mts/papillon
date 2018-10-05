@@ -1,6 +1,6 @@
 import React from 'react';
 import { generate } from 'shortid';
-import { string, node } from 'prop-types';
+import { node } from 'prop-types';
 
 const CircleBadgeDashedConnection = ({ children }) => (
   <div className="DashedConnection">
@@ -14,12 +14,7 @@ const CircleBadgeDashedConnection = ({ children }) => (
   </div>
 );
 
-CircleBadgeDashedConnection.defaultProps = {
-  className: '',
-};
-
 CircleBadgeDashedConnection.propTypes = {
-  className: string.isRequired,
   children: node.isRequired,
 };
 
