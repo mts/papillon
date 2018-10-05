@@ -8,11 +8,11 @@ import {
   blankslateCapped,
   blankslateLarge,
   blankslateCleanBackground
-} from './flavor';
+} from './Blankslate.render';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
 
-storiesOf('Blankslate', module)
+storiesOf('Blankslate/Blankslate', module)
   .add('blankslate', withNotes('Must render Blankslate ~ blankslate')
       (withInfo('blankslate')(() => blankslate)))
   .add('blankslate-icon', withNotes('Must render Blankslate ~ blankslate-icon')
