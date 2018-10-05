@@ -2,7 +2,6 @@ import React from 'react';
 import {
   flashAlertDefault,
   multipleParagraphs,
-  flashMessages,
   flashWarn,
   flashError,
   flashSuccess,
@@ -10,7 +9,7 @@ import {
   withDismiss,
   withActionButton,
   fullWidthFlash
-} from './flavor';
+} from './FlashAlert.render';
 
 describe('<FlashAlert />', () => {
   let wrapper;
@@ -19,11 +18,6 @@ describe('<FlashAlert />', () => {
     test('must be an instance of FlashAlert', () => {
       wrapper = renderShallow(flashAlertDefault);
       expect(wrapper.find('FlashAlert')).toHaveLength(1);
-    });
-
-    test('must be an instance of FlashMessages', () => {
-      wrapper = renderShallow(flashMessages);
-      expect(wrapper.find('FlashMessages')).toHaveLength(1);
     });
   });
 
@@ -34,10 +28,6 @@ describe('<FlashAlert />', () => {
 
     test('must match multipleParagraphs', () => {
       expect(global.renderToJSON(multipleParagraphs)).toMatchSnapshot();
-    });
-
-    test('must match flashMessages', () => {
-      expect(global.renderToJSON(flashMessages)).toMatchSnapshot();
     });
 
     test('must match flashWarn', () => {
