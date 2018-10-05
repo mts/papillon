@@ -11,6 +11,4 @@ const breadcrumb = (
   <Breadcrumb items={items} selectedIndex={2} />
 );
 
-export {
-  breadcrumb,
-};
+export default breadcrumb;

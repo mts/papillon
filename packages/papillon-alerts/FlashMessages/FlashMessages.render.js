@@ -12,6 +12,4 @@ const flashMessages = (
   </div>
 );
 
-export {
-  flashMessages,
-};
+export default flashMessages;

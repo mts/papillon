@@ -1,6 +1,4 @@
-import {
-  flashMessages,
-} from './FlashMessages.render';
+import flashMessages from './FlashMessages.render';
 
 describe('<FlashMessages />', () => {
   let wrapper;

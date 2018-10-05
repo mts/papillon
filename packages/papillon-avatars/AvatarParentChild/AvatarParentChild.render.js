@@ -12,6 +12,4 @@ height={20} />
   </AvatarParentChild>
 );
 
-export {
-  avatarParentChild,
-};
+export default avatarParentChild;

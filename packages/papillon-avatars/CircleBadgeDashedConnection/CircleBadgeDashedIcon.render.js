@@ -12,6 +12,4 @@ const circleBadgeDashedConnection = (
   </CircleBadgeDashedConnection>
 );
 
-export {
-  circleBadgeDashedConnection,
-};
+export default circleBadgeDashedConnection;

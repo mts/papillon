@@ -5,6 +5,4 @@ const centered = (
   <Centered />
 );
 
-export {
-  centered,
-};
+export default centered;

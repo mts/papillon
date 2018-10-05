@@ -1,6 +1,4 @@
-import {
-  circleBadgeDashedConnection,
-} from './CircleBadgeDashedIcon.render';
+import circleBadgeDashedConnection from './CircleBadgeDashedIcon.render';
 
 describe('<Avatar />', () => {
   let wrapper;

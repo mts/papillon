@@ -1,6 +1,4 @@
-import {
-  centered,
-} from './Centered.render';
+import centered from './Centered.render';
 
 describe('<Layout />', () => {
   let wrapper;

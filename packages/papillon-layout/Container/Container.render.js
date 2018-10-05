@@ -5,6 +5,4 @@ const container = (
   <Container className="border">Container</Container>
 );
 
-export {
-  container,
-};
+export default container;

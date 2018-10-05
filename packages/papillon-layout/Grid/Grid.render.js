@@ -5,6 +5,4 @@ const grid = (
   <Grid />
 );
 
-export {
-  grid,
-};
+export default grid;

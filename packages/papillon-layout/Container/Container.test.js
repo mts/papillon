@@ -1,6 +1,4 @@
-import {
-  container,
-} from './Container.render';
+import container from './Container.render';
 
 describe('<Layout />', () => {
   let wrapper;
