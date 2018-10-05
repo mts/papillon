@@ -4,8 +4,8 @@ import { arrayOf, shape, string, number, node } from 'prop-types';
 import MenuItem from '../MenuItem';
 import { isEmptyObject } from '../utility';
 
-const Menu = ({ className, aria, heading, items, selectedIndex }) => {
-  const { label, current, labelledby } = aria;
+const Menu = ({ aria, heading, items, selectedIndex }) => {
+  const { label, labelledby } = aria;
   const { title } = heading;
 
   return (
@@ -25,8 +25,13 @@ const Menu = ({ className, aria, heading, items, selectedIndex }) => {
           )
         }
           return (
-            <MenuItem key={generate()} className="selected" aria={aria} href={href}
-icon={icon}>
+            <MenuItem
+              key={generate()}
+              className="selected"
+              aria={aria}
+              href={href}
+              icon={icon}
+            >
               {html || null}
               {text}
             </MenuItem>
@@ -38,12 +43,10 @@ icon={icon}>
 };
 
 Menu.defaultProps = {
-  className: '',
   heading: {},
 };
 
 Menu.propTypes = {
-  className: string,
   aria: shape({
     label: string,
     current: string,
