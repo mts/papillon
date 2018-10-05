@@ -15,7 +15,9 @@
     "lint:staged": "lint-staged",
     "build": "npm run build:packages && build-storybook -o .build",
     "build:packages": "set NODE_ENV=production && webpack --config webpack.config.babel.js",
-    "build:dev": "webpack --config webpack.config.babel.js"
+    "build:dev": "webpack --config webpack.config.babel.js",
+    "bootstrap": "set NODE_ENV=development && lerna bootstrap",
+    "publish": "lerna publish"
   },
   "repository": {
     "type": "git",
