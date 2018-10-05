@@ -7,8 +7,8 @@
       0,
       {
         "devDependencies": [
-          "**/test.js",
-          "**/story.js"
+          "**/*.test.js",
+          "**/*.story.js"
         ]
       }
     ],
