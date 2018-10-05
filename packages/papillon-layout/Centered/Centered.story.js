@@ -1,18 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import {
-  container,
   centered,
-  grid
-} from './flavor';
+} from './Centered.render';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
 
-storiesOf('Layout', module)
-  .add('Container', withNotes('Must render Layout ~ Container')
-      (withInfo('Container')(() => container)))
+storiesOf('Layout/Centered', module)
   .add('Centered', withNotes('Must render Layout ~ Centered')
       (withInfo('Centered')(() => centered)))
-  .add('Grid', withNotes('Must render Layout ~ Grid')
-      (withInfo('Grid')(() => grid)))
 ;
