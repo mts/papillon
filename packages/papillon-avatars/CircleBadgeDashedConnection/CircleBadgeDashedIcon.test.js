@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  circleBadgeDashedConnection
+  circleBadgeDashedConnection,
 } from './CircleBadgeDashedIcon.render';
 
 describe('<Avatar />', () => {

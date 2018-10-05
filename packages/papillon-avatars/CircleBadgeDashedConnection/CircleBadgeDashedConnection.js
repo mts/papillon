@@ -1,7 +1,7 @@
 import React from 'react';
-import {string, node} from 'prop-types';
+import { string, node } from 'prop-types';
 
-const CircleBadgeDashedConnection = ({children}) => (
+const CircleBadgeDashedConnection = ({ children }) => (
   <div className="DashedConnection">
     <ul className="d-flex list-style-none flex-justify-between" aria-label="A sample GitHub workflow">
       {children.map((child, index) => (
@@ -14,12 +14,12 @@ const CircleBadgeDashedConnection = ({children}) => (
 );
 
 CircleBadgeDashedConnection.defaultProps = {
-  className: ''
+  className: '',
 };
 
 CircleBadgeDashedConnection.propTypes = {
   className: string.isRequired,
-  children: node.isRequired
+  children: node.isRequired,
 };
 
 export default CircleBadgeDashedConnection;
