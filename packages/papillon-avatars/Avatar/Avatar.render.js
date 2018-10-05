@@ -1,10 +1,5 @@
 import React from 'react';
 import Avatar from './Avatar';
-import AvatarParentChild from './AvatarParentChild';
-import CircleBadge from './CircleBadge';
-import CircleBadgeIcon from './CircleBadgeIcon';
-import CircleBadgeImage from './CircleBadgeImage';
-import CircleBadgeDashedConnection from './CircleBadgeDashedConnection';
 import { action } from '@storybook/addon-actions';
 
 const srcAvatar = "https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png";
@@ -16,13 +11,6 @@ const avatar = (
 
 const avatarSmall = (
   <Avatar className="avatar-small" alt="small" src={srcAvatar} width={32} height={32} />
-);
-
-const avatarParentChild = (
-  <AvatarParentChild className="float-left">
-    <Avatar alt="parent" src={srcAvatar} width={48} height={48} />
-    <Avatar className="avatar-child" alt="child" src={srcAvatar} width={20} height={20} />
-  </AvatarParentChild>
 );
 
 const avatarStackMore = (
@@ -71,63 +59,11 @@ const avatarStackRight = (
   </div>
 );
 
-const circleBadgeSmallIcon = (
-  <CircleBadge size="small" className="bg-yellow" title="Zap this!" href="#small">
-    <CircleBadgeIcon className="text-white" icon="zap" />
-  </CircleBadge>
-);
-
-const circleBadgeSmallImage = (
-  <CircleBadge size="small" className="float-left mr-2" title="Travis CI" href="#small">
-    <CircleBadgeImage src={srcCircleBadge} alt="" />
-  </CircleBadge>
-);
-
-const circleBadgeMediumIcon = (
-  <CircleBadge size="medium" className="bg-gray-dark" title="Zap this!" href="#medium">
-    <CircleBadgeIcon className="text-white" icon="zap" />
-  </CircleBadge>
-);
-
-const circleBadgeMediumImage = (
-  <CircleBadge size="medium" className="float-left mr-2" title="Travis CI" href="#medium">
-    <CircleBadgeImage src={srcCircleBadge} alt="" />
-  </CircleBadge>
-);
-
-const circleBadgeLargeIcon = (
-  <CircleBadge size="large" className="bg-gray-dark" title="Zap this!" href="#large">
-    <CircleBadgeIcon className="text-white" icon="zap" />
-  </CircleBadge>
-);
-
-const circleBadgeLargeImage = (
-  <CircleBadge size="large" className="float-left mr-2" title="Travis CI" href="#large">
-    <CircleBadgeImage src={srcCircleBadge} alt="" />
-  </CircleBadge>
-);
-
-const circleBadgeDashedConnection = (
-  <CircleBadgeDashedConnection>
-    <CircleBadgeImage src={srcCircleBadge} alt="" />
-    <CircleBadgeImage src={srcCircleBadge} alt="" />
-    <CircleBadgeImage src={srcCircleBadge} alt="" />
-  </CircleBadgeDashedConnection>
-);
-
 export {
   avatar,
   avatarSmall,
-  avatarParentChild,
   avatarStackMore,
   avatarStackThreePlus,
   avatarStackTwo,
   avatarStackRight,
-  circleBadgeSmallIcon,
-  circleBadgeSmallImage,
-  circleBadgeMediumIcon,
-  circleBadgeMediumImage,
-  circleBadgeLargeIcon,
-  circleBadgeLargeImage,
-  circleBadgeDashedConnection
 };

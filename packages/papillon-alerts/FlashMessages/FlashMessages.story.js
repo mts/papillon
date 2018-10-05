@@ -6,7 +6,7 @@ import {
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
 
-storiesOf('Flash alerts', module)
+storiesOf('Flash alerts/FlashMessages', module)
   .add('Flash messages', withNotes('Must render FlashMessages ~ Flash messages')
       (withInfo('Flash messages')(() => flashMessages)))
 ;
