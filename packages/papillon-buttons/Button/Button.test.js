@@ -10,7 +10,7 @@ import {
   btnPurple,
   btnLarge,
   btnLink
-} from './flavor';
+} from './Button.render';
 
 describe('<Button />', () => {
   let wrapper;
