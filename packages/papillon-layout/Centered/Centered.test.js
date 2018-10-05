@@ -1,8 +1,5 @@
-import React from 'react';
 import {
-  container,
   centered,
-  grid,
 } from './Centered.render';
 
 describe('<Layout />', () => {

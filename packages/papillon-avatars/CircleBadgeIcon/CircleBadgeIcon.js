@@ -1,5 +1,5 @@
 import React from 'react';
-import { string, number } from 'prop-types';
+import { string } from 'prop-types';
 import Octicon, { getIconByName } from '@githubprimer/octicons-react'
 
 const CircleBadgeIcon = ({ className, icon }) => (

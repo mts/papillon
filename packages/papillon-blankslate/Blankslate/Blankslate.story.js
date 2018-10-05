@@ -1,6 +1,4 @@
-import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Octicon, { getIconByName } from '@githubprimer/octicons-react';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
 import {

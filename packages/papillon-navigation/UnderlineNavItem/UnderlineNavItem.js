@@ -1,7 +1,6 @@
 import React from 'react';
 import { string, node } from 'prop-types';
 import Octicon, { getIconByName } from '@githubprimer/octicons-react';
-import cx from 'classnames';
 
 // mts ~ UnderlineNav-octicon does not apply in example
 // modules/primer-navigation/README.md

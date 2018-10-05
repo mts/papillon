@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   grid,
 } from './Grid.render';

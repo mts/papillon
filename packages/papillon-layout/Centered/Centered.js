@@ -1,5 +1,4 @@
 import React from 'react';
-import { string, node } from 'prop-types';
 
 // mts ~ block-blue does not exist
 
