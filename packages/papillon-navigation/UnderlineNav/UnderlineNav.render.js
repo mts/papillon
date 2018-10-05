@@ -1,5 +1,4 @@
 import React from 'react';
-import Menu from './Menu';
 import UnderlineNav from './UnderlineNav';
 import { action } from '@storybook/addon-actions';
 

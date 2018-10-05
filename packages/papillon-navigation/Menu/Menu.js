@@ -1,7 +1,7 @@
 import React from 'react';
 import {arrayOf, shape, string, number, node} from 'prop-types';
-import MenuItem from './MenuItem';
-import {isEmptyObject} from './utility';
+import MenuItem from '../MenuItem';
+import {isEmptyObject} from '../utility';
 
 const Menu = ({className, aria, heading, items, selectedIndex}) => {
   const {label, current, labelledby} = aria;
