@@ -17,6 +17,7 @@ const Label = ({ type, className, text, icon }) => (
 
 Label.defaultProps = {
   className: '',
+  icon: '',
 };
 
 Label.propTypes = {
