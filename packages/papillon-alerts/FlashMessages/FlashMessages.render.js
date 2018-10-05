@@ -1,8 +1,8 @@
 import React from 'react';
+import Octicon, { getIconByName } from '@githubprimer/octicons-react';
+import { action } from '@storybook/addon-actions';
 import FlashAlert from '../FlashAlert';
 import FlashMessages from './FlashMessages';
-import Octicon, {getIconByName} from '@githubprimer/octicons-react';
-import { action } from '@storybook/addon-actions';
 
 const flashMessages = (
   <div className='p-4'>
