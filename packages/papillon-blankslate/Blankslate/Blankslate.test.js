@@ -6,7 +6,7 @@ import {
   blankslateCapped,
   blankslateLarge,
   blankslateCleanBackground
-} from './flavor';
+} from './Blankslate.render';
 
 describe('<Blankslate />', () => {
   let wrapper;
