@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  breadcrumb
+  breadcrumb,
 } from './Breadcrumb.render';
 
 describe('<Breadcrumb />', () => {

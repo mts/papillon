@@ -1,11 +1,11 @@
 import React from 'react';
-import Breadcrumb from './Breadcrumb';
 import { action } from '@storybook/addon-actions';
+import Breadcrumb from './Breadcrumb';
 
 const items = [
-  {href: '/business', text: 'Business'},
-  {href: '/business/customer', text: 'Customers'},
-  {href: '', text: 'MailChimp'}
+  { href: '/business', text: 'Business' },
+  { href: '/business/customer', text: 'Customers' },
+  { href: '', text: 'MailChimp' },
 ];
 
 const breadcrumb = (
@@ -13,5 +13,5 @@ const breadcrumb = (
 );
 
 export {
-  breadcrumb
+  breadcrumb,
 };
