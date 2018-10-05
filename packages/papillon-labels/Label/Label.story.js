@@ -1,5 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
+import { withNotes } from '@storybook/addon-notes';
 import {
   labelDefault,
   design,
@@ -13,10 +15,8 @@ import {
   smallStates,
   counter,
   counterInTabs,
-  counterInBoxHeaders
+  counterInBoxHeaders,
 } from './Label.render';
-import { withInfo } from '@storybook/addon-info';
-import { withNotes } from '@storybook/addon-notes';
 
 storiesOf('Label/Label', module)
   .add('Default', withNotes('Must render Label ~ Default')
