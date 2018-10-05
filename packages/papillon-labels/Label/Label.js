@@ -1,14 +1,14 @@
 import React from 'react';
-import {string, oneOf} from 'prop-types';
-import Octicon, {getIconByName} from '@githubprimer/octicons-react'
+import { string, oneOf } from 'prop-types';
+import Octicon, { getIconByName } from '@githubprimer/octicons-react'
 import cx from 'classnames';
 
-const Label = ({type, className, text, icon}) => (
+const Label = ({ type, className, text, icon }) => (
   <span
     className={cx({
       'Label': type === 'label',
       'State': type === 'state',
-      'Counter': type === 'counter'
+      'Counter': type === 'counter',
     }, className)}
   >
     {icon ? <Octicon size='small' icon={getIconByName(icon)} /> : null} {text}
@@ -16,14 +16,15 @@ const Label = ({type, className, text, icon}) => (
 );
 
 Label.defaultProps = {
-  className: ''
+  className: '',
+  icon: '',
 };
 
 Label.propTypes = {
   type: oneOf(['label', 'state', 'counter']).isRequired,
   className: string,
   text: string.isRequired,
-  icon: string
+  icon: string,
 };
 
 export default Label;

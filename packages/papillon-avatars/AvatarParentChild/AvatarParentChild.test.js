@@ -1,7 +1,4 @@
-import React from 'react';
-import {
-  avatarParentChild,
-} from './AvatarParentChild.render';
+import avatarParentChild from './AvatarParentChild.render';
 
 describe('<Avatar />', () => {
   let wrapper;

@@ -1,25 +1,26 @@
 import React from 'react';
-import {arrayOf, shape, string, number} from 'prop-types';
+import { generate } from 'shortid';
+import { arrayOf, shape, string, number } from 'prop-types';
 
-const Breadcrumb = ({items, selectedIndex}) => (
+const Breadcrumb = ({ items, selectedIndex }) => (
   <nav aria-label="Breadcrumb">
     <ol>
       {items.map((item, index) => {
-        const {href, text} = item;
+        const { href, text } = item;
 
         if (index !== selectedIndex) {
           return (
-            <li key={index} className="breadcrumb-item text-small">
+            <li key={generate()} className="breadcrumb-item text-small">
               <a href={href}>{text}</a>
             </li>
           )
-        } else {
-          return (
-            <li key={index} className="breadcrumb-item breadcrumb-item-selected text-small text-gray" aria-current="page">
-              {text}
-            </li>
-          )
         }
+
+        return (
+          <li key={generate()} className="breadcrumb-item breadcrumb-item-selected text-small text-gray" aria-current="page">
+            {text}
+          </li>
+        )
       })}
     </ol>
   </nav>
@@ -28,9 +29,9 @@ const Breadcrumb = ({items, selectedIndex}) => (
 Breadcrumb.propTypes = {
   items: arrayOf(shape({
     href: string,
-    text: string
+    text: string,
   })).isRequired,
-  selectedIndex: number.isRequired
+  selectedIndex: number.isRequired,
 };
 
 export default Breadcrumb;

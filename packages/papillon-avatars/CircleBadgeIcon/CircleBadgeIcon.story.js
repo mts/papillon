@@ -1,12 +1,11 @@
-import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
+import { withNotes } from '@storybook/addon-notes';
 import {
   circleBadgeSmallIcon,
   circleBadgeMediumIcon,
   circleBadgeLargeIcon,
 } from './CircleBadgeIcon.render';
-import { withInfo } from '@storybook/addon-info';
-import { withNotes } from '@storybook/addon-notes';
 
 storiesOf('Avatar/CircleBadgeIcon', module)
   .add('CircleBadge-small-icon', withNotes('Must render CircleBadge ~ CircleBadge-small-icon')

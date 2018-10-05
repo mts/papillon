@@ -1,6 +1,5 @@
 import React from 'react';
 import Blankslate from './Blankslate';
-import { action } from '@storybook/addon-actions';
 
 const blankslate = (
   <Blankslate>

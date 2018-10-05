@@ -1,11 +1,10 @@
-import React from 'react';
 import {
   blankslate,
   blankslateIcon,
   blankslateNarrow,
   blankslateCapped,
   blankslateLarge,
-  blankslateCleanBackground
+  blankslateCleanBackground,
 } from './Blankslate.render';
 
 describe('<Blankslate />', () => {

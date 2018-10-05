@@ -1,19 +1,19 @@
 import React from 'react';
-import {string, node} from 'prop-types';
+import { string, node } from 'prop-types';
 
-const Container = ({className, children}) => (
+const Container = ({ className, children }) => (
   <div className={`container ${className}`.trim()}>
     {children}
   </div>
 );
 
 Container.defaultProps = {
-  className: ''
+  className: '',
 };
 
 Container.propTypes = {
   className: string,
-  children: node.isRequired
+  children: node.isRequired,
 };
 
 export default Container;

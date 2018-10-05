@@ -1,45 +1,46 @@
 import React from 'react';
-import {arrayOf, shape, string, number, node} from 'prop-types';
+import { generate } from 'shortid';
+import { arrayOf, shape, string, number, node } from 'prop-types';
 import UnderlineNavItem from '../UnderlineNavItem';
 
-const UnderlineNav = ({className, aria, items, action, selectedIndex}) => {
-  const {label} = aria;
+const UnderlineNav = ({ className, aria, items, action, selectedIndex }) => {
+  const { label } = aria;
 
   return (
     <nav className={`UnderlineNav ${className}`.trim()} aria-label={label}>
       {className.includes('UnderlineNav--right') && action ? action : null}
       <div className="UnderlineNav-body">
       {items.map((item, index) => {
-        const {href, role, title, text, icon, counter} = item;
+        const { href, role, title, text, icon, counter } = item;
 
         if (index !== selectedIndex) {
           return (
             <UnderlineNavItem
-              key={index}
+              key={generate()}
               href={href}
               role={role}
               title={title}
               icon={icon}
               counter={counter}
-            >
-              {text}
-            </UnderlineNavItem>
-          )
-        } else {
-          return (
-            <UnderlineNavItem
-              key={index}
-              href={href}
-              role={role}
-              title={title}
-              icon={icon}
-              counter={counter}
-              className="selected"
             >
               {text}
             </UnderlineNavItem>
           )
         }
+
+        return (
+          <UnderlineNavItem
+            key={generate()}
+            href={href}
+            role={role}
+            title={title}
+            icon={icon}
+            counter={counter}
+            className="selected"
+          >
+            {text}
+          </UnderlineNavItem>
+        )
       })}
       </div>
       {!className.includes('UnderlineNav--right') && action ? action : null}
@@ -49,15 +50,15 @@ const UnderlineNav = ({className, aria, items, action, selectedIndex}) => {
 
 UnderlineNav.defaultProps = {
   aria: {
-    label: ''
+    label: '',
   },
   className: '',
-  action: React.ReactNode
+  action: React.ReactNode,
 };
 
 UnderlineNav.propTypes = {
   aria: shape({
-    label: string
+    label: string,
   }),
   className: string,
   items: arrayOf(shape({
@@ -65,10 +66,10 @@ UnderlineNav.propTypes = {
     role: string,
     title: string,
     text: string,
-    icon: string
+    icon: string,
   })).isRequired,
   action: node,
-  selectedIndex: number.isRequired
+  selectedIndex: number.isRequired,
 };
 
 export default UnderlineNav;

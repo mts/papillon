@@ -28,6 +28,8 @@
   "globals": {
     "document": false,
     "expect": false,
-    "jest": false
+    "jest": false,
+    "renderShallow": false,
+    "renderMount": false,
   }
 }

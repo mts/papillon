@@ -111,6 +111,7 @@ exports[`<Button /> Snaphot must match btnLink 1`] = `
 >
   <button
     className="btn-link"
+    type="button"
   >
     Button
   </button>

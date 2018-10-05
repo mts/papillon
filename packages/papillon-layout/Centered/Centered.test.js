@@ -1,9 +1,4 @@
-import React from 'react';
-import {
-  container,
-  centered,
-  grid
-} from './Centered.render';
+import centered from './Centered.render';
 
 describe('<Layout />', () => {
   let wrapper;

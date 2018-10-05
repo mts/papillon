@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   btn,
   link,
@@ -9,7 +8,7 @@ import {
   btnBlue,
   btnPurple,
   btnLarge,
-  btnLink
+  btnLink,
 } from './Button.render';
 
 describe('<Button />', () => {
