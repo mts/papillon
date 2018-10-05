@@ -1,6 +1,6 @@
 const path = require('path');
 
-const modulesPath = path.resolve(__dirname, '../modules')
+const modulesPath = path.resolve(__dirname, '../packages')
 
 module.exports = (config, env) => {
 

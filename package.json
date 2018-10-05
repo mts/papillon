@@ -9,7 +9,8 @@
     "test:watchAll:loud": "clear && jest --config jest.config.json --watchAll",
     "test:watchChanged:silent": "clear && jest --config jest.config.json --watch --onlyChanged --silent --verbose",
     "test:watchChanged:loud": "clear && jest --config jest.config.json --watch --onlyChanged  --verbose",
-    "test:coverage": "jest --config jest.config.json --coverage --collectCoverageFrom=src/js/**/*.js --silent"
+    "test:coverage": "jest --config jest.config.json --coverage --collectCoverageFrom=src/js/**/*.js --silent",
+    "lint": "eslint packages/**/*.js packages/**/*.jsx"
   },
   "devDependencies": {
     "@githubprimer/octicons-react": "^8.1.0",
@@ -22,6 +23,7 @@
     "@storybook/addons": "^3.4.11",
     "@storybook/react": "^3.4.11",
     "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
@@ -29,6 +31,12 @@
     "css-loader": "^1.0.0",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
     "jest": "^23.6.0",
     "jest-enzyme": "^6.1.2",
     "lerna": "^3.3.2",
@@ -36,6 +44,7 @@
     "octicons": "^8.1.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-loader": "^3.0.0",
+    "prettier": "^1.14.3",
     "prop-types": "^15.6.2",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
