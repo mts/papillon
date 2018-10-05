@@ -5,7 +5,7 @@ import {
   blankslateNarrow,
   blankslateCapped,
   blankslateLarge,
-  blankslateCleanBackground
+  blankslateCleanBackground,
 } from './Blankslate.render';
 
 describe('<Blankslate />', () => {
