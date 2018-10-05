@@ -13,7 +13,7 @@ import {
   counter,
   counterInTabs,
   counterInBoxHeaders
-} from './flavor';
+} from './Label.render';
 
 describe('<Label />', () => {
   let wrapper;
