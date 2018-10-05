@@ -14,6 +14,14 @@
     "lint:style": "stylelint packages/**/**/*.scss --fix",
     "lint:staged": "lint-staged"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mts/papillon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mts/papillon/issues"
+  },
+  "homepage": "https://github.com/mts/papillon/#readme",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
