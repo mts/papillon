@@ -15,12 +15,12 @@ const Breadcrumb = ({ items, selectedIndex }) => (
             </li>
           )
         }
-          return (
-            <li key={generate()} className="breadcrumb-item breadcrumb-item-selected text-small text-gray" aria-current="page">
-              {text}
-            </li>
-          )
 
+        return (
+          <li key={generate()} className="breadcrumb-item breadcrumb-item-selected text-small text-gray" aria-current="page">
+            {text}
+          </li>
+        )
       })}
     </ol>
   </nav>

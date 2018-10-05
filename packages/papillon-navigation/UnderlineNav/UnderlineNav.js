@@ -27,20 +27,20 @@ const UnderlineNav = ({ className, aria, items, action, selectedIndex }) => {
             </UnderlineNavItem>
           )
         }
-          return (
-            <UnderlineNavItem
-              key={generate()}
-              href={href}
-              role={role}
-              title={title}
-              icon={icon}
-              counter={counter}
-              className="selected"
-            >
-              {text}
-            </UnderlineNavItem>
-          )
 
+        return (
+          <UnderlineNavItem
+            key={generate()}
+            href={href}
+            role={role}
+            title={title}
+            icon={icon}
+            counter={counter}
+            className="selected"
+          >
+            {text}
+          </UnderlineNavItem>
+        )
       })}
       </div>
       {!className.includes('UnderlineNav--right') && action ? action : null}

@@ -24,19 +24,19 @@ const Menu = ({ aria, heading, items, selectedIndex }) => {
             </MenuItem>
           )
         }
-          return (
-            <MenuItem
-              key={generate()}
-              className="selected"
-              aria={aria}
-              href={href}
-              icon={icon}
-            >
-              {html || null}
-              {text}
-            </MenuItem>
-          )
 
+        return (
+          <MenuItem
+            key={generate()}
+            className="selected"
+            aria={aria}
+            href={href}
+            icon={icon}
+          >
+            {html || null}
+            {text}
+          </MenuItem>
+        )
       })}
     </nav>
   );
