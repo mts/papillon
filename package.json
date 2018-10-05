@@ -12,7 +12,10 @@
     "test:coverage": "jest --config jest.config.json --coverage --collectCoverageFrom=src/js/**/*.js --silent",
     "lint": "eslint packages/**/**/*.js --fix",
     "lint:style": "stylelint packages/**/**/*.scss --fix",
-    "lint:staged": "lint-staged"
+    "lint:staged": "lint-staged",
+    "build": "npm run build:packages && build-storybook -o .build",
+    "build:packages": "set NODE_ENV=production && webpack --config webpack.config.babel.js",
+    "build:dev": "webpack --config webpack.config.babel.js"
   },
   "repository": {
     "type": "git",
