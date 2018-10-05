@@ -1,4 +1,5 @@
 import React from 'react';
+import { generate } from 'shortid';
 import { arrayOf, shape, string, number, node } from 'prop-types';
 import MenuItem from '../MenuItem';
 import { isEmptyObject } from '../utility';
@@ -17,20 +18,20 @@ const Menu = ({ className, aria, heading, items, selectedIndex }) => {
 
         if (index !== selectedIndex) {
           return (
-            <MenuItem key={index} href={href} icon={icon}>
+            <MenuItem key={generate()} href={href} icon={icon}>
               {html || null}
               {text}
             </MenuItem>
           )
-        } 
+        }
           return (
-            <MenuItem key={index} className="selected" aria={aria} href={href}
+            <MenuItem key={generate()} className="selected" aria={aria} href={href}
 icon={icon}>
               {html || null}
               {text}
             </MenuItem>
           )
-        
+
       })}
     </nav>
   );

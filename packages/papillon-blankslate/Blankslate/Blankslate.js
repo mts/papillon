@@ -1,11 +1,12 @@
 import React from 'react';
+import { generate } from 'shortid';
 import { string, node, arrayOf } from 'prop-types';
 import Octicon, { getIconByName } from '@githubprimer/octicons-react'
 
 const Blankslate = ({ className, children, icons }) => (
   <div className={`blankslate ${className}`.trim()}>
-    {icons && icons.map((icon, index) => (
-      <span key={index} className="blankslate-icon">
+    {icons && icons.map((icon) => (
+      <span key={generate()} className="blankslate-icon">
         <Octicon size='small' icon={getIconByName(icon)} />
       </span>
     ))}

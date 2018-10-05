@@ -1,4 +1,5 @@
 import React from 'react';
+import { generate } from 'shortid';
 import { arrayOf, shape, string, number, node } from 'prop-types';
 import UnderlineNavItem from '../UnderlineNavItem';
 
@@ -15,7 +16,7 @@ const UnderlineNav = ({ className, aria, items, action, selectedIndex }) => {
         if (index !== selectedIndex) {
           return (
             <UnderlineNavItem
-              key={index}
+              key={generate()}
               href={href}
               role={role}
               title={title}
@@ -25,10 +26,10 @@ const UnderlineNav = ({ className, aria, items, action, selectedIndex }) => {
               {text}
             </UnderlineNavItem>
           )
-        } 
+        }
           return (
             <UnderlineNavItem
-              key={index}
+              key={generate()}
               href={href}
               role={role}
               title={title}
@@ -39,7 +40,7 @@ const UnderlineNav = ({ className, aria, items, action, selectedIndex }) => {
               {text}
             </UnderlineNavItem>
           )
-        
+
       })}
       </div>
       {!className.includes('UnderlineNav--right') && action ? action : null}
