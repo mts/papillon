@@ -11,11 +11,11 @@ import {
   btnPurple,
   btnLarge,
   btnLink
-} from './flavor';
+} from './Button.render';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
 
-storiesOf('Button', module)
+storiesOf('Button/Button', module)
   .add('btn', withNotes('Must render Button ~ btn')
       (withInfo('btn')(() => btn)))
   .add('link', withNotes('Must render Button ~ link')
