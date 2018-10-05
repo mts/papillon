@@ -10,7 +10,7 @@
     "test:watchChanged:silent": "clear && jest --config jest.config.json --watch --onlyChanged --silent --verbose",
     "test:watchChanged:loud": "clear && jest --config jest.config.json --watch --onlyChanged  --verbose",
     "test:coverage": "jest --config jest.config.json --coverage --collectCoverageFrom=src/js/**/*.js --silent",
-    "lint": "eslint packages/**/*.js packages/**/*.jsx"
+    "lint": "eslint packages/**/**/*.js --fix"
   },
   "devDependencies": {
     "@githubprimer/octicons-react": "^8.1.0",
