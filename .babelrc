@@ -4,9 +4,6 @@
     "react"
   ],
   "plugins": [
-    "add-module-exports",
-    "transform-object-assign",
-    "transform-object-rest-spread",
-    "transform-class-properties"
+    "transform-object-rest-spread"
   ]
 }

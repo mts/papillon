@@ -1,7 +1,7 @@
 {
   "name": "papillon-buttons",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.4",
+  "main": "lib/papillon-buttons.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,5 +12,5 @@
   "dependencies": {
     "primer-buttons": "^2.6.0"
   },
-  "gitHead": "47a2e94294c826be3e303a7e326c64c202c21f74"
+  "gitHead": "d2a3869beddf7f0a231ecf9659572567f50ab0d4"
 }
