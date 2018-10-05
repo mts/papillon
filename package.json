@@ -10,7 +10,27 @@
     "test:watchChanged:silent": "clear && jest --config jest.config.json --watch --onlyChanged --silent --verbose",
     "test:watchChanged:loud": "clear && jest --config jest.config.json --watch --onlyChanged  --verbose",
     "test:coverage": "jest --config jest.config.json --coverage --collectCoverageFrom=src/js/**/*.js --silent",
-    "lint": "eslint packages/**/**/*.js --fix"
+    "lint": "eslint packages/**/**/*.js --fix",
+    "lint:style": "stylelint packages/**/**/*.scss --fix",
+    "lint:staged": "lint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "pre-commit": [
+    "lint:staged"
+  ],
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.scss": [
+      "stylelint --syntax=scss --fix",
+      "git add"
+    ]
   },
   "devDependencies": {
     "@githubprimer/octicons-react": "^8.1.0",
@@ -37,9 +57,11 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.1.1",
     "jest": "^23.6.0",
     "jest-enzyme": "^6.1.2",
     "lerna": "^3.3.2",
+    "lint-staged": "^7.3.0",
     "node-sass": "^4.9.3",
     "octicons": "^8.1.0",
     "postcss-cssnext": "^3.1.0",
@@ -51,6 +73,8 @@
     "react-test-renderer": "^16.5.2",
     "sass-loader": "^7.1.0",
     "shortid": "^2.2.13",
-    "style-loader": "^0.23.0"
+    "style-loader": "^0.23.0",
+    "stylelint": "^9.6.0",
+    "stylelint-order": "^1.0.0"
   }
 }
