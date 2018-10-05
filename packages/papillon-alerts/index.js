@@ -1,3 +1,7 @@
-import Alert from './Alert';
+import FlashAlert from './FlashAlert';
+import FlashMessages from './FlashMessages';
 
-export default Alert;
+export default {
+  FlashAlert,
+  FlashMessages,
+};
