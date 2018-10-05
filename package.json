@@ -10,8 +10,23 @@
     "test:watchChanged:silent": "clear && jest --config jest.config.json --watch --onlyChanged --silent --verbose",
     "test:watchChanged:loud": "clear && jest --config jest.config.json --watch --onlyChanged  --verbose",
     "test:coverage": "jest --config jest.config.json --coverage --collectCoverageFrom=src/js/**/*.js --silent",
-    "lint": "eslint packages/**/**/*.js --fix"
+    "lint": "eslint packages/**/**/*.js --fix",
+    "lint:style": "stylelint packages/**/**/*.scss --fix",
+    "lint:staged": "lint-staged"
   },
+  "lint-staged": {
+    "packages/**/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "packages/**/**/*.scss": [
+      "stylelint --syntax=scss --fix",
+      "git add"
+    ]
+  },
+  "pre-commit": [
+    "lint:staged"
+  ],
   "devDependencies": {
     "@githubprimer/octicons-react": "^8.1.0",
     "@storybook/addon-actions": "^3.4.11",
