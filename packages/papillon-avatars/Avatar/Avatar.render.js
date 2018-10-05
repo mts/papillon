@@ -35,13 +35,15 @@ const avatarStackThreePlus = (
     </div>
 );
 
+const href = 'https://github.com/mts/papillon/tree/master/packages/papillon-avatars/Avatar';
+
 const avatarStackTwo = (
   <div className="AvatarStack AvatarStack--two">
     <div className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat and octocat">
-      <a href="#" className="avatar">
+      <a href={href} className="avatar">
         <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
       </a>
-      <a href="#" className="avatar">
+      <a href={href} className="avatar">
         <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
       </a>
     </div>

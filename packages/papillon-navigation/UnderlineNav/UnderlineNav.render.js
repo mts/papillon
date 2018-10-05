@@ -58,7 +58,9 @@ const itemsWithIcons = [
   },
 ];
 
-const underlineNavAction = <div className="UnderlineNav-actions"><a className="btn">Button</a></div>;
+const href = 'https://github.com/mts/papillon/tree/master/packages/papillon-navigation/UnderlineNav';
+
+const underlineNavAction = <div className="UnderlineNav-actions"><a href={href} className="btn">Button</a></div>;
 
 const underlineNav = (
   <UnderlineNav
