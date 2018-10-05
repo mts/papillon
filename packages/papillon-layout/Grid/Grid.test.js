@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  grid
+  grid,
 } from './Grid.render';
 
 describe('<Layout />', () => {
