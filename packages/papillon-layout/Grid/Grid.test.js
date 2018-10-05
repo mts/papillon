@@ -1,7 +1,4 @@
-import React from 'react';
-import {
-  grid
-} from './Grid.render';
+import grid from './Grid.render';
 
 describe('<Layout />', () => {
   let wrapper;

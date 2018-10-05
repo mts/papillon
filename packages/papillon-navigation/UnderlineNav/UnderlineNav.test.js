@@ -1,10 +1,9 @@
-import React from 'react';
 import {
   underlineNav,
   underlineNavActions,
   underlineNavRight,
   underlineNavRightWithActions,
-  underlineNavWithCounter
+  underlineNavWithCounter,
 } from './UnderlineNav.render';
 
 describe('<Navigation />', () => {

@@ -1,10 +1,7 @@
-import React from 'react';
 import { storiesOf } from '@storybook/react';
-import {
-  grid
-} from './Grid.render';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
+import grid from './Grid.render';
 
 storiesOf('Layout/Grid', module)
   .add('Grid', withNotes('Must render Layout ~ Grid')

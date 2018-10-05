@@ -1,16 +1,14 @@
-import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Octicon, {getIconByName} from '@githubprimer/octicons-react';
+import { withInfo } from '@storybook/addon-info';
+import { withNotes } from '@storybook/addon-notes';
 import {
   blankslate,
   blankslateIcon,
   blankslateNarrow,
   blankslateCapped,
   blankslateLarge,
-  blankslateCleanBackground
+  blankslateCleanBackground,
 } from './Blankslate.render';
-import { withInfo } from '@storybook/addon-info';
-import { withNotes } from '@storybook/addon-notes';
 
 storiesOf('Blankslate/Blankslate', module)
   .add('blankslate', withNotes('Must render Blankslate ~ blankslate')

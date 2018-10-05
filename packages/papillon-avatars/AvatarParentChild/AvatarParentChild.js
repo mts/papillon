@@ -1,19 +1,19 @@
 import React from 'react';
-import {string, node} from 'prop-types';
+import { string, node } from 'prop-types';
 
-const AvatarParentChild = ({className, children}) => (
+const AvatarParentChild = ({ className, children }) => (
   <div className={`avatar-parent-child ${className}`.trim()}>
     {children}
   </div>
 );
 
 AvatarParentChild.defaultProps = {
-  className: ''
+  className: '',
 };
 
 AvatarParentChild.propTypes = {
   className: string,
-  children: node.isRequired
+  children: node.isRequired,
 };
 
 export default AvatarParentChild;

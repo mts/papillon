@@ -1,7 +1,7 @@
 import React from 'react';
-import FlashAlert from './FlashAlert';
-import Octicon, {getIconByName} from '@githubprimer/octicons-react';
+import Octicon, { getIconByName } from '@githubprimer/octicons-react';
 import { action } from '@storybook/addon-actions';
+import FlashAlert from './FlashAlert';
 
 const flashAlertDefault = (
   <div className='p-4'>
@@ -14,7 +14,7 @@ const flashAlertDefault = (
 const multipleParagraphs = (
   <div className='p-4'>
     <FlashAlert>
-      <p>This is a longer flash message in it's own paragraph. It ends up looking something like this. If we keep adding more text, it'll eventually wrap to a new line.</p>
+      <p>This is a longer flash message in it&apos;s own paragraph. It ends up looking something like this. If we keep adding more text, it&apos;ll eventually wrap to a new line.</p>
       <p>And this is another paragraph.</p>
     </FlashAlert>
   </div>
@@ -102,5 +102,5 @@ export {
   flashIcon,
   withDismiss,
   withActionButton,
-  fullWidthFlash
+  fullWidthFlash,
 };

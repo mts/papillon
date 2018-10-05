@@ -1,11 +1,12 @@
 import React from 'react';
-import {string, node} from 'prop-types';
+import { generate } from 'shortid';
+import { node } from 'prop-types';
 
-const CircleBadgeDashedConnection = ({children}) => (
+const CircleBadgeDashedConnection = ({ children }) => (
   <div className="DashedConnection">
     <ul className="d-flex list-style-none flex-justify-between" aria-label="A sample GitHub workflow">
-      {children.map((child, index) => (
-        <li key={index} className="CircleBadge CircleBadge--small" aria-label="GitHub">
+      {children.map((child) => (
+        <li key={generate()} className="CircleBadge CircleBadge--small" aria-label="GitHub">
           {child}
         </li>
       ))}
@@ -13,13 +14,8 @@ const CircleBadgeDashedConnection = ({children}) => (
   </div>
 );
 
-CircleBadgeDashedConnection.defaultProps = {
-  className: ''
-};
-
 CircleBadgeDashedConnection.propTypes = {
-  className: string.isRequired,
-  children: node.isRequired
+  children: node.isRequired,
 };
 
 export default CircleBadgeDashedConnection;

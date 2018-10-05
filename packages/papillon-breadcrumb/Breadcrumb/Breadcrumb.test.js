@@ -1,7 +1,4 @@
-import React from 'react';
-import {
-  breadcrumb
-} from './Breadcrumb.render';
+import breadcrumb from './Breadcrumb.render';
 
 describe('<Breadcrumb />', () => {
   let wrapper;

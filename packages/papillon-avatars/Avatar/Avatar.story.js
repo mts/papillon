@@ -1,5 +1,6 @@
-import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
+import { withNotes } from '@storybook/addon-notes';
 import {
   avatar,
   avatarSmall,
@@ -8,8 +9,6 @@ import {
   avatarStackTwo,
   avatarStackRight,
 } from './Avatar.render';
-import { withInfo } from '@storybook/addon-info';
-import { withNotes } from '@storybook/addon-notes';
 
 storiesOf('Avatar/Avatar', module)
   .add('avatar', withNotes('Must render Avatar ~ avatar')

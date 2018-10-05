@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   labelDefault,
   design,
@@ -12,7 +11,7 @@ import {
   smallStates,
   counter,
   counterInTabs,
-  counterInBoxHeaders
+  counterInBoxHeaders,
 } from './Label.render';
 
 describe('<Label />', () => {

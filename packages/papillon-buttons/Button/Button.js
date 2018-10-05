@@ -1,24 +1,26 @@
 import React from 'react';
-import {string, node, oneOf} from 'prop-types';
+import { string, node, oneOf } from 'prop-types';
 
-const Button = ({variant, className, children}) => {
+const Button = ({ variant, className, children }) => {
   if (variant === 'button') {
     return <button className={`btn ${className}`.trim()} type="button">{children}</button>
-  } else if (variant === 'link') {
+  } if (variant === 'link') {
     return <a className={`btn ${className}`.trim()} href="#url" role="button">{children}</a>
-  } else if (variant === 'button-link') {
-    return <button className="btn-link">Button</button>
+  } if (variant === 'button-link') {
+    return <button type="button" className="btn-link">Button</button>
   }
+
+  return null;
 };
 
 Button.defaultProps = {
-  className: ''
+  className: '',
 };
 
 Button.propTypes = {
   variant: oneOf(['button', 'link', 'button-link']).isRequired,
   className: string,
-  children: node.isRequired
+  children: node.isRequired,
 };
 
 export default Button;

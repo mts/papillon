@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   flashAlertDefault,
   multipleParagraphs,
@@ -8,7 +7,7 @@ import {
   flashIcon,
   withDismiss,
   withActionButton,
-  fullWidthFlash
+  fullWidthFlash,
 } from './FlashAlert.render';
 
 describe('<FlashAlert />', () => {
