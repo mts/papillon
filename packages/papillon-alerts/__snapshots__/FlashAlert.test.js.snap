@@ -61,22 +61,6 @@ exports[`<FlashAlert /> Snaphot must match flashIcon 1`] = `
 </div>
 `;
 
-exports[`<FlashAlert /> Snaphot must match flashMessages 1`] = `
-<div
-  className="p-4"
->
-  <div
-    className="flash-messages"
-  >
-    <div
-      className="flash"
-    >
-      Flash message goes here.
-    </div>
-  </div>
-</div>
-`;
-
 exports[`<FlashAlert /> Snaphot must match flashSuccess 1`] = `
 <div
   className="p-4"

@@ -3,7 +3,6 @@ import { storiesOf } from '@storybook/react';
 import {
   flashAlertDefault,
   multipleParagraphs,
-  flashMessages,
   flashWarn,
   flashError,
   flashSuccess,
@@ -11,7 +10,7 @@ import {
   withDismiss,
   withActionButton,
   fullWidthFlash
-} from './flavor';
+} from './FlashAlert.render';
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
 
@@ -20,8 +19,6 @@ storiesOf('Flash alerts', module)
       (withInfo('Default')(() => flashAlertDefault)))
   .add('Multiple paragraphs', withNotes('Must render FlashAlert ~ Multiple paragraphs')
       (withInfo('Multiple paragraphs')(() => multipleParagraphs)))
-  .add('Flash messages', withNotes('Must render FlashMessages ~ Flash messages')
-      (withInfo('Flash messages')(() => flashMessages)))
   .add('flash-warn', withNotes('Must render FlashAlert ~ flash-warn')
     (withInfo('flash-warn')(() => flashWarn)))
   .add('flash-error', withNotes('Must render FlashAlert ~ flash-error')
