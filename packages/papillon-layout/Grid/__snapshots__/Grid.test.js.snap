@@ -1,25 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Layout /> Snaphot must match centered 1`] = `
-<div
-  className="columns"
->
-  <div
-    className="one-half column centered block-blue border p-3"
-  >
-    .one-half
-  </div>
-</div>
-`;
-
-exports[`<Layout /> Snaphot must match container 1`] = `
-<div
-  className="container border"
->
-  Container
-</div>
-`;
-
 exports[`<Layout /> Snaphot must match grid 1`] = `
 <div
   className="container"
