@@ -22,6 +22,7 @@ yarn-error.log*
 
 # Build
 .build
+.tgz
 
 # Lib
 packages/**/lib/*.js
