@@ -22,7 +22,7 @@ yarn-error.log*
 
 # Build
 .build
-.tgz
+packages/**/*.tgz
 dist
 records.json
 
