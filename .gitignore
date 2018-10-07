@@ -23,6 +23,7 @@ yarn-error.log*
 # Build
 .build
 .tgz
+dist
 
 # Lib
 packages/**/lib/*.js
