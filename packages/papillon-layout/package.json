@@ -1,6 +1,6 @@
 {
   "name": "papillon-layout",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "main": "lib/papillon-layout.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +12,5 @@
   "dependencies": {
     "primer-layout": "^1.4.9"
   },
-  "gitHead": "d2a3869beddf7f0a231ecf9659572567f50ab0d4"
+  "gitHead": "13f32d4e227eed71bcd6e573e5b93c3914efca32"
 }

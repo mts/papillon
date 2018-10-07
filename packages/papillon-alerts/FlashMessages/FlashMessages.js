@@ -1,6 +1,6 @@
 import React from 'react';
 import { node } from 'prop-types';
-import '../index.scss';
+import '../../papillon/index.scss';
 
 const FlashMessages = ({ children }) => (
   <div className="flash-messages">
