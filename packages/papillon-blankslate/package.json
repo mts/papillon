@@ -1,6 +1,6 @@
 {
   "name": "papillon-blankslate",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "",
   "main": "lib/papillon-blankslate.js",
   "scripts": {
