@@ -9,8 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "primer-avatars": "^1.5.6"
-  },
-  "gitHead": "fbfb343fa91b48207f81b5fb346b290cc60e5812"
+  "dependencies": {},
+  "gitHead": "5c1c5595c268331cd4a76e8787ca96d13a889d0d",
+  "devDependencies": {
+    "primer": "^10.8.1"
+  }
 }
