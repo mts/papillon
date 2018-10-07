@@ -1,6 +1,6 @@
 {
   "name": "papillon-alerts",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "",
   "main": "lib/papillon-alerts.js",
   "scripts": {
@@ -9,7 +9,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
   "gitHead": "6659c83414796efc81940ab4ba3cfb124d3c7fab",
   "devDependencies": {
     "primer": "^10.8.1"
