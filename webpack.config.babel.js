@@ -69,6 +69,7 @@ export default function (env) {
       ],
     },
   }];
+
   const cssLoaderConfig = [
     {
       loader: 'css-loader',
@@ -144,7 +145,6 @@ export default function (env) {
     plugins.push(new BundleAnalyzerPlugin());
   }
 
-  // console.log('~loaders~', JSON.stringify(loaders));
   const configuration = {
     devtool: 'cheap-module-source-map',
     context: rootDir,
@@ -169,7 +169,6 @@ export default function (env) {
     },
   };
 
-  // console.log('~configuration~', JSON.stringify(configuration.module.rules));
   return {
     ...configuration,
     entry: entries,
