@@ -1,4 +1,6 @@
 /* eslint global-require : 0 */
+/* eslint no-unused-vars : 0 */
+/* eslint no-shadow : 0 */
 
 import 'babel-register';
 import { join, resolve } from 'path';
@@ -8,7 +10,7 @@ import CleanPlugin from 'clean-webpack-plugin';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 
-const modulesPath = resolve(__dirname, 'packages')
+const path = require('path');
 
 export default function (env) {
   const cssModuleNames = '[name]_[local]_[hash:base64:3]';
@@ -83,7 +85,6 @@ export default function (env) {
       loader: 'postcss-loader',
       options: {
         sourceMap: true,
-        plugins: () => [require("postcss-cssnext")()],
       },
     },
     {
@@ -95,6 +96,7 @@ export default function (env) {
     },
   ];
 
+  const modulesPath = path.resolve(__dirname, 'packages')
 
   const loaders = [
     {
@@ -103,13 +105,40 @@ export default function (env) {
       use: jsLoaders,
     },
     {
-      test: /\.(css|scss)$/,
-      include: [Object.values(entries), modulesPath],
-      loaders: ExtractTextPlugin.extract({
-        fallback: 'style-loader',
-        use: cssLoaderConfig,
-      }),
+      test: /\.scss$/,
+      loaders: [
+        'style-loader',
+        'css-loader',
+        {
+          loader: "postcss-loader",
+          options: {
+            plugins: () => [require("postcss-cssnext")()],
+          },
+        },
+        {
+          loader: 'sass-loader',
+          options: {
+            includePaths: [
+              modulesPath,
+            ],
+          },
+        },
+      ],
+      include: modulesPath,
     },
+    // {
+    //   test: /\.scss$/,
+    //   include: Object.values(entries),
+    //   use: [
+    //     "style-loader",
+    //     "css-loader",
+    //     "sass-loader",
+    //   ],
+    //   // loaders: ExtractTextPlugin.extract({
+    //   //   fallback: 'style-loader',
+    //   //   use: cssLoaderConfig,
+    //   // }),
+    // },
   ];
 
   if (target === 'bundle') {
