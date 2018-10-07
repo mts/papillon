@@ -1,6 +1,7 @@
 import React from 'react';
 import { string } from 'prop-types';
 import Octicon, { getIconByName } from '@githubprimer/octicons-react'
+import 'primer/index.scss';
 
 const CircleBadgeIcon = ({ className, icon }) => (
   <Octicon

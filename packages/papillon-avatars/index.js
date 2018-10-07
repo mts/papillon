@@ -5,7 +5,7 @@ import CircleBadgeDashedConnection from './CircleBadgeDashedConnection';
 import CircleBadgeIcon from './CircleBadgeIcon';
 import CircleBadgeImage from './CircleBadgeImage';
 
-export default {
+export {
   Avatar,
   AvatarParentChild,
   CircleBadge,
