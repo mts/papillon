@@ -11,5 +11,8 @@
     "!packages/**/*.stories.js",
     "!packages/**/index.js"
   ],
-  "setupTestFrameworkScriptFile": "<rootDir>/jest.config.js"
+  "setupTestFrameworkScriptFile": "<rootDir>/jest.config.js",
+  "moduleNameMapper": {
+    "\\.(css|less|scss)$": "identity-obj-proxy"
+  }
 }
