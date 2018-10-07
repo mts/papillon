@@ -1,7 +1,7 @@
 import React from 'react';
 import { string, node } from 'prop-types';
 import Octicon, { getIconByName } from '@githubprimer/octicons-react'
-import '../../papillon/index.scss';
+import 'primer/index.scss';
 
 const FlashAlert = ({ className, children, icon }) => (
   <div className={`flash ${className}`.trim()}>

@@ -126,6 +126,19 @@ export default function (env) {
       ],
       include: modulesPath,
     },
+    // {
+    //   test: /\.scss$/,
+    //   include: Object.values(entries),
+    //   use: [
+    //     "style-loader",
+    //     "css-loader",
+    //     "sass-loader",
+    //   ],
+    //   // loaders: ExtractTextPlugin.extract({
+    //   //   fallback: 'style-loader',
+    //   //   use: cssLoaderConfig,
+    //   // }),
+    // },
   ];
 
   if (target === 'bundle') {

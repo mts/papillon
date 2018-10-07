@@ -1,6 +1,6 @@
 {
   "name": "papillon-navigation",
-  "version": "1.0.7",
+  "version": "1.0.19",
   "main": "lib/papillon-navigation.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +12,5 @@
   "dependencies": {
     "primer-navigation": "^1.5.7"
   },
-  "gitHead": "13f32d4e227eed71bcd6e573e5b93c3914efca32"
+  "gitHead": "ae98fcf92cc57c45ffa1a5fca3213b829b16a560"
 }
