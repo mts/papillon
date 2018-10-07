@@ -1,5 +1,6 @@
 import React from 'react';
 import { string, node } from 'prop-types';
+import 'primer-avatars/index.scss';
 
 const CircleBadge = ({ size, className, children }) => (
   <a

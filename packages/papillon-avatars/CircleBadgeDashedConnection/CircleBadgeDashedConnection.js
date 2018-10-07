@@ -1,6 +1,7 @@
 import React from 'react';
 import { generate } from 'shortid';
 import { node } from 'prop-types';
+import 'primer-avatars/index.scss';
 
 const CircleBadgeDashedConnection = ({ children }) => (
   <div className="DashedConnection">
