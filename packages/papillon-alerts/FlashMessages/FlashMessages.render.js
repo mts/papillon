@@ -1,6 +1,9 @@
 import React from 'react';
 import FlashAlert from '../FlashAlert';
-import FlashMessages from './FlashMessages';
+
+const FlashMessages = process.env.NODE_ENV === 'develop'
+  ? require('./FlashMessages').default
+  : require('../lib/papillon-alerts').FlashMessages;
 
 const flashMessages = (
   <div className='p-4'>
