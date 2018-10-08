@@ -21,10 +21,7 @@ yarn-error.log*
 /storybook-static
 
 # Build
-.build
 packages/**/*.tgz
-dist
-records.json
 
 # Lib
 packages/**/lib/*.js

@@ -36,5 +36,5 @@ module.exports = (config, env) => {
     }
   )
 
-  return config
+  return config;
 }
