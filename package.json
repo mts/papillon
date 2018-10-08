@@ -2,8 +2,8 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "start:storybook:develop": "start-storybook -p 3000 -c .storybook",
-    "start:storybook:release": "start-storybook -p 5000 -c .storybook",
+    "start:storybook:develop": "NODE_ENV=develop start-storybook -p 3003 -c ./.storybook/develop",
+    "start:storybook:release": "NODE_ENV=release start-storybook -p 5005 -c ./.storybook/release",
     "test": "jest --config jest.config.json --no-cache --silent --runInBand",
     "test:watchAll:silent": "clear && jest --config jest.config.json --watchAll --silent --verbose",
     "test:watchAll:loud": "clear && jest --config jest.config.json --watchAll",
