@@ -1,5 +1,8 @@
 import React from 'react';
-import Avatar from './Avatar';
+
+const Avatar = process.env.NODE_ENV === 'develop'
+  ? require('./Avatar').default
+  : require('../lib/papillon-avatars').Avatar;
 
 const srcAvatar = "https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png";
 
