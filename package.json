@@ -2,8 +2,8 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "start": "start-storybook -p 8000 -c .storybook",
-    "storybook": "build-storybook -o build",
+    "start:storybook:develop": "start-storybook -p 3000 -c .storybook",
+    "start:storybook:release": "start-storybook -p 5000 -c .storybook",
     "test": "jest --config jest.config.json --no-cache --silent --runInBand",
     "test:watchAll:silent": "clear && jest --config jest.config.json --watchAll --silent --verbose",
     "test:watchAll:loud": "clear && jest --config jest.config.json --watchAll",
@@ -13,9 +13,10 @@
     "lint": "eslint packages/**/**/*.js --fix",
     "lint:style": "stylelint packages/**/**/*.scss --fix",
     "lint:staged": "lint-staged",
-    "build": "npm run build:packages && build-storybook -o .build",
+    "build:develop": "webpack --config webpack.config.babel.js",
+    "build:release": "npm run build:packages && npm run build-storybook",
     "build:packages": "set NODE_ENV=production && webpack --config webpack.config.babel.js",
-    "build:dev": "webpack --config webpack.config.babel.js",
+    "build-storybook": "build-storybook",
     "bootstrap": "set NODE_ENV=development && lerna bootstrap",
     "publish": "lerna publish"
   },
