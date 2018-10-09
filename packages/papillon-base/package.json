@@ -1,0 +1,13 @@
+{
+  "name": "@papillon/base",
+  "version": "1.0.22",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "gitHead": "08ff8e866fc17ab956c78fcb025c9554cbff4c97",
+  "dependencies": {
+    "primer": "^10.8.1"
+  }
+}
