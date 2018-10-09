@@ -12,8 +12,5 @@
   "dependencies": {
     "primer": "^10.8.1"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "gitHead": "ae98fcf92cc57c45ffa1a5fca3213b829b16a560"
 }
