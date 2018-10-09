@@ -1,5 +1,5 @@
 {
-  "name": "@papillon/navigation",
+  "name": "papillon-navigation",
   "version": "1.0.27",
   "main": "lib/papillon-navigation.js",
   "keywords": [],

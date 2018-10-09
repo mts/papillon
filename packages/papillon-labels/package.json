@@ -1,5 +1,5 @@
 {
-  "name": "@papillon/labels",
+  "name": "papillon-labels",
   "version": "1.0.27",
   "description": "",
   "main": "lib/papillon-labels.js",

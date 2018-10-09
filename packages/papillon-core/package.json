@@ -1,5 +1,5 @@
 {
-  "name": "@papillon/core",
+  "name": "papillon-core",
   "version": "1.0.27",
   "description": "",
   "main": "index.js",
