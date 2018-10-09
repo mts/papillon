@@ -1,6 +1,7 @@
 import React from 'react';
 import { generate } from 'shortid';
 import { arrayOf, shape, string, number } from 'prop-types';
+import 'primer/index.scss';
 
 const Breadcrumb = ({ items, selectedIndex }) => (
   <nav aria-label="Breadcrumb">

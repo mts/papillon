@@ -28,3 +28,6 @@ packages/**/lib/*.js
 packages/**/lib/*.js.map
 packages/**/lib/*.css
 packages/**/lib/*.css.map
+
+# Lerna
+lerna-debug.log

@@ -2,6 +2,7 @@ import React from 'react';
 import { string, oneOf } from 'prop-types';
 import Octicon, { getIconByName } from '@githubprimer/octicons-react'
 import cx from 'classnames';
+import 'primer/index.scss';
 
 const Label = ({ type, className, text, icon }) => (
   <span

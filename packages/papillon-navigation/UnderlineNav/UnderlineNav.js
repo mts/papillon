@@ -2,6 +2,7 @@ import React from 'react';
 import { generate } from 'shortid';
 import { arrayOf, shape, string, number, node } from 'prop-types';
 import UnderlineNavItem from '../UnderlineNavItem';
+import 'primer/index.scss';
 
 const UnderlineNav = ({ className, aria, items, action, selectedIndex }) => {
   const { label } = aria;
