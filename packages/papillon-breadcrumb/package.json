@@ -1,16 +1,13 @@
 {
-  "name": "papillon-breadcrumb",
+  "name": "@papillon/breadcrumb",
   "version": "1.0.19",
   "description": "",
   "main": "lib/papillon-breadcrumb.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "gitHead": "ae98fcf92cc57c45ffa1a5fca3213b829b16a560",
   "dependencies": {
-    "primer-breadcrumb": "^1.5.5"
-  },
-  "gitHead": "ae98fcf92cc57c45ffa1a5fca3213b829b16a560"
+    "primer": "^10.8.1"
+  }
 }

@@ -1,16 +1,13 @@
 {
-  "name": "papillon-box",
+  "name": "@papillon/box",
   "version": "1.0.19",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "gitHead": "ae98fcf92cc57c45ffa1a5fca3213b829b16a560",
   "dependencies": {
-    "primer-box": "^2.5.9"
-  },
-  "gitHead": "ae98fcf92cc57c45ffa1a5fca3213b829b16a560"
+    "primer": "^10.8.1"
+  }
 }

@@ -1,16 +1,13 @@
 {
-  "name": "papillon-layout",
+  "name": "@papillon/layout",
   "version": "1.0.19",
   "main": "lib/papillon-layout.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
+  "gitHead": "ae98fcf92cc57c45ffa1a5fca3213b829b16a560",
   "dependencies": {
-    "primer-layout": "^1.4.9"
-  },
-  "gitHead": "ae98fcf92cc57c45ffa1a5fca3213b829b16a560"
+    "primer": "^10.8.1"
+  }
 }

@@ -1,16 +1,13 @@
 {
-  "name": "papillon-avatars",
+  "name": "@papillon/avatars",
   "version": "1.0.19",
   "description": "",
   "main": "lib/papillon-avatars.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "gitHead": "ae98fcf92cc57c45ffa1a5fca3213b829b16a560",
-  "devDependencies": {
+  "dependencies": {
     "primer": "^10.8.1"
   }
 }
