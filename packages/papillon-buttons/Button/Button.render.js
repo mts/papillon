@@ -1,5 +1,8 @@
 import React from 'react';
-import Button from './Button';
+
+const Button = process.env.NODE_ENV === 'develop'
+  ? require('./Button').default
+  : require('../lib/papillon-buttons').default;
 
 const btn = (
   <div>

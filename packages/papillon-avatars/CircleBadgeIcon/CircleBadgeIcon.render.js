@@ -1,6 +1,12 @@
 import React from 'react';
-import CircleBadge from '../CircleBadge';
-import CircleBadgeIcon from './CircleBadgeIcon';
+
+const CircleBadge = process.env.NODE_ENV === 'develop'
+  ? require('../CircleBadge').default
+  : require('../lib/papillon-avatars').CircleBadge;
+
+const CircleBadgeIcon = process.env.NODE_ENV === 'develop'
+  ? require('./CircleBadgeIcon').default
+  : require('../lib/papillon-avatars').CircleBadgeIcon;
 
 const circleBadgeSmallIcon = (
   <CircleBadge size="small" className="bg-yellow" title="Zap this!" href="#small">
