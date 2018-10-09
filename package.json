@@ -1,5 +1,5 @@
 {
-  "name": "root",
+  "name": "papillon",
   "private": true,
   "scripts": {
     "start:storybook:develop": "NODE_ENV=develop start-storybook -p 3003 -c ./.storybook/develop",
