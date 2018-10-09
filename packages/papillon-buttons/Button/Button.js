@@ -1,5 +1,6 @@
 import React from 'react';
 import { string, node, oneOf } from 'prop-types';
+import 'primer/index.scss';
 
 const Button = ({ variant, className, children }) => {
   if (variant === 'button') {

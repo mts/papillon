@@ -1,16 +1,13 @@
 {
   "name": "papillon-navigation",
-  "version": "1.0.19",
+  "version": "1.0.29",
   "main": "lib/papillon-navigation.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
+  "gitHead": "e66505eb5cec6c4df3197c70ce463afa73d9662f",
   "dependencies": {
-    "primer-navigation": "^1.5.7"
-  },
-  "gitHead": "ae98fcf92cc57c45ffa1a5fca3213b829b16a560"
+    "primer": "^10.8.1"
+  }
 }
