@@ -3,6 +3,7 @@ import { generate } from 'shortid';
 import { arrayOf, shape, string, number, node } from 'prop-types';
 import MenuItem from '../MenuItem';
 import { isEmptyObject } from '../utility';
+import 'primer/index.scss';
 
 const Menu = ({ aria, heading, items, selectedIndex }) => {
   const { label, labelledby } = aria;

@@ -1,4 +1,5 @@
 import React from 'react';
+import 'primer/index.scss';
 
 // mts ~ block-blue does not exist
 

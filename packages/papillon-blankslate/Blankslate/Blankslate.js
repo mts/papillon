@@ -2,6 +2,7 @@ import React from 'react';
 import { generate } from 'shortid';
 import { string, node, arrayOf } from 'prop-types';
 import Octicon, { getIconByName } from '@githubprimer/octicons-react'
+import 'primer/index.scss';
 
 const Blankslate = ({ className, children, icons }) => (
   <div className={`blankslate ${className}`.trim()}>
