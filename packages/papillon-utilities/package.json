@@ -6,7 +6,7 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "gitHead": "facc1e7032a29d1cf15ab27e733982bb3eaea198",
+  "gitHead": "e66505eb5cec6c4df3197c70ce463afa73d9662f",
   "dependencies": {
     "primer-utilities": "^4.12.0"
   }
