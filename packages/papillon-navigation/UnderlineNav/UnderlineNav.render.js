@@ -1,5 +1,8 @@
 import React from 'react';
-import UnderlineNav from './UnderlineNav';
+
+const UnderlineNav = process.env.NODE_ENV === 'develop'
+  ? require('./UnderlineNav').default
+  : require('../lib/papillon-navigation').UnderlineNav;
 
 const aria = {
   label: 'Foo bar',
