@@ -1,6 +1,12 @@
 import React from 'react';
-import CircleBadge from '../CircleBadge';
-import CircleBadgeImage from './CircleBadgeImage';
+
+const CircleBadge = process.env.NODE_ENV === 'develop'
+  ? require('../CircleBadge').default
+  : require('../lib/papillon-avatars').CircleBadge;
+
+const CircleBadgeImage = process.env.NODE_ENV === 'develop'
+  ? require('./CircleBadgeImage').default
+  : require('../lib/papillon-avatars').CircleBadgeImage;
 
 const srcCircleBadge = "https://user-images.githubusercontent.com/334891/30004619-adc8ca86-90a0-11e7-8ccc-2322261d2ab1.png";
 

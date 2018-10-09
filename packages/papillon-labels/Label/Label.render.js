@@ -1,5 +1,8 @@
 import React from 'react';
-import Label from './Label';
+
+const Label = process.env.NODE_ENV === 'develop'
+  ? require('./Label').default
+  : require('../lib/papillon-labels').default;
 
 const labelDefault = (
   <Label type="label" className="bg-blue" text="default label" />

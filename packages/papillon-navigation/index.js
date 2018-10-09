@@ -1,7 +1,7 @@
 import Menu from './Menu';
 import UnderlineNav from './UnderlineNav';
 
-export default {
+export {
   Menu,
   UnderlineNav,
 };

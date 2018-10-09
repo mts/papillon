@@ -1,5 +1,8 @@
 import React from 'react';
-import Container from './Container';
+
+const Container = process.env.NODE_ENV === 'develop'
+  ? require('./Container').default
+  : require('../lib/papillon-layout').Container;
 
 const container = (
   <Container className="border">Container</Container>

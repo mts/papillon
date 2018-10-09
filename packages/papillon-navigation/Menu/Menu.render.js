@@ -1,5 +1,8 @@
 import React from 'react';
-import Menu from './Menu';
+
+const Menu = process.env.NODE_ENV === 'develop'
+  ? require('./Menu').default
+  : require('../lib/papillon-navigation').Menu;
 
 const menu = (() => {
   const aria = {
