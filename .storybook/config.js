@@ -2,7 +2,7 @@ import React from 'react'
 import { configure, addDecorator } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
 // import '../packages/papillon/index.scss';
-import { version } from '../packages/papillon/package.json';
+import { version } from '../packages/papillon-prime/package.json';
 
 const setup = () => {
   setOptions({
