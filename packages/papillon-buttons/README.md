@@ -15,6 +15,9 @@ This repository is distributed with [npm][npm]. After [installing npm][install-n
 $ npm install --save primer-buttons
 ```
 
+## Webpack Babel Sample
+[You can use it with React 16, Webpack 4 and Babel 7](https://github.com/mts/papillon/tree/master/packages/papillon-buttons/webpack-babel-sample)
+
 ## Usage
 
 You can import it like this.
