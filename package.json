@@ -16,10 +16,10 @@
     "build:develop": "webpack --config webpack.config.babel.js",
     "build:release": "npm run build:packages && npm run build-storybook",
     "build:packages": "set NODE_ENV=production && webpack --config webpack.config.babel.js",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -c .storybook/release -o .storybook-static",
     "bootstrap": "set NODE_ENV=development && lerna bootstrap",
     "release": "lerna publish",
-    "deploy": "gh-pages -d storybook-static"
+    "deploy": "gh-pages -d .storybook-static"
   },
   "repository": {
     "type": "git",

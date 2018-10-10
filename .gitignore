@@ -18,7 +18,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Storybook
-/storybook-static
+.storybook-static
 
 # Build
 packages/**/*.tgz
