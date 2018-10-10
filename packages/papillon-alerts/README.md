@@ -23,7 +23,7 @@ You can import it like this.
 import FlashAlert from 'papillon-alerts';
 ```
 
-### Documentation
+## Documentation
 
 Flash messages, or alerts, inform users of successful or pending actions. Use them sparingly. Don't show more than one at a time.
 
