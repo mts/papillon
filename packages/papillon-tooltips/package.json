@@ -1,6 +1,6 @@
 {
   "name": "papillon-tooltips",
-  "version": "1.0.30",
+  "version": "1.0.31",
   "description": "papillon-tooltips react components for primer-tooltips",
   "homepage": "https://github.com/mts/papillon",
   "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-tooltips",
