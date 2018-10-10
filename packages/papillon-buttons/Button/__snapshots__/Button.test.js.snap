@@ -266,6 +266,26 @@ exports[`<Button /> Snaphot must match btnSecondary 1`] = `
 </div>
 `;
 
+exports[`<Button /> Snaphot must match btnSmall 1`] = `
+<div
+  className="f3 p-4"
+>
+  <a
+    className="btn btn-sm btn-purple mr-6"
+    href="#url"
+    role="button"
+  >
+    Small link button
+  </a>
+  <button
+    className="btn btn-sm btn-outline-blue"
+    type="button"
+  >
+    Small button button
+  </button>
+</div>
+`;
+
 exports[`<Button /> Snaphot must match link 1`] = `
 <div>
   <a
