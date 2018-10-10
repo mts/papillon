@@ -1,6 +1,7 @@
 import {
   btn,
   link,
+  btnSmall,
   btnPrimary,
   btnSecondary,
   btnDanger,
@@ -28,6 +29,10 @@ describe('<Button />', () => {
 
     test('must match link', () => {
       expect(global.renderToJSON(link)).toMatchSnapshot();
+    });
+
+    test('must match btnSmall', () => {
+      expect(global.renderToJSON(btnSmall)).toMatchSnapshot();
     });
 
     test('must match btnPrimary', () => {

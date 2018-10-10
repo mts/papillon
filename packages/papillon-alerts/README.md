@@ -20,10 +20,10 @@ $ npm install --save papillon-alerts
 You can import it like this.
 
 ```javascript
-import FlashAlert from 'papillon-alerts';
+import {FlashAlert, FlashMessages} from 'papillon-alerts';
 ```
 
-### Documentation
+## Documentation
 
 Flash messages, or alerts, inform users of successful or pending actions. Use them sparingly. Don't show more than one at a time.
 
@@ -32,8 +32,6 @@ Flash messages, or alerts, inform users of successful or pending actions. Use th
 Flash messages start off looking decently neutral—they're just light blue rounded rectangles.
 
 ```html
-import FlashAlert from 'papillon-alerts';
-
 <FlashAlert>
   Flash message goes here.
 </FlashAlert>
