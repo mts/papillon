@@ -2,7 +2,7 @@
 
 # Papillon
 
-[Primer](https://github.com/primer/primer) React UI Components
+React UI Components using the [design system](https://primer.style/) that powers GitHub.
 
 ## Table of Contents
 
