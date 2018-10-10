@@ -1,11 +1,22 @@
 {
   "name": "papillon-blankslate",
   "version": "1.0.29",
-  "description": "",
+  "description": "papillon-blankslate react components for primer-blankslate",
+  "homepage": "https://github.com/mts/papillon",
+  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-blankslate",
+  "keywords": [
+    "blankslate",
+    "papillon",
+    "primer",
+    "css",
+    "react",
+    "github",
+    "design-system",
+    "component-library"
+  ],
   "main": "lib/papillon-blankslate.js",
-  "keywords": [],
-  "author": "",
   "license": "MIT",
+  "author": "MTS",
   "dependencies": {
     "primer": "^10.8.1"
   }
