@@ -1,11 +1,22 @@
 {
   "name": "papillon-breadcrumb",
   "version": "1.0.29",
-  "description": "",
+  "description": "papillon-breadcrumb react components for primer-breadcrumb",
+  "homepage": "https://github.com/mts/papillon",
+  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-breadcrumb",
+  "keywords": [
+    "breadcrumb",
+    "papillon",
+    "primer",
+    "css",
+    "react",
+    "github",
+    "design-system",
+    "component-library"
+  ],
   "main": "lib/papillon-breadcrumb.js",
-  "keywords": [],
-  "author": "",
   "license": "MIT",
+  "author": "MTS",
   "dependencies": {
     "primer": "^10.8.1"
   }

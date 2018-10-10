@@ -1,11 +1,22 @@
 {
   "name": "papillon-tooltips",
   "version": "1.0.29",
-  "description": "",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
+  "description": "papillon-tooltips react components for primer-tooltips",
+  "homepage": "https://github.com/mts/papillon",
+  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-tooltips",
+  "keywords": [
+    "tooltips",
+    "papillon",
+    "primer",
+    "css",
+    "react",
+    "github",
+    "design-system",
+    "component-library"
+  ],
+  "main": "lib/papillon-tooltips.js",
   "license": "MIT",
+  "author": "MTS",
   "dependencies": {
     "primer": "^10.8.1"
   }

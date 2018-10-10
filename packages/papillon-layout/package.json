@@ -1,11 +1,22 @@
 {
   "name": "papillon-layout",
   "version": "1.0.29",
+  "description": "papillon-layout react components for primer-layout",
+  "homepage": "https://github.com/mts/papillon",
+  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-layout",
+  "keywords": [
+    "layout",
+    "papillon",
+    "primer",
+    "css",
+    "react",
+    "github",
+    "design-system",
+    "component-library"
+  ],
   "main": "lib/papillon-layout.js",
-  "keywords": [],
-  "author": "",
   "license": "MIT",
-  "description": "",
+  "author": "MTS",
   "dependencies": {
     "primer": "^10.8.1"
   }

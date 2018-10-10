@@ -1,11 +1,22 @@
 {
   "name": "papillon-buttons",
   "version": "1.0.29",
+  "description": "papillon-buttons react components for primer-buttons",
+  "homepage": "https://github.com/mts/papillon",
+  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-buttons",
+  "keywords": [
+    "buttons",
+    "papillon",
+    "primer",
+    "css",
+    "react",
+    "github",
+    "design-system",
+    "component-library"
+  ],
   "main": "lib/papillon-buttons.js",
-  "keywords": [],
-  "author": "",
   "license": "MIT",
-  "description": "",
+  "author": "MTS",
   "dependencies": {
     "primer": "^10.8.1"
   }

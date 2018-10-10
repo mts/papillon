@@ -1,12 +1,23 @@
 {
   "name": "papillon-utilities",
   "version": "1.0.29",
-  "description": "",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
+  "description": "papillon-utilities react components for primer-utilities",
+  "homepage": "https://github.com/mts/papillon",
+  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-utilities",
+  "keywords": [
+    "utilities",
+    "papillon",
+    "primer",
+    "css",
+    "react",
+    "github",
+    "design-system",
+    "component-library"
+  ],
+  "main": "lib/papillon-utilities.js",
   "license": "MIT",
+  "author": "MTS",
   "dependencies": {
-    "primer-utilities": "^4.12.0"
+    "primer": "^10.8.1"
   }
 }
