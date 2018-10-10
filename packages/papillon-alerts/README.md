@@ -20,7 +20,7 @@ $ npm install --save papillon-alerts
 You can import it like this.
 
 ```javascript
-import {FlashAlert, FlashMessages} from 'papillon-alerts';
+import { FlashAlert, FlashMessages } from 'papillon-alerts';
 ```
 
 ## Documentation
