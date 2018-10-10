@@ -1,4 +1,4 @@
-# papillon-alerts-webpack-babel-sample
+# Papillon Alerts Webpack Babel Sample
 
 ## Features
 
@@ -14,4 +14,4 @@
 
 * npm install
 * npm start
-* visit `http://localhost:8080/`
+* visit `http://localhost:7007/`
