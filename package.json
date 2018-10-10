@@ -4,6 +4,8 @@
   "scripts": {
     "start:storybook:develop": "NODE_ENV=develop start-storybook -p 3003 -c ./.storybook/develop",
     "start:storybook:release": "NODE_ENV=release start-storybook -p 5005 -c ./.storybook/release",
+    "build-storybook:develop": "build-storybook -c .storybook/develop -o .storybook-static",
+    "build-storybook:release": "build-storybook -c .storybook/release -o .storybook-static",
     "test": "jest --config jest.config.json --no-cache --silent --runInBand",
     "test:watchAll:silent": "clear && jest --config jest.config.json --watchAll --silent --verbose",
     "test:watchAll:loud": "clear && jest --config jest.config.json --watchAll",
@@ -14,13 +16,11 @@
     "lint:style": "stylelint packages/**/**/*.scss --fix",
     "lint:staged": "lint-staged",
     "build:develop": "webpack --config webpack.config.babel.js",
-    "build:release": "npm run build:packages && npm run build-storybook",
+    "build:release": "npm run build:packages && npm run build-storybook:release",
     "build:packages": "set NODE_ENV=production && webpack --config webpack.config.babel.js",
-    "build-storybook:develop": "build-storybook -c .storybook/develop -o .storybook-static",
-    "build-storybook:release": "build-storybook -c .storybook/release -o .storybook-static",
     "bootstrap": "set NODE_ENV=development && lerna bootstrap",
-    "release": "lerna publish",
-    "deploy": "gh-pages -d .storybook-static"
+    "deploy": "gh-pages -d .storybook-static",
+    "release": "lerna publish"
   },
   "repository": {
     "type": "git",
