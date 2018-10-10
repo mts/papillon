@@ -16,6 +16,14 @@ const link = (
   </div>
 );
 
+const btnSmall = (
+  <div className='f3 p-4'>
+    <Button variant="link"className="btn-sm btn-purple mr-6">Small link button</Button>
+    <Button variant="button"className="btn-sm btn-outline-blue">Small button button</Button>
+  </div>
+);
+
+
 const btnPrimary = (
   <div className='p-4 d-flex flex-justify-between'>
     <Button variant="button" className="btn-primary">Button</Button>
@@ -93,6 +101,7 @@ const btnLink = (
 export {
   btn,
   link,
+  btnSmall,
   btnPrimary,
   btnSecondary,
   btnDanger,

@@ -4,6 +4,7 @@ import { withNotes } from '@storybook/addon-notes';
 import {
   btn,
   link,
+  btnSmall,
   btnPrimary,
   btnSecondary,
   btnDanger,
@@ -19,6 +20,8 @@ storiesOf('Button/Button', module)
       (withInfo('btn')(() => btn)))
   .add('link', withNotes('Must render Button ~ link')
       (withInfo('link')(() => link)))
+  .add('btn-sm', withNotes('Must render Button ~ btn-sm')
+      (withInfo('btn-sm')(() => btnSmall)))
   .add('btn-primary', withNotes('Must render Button ~ btn-primary')
       (withInfo('btn-primary')(() => btnPrimary)))
   .add('btn-secondary', withNotes('Must render Button ~ btn-secondary')
