@@ -1,11 +1,22 @@
 {
   "name": "papillon-labels",
   "version": "1.0.29",
-  "description": "",
+  "description": "papillon-labels react components for primer-labels",
+  "homepage": "https://github.com/mts/papillon",
+  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-labels",
+  "keywords": [
+    "labels",
+    "papillon",
+    "primer",
+    "css",
+    "react",
+    "github",
+    "design-system",
+    "component-library"
+  ],
   "main": "lib/papillon-labels.js",
-  "keywords": [],
-  "author": "",
   "license": "MIT",
+  "author": "MTS",
   "dependencies": {
     "primer": "^10.8.1"
   }

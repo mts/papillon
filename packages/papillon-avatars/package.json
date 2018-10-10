@@ -1,11 +1,22 @@
 {
   "name": "papillon-avatars",
   "version": "1.0.29",
-  "description": "",
+  "description": "papillon-avatars react components for primer-avatars",
+  "homepage": "https://github.com/mts/papillon",
+  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-avatars",
+  "keywords": [
+    "avatars",
+    "papillon",
+    "primer",
+    "css",
+    "react",
+    "github",
+    "design-system",
+    "component-library"
+  ],
   "main": "lib/papillon-avatars.js",
-  "keywords": [],
-  "author": "",
   "license": "MIT",
+  "author": "MTS",
   "dependencies": {
     "primer": "^10.8.1"
   }
