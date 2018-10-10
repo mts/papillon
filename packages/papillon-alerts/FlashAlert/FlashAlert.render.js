@@ -88,11 +88,11 @@ const withActionButton = (
 
 const fullWidthFlash = (
   <div className='p-4'>
-      <div className="container-lg">
-        <FlashAlert className="flash-full">
-          Full width flash message.
-        </FlashAlert>
-      </div>
+    <div className="container-lg">
+      <FlashAlert className="flash-full">
+        Full width flash message.
+      </FlashAlert>
+    </div>
   </div>
 );
 
