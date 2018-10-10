@@ -32,8 +32,6 @@ Flash messages, or alerts, inform users of successful or pending actions. Use th
 Flash messages start off looking decently neutral—they're just light blue rounded rectangles.
 
 ```html
-import FlashAlert from 'papillon-alerts';
-
 <FlashAlert>
   Flash message goes here.
 </FlashAlert>
