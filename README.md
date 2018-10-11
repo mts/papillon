@@ -1,4 +1,4 @@
-<center>![Logo](/papillon.png)</center>
+![Logo](/logo.png)
 
 # Papillon
 
@@ -56,8 +56,8 @@ import { FlashAlert, FlashMessages } from 'papillon-alerts';
 </FlashMessages>
 ```
 
-### Use all flavours of FlashAlert and FlashMessages
-Check out all flavours [here](https://github.com/mts/papillon/tree/master/packages/papillon-alerts).
+### Use all
+Find more flavours of FlashAlert and FlashMessages [here](https://github.com/mts/papillon/tree/master/packages/papillon-alerts).
 
 ### Webpack Babel Sample
 [Use Papillon Alerts with React 16, Webpack 4 and Babel 7](https://github.com/mts/papillon/tree/master/packages/papillon-alerts/webpack-babel-sample)
@@ -87,8 +87,8 @@ import Button from 'papillon-buttons';
 <Button variant="button">Button</Button>
 ```
 
-### Use all flavours of Button
-Check out all flavours [here](https://github.com/mts/papillon/tree/master/packages/papillon-buttons).
+### Use all
+Find more flavours of Button [here](https://github.com/mts/papillon/tree/master/packages/papillon-buttons).
 
 ### Webpack Babel Sample
 [Use Papillon Buttons with React 16, Webpack 4 and Babel 7](https://github.com/mts/papillon/tree/master/packages/papillon-buttons/webpack-babel-sample)
