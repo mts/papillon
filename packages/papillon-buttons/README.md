@@ -37,7 +37,7 @@ Use the standard—yet classy—`.btn` for form actions and primary page actions
 When using a `<button>` element, **always specify a `type`**. When using a `<a>` element, **always add `role="button"` for accessibility**.
 
 ```html
-  <Button variant="button">Button</Button>
+  <Button variant="button" onClick={() => {}}>Button</Button>
 ```
 
 ```html
@@ -47,13 +47,13 @@ When using a `<button>` element, **always specify a `type`**. When using a `<a>`
 You can find them in different sizes: the default `.btn`, the smaller `.btn-sm` and the larger `.btn-large`.
 
 ```html
-  <Button variant="link"className="btn-sm btn-purple mr-6">Small link button</Button>
-  <Button variant="button"className="btn-sm btn-outline-blue">Small button button</Button>
+  <Button variant="link"className="btn-sm btn-purple mr-6" onClick={() => {}}>Small link button</Button>
+  <Button variant="button"className="btn-sm btn-outline-blue" onClick={() => {}}>Small button button</Button>
 ```
 
 ```html
-  <Button variant="link"className="btn-large btn-purple mr-6">Large link button</Button>
-  <Button variant="button"className="btn-large btn-outline-blue">Large button button</Button>
+  <Button variant="link"className="btn-large btn-purple mr-6" onClick={() => {}}>Large link button</Button>
+  <Button variant="button"className="btn-large btn-outline-blue" onClick={() => {}}>Large button button</Button>
 ```
 
 ### Primary button
@@ -61,21 +61,21 @@ You can find them in different sizes: the default `.btn`, the smaller `.btn-sm` 
 Primary buttons are green and are used to indicate the *primary* action on a page. When you need your buttons to stand out, use `.btn.btn-primary`. You can use it with both button sizes—just add `.btn-primary`.
 
 ```html
-  <Button variant="button" className="btn-primary">Button</Button>
-  <Button variant="button" className="btn-primary hover">hover</Button>
-  <Button variant="button" className="btn-primary focus">focus</Button>
-  <Button variant="button" className="btn-primary selected">selected</Button>
-  <Button variant="button" className="btn-primary disabled">disabled</Button>
+  <Button variant="button" className="btn-primary" onClick={() => {}}>Button</Button>
+  <Button variant="button" className="btn-primary hover" onClick={() => {}}>hover</Button>
+  <Button variant="button" className="btn-primary focus" onClick={() => {}}>focus</Button>
+  <Button variant="button" className="btn-primary selected" onClick={() => {}}>selected</Button>
+  <Button variant="button" className="btn-primary disabled" onClick={() => {}}>disabled</Button>
 ```
 
 ### Secondary button
 
 ```html
-  <Button variant="button" className="btn-secondary">Button</Button>
-  <Button variant="button" className="btn-secondary hover">hover</Button>
-  <Button variant="button" className="btn-secondary focus">focus</Button>
-  <Button variant="button" className="btn-secondary selected">selected</Button>
-  <Button variant="button" className="btn-secondary disabled">disabled</Button>
+  <Button variant="button" className="btn-secondary" onClick={() => {}}>Button</Button>
+  <Button variant="button" className="btn-secondary hover" onClick={() => {}}>hover</Button>
+  <Button variant="button" className="btn-secondary focus" onClick={() => {}}>focus</Button>
+  <Button variant="button" className="btn-secondary selected" onClick={() => {}}>selected</Button>
+  <Button variant="button" className="btn-secondary disabled" onClick={() => {}}>disabled</Button>
 ```
 
 ### Danger button
@@ -83,11 +83,11 @@ Primary buttons are green and are used to indicate the *primary* action on a pag
 Danger buttons are red. They help reiterate that the intended action is important or potentially dangerous (e.g., deleting a repo or transferring ownership). Similar to the primary buttons, just add `.btn-danger`.
 
 ```html
-  <Button variant="button" className="btn-danger">Button</Button>
-  <Button variant="button" className="btn-danger hover">hover</Button>
-  <Button variant="button" className="btn-danger focus">focus</Button>
-  <Button variant="button" className="btn-danger selected">selected</Button>
-  <Button variant="button" className="btn-danger disabled">disabled</Button>
+  <Button variant="button" className="btn-danger" onClick={() => {}}>Button</Button>
+  <Button variant="button" className="btn-danger hover" onClick={() => {}}>hover</Button>
+  <Button variant="button" className="btn-danger focus" onClick={() => {}}>focus</Button>
+  <Button variant="button" className="btn-danger selected" onClick={() => {}}>selected</Button>
+  <Button variant="button" className="btn-danger disabled" onClick={() => {}}>disabled</Button>
 ```
 
 ### Outline button
@@ -95,31 +95,31 @@ Danger buttons are red. They help reiterate that the intended action is importan
 Outline buttons downplay an action as they appear like boxy links. Just add `.btn-outline` and go.
 
 ```html
-  <Button variant="button" className="btn-outline">Button</Button>
-  <Button variant="button" className="btn-outline hover">hover</Button>
-  <Button variant="button" className="btn-outline focus">focus</Button>
-  <Button variant="button" className="btn-outline selected">selected</Button>
-  <Button variant="button" className="btn-outline disabled">disabled</Button>
+  <Button variant="button" className="btn-outline" onClick={() => {}}>Button</Button>
+  <Button variant="button" className="btn-outline hover" onClick={() => {}}>hover</Button>
+  <Button variant="button" className="btn-outline focus" onClick={() => {}}>focus</Button>
+  <Button variant="button" className="btn-outline selected" onClick={() => {}}>selected</Button>
+  <Button variant="button" className="btn-outline disabled" onClick={() => {}}>disabled</Button>
 ```
 
 ### Blue button
 
 ```html
-  <Button variant="button" className="btn-blue">Button</Button>
-  <Button variant="button" className="btn-blue hover">hover</Button>
-  <Button variant="button" className="btn-blue focus">focus</Button>
-  <Button variant="button" className="btn-blue selected">selected</Button>
-  <Button variant="button" className="btn-blue disabled">disabled</Button>
+  <Button variant="button" className="btn-blue" onClick={() => {}}>Button</Button>
+  <Button variant="button" className="btn-blue hover" onClick={() => {}}>hover</Button>
+  <Button variant="button" className="btn-blue focus" onClick={() => {}}>focus</Button>
+  <Button variant="button" className="btn-blue selected" onClick={() => {}}>selected</Button>
+  <Button variant="button" className="btn-blue disabled" onClick={() => {}}>disabled</Button>
 ```
 
 ### Purple button
 
 ```html
-  <Button variant="button" className="btn-purple">Button</Button>
-  <Button variant="button" className="btn-purple hover">hover</Button>
-  <Button variant="button" className="btn-purple focus">focus</Button>
-  <Button variant="button" className="btn-purple selected">selected</Button>
-  <Button variant="button" className="btn-purple disabled">disabled</Button>
+  <Button variant="button" className="btn-purple" onClick={() => {}}>Button</Button>
+  <Button variant="button" className="btn-purple hover" onClick={() => {}}>hover</Button>
+  <Button variant="button" className="btn-purple focus" onClick={() => {}}>focus</Button>
+  <Button variant="button" className="btn-purple selected" onClick={() => {}}>selected</Button>
+  <Button variant="button" className="btn-purple disabled" onClick={() => {}}>disabled</Button>
 ```
 
 ### Button Link

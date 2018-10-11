@@ -1,5 +1,3 @@
-![Logo](/logo.png)
-
 # Papillon
 
 React UI Components styled with [Primer](https://primer.style/).
@@ -84,7 +82,7 @@ import Button from 'papillon-buttons';
 
 ### Use Button
 ```html
-<Button variant="button">Button</Button>
+<Button variant="button" onClick={() => {}}>Button</Button>
 ```
 
 ### Use all
