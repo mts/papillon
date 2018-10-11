@@ -1,8 +1,8 @@
-![Logo](/papillon.png)
+<center>![Logo](/papillon.png)</center>
 
 # Papillon
 
-React UI Components using the [design system](https://primer.style/) that powers GitHub.
+React UI Components styled with [Primer](https://primer.style/).
 
 ## Table of Contents
 
@@ -40,14 +40,14 @@ $ npm install --save papillon-alerts
 import { FlashAlert, FlashMessages } from 'papillon-alerts';
 ```
 
-### FlashAlert
+### Use FlashAlert
 ```html
 <FlashAlert>
   Flash message goes here.
 </FlashAlert>
 ```
 
-### FlashMessages
+### Use FlashMessages
 ```html
 <FlashMessages>
   <FlashAlert>
@@ -56,8 +56,11 @@ import { FlashAlert, FlashMessages } from 'papillon-alerts';
 </FlashMessages>
 ```
 
+### Use all flavours of FlashAlert and FlashMessages
+Check out all flavours [here](https://github.com/mts/papillon/tree/master/packages/papillon-alerts).
+
 ### Webpack Babel Sample
-[Papillon Alerts, React 16, Webpack 4 and Babel 7](https://github.com/mts/papillon/tree/master/packages/papillon-alerts/webpack-babel-sample)
+[Use Papillon Alerts with React 16, Webpack 4 and Babel 7](https://github.com/mts/papillon/tree/master/packages/papillon-alerts/webpack-babel-sample)
 
 ### NPM
 [Latest papillon-alerts](https://www.npmjs.com/package/papillon-alerts)
@@ -79,13 +82,16 @@ $ npm install --save papillon-buttons
 import Button from 'papillon-buttons';
 ```
 
-### Button
+### Use Button
 ```html
 <Button variant="button">Button</Button>
 ```
 
+### Use all flavours of Button
+Check out all flavours [here](https://github.com/mts/papillon/tree/master/packages/papillon-buttons).
+
 ### Webpack Babel Sample
-[Papillon Buttons, React 16, Webpack 4 and Babel 7](https://github.com/mts/papillon/tree/master/packages/papillon-buttons/webpack-babel-sample)
+[Use Papillon Buttons with React 16, Webpack 4 and Babel 7](https://github.com/mts/papillon/tree/master/packages/papillon-buttons/webpack-babel-sample)
 
 ### NPM
 [Latest papillon-buttons](https://www.npmjs.com/package/papillon-buttons)
