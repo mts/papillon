@@ -82,7 +82,7 @@ import Button from 'papillon-buttons';
 
 ### Use Button
 ```html
-<Button variant="button">Button</Button>
+<Button variant="button" onClick={() => {}}>Button</Button>
 ```
 
 ### Use all
