@@ -1,5 +1,3 @@
-![Logo](/logo.png)
-
 # Papillon
 
 React UI Components styled with [Primer](https://primer.style/).
