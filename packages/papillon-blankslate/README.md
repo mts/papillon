@@ -30,7 +30,7 @@ import Blankslate from 'papillon-blankslate';
 
 Blankslates are for when there is a lack of content within a page or section. Use them as placeholders to tell users why something isn't there. Be sure to provide an action to add content as well.
 
-### Basic example
+### Basic
 
 Wrap some content in the outer `.blankslate` wrapper to give it the blankslate appearance.
 
