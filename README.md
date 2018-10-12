@@ -41,6 +41,13 @@ React UI Components styled with [Primer](https://primer.style/).
 
 </details>
 
+### 🐙 Breadcrumb
+
+<details>
+<summary>View contents</summary>
+
+* [`Breadcrumb`](#breadcrumb)
+
 ---
 
 ## 🐳 Alerts
@@ -176,5 +183,44 @@ Check out how to use Papillon Labels with React 16, Webpack 4 and Babel 7 [here]
 
 ### NPM
 Get the latest papillon-labels [here](https://www.npmjs.com/package/papillon-labels)
+
+<br>[⬆ Back to top](#table-of-contents)
+
+---
+
+## 🐙 Breadcrumb
+
+### Install
+
+```bash
+$ npm install --save papillon-breadcrumb
+```
+
+### Import
+```javascript
+import BreadCrumb from 'papillon-breadcrumb';
+```
+
+### Use BreadCrumb
+```javascript
+const items = [
+  { href: '/business', text: 'Business' },
+  { href: '/business/customer', text: 'Customers' },
+  { href: '', text: 'MailChimp' },
+];
+```
+
+```html
+  <Breadcrumb items={items} selectedIndex={2} />
+```
+
+### Use all
+Find more flavours of BreadCrumb [here](https://github.com/mts/papillon/tree/master/packages/papillon-breadcrumb).
+
+### Webpack Babel Sample
+Check out how to use Papillon BreadCrumb with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-breadcrumb/webpack-babel-sample)
+
+### NPM
+Get the latest papillon-breadcrumb [here](https://www.npmjs.com/package/papillon-breadcrumb)
 
 <br>[⬆ Back to top](#table-of-contents)
