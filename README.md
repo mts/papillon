@@ -80,7 +80,7 @@ import { FlashAlert, FlashMessages } from 'papillon-alerts';
 ```
 
 ### Use all
-Find more flavours of FlashAlert and FlashMessages [here](https://github.com/mts/papillon/tree/master/packages/papillon-alerts).
+Find more flavours of FlashAlert and FlashMessages [here](https://github.com/mts/papillon/tree/master/packages/papillon-alerts)
 
 ### Webpack Babel Sample
 Check out how to use Papillon Alerts with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-alerts/webpack-babel-sample)
@@ -111,7 +111,7 @@ import Button from 'papillon-buttons';
 ```
 
 ### Use all
-Find more flavours of Button [here](https://github.com/mts/papillon/tree/master/packages/papillon-buttons).
+Find more flavours of Button [here](https://github.com/mts/papillon/tree/master/packages/papillon-buttons)
 
 ### Webpack Babel Sample
 Check out how to use Papillon Buttons with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-buttons/webpack-babel-sample)
@@ -145,7 +145,7 @@ import Blankslate from 'papillon-blankslate';
 ```
 
 ### Use all
-Find more flavours of Blankslate [here](https://github.com/mts/papillon/tree/master/packages/papillon-blankslate).
+Find more flavours of Blankslate [here](https://github.com/mts/papillon/tree/master/packages/papillon-blankslate)
 
 ### Webpack Babel Sample
 Check out how to use Papillon Blankslate with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-blankslate/webpack-babel-sample)
@@ -176,7 +176,7 @@ import Label from 'papillon-labels';
 ```
 
 ### Use all
-Find more flavours of Label [here](https://github.com/mts/papillon/tree/master/packages/papillon-labels).
+Find more flavours of Label [here](https://github.com/mts/papillon/tree/master/packages/papillon-labels)
 
 ### Webpack Babel Sample
 Check out how to use Papillon Labels with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-labels/webpack-babel-sample)
@@ -215,7 +215,7 @@ const items = [
 ```
 
 ### Use all
-Find more flavours of BreadCrumb [here](https://github.com/mts/papillon/tree/master/packages/papillon-breadcrumb).
+Find more flavours of BreadCrumb [here](https://github.com/mts/papillon/tree/master/packages/papillon-breadcrumb)
 
 ### Webpack Babel Sample
 Check out how to use Papillon BreadCrumb with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-breadcrumb/webpack-babel-sample)
