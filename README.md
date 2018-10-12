@@ -32,6 +32,15 @@ React UI Components styled with [Primer](https://primer.style/).
 
 </details>
 
+### 🐋 Labels
+
+<details>
+<summary>View contents</summary>
+
+* [`Label`](#label)
+
+</details>
+
 ---
 
 ## 🐳 Alerts
@@ -67,10 +76,10 @@ import { FlashAlert, FlashMessages } from 'papillon-alerts';
 Find more flavours of FlashAlert and FlashMessages [here](https://github.com/mts/papillon/tree/master/packages/papillon-alerts).
 
 ### Webpack Babel Sample
-[Use Papillon Alerts with React 16, Webpack 4 and Babel 7](https://github.com/mts/papillon/tree/master/packages/papillon-alerts/webpack-babel-sample)
+Check out how to use Papillon Alerts with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-alerts/webpack-babel-sample)
 
 ### NPM
-[Get the latest papillon-alerts](https://www.npmjs.com/package/papillon-alerts)
+Get the latest papillon-alerts [here](https://www.npmjs.com/package/papillon-alerts)
 
 <br>[⬆ Back to top](#table-of-contents)
 
@@ -98,10 +107,10 @@ import Button from 'papillon-buttons';
 Find more flavours of Button [here](https://github.com/mts/papillon/tree/master/packages/papillon-buttons).
 
 ### Webpack Babel Sample
-[Use Papillon Buttons with React 16, Webpack 4 and Babel 7](https://github.com/mts/papillon/tree/master/packages/papillon-buttons/webpack-babel-sample)
+Check out how to use Papillon Buttons with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-buttons/webpack-babel-sample)
 
 ### NPM
-[Get the latest papillon-buttons](https://www.npmjs.com/package/papillon-buttons)
+Get the latest papillon-buttons [here](https://www.npmjs.com/package/papillon-buttons)
 
 <br>[⬆ Back to top](#table-of-contents)
 
@@ -132,9 +141,40 @@ import Blankslate from 'papillon-blankslate';
 Find more flavours of Blankslate [here](https://github.com/mts/papillon/tree/master/packages/papillon-blankslate).
 
 ### Webpack Babel Sample
-[Use Papillon Blankslate with React 16, Webpack 4 and Babel 7](https://github.com/mts/papillon/tree/master/packages/papillon-blankslate/webpack-babel-sample)
+Check out how to use Papillon Blankslate with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-blankslate/webpack-babel-sample)
 
 ### NPM
-[Get the latest papillon-blankslate](https://www.npmjs.com/package/papillon-blankslate)
+Get the latest papillon-blankslate [here](https://www.npmjs.com/package/papillon-blankslate)
+
+<br>[⬆ Back to top](#table-of-contents)
+
+---
+
+## 🐋 Labels
+
+### Install
+
+```bash
+$ npm install --save papillon-labels
+```
+
+### Import
+```javascript
+import Label from 'papillon-labels';
+```
+
+### Use Label
+```html
+  <Label type="label" className="bg-blue">default label</Label>
+```
+
+### Use all
+Find more flavours of Label [here](https://github.com/mts/papillon/tree/master/packages/papillon-labels).
+
+### Webpack Babel Sample
+Check out how to use Papillon Labels with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-labels/webpack-babel-sample)
+
+### NPM
+Get the latest papillon-labels [here](https://www.npmjs.com/package/papillon-labels)
 
 <br>[⬆ Back to top](#table-of-contents)
