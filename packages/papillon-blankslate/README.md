@@ -67,7 +67,7 @@ Narrows the blankslate container to not occupy the entire available width.
   </Blankslate>
 ```
 
-###Capped
+### Capped
 
 Removes the `border-radius` on the top corners.
 
