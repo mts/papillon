@@ -16,7 +16,10 @@ $ npm install --save papillon-blankslate
 ```
 
 ## Webpack Babel Sample
-[You can use it with React 16, Webpack 4 and Babel 7](https://github.com/mts/papillon/tree/master/packages/papillon-blankslate/webpack-babel-sample)
+Check out how to use Papillon Blankslate with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-blankslate/webpack-babel-sample)
+
+## NPM
+Get the latest papillon-blankslate [here](https://www.npmjs.com/package/papillon-blankslate)
 
 ## Usage
 

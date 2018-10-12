@@ -1,11 +1,11 @@
 {
-  "name": "papillon-labels-webpack-babel-sample",
+  "name": "papillon-breadcrumb-webpack-babel-sample",
   "version": "1.0.0",
-  "description": "papillon-labels webpack babel sample",
+  "description": "papillon-breadcrumb webpack babel sample",
   "homepage": "https://github.com/mts/papillon",
-  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-labels/webpack-babel-sample",
+  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-breadcrumb/webpack-babel-sample",
   "keywords": [
-    "labels",
+    "breadcrumb",
     "papillon",
     "primer",
     "css",
@@ -13,7 +13,7 @@
     "github",
     "design-system",
     "component-library",
-    "papillon-labels",
+    "papillon-breadcrumb",
     "webpack",
     "babel"
   ],
@@ -35,7 +35,7 @@
     "webpack-dev-server": "^3.1.8"
   },
   "dependencies": {
-    "papillon-labels": "^1.0.35",
+    "papillon-breadcrumb": "^1.0.31",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   }
