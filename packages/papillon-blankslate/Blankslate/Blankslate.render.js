@@ -32,6 +32,13 @@ const blankslateCapped = (
   </Blankslate>
 );
 
+const blankslateSpacious = (
+  <Blankslate className="blankslate-spacious">
+    <h3>This is a blank slate</h3>
+    <p>Use it to provide information when no dynamic content exists.</p>
+  </Blankslate>
+);
+
 const blankslateLarge = (
   <Blankslate className="blankslate-large">
     <h3>This is a blank slate</h3>
@@ -51,6 +58,7 @@ export {
   blankslateIcon,
   blankslateNarrow,
   blankslateCapped,
+  blankslateSpacious,
   blankslateLarge,
   blankslateCleanBackground,
 };

@@ -5,14 +5,14 @@ import Octicon, { getIconByName } from '@githubprimer/octicons-react';
 
 ReactDOM.render(
   <div>
-    <h3 className="pl-4">flashAlertDefault</h3>
+    <h3 className="pl-4">Default</h3>
     <div className='p-4'>
       <FlashAlert>
         Flash message goes here.
       </FlashAlert>
     </div>
 
-    <h3 className="pl-4">multipleParagraphs</h3>
+    <h3 className="pl-4">Multiple paragraphs</h3>
     <div className='p-4'>
       <FlashAlert>
         <p>This is a longer flash message in it&apos;s own paragraph. It ends up looking something like this. If we keep adding more text, it&apos;ll eventually wrap to a new line.</p>
@@ -20,35 +20,35 @@ ReactDOM.render(
       </FlashAlert>
     </div>
 
-    <h3 className="pl-4">flashWarn</h3>
+    <h3 className="pl-4">Warn</h3>
     <div className='p-4'>
       <FlashAlert className="flash-warn">
         Flash message goes here.
       </FlashAlert>
     </div>
 
-    <h3 className="pl-4">flashError</h3>
+    <h3 className="pl-4">Error</h3>
     <div className='p-4'>
       <FlashAlert className="flash-error">
         Flash message goes here.
       </FlashAlert>
     </div>
 
-    <h3 className="pl-4">flashSuccess</h3>
+    <h3 className="pl-4">Success</h3>
     <div className='p-4'>
       <FlashAlert className="flash-success">
         Flash message goes here.
       </FlashAlert>
     </div>
 
-    <h3 className="pl-4">flashIcon</h3>
+    <h3 className="pl-4">With icon</h3>
     <div className='p-4'>
       <FlashAlert icon="alert">
         Flash message with an icon goes here.
       </FlashAlert>
     </div>
 
-    <h3 className="pl-4">withDismiss</h3>
+    <h3 className="pl-4">With dismiss</h3>
     <div className='p-4'>
       <FlashAlert>
           <button
@@ -62,7 +62,7 @@ ReactDOM.render(
       </FlashAlert>
     </div>
 
-    <h3 className="pl-4">withActionButton</h3>
+    <h3 className="pl-4">With action button</h3>
     <div className='p-4'>
       <FlashAlert>
         <button
@@ -76,7 +76,7 @@ ReactDOM.render(
       </FlashAlert>
     </div>
 
-    <h3 className="pl-4">fullWidthFlash</h3>
+    <h3 className="pl-4">Full width</h3>
     <div className='p-4'>
       <div className="container-lg">
         <FlashAlert className="flash-full">
@@ -85,7 +85,7 @@ ReactDOM.render(
       </div>
     </div>
 
-    <h3 className="pl-4">flashMessages</h3>
+    <h3 className="pl-4">Messages</h3>
     <div className='p-4'>
       <FlashMessages>
         <FlashAlert>

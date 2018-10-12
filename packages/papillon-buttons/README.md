@@ -9,10 +9,10 @@ This repository is a module of the full [papillon][papillon] repository.
 
 ## Install
 
-This repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-buttons` with this command.
+This repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `papillon-buttons` with this command.
 
 ```
-$ npm install --save primer-buttons
+$ npm install --save papillon-buttons
 ```
 
 ## Webpack Babel Sample

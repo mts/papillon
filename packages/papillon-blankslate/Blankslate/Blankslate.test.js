@@ -3,6 +3,7 @@ import {
   blankslateIcon,
   blankslateNarrow,
   blankslateCapped,
+  blankslateSpacious,
   blankslateLarge,
   blankslateCleanBackground,
 } from './Blankslate.render';
@@ -32,6 +33,10 @@ describe('<Blankslate />', () => {
 
     test('must match blankslateCapped', () => {
       expect(global.renderToJSON(blankslateCapped)).toMatchSnapshot();
+    });
+
+    test('must match blankslateSpacious', () => {
+      expect(global.renderToJSON(blankslateSpacious)).toMatchSnapshot();
     });
 
     test('must match blankslateLarge', () => {
