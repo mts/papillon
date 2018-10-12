@@ -6,6 +6,7 @@ import {
   blankslateIcon,
   blankslateNarrow,
   blankslateCapped,
+  blankslateSpacious,
   blankslateLarge,
   blankslateCleanBackground,
 } from './Blankslate.render';
@@ -19,6 +20,8 @@ storiesOf('Blankslate/Blankslate', module)
       (withInfo('blankslate-narrow')(() => blankslateNarrow)))
   .add('blankslate-capped', withNotes('Must render Blankslate ~ blankslate-capped')
       (withInfo('blankslate-capped')(() => blankslateCapped)))
+  .add('blankslate-spacious', withNotes('Must render Blankslate ~ blankslate-spacious')
+      (withInfo('blankslate-spacious')(() => blankslateSpacious)))
   .add('blankslate-large', withNotes('Must render Blankslate ~ blankslate-large')
       (withInfo('blankslate-large')(() => blankslateLarge)))
   .add('blankslate-clean-background', withNotes('Must render Blankslate ~ blankslate-clean-background')
