@@ -1,6 +1,6 @@
 {
   "name": "papillon-base",
-  "version": "1.0.31",
+  "version": "1.0.35",
   "description": "papillon-base react components for primer-base",
   "homepage": "https://github.com/mts/papillon",
   "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-base",
