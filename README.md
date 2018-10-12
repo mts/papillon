@@ -23,6 +23,15 @@ React UI Components styled with [Primer](https://primer.style/).
 
 </details>
 
+### 🐬 Blankslate
+
+<details>
+<summary>View contents</summary>
+
+* [`Blankslate`](#blankslate)
+
+</details>
+
 ---
 
 ## 🐳 Alerts
@@ -61,7 +70,7 @@ Find more flavours of FlashAlert and FlashMessages [here](https://github.com/mts
 [Use Papillon Alerts with React 16, Webpack 4 and Babel 7](https://github.com/mts/papillon/tree/master/packages/papillon-alerts/webpack-babel-sample)
 
 ### NPM
-[Latest papillon-alerts](https://www.npmjs.com/package/papillon-alerts)
+[Get the latest papillon-alerts](https://www.npmjs.com/package/papillon-alerts)
 
 <br>[⬆ Back to top](#table-of-contents)
 
@@ -92,6 +101,40 @@ Find more flavours of Button [here](https://github.com/mts/papillon/tree/master/
 [Use Papillon Buttons with React 16, Webpack 4 and Babel 7](https://github.com/mts/papillon/tree/master/packages/papillon-buttons/webpack-babel-sample)
 
 ### NPM
-[Latest papillon-buttons](https://www.npmjs.com/package/papillon-buttons)
+[Get the latest papillon-buttons](https://www.npmjs.com/package/papillon-buttons)
+
+<br>[⬆ Back to top](#table-of-contents)
+
+---
+
+## 🐬 Blankslate
+
+### Install
+
+```bash
+$ npm install --save papillon-blankslate
+```
+
+### Import
+```javascript
+import Blankslate from 'papillon-blankslate';
+```
+
+### Use Blankslate
+```html
+  <Blankslate>
+    <h3>This is a blank slate</h3>
+    <p>Use it to provide information when no dynamic content exists.</p>
+  </Blankslate>
+```
+
+### Use all
+Find more flavours of Blankslate [here](https://github.com/mts/papillon/tree/master/packages/papillon-blankslate).
+
+### Webpack Babel Sample
+[Use Papillon Blankslate with React 16, Webpack 4 and Babel 7](https://github.com/mts/papillon/tree/master/packages/papillon-blankslate/webpack-babel-sample)
+
+### NPM
+[Get the latest papillon-blankslate](https://www.npmjs.com/package/papillon-blankslate)
 
 <br>[⬆ Back to top](#table-of-contents)
