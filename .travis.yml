@@ -7,6 +7,6 @@ notifications:
 node_js:
   - '10'
 before_script:
-  - npm run build:release
+  - npm run before:script
 script:
-  - npm run lint && npm run test
+  - npm run script

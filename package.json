@@ -18,13 +18,15 @@
     "build:develop": "webpack --config webpack.config.babel.js",
     "build:release": "npm run build:packages && npm run build-storybook:release",
     "build:packages": "set NODE_ENV=production && webpack --config webpack.config.babel.js",
-    "bootstrap": "set NODE_ENV=development && lerna bootstrap",
+    "bootstrap": "lerna bootstrap",
     "release": "npm run build:release && lerna publish",
-    "deploy": "npm run build:release && gh-pages -d .storybook-static"
+    "deploy": "npm run build:release && gh-pages -d .storybook-static",
+    "before:script": "npm run bootstrap && npm run build:release",
+    "script": "npm run lint && npm run test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mts/papillon.git"
+    "url": "git+https://github.com/mts/papillon.git"
   },
   "bugs": {
     "url": "https://github.com/mts/papillon/issues"
