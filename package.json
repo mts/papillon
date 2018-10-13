@@ -20,9 +20,7 @@
     "build:packages": "set NODE_ENV=production && webpack --config webpack.config.babel.js",
     "bootstrap": "set NODE_ENV=development && lerna bootstrap",
     "release": "npm run build:release && lerna publish",
-    "deploy": "npm run build:release && gh-pages -d .storybook-static",
-    "travis-deploy-once": "travis-deploy-once",
-    "semantic-release": "semantic-release"
+    "deploy": "npm run build:release && gh-pages -d .storybook-static"
   },
   "repository": {
     "type": "git",
@@ -103,9 +101,6 @@
     "stylelint": "^9.6.0",
     "stylelint-order": "^1.0.0",
     "webpack": "^3.12.0",
-    "webpack-bundle-analyzer": "^3.0.2",
-    "travis-deploy-once": "^5.0.9",
-    "semantic-release": "^15.9.17"
-  },
-  "version": "0.0.0-development"
+    "webpack-bundle-analyzer": "^3.0.2"
+  }
 }
