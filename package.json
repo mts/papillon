@@ -15,14 +15,11 @@
     "lint": "eslint packages/**/**/*.js --fix",
     "lint:style": "stylelint packages/**/**/*.scss --fix",
     "lint:staged": "lint-staged",
-    "build:develop": "webpack --config webpack.config.babel.js",
-    "build:release": "npm run build:packages && npm run build-storybook:release",
-    "build:packages": "set NODE_ENV=production && webpack --config webpack.config.babel.js",
     "bootstrap": "lerna bootstrap",
-    "release": "npm run build:release && lerna publish",
-    "deploy": "npm run build:release && gh-pages -d .storybook-static",
-    "before:script": "npm run bootstrap && npm run build:release",
-    "script": "npm run lint && npm run test"
+    "build:develop": "webpack --config webpack.config.babel.js",
+    "build:release": "set NODE_ENV=production && webpack --config webpack.config.babel.js && npm run build-storybook:release",
+    "release": "lerna publish",
+    "deploy": "npm run build:release && gh-pages -d .storybook-static"
   },
   "repository": {
     "type": "git",
