@@ -7,6 +7,8 @@ notifications:
 node_js:
   - '10'
 before_script:
-  - npm run bootstrap && npm run build:release
+  - npm run bootstrap
+  - npm run build:release
 script:
-  - npm run lint && npm run test
+  - npm run lint
+  - npm run test
