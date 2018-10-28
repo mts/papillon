@@ -1,7 +1,9 @@
 # Papillon Labels
 
-[![npm version](https://img.shields.io/npm/v/papillon-labels.svg)](https://www.npmjs.org/package/papillon-labels)
-[![Build Status](https://travis-ci.org/mts/papillon.svg?branch=master)](https://travis-ci.org/mts/papillon)
+[![travis build](https://img.shields.io/travis/mts/papillon.svg?style=flat-square)](https://travis-ci.org/mts/papillon)
+[![version](https://img.shields.io/npm/v/papillon-labels.svg?style=flat-square)](http://npm.im/papillon-labels)
+[![downloads](https://img.shields.io/npm/dm/papillon-labels.svg?style=flat-square)](http://npm-stat.com/charts.html?package=papillon-labels&from=2018-10-13)
+[![MIT License](https://img.shields.io/npm/l/papillon-labels.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 > Labels add metadata or indicate status of items and navigational elements.
 
