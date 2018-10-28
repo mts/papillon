@@ -1,5 +1,10 @@
 # Papillon
 
+[![travis build](https://img.shields.io/travis/mts/papillon.svg?style=flat-square)](https://travis-ci.org/mts/papillon)
+[![version](https://img.shields.io/npm/v/papillon-prime.svg?style=flat-square)](http://npm.im/papillon-prime)
+[![downloads](https://img.shields.io/npm/dm/papillon-prime.svg?style=flat-square)](http://npm-stat.com/charts.html?package=papillon-prime&from=2018-10-13)
+[![MIT License](https://img.shields.io/npm/l/papillon-prime.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+
 React UI Components styled with [Primer](https://primer.style/).
 
 ## Table of Contents

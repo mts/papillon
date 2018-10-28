@@ -1,6 +1,6 @@
 {
   "name": "papillon-alerts",
-  "version": "1.0.36",
+  "version": "1.0.38",
   "description": "papillon-alerts react components for primer-alerts",
   "homepage": "https://github.com/mts/papillon",
   "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-alerts",
@@ -19,5 +19,6 @@
   "author": "MTS",
   "dependencies": {
     "primer": "^10.8.1"
-  }
+  },
+  "gitHead": "e6d990e7545978926a0b663ff5ceca2ccaacfc53"
 }

@@ -1,7 +1,9 @@
 # Papillon Alerts
 
-[![npm version](https://img.shields.io/npm/v/papillon-alerts.svg)](https://www.npmjs.org/package/papillon-alerts)
-[![Build Status](https://travis-ci.org/mts/papillon.svg?branch=master)](https://travis-ci.org/mts/papillon)
+[![travis build](https://img.shields.io/travis/mts/papillon.svg?style=flat-square)](https://travis-ci.org/mts/papillon)
+[![version](https://img.shields.io/npm/v/papillon-alerts.svg?style=flat-square)](http://npm.im/papillon-alerts)
+[![downloads](https://img.shields.io/npm/dm/papillon-alerts.svg?style=flat-square)](http://npm-stat.com/charts.html?package=papillon-alerts&from=2018-10-13)
+[![MIT License](https://img.shields.io/npm/l/papillon-alerts.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 > Flash messages, or alerts, inform users of successful or pending actions. Use them sparingly. Don’t show more than one at a time.
 

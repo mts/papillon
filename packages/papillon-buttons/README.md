@@ -1,7 +1,9 @@
 # Papillon Buttons
 
-[![npm version](https://img.shields.io/npm/v/papillon-buttons.svg)](https://www.npmjs.org/package/papillon-buttons)
-[![Build Status](https://travis-ci.org/mts/papillon.svg?branch=master)](https://travis-ci.org/mts/papillon)
+[![travis build](https://img.shields.io/travis/mts/papillon.svg?style=flat-square)](https://travis-ci.org/mts/papillon)
+[![version](https://img.shields.io/npm/v/papillon-buttons.svg?style=flat-square)](http://npm.im/papillon-buttons)
+[![downloads](https://img.shields.io/npm/dm/papillon-buttons.svg?style=flat-square)](http://npm-stat.com/charts.html?package=papillon-buttons&from=2018-10-13)
+[![MIT License](https://img.shields.io/npm/l/papillon-buttons.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 > Buttons are used for actions, like in forms, while textual hyperlinks are used for destinations, or moving from one page to another.
 

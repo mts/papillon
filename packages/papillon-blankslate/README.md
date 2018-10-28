@@ -1,7 +1,9 @@
 # Papillon Blankslate
 
-[![npm version](https://img.shields.io/npm/v/papillon-blankslate.svg)](https://www.npmjs.org/package/papillon-blankslate)
-[![Build Status](https://travis-ci.org/mts/papillon.svg?branch=master)](https://travis-ci.org/mts/papillon)
+[![travis build](https://img.shields.io/travis/mts/papillon.svg?style=flat-square)](https://travis-ci.org/mts/papillon)
+[![version](https://img.shields.io/npm/v/papillon-blankslate.svg?style=flat-square)](http://npm.im/papillon-blankslate)
+[![downloads](https://img.shields.io/npm/dm/papillon-blankslate.svg?style=flat-square)](http://npm-stat.com/charts.html?package=papillon-blankslate&from=2018-10-13)
+[![MIT License](https://img.shields.io/npm/l/papillon-blankslate.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 > Blankslates are for when there is a lack of content within a page or section. Use them as placeholders to tell users why something isn’t there. Be sure to provide an action to add content as well.
 
