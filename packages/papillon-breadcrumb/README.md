@@ -1,7 +1,9 @@
 # Papillon Breadcrumb
 
-[![npm version](https://img.shields.io/npm/v/papillon-breadcrumb.svg)](https://www.npmjs.org/package/papillon-breadcrumb)
-[![Build Status](https://travis-ci.org/mts/papillon.svg?branch=master)](https://travis-ci.org/mts/papillon)
+[![travis build](https://img.shields.io/travis/mts/papillon.svg?style=flat-square)](https://travis-ci.org/mts/papillon)
+[![version](https://img.shields.io/npm/v/papillon-breadcrumb.svg?style=flat-square)](http://npm.im/papillon-breadcrumb)
+[![downloads](https://img.shields.io/npm/dm/papillon-breadcrumb.svg?style=flat-square)](http://npm-stat.com/charts.html?package=papillon-breadcrumb&from=2018-10-13)
+[![MIT License](https://img.shields.io/npm/l/papillon-breadcrumb.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 > Breadcrumb navigation for GitHub's pages with parents / grandparents.
 
