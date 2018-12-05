@@ -37,7 +37,7 @@
     "lint:scss": "stylelint lib/*.scss --fix",
     "lint:js": "eslint lib/*.js --fix",
     "lint:staged": "lint-staged",
-    "ci": "npm-run-all lint test build"
+    "ci": "npm-run-all lint build test"
   },
   "dependencies": {
     "primer": "10.10.2"
