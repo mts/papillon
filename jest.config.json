@@ -1,5 +1,5 @@
 {
-  "testRegex": ".spec\\.js$",
+  "testRegex": ".test.tmp\\.js$",
   "roots": [
     "<rootDir>"
   ],

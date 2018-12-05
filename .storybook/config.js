@@ -18,7 +18,7 @@ const setup = () => {
     </div>
   ));
 
-  const contexts = [require.context('../packages', true, /story.*\.js$/)];
+  const contexts = [require.context('../packages', true, /story.tmp.*\.js$/)];
 
   const loadStories = () => {
     contexts.forEach(context => {
