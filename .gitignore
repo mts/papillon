@@ -1,33 +1,6 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-
-# testing
-/coverage
-
-# misc
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Storybook
+node_modules
+.cache
+.npmrc
 .storybook-static
-
-# Build
-packages/**/*.tgz
-
-# Lib
-packages/**/lib/*.js
-packages/**/lib/*.js.map
-packages/**/lib/*.css
-packages/**/lib/*.css.map
-
-# Lerna
 lerna-debug.log
