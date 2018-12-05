@@ -4,6 +4,12 @@
   "scripts": {
     "build": "lerna run build --stream",
     "release": "lerna publish",
+    "uninstall-packages": "lerna run uninstall-packages --stream",
+    "install-packages": "lerna run install-packages --stream",
+    "reinstall-packages": "lerna run reinstall-packages --stream",
+    "uninstall-primer": "lerna run uninstall-primer --stream",
+    "install-primer": "lerna run install-primer --stream",
+    "reinstall-primer": "lerna run reinstall-primer --stream",
     "start-storybook-develop": "NODE_ENV=develop start-storybook -p 3003 -c ./.storybook/develop",
     "start-storybook-release": "NODE_ENV=release start-storybook -p 5005 -c ./.storybook/release",
     "build-storybook-develop": "NODE_ENV=develop build-storybook -c .storybook/develop -o .storybook-static",
