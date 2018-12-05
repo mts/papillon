@@ -8,6 +8,5 @@ node_js:
   - '10'
 before_script:
   - npm install
-  - npm run install-packages
 script:
   - npm run ci
