@@ -5,25 +5,6 @@ import {
 } from './CircleBadgeIcon.render'
 
 describe('<Avatar />', () => {
-  let wrapper
-
-  describe('Instance', () => {
-    test('must be an instance of CircleBadgeIcon', () => {
-      wrapper = renderMount(circleBadgeSmallIcon)
-      expect(wrapper.find('CircleBadgeIcon')).toHaveLength(1)
-    })
-
-    test('must be an instance of CircleBadgeIcon', () => {
-      wrapper = renderMount(circleBadgeMediumIcon)
-      expect(wrapper.find('CircleBadgeIcon')).toHaveLength(1)
-    })
-
-    test('must be an instance of CircleBadgeIcon', () => {
-      wrapper = renderMount(circleBadgeLargeIcon)
-      expect(wrapper.find('CircleBadgeIcon')).toHaveLength(1)
-    })
-  })
-
   describe('Snaphot', () => {
     test('must match circleBadgeSmallIcon', () => {
       expect(global.renderToJSON(circleBadgeSmallIcon)).toMatchSnapshot()

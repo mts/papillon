@@ -38,9 +38,9 @@ exports.entry = () => ({
 exports.output = () => ({
   output: {
     libraryTarget: 'umd',
-    library: 'PapillonAlerts',
+    library: 'PapillonAvatars',
     path: path.join(__dirname, './build'),
-    filename: 'papillon-alerts.js',
+    filename: 'papillon-avatars.js',
   },
 })
 
