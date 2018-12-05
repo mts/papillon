@@ -1,10 +1,10 @@
-import React from 'react';
-import Octicon, { getIconByName } from '@githubprimer/octicons-react';
-import { action } from '@storybook/addon-actions';
+import React from 'react'
+import Octicon, { getIconByName } from '@githubprimer/octicons-react'
+import { action } from '@storybook/addon-actions'
 
 const FlashAlert = process.env.NODE_ENV === 'develop'
   ? require('./FlashAlert').default
-  : require('../lib/papillon-alerts').FlashAlert;
+  : require('../../build/papillon-alerts').FlashAlert
 
 const flashAlertDefault = (
   <div className='p-4'>
@@ -12,7 +12,7 @@ const flashAlertDefault = (
       Flash message goes here.
     </FlashAlert>
   </div>
-);
+)
 
 const multipleParagraphs = (
   <div className='p-4'>
@@ -21,7 +21,7 @@ const multipleParagraphs = (
       <p>And this is another paragraph.</p>
     </FlashAlert>
   </div>
-);
+)
 
 const flashWarn = (
   <div className='p-4'>
@@ -29,7 +29,7 @@ const flashWarn = (
       Flash message goes here.
     </FlashAlert>
   </div>
-);
+)
 
 const flashError = (
   <div className='p-4'>
@@ -37,7 +37,7 @@ const flashError = (
       Flash message goes here.
     </FlashAlert>
   </div>
-);
+)
 
 const flashSuccess = (
   <div className='p-4'>
@@ -45,7 +45,7 @@ const flashSuccess = (
       Flash message goes here.
     </FlashAlert>
   </div>
-);
+)
 
 const flashIcon = (
   <div className='p-4'>
@@ -53,7 +53,7 @@ const flashIcon = (
       Flash message with an icon goes here.
     </FlashAlert>
   </div>
-);
+)
 
 const withDismiss = (
   // mts ~ js-flash-close does not exist
@@ -69,7 +69,7 @@ const withDismiss = (
         Dismissable flash message goes here.
     </FlashAlert>
   </div>
-);
+)
 
 const withActionButton = (
   <div className='p-4'>
@@ -84,7 +84,7 @@ const withActionButton = (
       Flash message with action here.
     </FlashAlert>
   </div>
-);
+)
 
 const fullWidthFlash = (
   <div className='p-4'>
@@ -94,7 +94,7 @@ const fullWidthFlash = (
       </FlashAlert>
     </div>
   </div>
-);
+)
 
 export {
   flashAlertDefault,
@@ -106,4 +106,4 @@ export {
   withDismiss,
   withActionButton,
   fullWidthFlash,
-};
+}

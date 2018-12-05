@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
 
 const FlashAlert = process.env.NODE_ENV === 'develop'
   ? require('../FlashAlert').default
-  : require('../lib/papillon-alerts').FlashAlert;
+  : require('../../build/papillon-alerts').FlashAlert
 
 const FlashMessages = process.env.NODE_ENV === 'develop'
   ? require('./FlashMessages').default
-  : require('../lib/papillon-alerts').FlashMessages;
+  : require('../../build/papillon-alerts').FlashMessages
 
 const flashMessages = (
   <div className='p-4'>
@@ -16,6 +16,6 @@ const flashMessages = (
       </FlashAlert>
     </FlashMessages>
   </div>
-);
+)
 
-export default flashMessages;
+export default flashMessages
