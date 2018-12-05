@@ -14,7 +14,7 @@ const setup = () => {
       name: `Papillon v${version}`,
       url: 'https://github.com/mts/papillon',
       showAddonPanel: true,
-      addonPanelInRight: false
+      addonPanelInRight: true
     }))
 
   addDecorator(story => (
