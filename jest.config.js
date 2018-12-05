@@ -1,10 +1,16 @@
+/* eslint prefer-destructuring: 0 */
+
 // https://github.com/FormidableLabs/enzyme-matchers/tree/master/packages
-import 'jest-enzyme'
+require('jest-enzyme')
 
-import renderer from 'react-test-renderer'
+const renderer = require('react-test-renderer')
 
-import Enzyme, { shallow, mount } from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
+const Enzyme = require('enzyme')
+
+const shallow = Enzyme.shallow
+const mount = Enzyme.mount
+
+const Adapter = require('enzyme-adapter-react-16')
 
 Enzyme.configure({ adapter: new Adapter() })
 
