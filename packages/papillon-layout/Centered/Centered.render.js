@@ -1,11 +1,13 @@
-import React from 'react';
+import React from 'react'
 
-const Centered = process.env.NODE_ENV === 'develop'
-  ? require('./Centered').default
-  : require('../lib/papillon-layout').Centered;
+// const Centered = process.env.NODE_ENV === 'develop'
+//   ? require('./Centered').default
+//   : require('../lib/papillon-layout').Centered;
+
+const Centered = require('./Centered').default
 
 const centered = (
   <Centered />
-);
+)
 
-export default centered;
+export default centered
