@@ -1,6 +1,5 @@
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import { withNotes } from '@storybook/addon-notes';
+import { storiesOf } from '@storybook/react'
+import { getInfo } from '../../../../.storybook/utility'
 import {
   flashAlertDefault,
   multipleParagraphs,
@@ -11,25 +10,25 @@ import {
   withDismiss,
   withActionButton,
   fullWidthFlash,
-} from './FlashAlert.render';
+} from './FlashAlert.render'
+
+const flashAlertDefaultInfo = getInfo('Default')
+const multipleParagraphsInfo = getInfo('Multiple paragraphs')
+const flashWarnInfo = getInfo('flash-warn')
+const flashErrorInfo = getInfo('flash-error')
+const flashSuccessInfo = getInfo('flash-success')
+const flashIconInfo = getInfo('flash-icon')
+const withDismissInfo = getInfo('with-dismiss')
+const withActionButtonInfo = getInfo('with-action-button')
+const fullWidthFlashInfo = getInfo('full-width-flash')
 
 storiesOf('Flash alerts/FlashAlert', module)
-  .add('Default', withNotes('Must render FlashAlert ~ Default')
-      (withInfo('Default')(() => flashAlertDefault)))
-  .add('Multiple paragraphs', withNotes('Must render FlashAlert ~ Multiple paragraphs')
-      (withInfo('Multiple paragraphs')(() => multipleParagraphs)))
-  .add('flash-warn', withNotes('Must render FlashAlert ~ flash-warn')
-    (withInfo('flash-warn')(() => flashWarn)))
-  .add('flash-error', withNotes('Must render FlashAlert ~ flash-error')
-    (withInfo('flash-error')(() => flashError)))
-  .add('flash-success', withNotes('Must render FlashAlert ~ flash-success')
-    (withInfo('flash-success')(() => flashSuccess)))
-  .add('flash-icon', withNotes('Must render FlashAlert ~ flash-icon')
-    (withInfo('flash-icon')(() => flashIcon)))
-  .add('with-dismiss', withNotes('Must render FlashAlert ~ flash-dismiss')
-    (withInfo('with-dismiss')(() => withDismiss)))
-  .add('with-action-button', withNotes('Must render FlashAlert ~ with-action-button')
-    (withInfo('with-action-button')(() => withActionButton)))
-  .add('full-width-flash', withNotes('Must render FlashAlert ~ full-width-flash')
-    (withInfo('full-width-flash')(() => fullWidthFlash)))
-;
+  .add(flashAlertDefaultInfo.text, () => flashAlertDefault, flashAlertDefaultInfo.parameters)
+  .add(multipleParagraphsInfo.text, () => multipleParagraphs, multipleParagraphsInfo.parameters)
+  .add(flashWarnInfo.text, () => flashWarn, flashWarnInfo.parameters)
+  .add(flashErrorInfo.text, () => flashError, flashErrorInfo.parameters)
+  .add(flashSuccessInfo.text, () => flashSuccess, flashSuccessInfo.parameters)
+  .add(flashIconInfo.text, () => flashIcon, flashIconInfo.parameters)
+  .add(withDismissInfo.text, () => withDismiss, withDismissInfo.parameters)
+  .add(withActionButtonInfo.text, () => withActionButton, withActionButtonInfo.parameters)
+  .add(fullWidthFlashInfo.text, () => fullWidthFlash, fullWidthFlashInfo.parameters)
