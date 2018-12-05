@@ -1,7 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { FlashAlert, FlashMessages } from 'papillon-alerts';
-import Octicon, { getIconByName } from '@githubprimer/octicons-react';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Octicon, { getIconByName } from '@githubprimer/octicons-react'
+// import { FlashAlert, FlashMessages } from 'papillon-alerts'
+import { FlashAlert, FlashMessages } from '../../build/papillon-alerts'
 
 ReactDOM.render(
   <div>
@@ -95,6 +96,6 @@ ReactDOM.render(
     </div>
   </div>,
   document.getElementById('app'),
-);
+)
 
-module.hot.accept();
+module.hot.accept()

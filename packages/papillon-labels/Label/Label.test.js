@@ -12,69 +12,69 @@ import {
   counter,
   counterInTabs,
   counterInBoxHeaders,
-} from './Label.render';
+} from './Label.render'
 
 describe('<Label />', () => {
-  let wrapper;
+  let wrapper
 
   describe('Instance', () => {
     test('must be an instance of Label', () => {
-      wrapper = renderMount(labelDefault);
-      expect(wrapper.find('Label')).toHaveLength(1);
-    });
-  });
+      wrapper = renderMount(labelDefault)
+      expect(wrapper.find('Label')).toHaveLength(1)
+    })
+  })
 
   describe('Snaphot', () => {
     test('must match labelDefault', () => {
-      expect(global.renderToJSON(labelDefault)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(labelDefault)).toMatchSnapshot()
+    })
 
     test('must match design', () => {
-      expect(global.renderToJSON(design)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(design)).toMatchSnapshot()
+    })
 
     test('must match labelThemeGray', () => {
-      expect(global.renderToJSON(labelThemeGray)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(labelThemeGray)).toMatchSnapshot()
+    })
 
     test('must match labelThemeDarkGray', () => {
-      expect(global.renderToJSON(labelThemeDarkGray)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(labelThemeDarkGray)).toMatchSnapshot()
+    })
 
     test('must match labelThemeOrange', () => {
-      expect(global.renderToJSON(labelThemeOrange)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(labelThemeOrange)).toMatchSnapshot()
+    })
 
     test('must match labelOutline', () => {
-      expect(global.renderToJSON(labelOutline)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(labelOutline)).toMatchSnapshot()
+    })
 
     test('must match labelOutlineGreen', () => {
-      expect(global.renderToJSON(labelOutlineGreen)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(labelOutlineGreen)).toMatchSnapshot()
+    })
 
     test('must match state', () => {
-      expect(global.renderToJSON(state)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(state)).toMatchSnapshot()
+    })
 
     test('must match stateThemes', () => {
-      expect(global.renderToJSON(stateThemes)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(stateThemes)).toMatchSnapshot()
+    })
 
     test('must match smallStates', () => {
-      expect(global.renderToJSON(smallStates)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(smallStates)).toMatchSnapshot()
+    })
 
     test('must match counter', () => {
-      expect(global.renderToJSON(counter)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(counter)).toMatchSnapshot()
+    })
 
     test('must match counterInTabs', () => {
-      expect(global.renderToJSON(counterInTabs)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(counterInTabs)).toMatchSnapshot()
+    })
 
     test('must match counterInBoxHeaders', () => {
-      expect(global.renderToJSON(counterInBoxHeaders)).toMatchSnapshot();
-    });
-  });
-});
+      expect(global.renderToJSON(counterInBoxHeaders)).toMatchSnapshot()
+    })
+  })
+})

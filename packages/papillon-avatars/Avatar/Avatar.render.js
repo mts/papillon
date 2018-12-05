@@ -1,19 +1,21 @@
-import React from 'react';
+import React from 'react'
 
-const Avatar = process.env.NODE_ENV === 'develop'
-  ? require('./Avatar').default
-  : require('../lib/papillon-avatars').Avatar;
+// const Avatar = process.env.NODE_ENV === 'develop'
+//   ? require('./Avatar').default
+//   : require('../lib/papillon-avatars').Avatar
 
-const srcAvatar = "https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png";
+const Avatar = require('./Avatar').default
+
+const srcAvatar = "https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png"
 
 const avatar = (
   <Avatar alt="basic" src={srcAvatar} width={72} height={72} />
-);
+)
 
 const avatarSmall = (
   <Avatar className="avatar-small" alt="small" src={srcAvatar} width={32}
 height={32} />
-);
+)
 
 const avatarStackMore = (
   <div className="AvatarStack AvatarStack--three-plus">
@@ -26,7 +28,7 @@ const avatarStackMore = (
       <Avatar height={20} alt="@octocat" src={srcAvatar} width={20} />
     </div>
   </div>
-);
+)
 
 const avatarStackThreePlus = (
     <div className="AvatarStack AvatarStack--three-plus">
@@ -36,9 +38,9 @@ const avatarStackThreePlus = (
         <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
       </div>
     </div>
-);
+)
 
-const href = 'https://github.com/mts/papillon/tree/master/packages/papillon-avatars/Avatar';
+const href = 'https://github.com/mts/papillon/tree/master/packages/papillon-avatars/Avatar'
 
 const avatarStackTwo = (
   <div className="AvatarStack AvatarStack--two">
@@ -51,7 +53,7 @@ const avatarStackTwo = (
       </a>
     </div>
   </div>
-);
+)
 
 const avatarStackRight = (
   <div className="AvatarStack AvatarStack--three-plus AvatarStack--right">
@@ -61,7 +63,7 @@ const avatarStackRight = (
       <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
     </div>
   </div>
-);
+)
 
 export {
   avatar,
@@ -70,4 +72,4 @@ export {
   avatarStackThreePlus,
   avatarStackTwo,
   avatarStackRight,
-};
+}

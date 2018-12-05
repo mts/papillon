@@ -1,40 +1,42 @@
-import React from 'react';
+import React from 'react'
 
-const Label = process.env.NODE_ENV === 'develop'
-  ? require('./Label').default
-  : require('../lib/papillon-labels').default;
+// const Label = process.env.NODE_ENV === 'develop'
+//   ? require('./Label').default
+//   : require('../lib/papillon-labels').default
+
+const Label = require('./Label').default
 
 const labelDefault = (
   <Label type="label" className="bg-blue">default label</Label>
-);
+)
 
 const design = (
   <Label type="label" className="bg-blue ml-1">design label</Label>
-);
+)
 
 const labelThemeGray = (
   <Label type="label" className="Label--gray">gray label</Label>
-);
+)
 
 const labelThemeDarkGray = (
   <Label type="label" className="Label--gray-darker">dark gray label</Label>
-);
+)
 
 const labelThemeOrange = (
   <Label type="label" className="Label--orange">orange label</Label>
-);
+)
 
 const labelOutline = (
   <Label type="label" className="Label--outline">outlined label</Label>
-);
+)
 
 const labelOutlineGreen = (
   <Label type="label" className="Label--outline Label--outline-green">green outlined label</Label>
-);
+)
 
 const state = (
   <Label type="state">Default</Label>
-);
+)
 
 const stateThemes = (
   // mts ~ Error when wrapped with React.Fragment instad of div
@@ -44,14 +46,14 @@ const stateThemes = (
     <Label type="state" className="State--red mr-1" icon="git-pull-request">Closed</Label>
     <Label type="state" className="State--purple" icon="git-merge">Merged</Label>
   </div>
-);
+)
 
 const smallStates = (
   <div>
     <Label type="state" className="State--green State--small mr-1" icon="issue-opened">Open</Label>
     <Label type="state" className="State--red State--small" icon="issue-closed">Closed</Label>
   </div>
-);
+)
 
 const counter = (
   <div>
@@ -59,7 +61,7 @@ const counter = (
     <Label type="counter" className="Counter--gray mr-1">32</Label>
     <Label type="counter" className="Counter--gray-light">64</Label>
   </div>
-);
+)
 
 const counterInTabs = (
   <div className="tabnav">
@@ -73,7 +75,7 @@ const counterInTabs = (
       </a>
     </nav>
   </div>
-);
+)
 
 const counterInBoxHeaders = (
   <div className="Box">
@@ -95,7 +97,7 @@ const counterInBoxHeaders = (
       </li>
     </ul>
   </div>
-);
+)
 
 export {
   labelDefault,
@@ -111,4 +113,4 @@ export {
   counter,
   counterInTabs,
   counterInBoxHeaders,
-};
+}

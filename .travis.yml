@@ -7,8 +7,7 @@ notifications:
 node_js:
   - '10'
 before_script:
-  - npm run bootstrap
-  - npm run build:release
+  - npm install
+  - npm run install-packages
 script:
-  - npm run lint
-  - npm run test
+  - npm run ci

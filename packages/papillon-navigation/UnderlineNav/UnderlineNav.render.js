@@ -1,12 +1,14 @@
-import React from 'react';
+import React from 'react'
 
-const UnderlineNav = process.env.NODE_ENV === 'develop'
-  ? require('./UnderlineNav').default
-  : require('../lib/papillon-navigation').UnderlineNav;
+// const UnderlineNav = process.env.NODE_ENV === 'develop'
+//   ? require('./UnderlineNav').default
+//   : require('../lib/papillon-navigation').UnderlineNav;
+
+const UnderlineNav = require('./UnderlineNav').default
 
 const aria = {
   label: 'Foo bar',
-};
+}
 
 const items = [
   { href: '#url',
@@ -29,9 +31,9 @@ const items = [
     title: 'Item 4',
     text: 'Item 4',
   },
-];
+]
 
-const counter = <span className="Counter">10</span>;
+const counter = <span className="Counter">10</span>
 
 const itemsWithIcons = [
   { href: '#url',
@@ -59,18 +61,18 @@ const itemsWithIcons = [
     text: 'Item 4',
     icon: 'tools',
   },
-];
+]
 
-const href = 'https://github.com/mts/papillon/tree/master/packages/papillon-navigation/UnderlineNav';
+const href = 'https://github.com/mts/papillon/tree/master/packages/papillon-navigation/UnderlineNav'
 
-const underlineNavAction = <div className="UnderlineNav-actions"><a href={href} className="btn">Button</a></div>;
+const underlineNavAction = <div className="UnderlineNav-actions"><a href={href} className="btn">Button</a></div>
 
 const underlineNav = (
   <UnderlineNav
     items={items}
     selectedIndex={0}
   />
-);
+)
 
 const underlineNavActions = (
   <UnderlineNav
@@ -79,7 +81,7 @@ const underlineNavActions = (
     action={underlineNavAction}
     selectedIndex={0}
   />
-);
+)
 
 const underlineNavRight = (
   <UnderlineNav
@@ -87,7 +89,7 @@ const underlineNavRight = (
     items={items}
     selectedIndex={0}
   />
-);
+)
 
 const underlineNavRightWithActions = (
   <UnderlineNav
@@ -97,7 +99,7 @@ const underlineNavRightWithActions = (
     action={underlineNavAction}
     selectedIndex={0}
   />
-);
+)
 
 const underlineNavWithCounter = (
   <UnderlineNav
@@ -105,7 +107,7 @@ const underlineNavWithCounter = (
     items={itemsWithIcons}
     selectedIndex={0}
   />
-);
+)
 
 export {
   underlineNav,
@@ -113,4 +115,4 @@ export {
   underlineNavRight,
   underlineNavRightWithActions,
   underlineNavWithCounter,
-};
+}
