@@ -1,6 +1,6 @@
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import { withNotes } from '@storybook/addon-notes';
+import { storiesOf } from '@storybook/react'
+import { withInfo } from '@storybook/addon-info'
+import { withNotes } from '@storybook/addon-notes'
 import {
   btn,
   link,
@@ -13,7 +13,7 @@ import {
   btnPurple,
   btnLarge,
   btnLink,
-} from './Button.render';
+} from './Button.render'
 
 storiesOf('Button/Button', module)
   .add('btn', withNotes('Must render Button ~ btn')
@@ -38,4 +38,4 @@ storiesOf('Button/Button', module)
       (withInfo('btn-large')(() => btnLarge)))
   .add('btn-link', withNotes('Must render Button ~ btn-link')
       (withInfo('btn-link')(() => btnLink)))
-;
+

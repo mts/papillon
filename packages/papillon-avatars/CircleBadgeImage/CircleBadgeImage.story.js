@@ -1,11 +1,11 @@
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import { withNotes } from '@storybook/addon-notes';
+import { storiesOf } from '@storybook/react'
+import { withInfo } from '@storybook/addon-info'
+import { withNotes } from '@storybook/addon-notes'
 import {
   circleBadgeSmallImage,
   circleBadgeMediumImage,
   circleBadgeLargeImage,
-} from './CircleBadgeImage.render';
+} from './CircleBadgeImage.render'
 
 storiesOf('Avatar/CircleBadgeImage', module)
   .add('CircleBadge-small-image', withNotes('Must render CircleBadge ~ CircleBadge-small-image')
@@ -14,4 +14,4 @@ storiesOf('Avatar/CircleBadgeImage', module)
       (withInfo('CircleBaMediumIedium-image')(() => circleBadgeMediumImage)))
   .add('CircleBadge-large-image', withNotes('Must render CircleBadge ~ CircleBadge-large-image')
       (withInfo('CircleBadge-large-image')(() => circleBadgeLargeImage)))
-;
+

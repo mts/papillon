@@ -1,13 +1,13 @@
-import React from 'react';
-import { generate } from 'shortid';
-import { arrayOf, shape, string, number, node } from 'prop-types';
-import MenuItem from '../MenuItem';
-import { isEmptyObject } from '../utility';
-import 'primer/index.scss';
+import React from 'react'
+import { generate } from 'shortid'
+import { arrayOf, shape, string, number, node } from 'prop-types'
+import MenuItem from '../MenuItem'
+import { isEmptyObject } from '../utility'
+import 'primer/index.scss'
 
 const Menu = ({ aria, heading, items, selectedIndex }) => {
-  const { label, labelledby } = aria;
-  const { title } = heading;
+  const { label, labelledby } = aria
+  const { title } = heading
 
   return (
     <nav className="menu" aria-label={label} aria-labelledby={labelledby}>
@@ -15,7 +15,7 @@ const Menu = ({ aria, heading, items, selectedIndex }) => {
         <span className="menu-heading" id="menu-heading">{title}</span>
       )}
       {items.map((item, index) => {
-        const { href, text, icon, html } = item;
+        const { href, text, icon, html } = item
 
         if (index !== selectedIndex) {
           return (
@@ -40,12 +40,12 @@ const Menu = ({ aria, heading, items, selectedIndex }) => {
         )
       })}
     </nav>
-  );
-};
+  )
+}
 
 Menu.defaultProps = {
   heading: {},
-};
+}
 
 Menu.propTypes = {
   aria: shape({
@@ -62,7 +62,7 @@ Menu.propTypes = {
     html: node,
   })).isRequired,
   selectedIndex: number.isRequired,
-};
+}
 
-export default Menu;
+export default Menu
 

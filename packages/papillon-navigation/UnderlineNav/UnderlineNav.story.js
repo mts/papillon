@@ -1,13 +1,13 @@
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import { withNotes } from '@storybook/addon-notes';
+import { storiesOf } from '@storybook/react'
+import { withInfo } from '@storybook/addon-info'
+import { withNotes } from '@storybook/addon-notes'
 import {
   underlineNav,
   underlineNavActions,
   underlineNavRight,
   underlineNavRightWithActions,
   underlineNavWithCounter,
-} from './UnderlineNav.render';
+} from './UnderlineNav.render'
 
 storiesOf('Navigation/UnderlineNav', module)
   .add('UnderlineNav', withNotes('Must render UnderlineNav ~ UnderlineNav')
@@ -20,4 +20,4 @@ storiesOf('Navigation/UnderlineNav', module)
       (withInfo('UnderlineNav--right with actions')(() => underlineNavRightWithActions)))
   .add('UnderlineNav with Counter', withNotes('Must render UnderlineNav ~ UnderlineNav with Counter')
       (withInfo('UnderlineNav with Counter')(() => underlineNavWithCounter)))
-;
+

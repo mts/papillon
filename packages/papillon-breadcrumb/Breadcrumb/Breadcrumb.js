@@ -1,13 +1,13 @@
-import React from 'react';
-import { generate } from 'shortid';
-import { arrayOf, shape, string, number } from 'prop-types';
-import 'primer/index.scss';
+import React from 'react'
+import { generate } from 'shortid'
+import { arrayOf, shape, string, number } from 'prop-types'
+import 'primer/index.scss'
 
 const Breadcrumb = ({ items, selectedIndex }) => (
   <nav aria-label="Breadcrumb">
     <ol>
       {items.map((item, index) => {
-        const { href, text } = item;
+        const { href, text } = item
 
         if (index !== selectedIndex) {
           return (
@@ -25,7 +25,7 @@ const Breadcrumb = ({ items, selectedIndex }) => (
       })}
     </ol>
   </nav>
-);
+)
 
 Breadcrumb.propTypes = {
   items: arrayOf(shape({
@@ -33,6 +33,6 @@ Breadcrumb.propTypes = {
     text: string,
   })).isRequired,
   selectedIndex: number.isRequired,
-};
+}
 
-export default Breadcrumb;
+export default Breadcrumb

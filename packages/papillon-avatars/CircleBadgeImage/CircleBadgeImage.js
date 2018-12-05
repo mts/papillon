@@ -1,6 +1,6 @@
-import React from 'react';
-import { string } from 'prop-types';
-import 'primer/index.scss';
+import React from 'react'
+import { string } from 'prop-types'
+import 'primer/index.scss'
 
 const CircleBadgeImage = ({ src, className, alt }) => (
   <img
@@ -8,16 +8,16 @@ const CircleBadgeImage = ({ src, className, alt }) => (
     className={`CircleBadge-icon ${className}`.trim()}
     alt={alt}
   />
-);
+)
 
 CircleBadgeImage.defaultProps = {
   className: '',
-};
+}
 
 CircleBadgeImage.propTypes = {
   src: string.isRequired,
   className: string,
   alt: string.isRequired,
-};
+}
 
-export default CircleBadgeImage;
+export default CircleBadgeImage

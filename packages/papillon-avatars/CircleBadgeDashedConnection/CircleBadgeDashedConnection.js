@@ -1,7 +1,7 @@
-import React from 'react';
-import { generate } from 'shortid';
-import { node } from 'prop-types';
-import 'primer/index.scss';
+import React from 'react'
+import { generate } from 'shortid'
+import { node } from 'prop-types'
+import 'primer/index.scss'
 
 const CircleBadgeDashedConnection = ({ children }) => (
   <div className="DashedConnection">
@@ -13,10 +13,10 @@ const CircleBadgeDashedConnection = ({ children }) => (
       ))}
     </ul>
   </div>
-);
+)
 
 CircleBadgeDashedConnection.propTypes = {
   children: node.isRequired,
-};
+}
 
-export default CircleBadgeDashedConnection;
+export default CircleBadgeDashedConnection

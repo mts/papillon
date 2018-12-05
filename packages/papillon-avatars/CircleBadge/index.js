@@ -1,3 +1,3 @@
-import CircleBadge from './CircleBadge';
+import CircleBadge from './CircleBadge'
 
-export default CircleBadge;
+export default CircleBadge

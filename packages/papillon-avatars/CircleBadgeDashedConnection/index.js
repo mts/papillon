@@ -1,3 +1,3 @@
-import CircleBadgeDashedConnection from './CircleBadgeDashedConnection';
+import CircleBadgeDashedConnection from './CircleBadgeDashedConnection'
 
-export default CircleBadgeDashedConnection;
+export default CircleBadgeDashedConnection

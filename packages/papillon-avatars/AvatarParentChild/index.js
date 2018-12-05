@@ -1,3 +1,3 @@
-import AvatarParentChild from './AvatarParentChild';
+import AvatarParentChild from './AvatarParentChild'
 
-export default AvatarParentChild;
+export default AvatarParentChild

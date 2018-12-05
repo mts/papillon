@@ -1,6 +1,6 @@
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import { withNotes } from '@storybook/addon-notes';
+import { storiesOf } from '@storybook/react'
+import { withInfo } from '@storybook/addon-info'
+import { withNotes } from '@storybook/addon-notes'
 import {
   avatar,
   avatarSmall,
@@ -8,7 +8,7 @@ import {
   avatarStackThreePlus,
   avatarStackTwo,
   avatarStackRight,
-} from './Avatar.render';
+} from './Avatar.render'
 
 storiesOf('Avatar/Avatar', module)
   .add('avatar', withNotes('Must render Avatar ~ avatar')
@@ -23,4 +23,4 @@ storiesOf('Avatar/Avatar', module)
       (withInfo('avatar-stack-two')(() => avatarStackTwo)))
   .add('avatar-stack-right', withNotes('Must render Avatar ~ avatar-stack-right')
       (withInfo('avatar-stack-right')(() => avatarStackRight)))
-;
+

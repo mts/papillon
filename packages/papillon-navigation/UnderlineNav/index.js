@@ -1,3 +1,3 @@
-import UnderlineNav from './UnderlineNav';
+import UnderlineNav from './UnderlineNav'
 
-export default UnderlineNav;
+export default UnderlineNav

@@ -1,11 +1,11 @@
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import { withNotes } from '@storybook/addon-notes';
+import { storiesOf } from '@storybook/react'
+import { withInfo } from '@storybook/addon-info'
+import { withNotes } from '@storybook/addon-notes'
 import {
   menu,
   menuWithIconAvatarCounter,
   menuWithHeading,
-} from './Menu.render';
+} from './Menu.render'
 
 storiesOf('Navigation/Menu', module)
   .add('Menu', withNotes('Must render Menu ~ Menu')
@@ -14,4 +14,4 @@ storiesOf('Navigation/Menu', module)
       (withInfo('Menu with octicons, avatars and counters')(() => menuWithIconAvatarCounter)))
   .add('Menu with heading', withNotes('Must render Menu ~ Menu with heading')
       (withInfo('Menu with heading')(() => menuWithHeading)))
-;
+

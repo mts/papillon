@@ -5,41 +5,41 @@ import {
   avatarStackThreePlus,
   avatarStackTwo,
   avatarStackRight,
-} from './Avatar.render';
+} from './Avatar.render'
 
 describe('<Avatar />', () => {
-  let wrapper;
+  let wrapper
 
   describe('Instance', () => {
     test('must be an instance of Avatar', () => {
-      wrapper = renderMount(avatar);
-      expect(wrapper.find('Avatar')).toHaveLength(1);
-    });
-  });
+      wrapper = renderMount(avatar)
+      expect(wrapper.find('Avatar')).toHaveLength(1)
+    })
+  })
 
   describe('Snaphot', () => {
     test('must match avatar', () => {
-      expect(global.renderToJSON(avatar)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(avatar)).toMatchSnapshot()
+    })
 
     test('must match avatarSmall', () => {
-      expect(global.renderToJSON(avatarSmall)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(avatarSmall)).toMatchSnapshot()
+    })
 
     test('must match avatarStackMore', () => {
-      expect(global.renderToJSON(avatarStackMore)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(avatarStackMore)).toMatchSnapshot()
+    })
 
     test('must match avatarStackThreePlus', () => {
-      expect(global.renderToJSON(avatarStackThreePlus)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(avatarStackThreePlus)).toMatchSnapshot()
+    })
 
     test('must match avatarStackTwo', () => {
-      expect(global.renderToJSON(avatarStackTwo)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(avatarStackTwo)).toMatchSnapshot()
+    })
 
     test('must match avatarStackRight', () => {
-      expect(global.renderToJSON(avatarStackRight)).toMatchSnapshot();
-    });
-  });
-});
+      expect(global.renderToJSON(avatarStackRight)).toMatchSnapshot()
+    })
+  })
+})

@@ -1,6 +1,6 @@
-import React from 'react';
-import { string, node } from 'prop-types';
-import 'primer/index.scss';
+import React from 'react'
+import { string, node } from 'prop-types'
+import 'primer/index.scss'
 
 const CircleBadge = ({ size, className, children }) => (
   <a
@@ -10,16 +10,16 @@ const CircleBadge = ({ size, className, children }) => (
   >
     {children}
   </a>
-);
+)
 
 CircleBadge.defaultProps = {
   className: '',
-};
+}
 
 CircleBadge.propTypes = {
   size: string.isRequired,
   className: string,
   children: node.isRequired,
-};
+}
 
-export default CircleBadge;
+export default CircleBadge
