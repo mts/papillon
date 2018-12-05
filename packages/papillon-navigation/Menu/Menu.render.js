@@ -1,21 +1,23 @@
-import React from 'react';
+import React from 'react'
 
-const Menu = process.env.NODE_ENV === 'develop'
-  ? require('./Menu').default
-  : require('../lib/papillon-navigation').Menu;
+// const Menu = process.env.NODE_ENV === 'develop'
+//   ? require('./Menu').default
+//   : require('../lib/papillon-navigation').Menu;
+
+const Menu = require('./Menu').default
 
 const menu = (() => {
   const aria = {
     label: 'Person settings',
     current: 'page',
-  };
+  }
 
   const items = [
     { href: '#url', text: 'Account' },
     { href: '#url', text: 'Profile' },
     { href: '#url', text: 'Emails' },
     { href: '#url', text: 'Notifications' },
-  ];
+  ]
 
   return (
     <Menu
@@ -24,13 +26,13 @@ const menu = (() => {
       selectedIndex={0}
     />
   )
-})();
+})()
 
 const menuWithIconAvatarCounter = (() => {
   const aria = {
     label: 'Person settings',
     current: 'page',
-  };
+  }
 
   const items = [
     { href: '#url',
@@ -51,7 +53,7 @@ const menuWithIconAvatarCounter = (() => {
       icon: 'radio-tower',
       html: <span className="Counter">3</span>,
     },
-  ];
+  ]
 
   return (
     <Menu
@@ -60,25 +62,25 @@ const menuWithIconAvatarCounter = (() => {
       selectedIndex={0}
     />
   )
-})();
+})()
 
 const menuWithHeading = (() => {
   const aria = {
     label: 'Person settings',
     current: 'page',
     labelledby: 'menu-heading',
-  };
+  }
 
   const heading = {
     title: 'Menu heading',
-  };
+  }
 
   const items = [
     { href: '#url', text: 'Account' },
     { href: '#url', text: 'Profile' },
     { href: '#url', text: 'Emails' },
     { href: '#url', text: 'Notifications' },
-  ];
+  ]
 
   return (
     <Menu
@@ -88,10 +90,10 @@ const menuWithHeading = (() => {
       selectedIndex={0}
     />
   )
-})();
+})()
 
 export {
   menu,
   menuWithIconAvatarCounter,
   menuWithHeading,
-};
+}
