@@ -1,9 +1,9 @@
 {
-  "name": "papillon-alerts-webpack-babel-sample",
+  "name": "papillon-alerts-explorer",
   "version": "1.0.0",
   "description": "papillon-alerts webpack babel sample",
   "homepage": "https://github.com/mts/papillon",
-  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-alerts/webpack-babel-sample",
+  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-alerts/explorer",
   "keywords": [
     "alerts",
     "papillon",

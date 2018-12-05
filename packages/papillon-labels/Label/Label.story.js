@@ -1,6 +1,6 @@
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import { withNotes } from '@storybook/addon-notes';
+import { storiesOf } from '@storybook/react'
+import { withInfo } from '@storybook/addon-info'
+import { withNotes } from '@storybook/addon-notes'
 import {
   labelDefault,
   design,
@@ -15,7 +15,7 @@ import {
   counter,
   counterInTabs,
   counterInBoxHeaders,
-} from './Label.render';
+} from './Label.render'
 
 storiesOf('Label/Label', module)
   .add('Default', withNotes('Must render Label ~ Default')
@@ -44,4 +44,4 @@ storiesOf('Label/Label', module)
       (withInfo('Counter in tabs')(() => counterInTabs)))
   .add('Counter in Box headers', withNotes('Must render Label ~ Counter in Box headers')
       (withInfo('Counter in Box headers')(() => counterInBoxHeaders)))
-;
+

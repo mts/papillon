@@ -1,7 +1,6 @@
-import FlashAlert from './FlashAlert';
-import FlashMessages from './FlashMessages';
+import { FlashAlert, FlashMessages } from './lib'
 
 export {
   FlashAlert,
   FlashMessages,
-};
+}

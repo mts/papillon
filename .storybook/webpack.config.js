@@ -3,8 +3,7 @@ const path = require('path');
 const modulesPath = path.resolve(__dirname, '../packages')
 
 module.exports = (config, env) => {
-
-  if (env === 'PRODUCTION') {
+  if (env !== 'development') {
     config.plugins = config.plugins
       .filter(plugin => plugin.constructor.name !== 'UglifyJsPlugin')
   }
