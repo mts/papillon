@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FlashMessages /> Snaphot must match flashMessages 1`] = `
+<div
+  className="p-4"
+>
+  <div
+    className="flash-messages"
+  >
+    <div
+      className="flash"
+    >
+      Flash message goes here.
+    </div>
+  </div>
+</div>
+`;
