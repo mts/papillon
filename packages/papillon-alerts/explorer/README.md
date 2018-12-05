@@ -1,4 +1,4 @@
-# Papillon Alerts Webpack Babel Sample
+# Papillon Alerts Explorer
 
 ## Features
 
