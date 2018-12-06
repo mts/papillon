@@ -17,8 +17,8 @@ This repository is distributed with [npm][npm]. After [installing npm][install-n
 $ npm install --save papillon-buttons
 ```
 
-## Webpack Babel Sample
-Check out how to use Papillon Buttons with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-buttons/webpack-babel-sample)
+## Explorer
+Check out how to use Papillon Buttons with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-buttons/explorer)
 
 ## NPM
 Get the latest papillon-buttons [here](https://www.npmjs.com/package/papillon-buttons)

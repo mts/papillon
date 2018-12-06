@@ -1,9 +1,9 @@
 {
-  "name": "papillon-buttons-webpack-babel-sample",
+  "name": "papillon-buttons-explorer",
   "version": "1.0.0",
-  "description": "papillon-buttons webpack babel sample",
+  "description": "papillon-buttons explorer",
   "homepage": "https://github.com/mts/papillon",
-  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-buttons/webpack-babel-sample",
+  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-buttons/explorer",
   "keywords": [
     "buttons",
     "papillon",

@@ -1,4 +1,4 @@
-# Papillon Buttons Webpack Babel Sample
+# Papillon Buttons Explorer
 
 ## Features
 
