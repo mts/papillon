@@ -1,6 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Blankslate from 'papillon-blankslate';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Blankslate from 'papillon-blankslate'
 
 ReactDOM.render(
   <div>
@@ -61,6 +61,6 @@ ReactDOM.render(
     </div>
   </div>,
   document.getElementById('app'),
-);
+)
 
-module.hot.accept();
+module.hot.accept()
