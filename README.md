@@ -117,7 +117,7 @@ import { FlashAlert, FlashMessages } from 'papillon-alerts';
 Find more flavours of FlashAlert and FlashMessages [here](https://github.com/mts/papillon/tree/master/packages/papillon-alerts)
 
 ### Explorer
-Check out how to use Papillon Alerts with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-alerts/webpack-babel-sample)
+Check out how to use Papillon Alerts with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-alerts/explorer)
 
 ### NPM
 Get the latest papillon-alerts [here](https://www.npmjs.com/package/papillon-alerts)
@@ -148,7 +148,7 @@ import Button from 'papillon-buttons';
 Find more flavours of Button [here](https://github.com/mts/papillon/tree/master/packages/papillon-buttons)
 
 ### Explorer
-Check out how to use Papillon Buttons with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-buttons/webpack-babel-sample)
+Check out how to use Papillon Buttons with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-buttons/explorer)
 
 ### NPM
 Get the latest papillon-buttons [here](https://www.npmjs.com/package/papillon-buttons)
@@ -182,7 +182,7 @@ import Blankslate from 'papillon-blankslate';
 Find more flavours of Blankslate [here](https://github.com/mts/papillon/tree/master/packages/papillon-blankslate)
 
 ### Explorer
-Check out how to use Papillon Blankslate with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-blankslate/webpack-babel-sample)
+Check out how to use Papillon Blankslate with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-blankslate/explorer)
 
 ### NPM
 Get the latest papillon-blankslate [here](https://www.npmjs.com/package/papillon-blankslate)
@@ -213,7 +213,7 @@ import Label from 'papillon-labels';
 Find more flavours of Label [here](https://github.com/mts/papillon/tree/master/packages/papillon-labels)
 
 ### Explorer
-Check out how to use Papillon Labels with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-labels/webpack-babel-sample)
+Check out how to use Papillon Labels with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-labels/explorer)
 
 ### NPM
 Get the latest papillon-labels [here](https://www.npmjs.com/package/papillon-labels)
@@ -252,7 +252,7 @@ const items = [
 Find more flavours of BreadCrumb [here](https://github.com/mts/papillon/tree/master/packages/papillon-breadcrumb)
 
 ### Explorer
-Check out how to use Papillon BreadCrumb with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-breadcrumb/webpack-babel-sample)
+Check out how to use Papillon BreadCrumb with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-breadcrumb/explorer)
 
 ### NPM
 Get the latest papillon-breadcrumb [here](https://www.npmjs.com/package/papillon-breadcrumb)
