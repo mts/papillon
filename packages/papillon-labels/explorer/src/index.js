@@ -1,6 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Label from 'papillon-labels';
+import React from 'react'
+import ReactDOM from 'react-dom'
+// import Label from 'papillon-labels'
+import Label from '../../build/papillon-labels'
 
 ReactDOM.render(
   <div>
@@ -69,6 +70,6 @@ ReactDOM.render(
     </div>
   </div>,
   document.getElementById('app'),
-);
+)
 
-module.hot.accept();
+module.hot.accept()

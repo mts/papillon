@@ -1,9 +1,9 @@
 {
-  "name": "papillon-labels-webpack-babel-sample",
+  "name": "papillon-labels-explorer",
   "version": "1.0.0",
-  "description": "papillon-labels webpack babel sample",
+  "description": "papillon-labels explorer",
   "homepage": "https://github.com/mts/papillon",
-  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-labels/webpack-babel-sample",
+  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-labels/explorer",
   "keywords": [
     "labels",
     "papillon",
