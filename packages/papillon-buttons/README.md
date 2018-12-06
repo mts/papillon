@@ -11,6 +11,8 @@ This repository is a module of the full [papillon][papillon] repository.
 
 ## Install
 
+https://nodei.co/npm/papillon-buttons.png
+
 This repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `papillon-buttons` with this command.
 
 ```

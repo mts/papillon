@@ -11,6 +11,8 @@ This repository is a module of the full [papillon][papillon] repository.
 
 ## Install
 
+https://nodei.co/npm/papillon-labels.png
+
 This repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `papillon-labels` with this command.
 
 ```
