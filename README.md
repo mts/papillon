@@ -82,6 +82,8 @@
 
 * [`Breadcrumb`](#breadcrumb)
 
+</details>
+
 ---
 
 ## :octocat: Alerts
