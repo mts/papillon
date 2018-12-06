@@ -1,6 +1,8 @@
-import Centered from './Centered'
-import Container from './Container'
-import Grid from './Grid'
+import {
+  Centered,
+  Container,
+  Grid,
+} from './lib'
 
 export {
   Centered,
