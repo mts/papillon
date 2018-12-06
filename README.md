@@ -4,7 +4,7 @@
 
 <h1 align="center">Papillon Components</h1>
 
-<p align="center">React components for the [Primer Design System](https://primer.style/)</p>
+<p align="center">React components for the Primer Design System</p>
 
 <p align="center">
   <a aria-label="npm package" href="https://www.npmjs.com/package/papillon-prime">
