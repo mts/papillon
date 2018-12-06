@@ -22,7 +22,7 @@ const withDismissInfo = getInfo('with-dismiss')
 const withActionButtonInfo = getInfo('with-action-button')
 const fullWidthFlashInfo = getInfo('full-width-flash')
 
-storiesOf('Flash alerts/FlashAlert', module)
+storiesOf('Alerts/FlashAlert', module)
   .add(flashAlertDefaultInfo.text, () => flashAlertDefault, flashAlertDefaultInfo.parameters)
   .add(multipleParagraphsInfo.text, () => multipleParagraphs, multipleParagraphsInfo.parameters)
   .add(flashWarnInfo.text, () => flashWarn, flashWarnInfo.parameters)
