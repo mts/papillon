@@ -11,14 +11,16 @@ This repository is a module of the full [papillon][papillon] repository.
 
 ## Install
 
+https://nodei.co/npm/papillon-buttons.png
+
 This repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `papillon-buttons` with this command.
 
 ```
 $ npm install --save papillon-buttons
 ```
 
-## Webpack Babel Sample
-Check out how to use Papillon Buttons with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-buttons/webpack-babel-sample)
+## Explorer
+Check out how to use Papillon Buttons with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-buttons/explorer)
 
 ## NPM
 Get the latest papillon-buttons [here](https://www.npmjs.com/package/papillon-buttons)

@@ -1,9 +1,12 @@
 {
   "name": "papillon-prime",
   "version": "1.0.40",
-  "description": "papillon-prime react components for primer-prime",
+  "description": "Papillon Prime React components for Primer Prime",
   "homepage": "https://github.com/mts/papillon",
   "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-prime",
+  "main": "build/papillon-prime.js",
+  "author": "MTS",
+  "license": "MIT",
   "keywords": [
     "prime",
     "papillon",
@@ -14,11 +17,7 @@
     "design-system",
     "component-library"
   ],
-  "main": "lib/papillon-prime.js",
-  "license": "MIT",
-  "author": "MTS",
   "dependencies": {
-    "primer": "10.9.0"
-  },
-  "gitHead": "e6d990e7545978926a0b663ff5ceca2ccaacfc53"
+    "primer": "10.10.2"
+  }
 }

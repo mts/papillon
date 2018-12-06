@@ -1,5 +1,6 @@
-import Menu from './Menu'
-import UnderlineNav from './UnderlineNav'
+import {
+  Menu, UnderlineNav,
+} from './lib'
 
 export {
   Menu,

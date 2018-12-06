@@ -1,9 +1,12 @@
 {
   "name": "papillon-box",
   "version": "1.0.40",
-  "description": "papillon-box react components for primer-box",
+  "description": "Papillon Box React components for Primer Box",
   "homepage": "https://github.com/mts/papillon",
   "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-box",
+  "main": "build/papillon-box.js",
+  "author": "MTS",
+  "license": "MIT",
   "keywords": [
     "box",
     "papillon",
@@ -14,11 +17,7 @@
     "design-system",
     "component-library"
   ],
-  "main": "lib/papillon-box.js",
-  "license": "MIT",
-  "author": "MTS",
   "dependencies": {
-    "primer": "10.9.0"
-  },
-  "gitHead": "e6d990e7545978926a0b663ff5ceca2ccaacfc53"
+    "primer": "10.10.2"
+  }
 }

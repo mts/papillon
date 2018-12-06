@@ -1,7 +1,7 @@
 {
   "name": "papillon-support",
   "version": "1.0.40",
-  "description": "papillon-support react components for primer-support",
+  "description": "Papillon Support react components for Primer Support",
   "homepage": "https://github.com/mts/papillon",
   "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-support",
   "keywords": [
@@ -18,7 +18,7 @@
   "license": "MIT",
   "author": "MTS",
   "dependencies": {
-    "primer": "10.9.0"
+    "primer": "10.10.2"
   },
   "gitHead": "e6d990e7545978926a0b663ff5ceca2ccaacfc53"
 }

@@ -1,7 +1,7 @@
 {
   "name": "papillon-product",
   "version": "1.0.40",
-  "description": "papillon-product react components for primer-product",
+  "description": "Papillon Product react components for Primer Product",
   "homepage": "https://github.com/mts/papillon",
   "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-product",
   "keywords": [
@@ -18,7 +18,7 @@
   "license": "MIT",
   "author": "MTS",
   "dependencies": {
-    "primer": "10.9.0"
+    "primer": "10.10.2"
   },
   "gitHead": "e6d990e7545978926a0b663ff5ceca2ccaacfc53"
 }

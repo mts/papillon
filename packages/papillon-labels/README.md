@@ -11,14 +11,16 @@ This repository is a module of the full [papillon][papillon] repository.
 
 ## Install
 
+https://nodei.co/npm/papillon-labels.png
+
 This repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `papillon-labels` with this command.
 
 ```
 $ npm install --save papillon-labels
 ```
 
-## Webpack Babel Sample
-Check out how to use Papillon Labels with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-labels/webpack-babel-sample)
+## Explorer
+Check out how to use Papillon Labels with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-labels/explorer)
 
 ## NPM
 Get the latest papillon-labels [here](https://www.npmjs.com/package/papillon-labels)

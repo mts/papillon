@@ -1,9 +1,12 @@
 {
   "name": "papillon-base",
   "version": "1.0.40",
-  "description": "papillon-base react components for primer-base",
+  "description": "Papillon Base React components for Primer Base",
   "homepage": "https://github.com/mts/papillon",
   "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-base",
+  "main": "build/papillon-base.js",
+  "author": "MTS",
+  "license": "MIT",
   "keywords": [
     "base",
     "papillon",
@@ -14,11 +17,7 @@
     "design-system",
     "component-library"
   ],
-  "main": "lib/papillon-base.js",
-  "license": "MIT",
-  "author": "MTS",
   "dependencies": {
-    "primer": "10.9.0"
-  },
-  "gitHead": "e6d990e7545978926a0b663ff5ceca2ccaacfc53"
+    "primer": "10.10.2"
+  }
 }
