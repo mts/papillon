@@ -1,11 +1,9 @@
 import React from 'react'
 import { action } from '@storybook/addon-actions'
 
-// const Button = process.env.NODE_ENV === 'develop'
-//   ? require('./Button').default
-//   : require('../lib/papillon-buttons').default;
-
-const Button = require('./Button').default
+const Button = process.env.NODE_ENV === 'develop'
+  ? require('./Button').default
+  : require('../../build/papillon-buttons').default;
 
 const btn = (
   <div>
