@@ -32,7 +32,7 @@ const counterInfo = getInfo('Counter')
 const counterInTabsInfo = getInfo('Counter in box')
 const counterInBoxHeadersInfo = getInfo('Counter in Box Headers')
 
-storiesOf('Label/Label', module)
+storiesOf('Labels/Label', module)
   .add(labelDefaultInfo.text, () => labelDefault, labelDefaultInfo.parameters)
   .add(designInfo.text, () => design, designInfo.parameters)
   .add(labelThemeGrayInfo.text, () => labelThemeGray, labelThemeGrayInfo.parameters)
