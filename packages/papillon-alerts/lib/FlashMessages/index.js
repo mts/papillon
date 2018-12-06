@@ -1,3 +1,3 @@
-import FlashMessages from './FlashMessages';
+import FlashMessages from './FlashMessages'
 
-export default FlashMessages;
+export default FlashMessages

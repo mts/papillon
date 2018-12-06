@@ -1,3 +1,3 @@
-import FlashAlert from './FlashAlert';
+import FlashAlert from './FlashAlert'
 
-export default FlashAlert;
+export default FlashAlert

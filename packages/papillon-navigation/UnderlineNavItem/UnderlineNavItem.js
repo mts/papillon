@@ -1,6 +1,6 @@
-import React from 'react';
-import { string, node } from 'prop-types';
-import Octicon, { getIconByName } from '@githubprimer/octicons-react';
+import React from 'react'
+import { string, node } from 'prop-types'
+import Octicon, { getIconByName } from '@githubprimer/octicons-react'
 
 // mts ~ UnderlineNav-octicon does not apply in example
 // modules/primer-navigation/README.md
@@ -17,13 +17,13 @@ const UnderlineNavItem = ({ className, href, role, title, icon, counter, childre
       {children}
       {counter ? <span className='ml-1'>{counter}</span> : null}
     </a>
-  );
+  )
 
 UnderlineNavItem.defaultProps = {
   className: '',
   icon: '',
   counter: React.ReactNode,
-};
+}
 
 UnderlineNavItem.propTypes = {
   className: string,
@@ -33,6 +33,6 @@ UnderlineNavItem.propTypes = {
   icon: string,
   counter: node,
   children: node.isRequired,
-};
+}
 
-export default UnderlineNavItem;
+export default UnderlineNavItem

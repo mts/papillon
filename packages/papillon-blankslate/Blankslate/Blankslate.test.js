@@ -6,45 +6,45 @@ import {
   blankslateSpacious,
   blankslateLarge,
   blankslateCleanBackground,
-} from './Blankslate.render';
+} from './Blankslate.render'
 
 describe('<Blankslate />', () => {
-  let wrapper;
+  let wrapper
 
   describe('Instance', () => {
     test('must be an instance of Blankslate', () => {
-      wrapper = renderMount(blankslate);
-      expect(wrapper.find('Blankslate')).toHaveLength(1);
-    });
-  });
+      wrapper = renderMount(blankslate)
+      expect(wrapper.find('Blankslate')).toHaveLength(1)
+    })
+  })
 
   describe('Snaphot', () => {
     test('must match blankslate', () => {
-      expect(global.renderToJSON(blankslate)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(blankslate)).toMatchSnapshot()
+    })
 
     test('must match blankslateIcon', () => {
-      expect(global.renderToJSON(blankslateIcon)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(blankslateIcon)).toMatchSnapshot()
+    })
 
     test('must match blankslateNarrow', () => {
-      expect(global.renderToJSON(blankslateNarrow)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(blankslateNarrow)).toMatchSnapshot()
+    })
 
     test('must match blankslateCapped', () => {
-      expect(global.renderToJSON(blankslateCapped)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(blankslateCapped)).toMatchSnapshot()
+    })
 
     test('must match blankslateSpacious', () => {
-      expect(global.renderToJSON(blankslateSpacious)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(blankslateSpacious)).toMatchSnapshot()
+    })
 
     test('must match blankslateLarge', () => {
-      expect(global.renderToJSON(blankslateLarge)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(blankslateLarge)).toMatchSnapshot()
+    })
 
     test('must match blankslateCleanBackground', () => {
-      expect(global.renderToJSON(blankslateCleanBackground)).toMatchSnapshot();
-    });
-  });
-});
+      expect(global.renderToJSON(blankslateCleanBackground)).toMatchSnapshot()
+    })
+  })
+})

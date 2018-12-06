@@ -1,5 +1,5 @@
-import React from 'react';
-import 'primer/index.scss';
+import React from 'react'
+import 'primer/index.scss'
 
 // mts ~ block-blue does not exist
 
@@ -9,6 +9,6 @@ const Centered = () => (
       .one-half
     </div>
   </div>
-);
+)
 
-export default Centered;
+export default Centered

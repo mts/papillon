@@ -15,9 +15,9 @@
     "build-storybook-develop": "NODE_ENV=develop build-storybook -c .storybook/develop -o .storybook-static",
     "build-storybook-release": "NODE_ENV=release build-storybook -c .storybook/release -o .storybook-static",
     "deploy-storybook": "gh-pages -d .storybook-static",
-    "test": "lerna run test --stream",
-    "lint": "lerna run --parallel lint",
-    "lint-fix": "lerna run --parallel lint-fix",
+    "test": "lerna exec --concurrency 1 -- npm run test -- -u",
+    "lint": "lerna run --stream lint",
+    "lint-fix": "lerna run --parallel stream-fix",
     "ci": "lerna run ci --stream"
   },
   "repository": {

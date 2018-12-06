@@ -1,6 +1,6 @@
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import { withNotes } from '@storybook/addon-notes';
+import { storiesOf } from '@storybook/react'
+import { withInfo } from '@storybook/addon-info'
+import { withNotes } from '@storybook/addon-notes'
 import {
   blankslate,
   blankslateIcon,
@@ -9,7 +9,7 @@ import {
   blankslateSpacious,
   blankslateLarge,
   blankslateCleanBackground,
-} from './Blankslate.render';
+} from './Blankslate.render'
 
 storiesOf('Blankslate/Blankslate', module)
   .add('blankslate', withNotes('Must render Blankslate ~ blankslate')
@@ -26,4 +26,4 @@ storiesOf('Blankslate/Blankslate', module)
       (withInfo('blankslate-large')(() => blankslateLarge)))
   .add('blankslate-clean-background', withNotes('Must render Blankslate ~ blankslate-clean-background')
       (withInfo('blankslate-clean-background')(() => blankslateCleanBackground)))
-;
+
