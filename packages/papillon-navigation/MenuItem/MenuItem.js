@@ -1,8 +1,8 @@
-import React from 'react';
-import { string, shape, node } from 'prop-types';
-import Octicon, { getIconByName } from '@githubprimer/octicons-react';
-import cx from 'classnames';
-import { isEmptyObject } from '../utility';
+import React from 'react'
+import { string, shape, node } from 'prop-types'
+import Octicon, { getIconByName } from '@githubprimer/octicons-react'
+import cx from 'classnames'
+import { isEmptyObject } from '../utility'
 
 const MenuItem = ({ className, aria, href, icon, children }) => {
   if (isEmptyObject(aria)) {
@@ -11,7 +11,7 @@ const MenuItem = ({ className, aria, href, icon, children }) => {
         {icon ? <Octicon size='small' icon={getIconByName(icon)} /> : null}
         <span className={cx({ 'ml-1': icon !== '' })}>{children}</span>
       </a>
-    );
+    )
   }
 
   return (
@@ -19,14 +19,14 @@ const MenuItem = ({ className, aria, href, icon, children }) => {
       {icon ? <Octicon size='small' icon={getIconByName(icon)} /> : null}
       <span className={cx({ 'ml-1': icon !== '' })}>{children}</span>
     </a>
-  );
-};
+  )
+}
 
 MenuItem.defaultProps = {
   className: '',
   aria: {},
   icon: '',
-};
+}
 
 MenuItem.propTypes = {
   className: string,
@@ -37,6 +37,6 @@ MenuItem.propTypes = {
   href: string.isRequired,
   icon: string,
   children: node.isRequired,
-};
+}
 
-export default MenuItem;
+export default MenuItem

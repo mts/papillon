@@ -4,37 +4,37 @@ import {
   underlineNavRight,
   underlineNavRightWithActions,
   underlineNavWithCounter,
-} from './UnderlineNav.render';
+} from './UnderlineNav.render'
 
 describe('<Navigation />', () => {
-  let wrapper;
+  let wrapper
 
   describe('Instance', () => {
     test('must be an instance of UnderlineNav', () => {
-      wrapper = renderMount(underlineNav);
-      expect(wrapper.find('UnderlineNav')).toHaveLength(1);
-    });
-  });
+      wrapper = renderMount(underlineNav)
+      expect(wrapper.find('UnderlineNav')).toHaveLength(1)
+    })
+  })
 
   describe('Snaphot', () => {
     test('must match underlineNav', () => {
-      expect(global.renderToJSON(underlineNav)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(underlineNav)).toMatchSnapshot()
+    })
 
     test('must match underlineNavActions', () => {
-      expect(global.renderToJSON(underlineNavActions)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(underlineNavActions)).toMatchSnapshot()
+    })
 
     test('must match underlineNavRight', () => {
-      expect(global.renderToJSON(underlineNavRight)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(underlineNavRight)).toMatchSnapshot()
+    })
 
     test('must match underlineNavRightWithActions', () => {
-      expect(global.renderToJSON(underlineNavRightWithActions)).toMatchSnapshot();
-    });
+      expect(global.renderToJSON(underlineNavRightWithActions)).toMatchSnapshot()
+    })
 
     test('must match underlineNavWithCounter', () => {
-      expect(global.renderToJSON(underlineNavWithCounter)).toMatchSnapshot();
-    });
-  });
-});
+      expect(global.renderToJSON(underlineNavWithCounter)).toMatchSnapshot()
+    })
+  })
+})

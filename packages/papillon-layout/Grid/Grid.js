@@ -1,5 +1,5 @@
-import React from 'react';
-import 'primer/index.scss';
+import React from 'react'
+import 'primer/index.scss'
 
 // mts ~ block-blue does not exist
 
@@ -41,6 +41,6 @@ const Grid = () => (
       </div>
     </div>
   </div>
-);
+)
 
-export default Grid;
+export default Grid

@@ -1,18 +1,18 @@
-import React from 'react';
-import { generate } from 'shortid';
-import { arrayOf, shape, string, number, node } from 'prop-types';
-import UnderlineNavItem from '../UnderlineNavItem';
-import 'primer/index.scss';
+import React from 'react'
+import { generate } from 'shortid'
+import { arrayOf, shape, string, number, node } from 'prop-types'
+import UnderlineNavItem from '../UnderlineNavItem'
+import 'primer/index.scss'
 
 const UnderlineNav = ({ className, aria, items, action, selectedIndex }) => {
-  const { label } = aria;
+  const { label } = aria
 
   return (
     <nav className={`UnderlineNav ${className}`.trim()} aria-label={label}>
       {className.includes('UnderlineNav--right') && action ? action : null}
       <div className="UnderlineNav-body">
       {items.map((item, index) => {
-        const { href, role, title, text, icon, counter } = item;
+        const { href, role, title, text, icon, counter } = item
 
         if (index !== selectedIndex) {
           return (
@@ -46,8 +46,8 @@ const UnderlineNav = ({ className, aria, items, action, selectedIndex }) => {
       </div>
       {!className.includes('UnderlineNav--right') && action ? action : null}
     </nav>
-  );
-};
+  )
+}
 
 UnderlineNav.defaultProps = {
   aria: {
@@ -55,7 +55,7 @@ UnderlineNav.defaultProps = {
   },
   className: '',
   action: React.ReactNode,
-};
+}
 
 UnderlineNav.propTypes = {
   aria: shape({
@@ -71,7 +71,7 @@ UnderlineNav.propTypes = {
   })).isRequired,
   action: node,
   selectedIndex: number.isRequired,
-};
+}
 
-export default UnderlineNav;
+export default UnderlineNav
 
