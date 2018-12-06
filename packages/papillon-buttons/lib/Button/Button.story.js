@@ -28,7 +28,7 @@ const btnPurpleInfo = getInfo('btn-purple')
 const btnLargeInfo = getInfo('btn-large')
 const btnLinkInfo = getInfo('btn-link')
 
-storiesOf('Button/Button', module)
+storiesOf('Buttons/Button', module)
   .add(btnInfo.text, () => btn, btnInfo.parameters)
   .add(linkInfo.text, () => link, linkInfo.parameters)
   .add(btnSmallInfo.text, () => btnSmall, btnSmallInfo.parameters)
