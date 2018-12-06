@@ -7,15 +7,6 @@ import {
 } from './UnderlineNav.render'
 
 describe('<Navigation />', () => {
-  let wrapper
-
-  describe('Instance', () => {
-    test('must be an instance of UnderlineNav', () => {
-      wrapper = renderMount(underlineNav)
-      expect(wrapper.find('UnderlineNav')).toHaveLength(1)
-    })
-  })
-
   describe('Snaphot', () => {
     test('must match underlineNav', () => {
       expect(global.renderToJSON(underlineNav)).toMatchSnapshot()
