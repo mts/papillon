@@ -1,4 +1,4 @@
-# Papillon Labels Webpack Babel Sample
+# Papillon Labels Explorer
 
 ## Features
 
