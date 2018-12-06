@@ -23,7 +23,7 @@ const setup = () => {
     </div>
   ));
 
-  const contexts = [require.context('../packages', true, /story.tmp*\.js$/)];
+  const contexts = [require.context('../packages', true, /story*\.js$/)];
 
   const loadStories = () => {
     require('./welcomeStory');
