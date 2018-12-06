@@ -6,12 +6,13 @@ import {
   circleBadgeMediumImage,
   circleBadgeLargeImage,
 } from './CircleBadgeImage.render'
+import { getInfo } from '../../../../.storybook/utility'
+
+const circleBadgeSmallImageInfo = getInfo('CircleBadge-small-Image')
+const circleBadgeMediumImageInfo = getInfo('CircleBadge-medium-Image')
+const circleBadgeLargeImageInfo = getInfo('CircleBadge-large-Image')
 
 storiesOf('Avatar/CircleBadgeImage', module)
-  .add('CircleBadge-small-image', withNotes('Must render CircleBadge ~ CircleBadge-small-image')
-      (withInfo('CircleBadge-small-image')(() => circleBadgeSmallImage)))
-  .add('CircleBadge-medium-image', withNotes('Must render CircleBadge ~ CircleBadge-medium-image')
-      (withInfo('CircleBaMediumIedium-image')(() => circleBadgeMediumImage)))
-  .add('CircleBadge-large-image', withNotes('Must render CircleBadge ~ CircleBadge-large-image')
-      (withInfo('CircleBadge-large-image')(() => circleBadgeLargeImage)))
-
+  .add(circleBadgeSmallImageInfo.text, () => circleBadgeSmallImage, circleBadgeSmallImageInfo.parameters)
+  .add(circleBadgeMediumImageInfo.text, () => circleBadgeMediumImage, circleBadgeMediumImageInfo.parameters)
+  .add(circleBadgeLargeImageInfo.text, () => circleBadgeLargeImage, circleBadgeLargeImageInfo.parameters)

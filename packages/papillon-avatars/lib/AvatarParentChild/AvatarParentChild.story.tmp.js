@@ -2,8 +2,9 @@ import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { withNotes } from '@storybook/addon-notes'
 import avatarParentChild from './AvatarParentChild.render'
+import { getInfo } from '../../../../.storybook/utility'
+
+const avatarParentChildInfo = getInfo('avatar-parent-child')
 
 storiesOf('Avatar/AvatarParentChild', module)
-  .add('avatar-parent-child', withNotes('Must render Avatar ~ avatar-parent-child')
-      (withInfo('avatar-parent-child')(() => avatarParentChild)))
-
+  .add(avatarParentChildInfo.text, () => avatarParentChild, avatarParentChildInfo.parameters)
