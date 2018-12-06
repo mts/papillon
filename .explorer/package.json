@@ -1,0 +1,43 @@
+{
+  "name": "papillon-alerts-explorer",
+  "version": "1.0.0",
+  "description": "papillon-alerts explorer",
+  "homepage": "https://github.com/mts/papillon",
+  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-alerts/explorer",
+  "keywords": [
+    "alerts",
+    "papillon",
+    "primer",
+    "css",
+    "react",
+    "github",
+    "design-system",
+    "component-library",
+    "papillon-alerts",
+    "webpack",
+    "babel"
+  ],
+  "main": "index.js",
+  "license": "MIT",
+  "author": "MTS",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "react-hot-loader": "^4.3.11",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {
+    "@githubprimer/octicons-react": "^8.1.0",
+    "papillon-alerts": "^1.0.31",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  }
+}
