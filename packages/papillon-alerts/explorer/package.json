@@ -1,7 +1,7 @@
 {
   "name": "papillon-alerts-explorer",
   "version": "1.0.0",
-  "description": "papillon-alerts webpack babel sample",
+  "description": "papillon-alerts explorer",
   "homepage": "https://github.com/mts/papillon",
   "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-alerts/explorer",
   "keywords": [
