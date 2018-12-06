@@ -12,7 +12,7 @@
   </a>
 
   <a aria-label="travis build" href="https://travis-ci.org/mts/papillon">
-    <img alt="" src="https://img.shields.io/travis/mts/papillon.svg">
+    <img alt="" src="https://img.shields.io/travis/mts/papillon.svg?logo=travis">
   </a>
 
   <a aria-label="downloads" href="http://npm-stat.com/charts.html?package=papillon-prime&from=2018-10-13">
