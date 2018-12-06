@@ -1,9 +1,9 @@
 {
-  "name": "papillon-breadcrumb-webpack-babel-sample",
+  "name": "papillon-breadcrumb-explorer",
   "version": "1.0.0",
-  "description": "papillon-breadcrumb webpack babel sample",
+  "description": "papillon-breadcrumb explorer",
   "homepage": "https://github.com/mts/papillon",
-  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-breadcrumb/webpack-babel-sample",
+  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-breadcrumb/explorer",
   "keywords": [
     "breadcrumb",
     "papillon",

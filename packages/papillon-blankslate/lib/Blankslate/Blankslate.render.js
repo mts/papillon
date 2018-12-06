@@ -1,10 +1,8 @@
 import React from 'react'
 
-// const Blankslate = process.env.NODE_ENV === 'develop'
-//   ? require('./Blankslate').default
-//   : require('../lib/papillon-blankslate').default;
-
-const Blankslate = require('./Blankslate').default
+const Blankslate = process.env.NODE_ENV === 'develop'
+  ? require('./Blankslate').default
+  : require('../../build/papillon-blankslate').default;
 
 const blankslate = (
   <Blankslate>

@@ -1,4 +1,4 @@
-# Papillon Breadcrumb Webpack Babel Sample
+# Papillon Breadcrumb Explorer
 
 ## Features
 

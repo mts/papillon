@@ -17,8 +17,8 @@ This repository is distributed with [npm][npm]. After [installing npm][install-n
 $ npm install --save papillon-breadcrumb
 ```
 
-## Webpack Babel Sample
-Check out how to use Papillon Breadcrumb with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-breadcrumb/webpack-babel-sample)
+## Explorer
+Check out how to use Papillon Breadcrumb with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-breadcrumb/explorer)
 
 ## NPM
 Get the latest papillon-breadcrumb [here](https://www.npmjs.com/package/papillon-breadcrumb)
