@@ -1,4 +1,4 @@
-# Papillon Blankslate Webpack Babel Sample
+# Papillon Blankslate Explorer
 
 ## Features
 

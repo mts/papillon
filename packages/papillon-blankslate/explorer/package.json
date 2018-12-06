@@ -1,9 +1,9 @@
 {
-  "name": "papillon-blankslate-webpack-babel-sample",
+  "name": "papillon-blankslate-explorer",
   "version": "1.0.0",
-  "description": "papillon-blankslate webpack babel sample",
+  "description": "papillon-blankslate explorer",
   "homepage": "https://github.com/mts/papillon",
-  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-blankslate/webpack-babel-sample",
+  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-blankslate/explorer",
   "keywords": [
     "blankslate",
     "papillon",
