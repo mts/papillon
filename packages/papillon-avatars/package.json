@@ -32,7 +32,7 @@
     "uninstall-primer": "npm un -S primer",
     "install-primer": "npm i -S primer",
     "reinstall-primer": "npm-run-all uninstall-primer install-primer",
-    "test": "jest --config ../../jest.config.json --no-cache --silent --runInBand",
+    "test": "jest -u --config jest.config.json --no-cache --silent --runInBand",
     "lint": "npm-run-all lint:scss lint:js",
     "lint:scss": "stylelint lib/*.scss --fix",
     "lint:js": "eslint lib/*.js --fix",
@@ -41,5 +41,9 @@
   },
   "dependencies": {
     "primer": "10.10.2"
+  },
+  "devDependencies": {
+    "babel-core": "7.0.0-bridge.0",
+    "jest": "23.6.0"
   }
 }
