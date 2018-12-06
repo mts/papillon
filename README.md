@@ -1,15 +1,44 @@
-# Papillon
+<p align="center">
+  <img width="300px" src="/logo.png">
+</p>
 
-[![travis build](https://img.shields.io/travis/mts/papillon.svg?style=flat-square)](https://travis-ci.org/mts/papillon)
-[![version](https://img.shields.io/npm/v/papillon-prime.svg?style=flat-square)](http://npm.im/papillon-prime)
-[![downloads](https://img.shields.io/npm/dm/papillon-prime.svg?style=flat-square)](http://npm-stat.com/charts.html?package=papillon-prime&from=2018-10-13)
-[![MIT License](https://img.shields.io/npm/l/papillon-prime.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+<h1 align="center">Papillon Components</h1>
 
-React UI Components styled with [Primer](https://primer.style/).
+<p align="center">React components for the [Primer Design System](https://primer.style/)</p>
+
+<p align="center">
+  <a aria-label="npm package" href="https://www.npmjs.com/package/papillon-prime">
+    <img alt="" src="https://img.shields.io/npm/v/papillon-prime.svg">
+  </a>
+
+  <a aria-label="travis build" href="https://travis-ci.org/mts/papillon">
+    <img alt="" src="https://img.shields.io/travis/mts/papillon.svg">
+  </a>
+
+  <a aria-label="downloads" href="http://npm-stat.com/charts.html?package=papillon-prime&from=2018-10-13">
+    <img alt="" src="https://img.shields.io/npm/dm/papillon-prime.svg">
+  </a>
+
+  <a aria-label="last commit" href="https://github.com/mts/papillon/commits/master">
+    <img alt="" src="https://img.shields.io/github/last-commit/mts/papillon.svg">
+  </a>
+
+  <a aria-label="contributors graph" href="https://github.com/mts/papillon/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/mts/papillon.svg">
+  </a>
+
+  <a aria-label="license" href="https://github.com/mts/papillon/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/mts/papillon.svg" alt="">
+  </a>
+</p>
+
+## Status
+
+**⚠️ This project is a work in progress and is not ready for production use yet!**
 
 ## Table of Contents
 
-### 🐳 Alerts
+### :octocat: Alerts
 
 <details>
 <summary>View contents</summary>
@@ -19,7 +48,7 @@ React UI Components styled with [Primer](https://primer.style/).
 
 </details>
 
-### 🐠 Buttons
+### :octocat: Buttons
 
 <details>
 <summary>View contents</summary>
@@ -28,7 +57,7 @@ React UI Components styled with [Primer](https://primer.style/).
 
 </details>
 
-### 🐬 Blankslate
+### :octocat: Blankslate
 
 <details>
 <summary>View contents</summary>
@@ -37,7 +66,7 @@ React UI Components styled with [Primer](https://primer.style/).
 
 </details>
 
-### 🐋 Labels
+### :octocat: Labels
 
 <details>
 <summary>View contents</summary>
@@ -46,7 +75,7 @@ React UI Components styled with [Primer](https://primer.style/).
 
 </details>
 
-### 🐙 Breadcrumb
+### :octocat: Breadcrumb
 
 <details>
 <summary>View contents</summary>
@@ -55,7 +84,7 @@ React UI Components styled with [Primer](https://primer.style/).
 
 ---
 
-## 🐳 Alerts
+## :octocat: Alerts
 
 ### Install
 
@@ -87,7 +116,7 @@ import { FlashAlert, FlashMessages } from 'papillon-alerts';
 ### Use all
 Find more flavours of FlashAlert and FlashMessages [here](https://github.com/mts/papillon/tree/master/packages/papillon-alerts)
 
-### Webpack Babel Sample
+### Explorer
 Check out how to use Papillon Alerts with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-alerts/webpack-babel-sample)
 
 ### NPM
@@ -97,7 +126,7 @@ Get the latest papillon-alerts [here](https://www.npmjs.com/package/papillon-ale
 
 ---
 
-## 🐠 Buttons
+## :octocat: Buttons
 
 ### Install
 
@@ -118,7 +147,7 @@ import Button from 'papillon-buttons';
 ### Use all
 Find more flavours of Button [here](https://github.com/mts/papillon/tree/master/packages/papillon-buttons)
 
-### Webpack Babel Sample
+### Explorer
 Check out how to use Papillon Buttons with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-buttons/webpack-babel-sample)
 
 ### NPM
@@ -128,7 +157,7 @@ Get the latest papillon-buttons [here](https://www.npmjs.com/package/papillon-bu
 
 ---
 
-## 🐬 Blankslate
+## :octocat: Blankslate
 
 ### Install
 
@@ -152,7 +181,7 @@ import Blankslate from 'papillon-blankslate';
 ### Use all
 Find more flavours of Blankslate [here](https://github.com/mts/papillon/tree/master/packages/papillon-blankslate)
 
-### Webpack Babel Sample
+### Explorer
 Check out how to use Papillon Blankslate with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-blankslate/webpack-babel-sample)
 
 ### NPM
@@ -162,7 +191,7 @@ Get the latest papillon-blankslate [here](https://www.npmjs.com/package/papillon
 
 ---
 
-## 🐋 Labels
+## :octocat: Labels
 
 ### Install
 
@@ -183,7 +212,7 @@ import Label from 'papillon-labels';
 ### Use all
 Find more flavours of Label [here](https://github.com/mts/papillon/tree/master/packages/papillon-labels)
 
-### Webpack Babel Sample
+### Explorer
 Check out how to use Papillon Labels with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-labels/webpack-babel-sample)
 
 ### NPM
@@ -193,7 +222,7 @@ Get the latest papillon-labels [here](https://www.npmjs.com/package/papillon-lab
 
 ---
 
-## 🐙 Breadcrumb
+## :octocat: Breadcrumb
 
 ### Install
 
@@ -222,7 +251,7 @@ const items = [
 ### Use all
 Find more flavours of BreadCrumb [here](https://github.com/mts/papillon/tree/master/packages/papillon-breadcrumb)
 
-### Webpack Babel Sample
+### Explorer
 Check out how to use Papillon BreadCrumb with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-breadcrumb/webpack-babel-sample)
 
 ### NPM
