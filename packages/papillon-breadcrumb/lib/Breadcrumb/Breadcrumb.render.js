@@ -1,10 +1,8 @@
 import React from 'react'
 
-// const Breadcrumb = process.env.NODE_ENV === 'develop'
-//   ? require('./Breadcrumb').default
-//   : require('../lib/papillon-breadcrumb').default;
-
-const Breadcrumb = require('./Breadcrumb').default
+const Breadcrumb = process.env.NODE_ENV === 'develop'
+  ? require('./Breadcrumb').default
+  : require('../../build/papillon-breadcrumb').default;
 
 const items = [
   { href: '/business', text: 'Business' },
