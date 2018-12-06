@@ -18,7 +18,7 @@ $ npm install --save papillon-alerts
 ```
 
 ## Explorer
-Check out how to use Papillon Alerts with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-alerts/webpack-babel-sample)
+Check out how to use Papillon Alerts with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-alerts/explorer)
 
 ## NPM
 Get the latest papillon-alerts [here](https://www.npmjs.com/package/papillon-alerts)
