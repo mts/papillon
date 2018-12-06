@@ -9,18 +9,19 @@ import {
   avatarStackTwo,
   avatarStackRight,
 } from './Avatar.render'
+import { getInfo } from '../../../../.storybook/utility'
+
+const avatarInfo = getInfo('avatar')
+const avatarSmallInfo = getInfo('avatar-small')
+const avatarStackMoreInfo = getInfo('avatar-stack-more')
+const avatarStackThreePlusInfo = getInfo('avatar-stack-three-plus')
+const avatarStackTwoInfo = getInfo('avatar-stack-two')
+const avatarStackRightInfo = getInfo('avatar-stack-right')
 
 storiesOf('Avatar/Avatar', module)
-  .add('avatar', withNotes('Must render Avatar ~ avatar')
-      (withInfo('avatar')(() => avatar)))
-  .add('avatar-small', withNotes('Must render Avatar ~ avatar-small')
-      (withInfo('avatar-small')(() => avatarSmall)))
-  .add('avatar-stack-more', withNotes('Must render Avatar ~ avatar-stack-more')
-      (withInfo('avatar-stack-more')(() => avatarStackMore)))
-  .add('avatar-stack-three-plus', withNotes('Must render Avatar ~ avatar-stack-three-plus')
-      (withInfo('avatar-stack-three-plus')(() => avatarStackThreePlus)))
-  .add('avatar-stack-two', withNotes('Must render Avatar ~ avatar-stack-two')
-      (withInfo('avatar-stack-two')(() => avatarStackTwo)))
-  .add('avatar-stack-right', withNotes('Must render Avatar ~ avatar-stack-right')
-      (withInfo('avatar-stack-right')(() => avatarStackRight)))
-
+  .add(avatarInfo.text, () => avatar, avatarInfo.parameters)
+  .add(avatarSmallInfo.text, () => avatarSmall, avatarSmallInfo.parameters)
+  .add(avatarStackMoreInfo.text, () => avatarStackMore, avatarStackMoreInfo.parameters)
+  .add(avatarStackThreePlusInfo.text, () => avatarStackThreePlus, avatarStackThreePlusInfo.parameters)
+  .add(avatarStackTwoInfo.text, () => avatarStackTwo, avatarStackTwoInfo.parameters)
+  .add(avatarStackRightInfo.text, () => avatarStackRight, avatarStackRightInfo.parameters)
