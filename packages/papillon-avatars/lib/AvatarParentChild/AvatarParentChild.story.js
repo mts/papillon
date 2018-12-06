@@ -6,5 +6,5 @@ import { getInfo } from '../../../../.storybook/utility'
 
 const avatarParentChildInfo = getInfo('avatar-parent-child')
 
-storiesOf('Avatar/AvatarParentChild', module)
+storiesOf('Avatars/AvatarParentChild', module)
   .add(avatarParentChildInfo.text, () => avatarParentChild, avatarParentChildInfo.parameters)

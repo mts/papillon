@@ -18,7 +18,7 @@ const avatarStackThreePlusInfo = getInfo('avatar-stack-three-plus')
 const avatarStackTwoInfo = getInfo('avatar-stack-two')
 const avatarStackRightInfo = getInfo('avatar-stack-right')
 
-storiesOf('Avatar/Avatar', module)
+storiesOf('Avatars/Avatar', module)
   .add(avatarInfo.text, () => avatar, avatarInfo.parameters)
   .add(avatarSmallInfo.text, () => avatarSmall, avatarSmallInfo.parameters)
   .add(avatarStackMoreInfo.text, () => avatarStackMore, avatarStackMoreInfo.parameters)

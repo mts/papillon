@@ -12,7 +12,7 @@ const circleBadgeSmallIconInfo = getInfo('CircleBadge-small-icon')
 const circleBadgeMediumIconInfo = getInfo('CircleBadge-medium-icon')
 const circleBadgeLargeIconInfo = getInfo('CircleBadge-large-icon')
 
-storiesOf('Avatar/CircleBadgeIcon', module)
+storiesOf('Avatars/CircleBadgeIcon', module)
   .add(circleBadgeSmallIconInfo.text, () => circleBadgeSmallIcon, circleBadgeSmallIconInfo.parameters)
   .add(circleBadgeMediumIconInfo.text, () => circleBadgeMediumIcon, circleBadgeMediumIconInfo.parameters)
   .add(circleBadgeLargeIconInfo.text, () => circleBadgeLargeIcon, circleBadgeLargeIconInfo.parameters)

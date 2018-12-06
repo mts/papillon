@@ -12,7 +12,7 @@ const circleBadgeSmallImageInfo = getInfo('CircleBadge-small-Image')
 const circleBadgeMediumImageInfo = getInfo('CircleBadge-medium-Image')
 const circleBadgeLargeImageInfo = getInfo('CircleBadge-large-Image')
 
-storiesOf('Avatar/CircleBadgeImage', module)
+storiesOf('Avatars/CircleBadgeImage', module)
   .add(circleBadgeSmallImageInfo.text, () => circleBadgeSmallImage, circleBadgeSmallImageInfo.parameters)
   .add(circleBadgeMediumImageInfo.text, () => circleBadgeMediumImage, circleBadgeMediumImageInfo.parameters)
   .add(circleBadgeLargeImageInfo.text, () => circleBadgeLargeImage, circleBadgeLargeImageInfo.parameters)
