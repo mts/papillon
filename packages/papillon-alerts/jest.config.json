@@ -1,5 +1,5 @@
 {
-  "testRegex": ".spec\\.js$",
+  "testRegex": ".test\\.js$",
   "roots": [
     "<rootDir>"
   ],
@@ -16,5 +16,5 @@
   "moduleNameMapper": {
     "\\.(css|less|scss)$": "identity-obj-proxy"
   },
-  "moduleFileExtensions": ["js", "json"]
+  "moduleFileExtensions": ["js"]
 }
