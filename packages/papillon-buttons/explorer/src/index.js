@@ -1,6 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Button from 'papillon-buttons';
+import React from 'react'
+import ReactDOM from 'react-dom'
+// import Button from 'papillon-buttons'
+import Button from '../../build/papillon-buttons'
 
 ReactDOM.render(
   <div>
@@ -86,6 +87,6 @@ ReactDOM.render(
     </div>
   </div>,
   document.getElementById('app'),
-);
+)
 
-module.hot.accept();
+module.hot.accept()
