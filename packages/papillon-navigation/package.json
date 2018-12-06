@@ -1,9 +1,18 @@
 {
   "name": "papillon-navigation",
   "version": "1.0.40",
-  "description": "papillon-navigation react components for primer-navigation",
+  "description": "Papillon Navigation React components for Primer Navigation",
   "homepage": "https://github.com/mts/papillon",
   "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-navigation",
+  "main": "build/papillon-navigation.js",
+  "author": "MTS",
+  "license": "MIT",
+  "files": [
+    "lib",
+    "build",
+    "LICENSE",
+    "README.md"
+  ],
   "keywords": [
     "navigation",
     "papillon",
@@ -14,11 +23,27 @@
     "design-system",
     "component-library"
   ],
-  "main": "lib/papillon-navigation.js",
-  "license": "MIT",
-  "author": "MTS",
-  "dependencies": {
-    "primer": "10.9.0"
+  "scripts": {
+    "build": "webpack --env production",
+    "release": "npm publish",
+    "uninstall-packages": "rm -rf node_modules package-lock.json",
+    "install-packages": "npm i",
+    "reinstall-packages": "npm-run-all uninstall-packages install-packages",
+    "uninstall-primer": "npm un -S primer",
+    "install-primer": "npm i -S primer",
+    "reinstall-primer": "npm-run-all uninstall-primer install-primer",
+    "test": "jest --config jest.config.json --no-cache --silent --runInBand",
+    "lint": "npm-run-all lint:scss lint:js",
+    "lint:scss": "stylelint lib/*.scss --fix",
+    "lint:js": "eslint lib/*.js --fix",
+    "lint:staged": "lint-staged",
+    "ci": "npm-run-all lint build test"
   },
-  "gitHead": "e6d990e7545978926a0b663ff5ceca2ccaacfc53"
+  "dependencies": {
+    "primer": "10.10.2"
+  },
+  "devDependencies": {
+    "babel-core": "7.0.0-bridge.0",
+    "jest": "23.6.0"
+  }
 }
