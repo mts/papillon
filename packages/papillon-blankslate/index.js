@@ -1,3 +1,4 @@
-import Blankslate from './Blankslate'
+/* eslint import/prefer-default-export: 0 */
+import { Blankslate } from './lib'
 
-export default Blankslate
+export { Blankslate }
