@@ -1,7 +1,7 @@
 {
   "name": "papillon-support",
   "version": "1.0.40",
-  "description": "papillon-support react components for primer-support",
+  "description": "Papillon Support react components for Primer Support",
   "homepage": "https://github.com/mts/papillon",
   "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-support",
   "keywords": [

@@ -1,7 +1,7 @@
 {
   "name": "papillon-product",
   "version": "1.0.40",
-  "description": "papillon-product react components for primer-product",
+  "description": "Papillon Product react components for Primer Product",
   "homepage": "https://github.com/mts/papillon",
   "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-product",
   "keywords": [

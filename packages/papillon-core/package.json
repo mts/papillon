@@ -1,9 +1,12 @@
 {
   "name": "papillon-core",
   "version": "1.0.40",
-  "description": "papillon-core react components for primer-core",
+  "description": "Papillon Core React components for Primer Core",
   "homepage": "https://github.com/mts/papillon",
   "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-core",
+  "main": "build/papillon-core.js",
+  "author": "MTS",
+  "license": "MIT",
   "keywords": [
     "core",
     "papillon",
@@ -14,11 +17,7 @@
     "design-system",
     "component-library"
   ],
-  "main": "lib/papillon-core.js",
-  "license": "MIT",
-  "author": "MTS",
   "dependencies": {
-    "primer": "10.9.0"
-  },
-  "gitHead": "e6d990e7545978926a0b663ff5ceca2ccaacfc53"
+    "primer": "10.10.2"
+  }
 }

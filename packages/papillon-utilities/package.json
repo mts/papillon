@@ -1,7 +1,7 @@
 {
   "name": "papillon-utilities",
   "version": "1.0.40",
-  "description": "papillon-utilities react components for primer-utilities",
+  "description": "Papillon Utilities react components for Primer Utilities",
   "homepage": "https://github.com/mts/papillon",
   "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-utilities",
   "keywords": [
