@@ -35,7 +35,7 @@
     "webpack-dev-server": "^3.1.8"
   },
   "dependencies": {
-    "papillon-breadcrumb": "^1.0.31",
+    "papillon-breadcrumb": "^1.0.42",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   }
