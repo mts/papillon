@@ -4,12 +4,12 @@ import Octicon, { getIconByName } from '@githubprimer/octicons-react'
 import cx from 'classnames'
 import 'primer/index.scss'
 
-const Label = ({ type, className, children, icon }) => (
+const Label = ({ variant, className, children, icon }) => (
   <span
     className={cx({
-      'Label': type === 'label',
-      'State': type === 'state',
-      'Counter': type === 'counter',
+      'Label': variant === 'label',
+      'State': variant === 'state',
+      'Counter': variant === 'counter',
     }, className)}
   >
     {icon ? <Octicon size='small' icon={getIconByName(icon)} /> : null} {children}
@@ -22,7 +22,7 @@ Label.defaultProps = {
 }
 
 Label.propTypes = {
-  type: oneOf(['label', 'state', 'counter']).isRequired,
+  variant: oneOf(['label', 'state', 'counter']).isRequired,
   className: string,
   children: node.isRequired,
   icon: string,
