@@ -4,7 +4,7 @@ import { withInfo } from '@storybook/addon-info'
 import { withNotes } from '@storybook/addon-notes'
 import { withOptions } from '@storybook/addon-options';
 // import '../packages/papillon/index.scss';
-import { version } from '../packages/papillon-prime/package.json';
+import { version } from '../lerna.json';
 
 const setup = () => {
   addDecorator(withInfo);
