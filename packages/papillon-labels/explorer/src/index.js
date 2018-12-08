@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import BasicLabels from './BasicLabels'
+import RegularLabels from './RegularLabels'
 import ThemeLabels from './ThemeLabels'
 import StateLabels from './StateLabels'
 import CounterLabels from './CounterLabels'
@@ -10,7 +10,7 @@ ReactDOM.render(
   <div>
     <div className="d-flex flex-justify-around">
       <div className="col-3">
-        <BasicLabels />
+        <RegularLabels />
       </div>
       <div className="col-3">
         <ThemeLabels />
