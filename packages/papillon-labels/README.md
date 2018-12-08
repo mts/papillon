@@ -11,7 +11,11 @@ This repository is a module of the full [papillon][papillon] repository.
 
 ## Install
 
-https://nodei.co/npm/papillon-labels.png
+<p align="left">
+  <a aria-label="npm install" href="https://www.npmjs.com/package/papillon-labels">
+    <img alt="" src="https://nodei.co/npm/papillon-labels.png">
+  </a>
+</p>
 
 This repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `papillon-labels` with this command.
 
