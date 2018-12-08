@@ -50,7 +50,7 @@ GitHub also programmatically generates and applies a background color for labels
 The base `Label` style does not apply a background color, here's an example using the `bg-blue` utility to apply a blue background:
 
 ```html
-  <Label type="label" className="bg-blue">default label</Label>
+  <Label variant="label" className="bg-blue">default label</Label>
 ```
 
 ### Label themes
@@ -62,7 +62,7 @@ Labels come in a few different themes. Use a theme that helps communicate the co
 Use `Label--gray` to create a label with a light gray background and gray text. This label is neutral in color and can be used in contexts where all you need to communicate is metadata, or whe you want a label to feel less prominent compared with labels with stronger colors.
 
 ```html
-  <Label type="label" className="Label--gray">gray label</Label>
+  <Label variant="label" className="Label--gray">gray label</Label>
 ```
 
 #### Theme dark gray
@@ -70,7 +70,7 @@ Use `Label--gray` to create a label with a light gray background and gray text. 
 Use `Label--gray-darker` to create a label with a dark-gray background color. This label is also neutral in color, however, since it's background is darker it can stand out more compared to `Label--gray`.
 
 ```html
-  <Label type="label" className="Label--gray-darker">dark gray label</Label>
+  <Label variant="label" className="Label--gray-darker">dark gray label</Label>
 ```
 
 #### Theme orange
@@ -78,7 +78,7 @@ Use `Label--gray-darker` to create a label with a dark-gray background color. Th
 Use `Label--orange` to communicate "warning". The orange background color is very close to red, so avoid using next to labels with a red background color since most people will find it hard to tell the difference.
 
 ```html
-  <Label type="label" className="Label--orange">orange label</Label>
+  <Label variant="label" className="Label--orange">orange label</Label>
 ```
 
 #### Theme outline
@@ -86,7 +86,7 @@ Use `Label--orange` to communicate "warning". The orange background color is ver
 Use `Label--outline` to create a label with gray text, a gray border, and a transparent background. The outline reduces the contrast of this label in combination with filled labels. Use this in contexts where you need it to stand out less than other labels and communicate a neutral message.
 
 ```html
-  <Label type="label" className="Label--outline">outlined label</Label>
+  <Label variant="label" className="Label--outline">outlined label</Label>
 ```
 
 #### Theme outline green
@@ -94,7 +94,7 @@ Use `Label--outline` to create a label with gray text, a gray border, and a tran
 Use `Label--outline-green` in combination with `Label--outline` to communicate a positive message.
 
 ```html
-  <Label type="label" className="Label--outline Label--outline-green">green outlined label</Label>
+  <Label variant="label" className="Label--outline Label--outline-green">green outlined label</Label>
 ```
 
 ## States
@@ -102,7 +102,7 @@ Use `Label--outline-green` in combination with `Label--outline` to communicate a
 Use state labels to inform users of an items status. States are large labels with bolded text. The default state has a gray background.
 
 ```html
-  <Label type="state">Default</Label>
+  <Label variant="state">Default</Label>
 ```
 
 ### State themes
@@ -110,9 +110,9 @@ Use state labels to inform users of an items status. States are large labels wit
 States come in a few variations that apply different colors. Use the state that best communicates the status or function.
 
 ```html
-  <Label type="state" className="State--green mr-1"icon="git-pull-request">Open</Label>
-  <Label type="state" className="State--red mr-1" icon="git-pull-request">Closed</Label>
-  <Label type="state" className="State--purple" icon="git-merge">Merged</Label>
+  <Label variant="state" className="State--green mr-1"icon="git-pull-request">Open</Label>
+  <Label variant="state" className="State--red mr-1" icon="git-pull-request">Closed</Label>
+  <Label variant="state" className="State--purple" icon="git-merge">Merged</Label>
 ```
 
 ### Small states
@@ -120,8 +120,8 @@ States come in a few variations that apply different colors. Use the state that 
 Use `State--small` for a state label with reduced padding a smaller font size. This is useful in denser areas of content.
 
 ```html
-  <Label type="state" className="State--green State--small mr-1" icon="issue-opened">Open</Label>
-  <Label type="state" className="State--red State--small" icon="issue-closed">Closed</Label>
+  <Label variant="state" className="State--green State--small mr-1" icon="issue-opened">Open</Label>
+  <Label variant="state" className="State--red State--small" icon="issue-closed">Closed</Label>
 ```
 
 ## Counters
@@ -129,9 +129,9 @@ Use `State--small` for a state label with reduced padding a smaller font size. T
 Use the `Counter` component to add a count to navigational elements and buttons. Counters come in 3 variations: the default `Counter` with a light gray background, `Counter--gray` with a dark-gray background and inverse white text, and `Counter--gray-light` with a light-gray background and dark gray text.
 
 ```html
-  <Label type="counter" className="mr-1">16</Label>
-  <Label type="counter" className="Counter--gray mr-1">32</Label>
-  <Label type="counter" className="Counter--gray-light">64</Label>
+  <Label variant="counter" className="mr-1">16</Label>
+  <Label variant="counter" className="Counter--gray mr-1">32</Label>
+  <Label variant="counter" className="Counter--gray-light">64</Label>
 ```
 
 #### Counter in tabs
@@ -143,7 +143,7 @@ Use the `Counter` in navigation to indicate the number of items without the user
     <nav className="tabnav-tabs" aria-label="Foo bar">
       <a href="#url" className="tabnav-tab selected" aria-current="page">
         Foo tab
-        <Label type="counter">23</Label>
+        <Label variant="counter">23</Label>
       </a>
       <a href="#url" className="tabnav-tab ml-1">
         Bar tab
