@@ -29,7 +29,7 @@ const stateInfo = getInfo('State')
 const stateThemesInfo = getInfo('State themes')
 const smallStatesInfo = getInfo('Small states')
 const counterInfo = getInfo('Counter')
-const counterInTabsInfo = getInfo('Counter in box')
+const counterInTabsInfo = getInfo('Counter in tabs')
 const counterInBoxHeadersInfo = getInfo('Counter in Box Headers')
 
 storiesOf('Labels/Label', module)
