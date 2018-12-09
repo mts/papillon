@@ -1,43 +1,59 @@
-import React from 'react'
-import { node } from 'prop-types'
-import Label from './Label'
+export const label = 'label'
+export const state = 'state'
+export const counter = 'counter'
+export const labelWhiteOnBlue = 'label-white-on-blue'
+export const labelWhiteOnDarkGray = 'label-white-on-dark-gray'
+export const labelWhiteOnDarkGreen = 'label-white-on-green'
+export const labelWhiteOnRed = 'label-white-on-red'
+export const labelWhiteOnYellow = 'label-white-on-yellow'
+export const labelWhiteOnPurple = 'label-white-on-purple'
+export const themeGray = 'theme-gray'
+export const themeDarkGray = 'theme-dark-gray'
+export const themeOrange = 'theme-orange'
+export const themeOutline = 'theme-outline'
+export const themeOutlineGreen = 'theme-outline-green'
+export const stateDefault = 'state-default'
+export const stateGreen = 'state-green'
+export const statePurple = 'state-purple'
+export const stateRed = 'state-red'
+export const stateDefaultSmall = 'state-default-small'
+export const stateGreenSmall = 'state-green-small'
+export const statePurpleSmall = 'state-purple-small'
+export const stateRedSmall = 'state-red-small'
+export const stateOpen = 'state-open'
+export const stateClosed = 'state-closed'
+export const stateMerged = 'state-merged'
+export const counterDefault = 'counter-default'
+export const counterGray = 'counter-gray'
+export const counterGrayLight = 'counter-gray-light'
 
-const variants = [
-  'label',
-  'state',
-  'counter',
-  'regular-white-on-blue',
-  'regular-white-on-dark-gray',
-  'regular-white-on-green',
-  'regular-white-on-red',
-  'regular-white-on-yellow',
-  'regular-white-on-purple',
-  'theme-gray',
-  'theme-dark-gray',
-  'theme-dark-gray',
-  'theme-orange',
-  'theme-outline',
-  'theme-outline-green',
-  'state-default',
-  'state-green',
-  'state-purple',
-  'state-red',
-  'state-default-small',
-  'state-green-small',
-  'state-purple-small',
-  'state-red-small',
-  'state-open',
-  'state-closed',
-  'state-merged',
-  'counter-default',
-  'counter-gray',
-  'counter-gray-light',
+export const variants = [
+  label,
+  state,
+  counter,
+  labelWhiteOnBlue,
+  labelWhiteOnDarkGray,
+  labelWhiteOnDarkGreen,
+  labelWhiteOnRed,
+  labelWhiteOnYellow,
+  labelWhiteOnPurple,
+  themeGray,
+  themeDarkGray,
+  themeOrange,
+  themeOutline,
+  themeOutlineGreen,
+  stateDefault,
+  stateGreen,
+  statePurple,
+  stateRed,
+  stateDefaultSmall,
+  stateGreenSmall,
+  statePurpleSmall,
+  stateRedSmall,
+  stateOpen,
+  stateClosed,
+  stateMerged,
+  counterDefault,
+  counterGray,
+  counterGrayLight,
 ]
-
-const RegularWhiteOnBlue = ({ children }) => <Label variant="label" className="text-white bg-blue">{children}</Label>
-RegularWhiteOnBlue.propTypes = { children: node.isRequired }
-
-export {
-  variants,
-  RegularWhiteOnBlue
-}
