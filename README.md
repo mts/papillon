@@ -208,7 +208,7 @@ import Label from 'papillon-labels';
 
 ### Use Label
 ```html
-  <Label type="label" className="bg-blue">default label</Label>
+  <Label variant="label" className="bg-blue">default label</Label>
 ```
 
 ### Use all

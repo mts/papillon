@@ -1,71 +1,143 @@
 import {
-  labelDefault,
-  design,
-  labelThemeGray,
-  labelThemeDarkGray,
-  labelThemeOrange,
-  labelOutline,
-  labelOutlineGreen,
-  state,
-  stateThemes,
-  smallStates,
-  counter,
-  counterInTabs,
-  counterInBoxHeaders,
+  // regular
+  labelWhiteOnBlueVariant,
+  labelWhiteOnDarkGrayVariant,
+  labelWhiteOnGreenVariant,
+  labelWhiteOnRedVariant,
+  labelWhiteOnYellowVariant,
+  labelWhiteOnPurpleVariant,
+  // theme
+  themeGrayVariant,
+  themeDarkGrayVariant,
+  themeOrangeVariant,
+  themeOutlineVariant,
+  themeOutlineGreenVariant,
+  // state
+  stateDefaultVariant,
+  stateGreenVariant,
+  statePurpleVariant,
+  stateRedVariant,
+  stateDefaultSmallVariant,
+  stateGreenSmallVariant,
+  statePurpleSmallVariant,
+  stateRedSmallVariant,
+  stateOpenVariant,
+  stateClosedVariant,
+  stateMergedVariant,
+  // counter
+  counterDefaultVariant,
+  counterGrayVariant,
+  counterGrayLightVariant,
 } from './Label.render'
 
 describe('<Label />', () => {
   describe('Snaphot', () => {
-    test('must match labelDefault', () => {
-      expect(global.renderToJSON(labelDefault)).toMatchSnapshot()
+    describe('regular', () => {
+      test('must match labelWhiteOnBlueVariant', () => {
+        expect(global.renderToJSON(labelWhiteOnBlueVariant)).toMatchSnapshot()
+      })
+
+      test('must match labelWhiteOnDarkGrayVariant', () => {
+        expect(global.renderToJSON(labelWhiteOnDarkGrayVariant)).toMatchSnapshot()
+      })
+
+      test('must match labelWhiteOnGreenVariant', () => {
+        expect(global.renderToJSON(labelWhiteOnGreenVariant)).toMatchSnapshot()
+      })
+
+      test('must match labelWhiteOnRedVariant', () => {
+        expect(global.renderToJSON(labelWhiteOnRedVariant)).toMatchSnapshot()
+      })
+
+      test('must match labelWhiteOnYellowVariant', () => {
+        expect(global.renderToJSON(labelWhiteOnYellowVariant)).toMatchSnapshot()
+      })
+
+      test('must match labelWhiteOnPurpleVariant', () => {
+        expect(global.renderToJSON(labelWhiteOnPurpleVariant)).toMatchSnapshot()
+      })
     })
 
-    test('must match design', () => {
-      expect(global.renderToJSON(design)).toMatchSnapshot()
+    describe('theme', () => {
+      test('must match themeGrayVariant', () => {
+        expect(global.renderToJSON(themeGrayVariant)).toMatchSnapshot()
+      })
+
+      test('must match themeDarkGrayVariant', () => {
+        expect(global.renderToJSON(themeDarkGrayVariant)).toMatchSnapshot()
+      })
+
+      test('must match themeOrangeVariant', () => {
+        expect(global.renderToJSON(themeOrangeVariant)).toMatchSnapshot()
+      })
+
+      test('must match themeOutlineVariant', () => {
+        expect(global.renderToJSON(themeOutlineVariant)).toMatchSnapshot()
+      })
+
+      test('must match themeOutlineGreenVariant', () => {
+        expect(global.renderToJSON(themeOutlineGreenVariant)).toMatchSnapshot()
+      })
     })
 
-    test('must match labelThemeGray', () => {
-      expect(global.renderToJSON(labelThemeGray)).toMatchSnapshot()
+    describe('state', () => {
+      test('must match stateDefaultVariant', () => {
+        expect(global.renderToJSON(stateDefaultVariant)).toMatchSnapshot()
+      })
+
+      test('must match stateGreenVariant', () => {
+        expect(global.renderToJSON(stateGreenVariant)).toMatchSnapshot()
+      })
+
+      test('must match statePurpleVariant', () => {
+        expect(global.renderToJSON(statePurpleVariant)).toMatchSnapshot()
+      })
+
+      test('must match stateRedVariant', () => {
+        expect(global.renderToJSON(stateRedVariant)).toMatchSnapshot()
+      })
+
+      test('must match stateDefaultSmallVariant', () => {
+        expect(global.renderToJSON(stateDefaultSmallVariant)).toMatchSnapshot()
+      })
+
+      test('must match stateGreenSmallVariant', () => {
+        expect(global.renderToJSON(stateGreenSmallVariant)).toMatchSnapshot()
+      })
+
+      test('must match statePurpleSmallVariant', () => {
+        expect(global.renderToJSON(statePurpleSmallVariant)).toMatchSnapshot()
+      })
+
+      test('must match stateRedSmallVariant', () => {
+        expect(global.renderToJSON(stateRedSmallVariant)).toMatchSnapshot()
+      })
+
+      test('must match stateOpenVariant', () => {
+        expect(global.renderToJSON(stateOpenVariant)).toMatchSnapshot()
+      })
+
+      test('must match stateClosedVariant', () => {
+        expect(global.renderToJSON(stateClosedVariant)).toMatchSnapshot()
+      })
+
+      test('must match stateMergedVariant', () => {
+        expect(global.renderToJSON(stateMergedVariant)).toMatchSnapshot()
+      })
     })
 
-    test('must match labelThemeDarkGray', () => {
-      expect(global.renderToJSON(labelThemeDarkGray)).toMatchSnapshot()
-    })
+    describe('counter', () => {
+      test('must match counterDefaultVariant', () => {
+        expect(global.renderToJSON(counterDefaultVariant)).toMatchSnapshot()
+      })
 
-    test('must match labelThemeOrange', () => {
-      expect(global.renderToJSON(labelThemeOrange)).toMatchSnapshot()
-    })
+      test('must match counterGrayVariant', () => {
+        expect(global.renderToJSON(counterGrayVariant)).toMatchSnapshot()
+      })
 
-    test('must match labelOutline', () => {
-      expect(global.renderToJSON(labelOutline)).toMatchSnapshot()
-    })
-
-    test('must match labelOutlineGreen', () => {
-      expect(global.renderToJSON(labelOutlineGreen)).toMatchSnapshot()
-    })
-
-    test('must match state', () => {
-      expect(global.renderToJSON(state)).toMatchSnapshot()
-    })
-
-    test('must match stateThemes', () => {
-      expect(global.renderToJSON(stateThemes)).toMatchSnapshot()
-    })
-
-    test('must match smallStates', () => {
-      expect(global.renderToJSON(smallStates)).toMatchSnapshot()
-    })
-
-    test('must match counter', () => {
-      expect(global.renderToJSON(counter)).toMatchSnapshot()
-    })
-
-    test('must match counterInTabs', () => {
-      expect(global.renderToJSON(counterInTabs)).toMatchSnapshot()
-    })
-
-    test('must match counterInBoxHeaders', () => {
-      expect(global.renderToJSON(counterInBoxHeaders)).toMatchSnapshot()
+      test('must match counterGrayLightVariant', () => {
+        expect(global.renderToJSON(counterGrayLightVariant)).toMatchSnapshot()
+      })
     })
   })
 })
