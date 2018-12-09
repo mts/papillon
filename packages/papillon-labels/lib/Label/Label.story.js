@@ -2,47 +2,97 @@ import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { withNotes } from '@storybook/addon-notes'
 import {
-  labelDefault,
-  design,
-  labelThemeGray,
-  labelThemeDarkGray,
-  labelThemeOrange,
-  labelOutline,
-  labelOutlineGreen,
-  state,
-  stateThemes,
-  smallStates,
-  counter,
-  counterInTabs,
-  counterInBoxHeaders,
+  // regular
+  labelWhiteOnBlueVariant,
+  labelWhiteOnDarkGrayVariant,
+  labelWhiteOnGreenVariant,
+  labelWhiteOnRedVariant,
+  labelWhiteOnYellowVariant,
+  labelWhiteOnPurpleVariant,
+  // theme
+  themeGrayVariant,
+  themeDarkGrayVariant,
+  themeOrangeVariant,
+  themeOutlineVariant,
+  themeOutlineGreenVariant,
+  // state
+  stateDefaultVariant,
+  stateGreenVariant,
+  statePurpleVariant,
+  stateRedVariant,
+  stateDefaultSmallVariant,
+  stateGreenSmallVariant,
+  statePurpleSmallVariant,
+  stateRedSmallVariant,
+  stateOpenVariant,
+  stateClosedVariant,
+  stateMergedVariant,
+  // counter
+  counterDefaultVariant,
+  counterGrayVariant,
+  counterGrayLightVariant,
 } from './Label.render'
 import { getInfo } from '../../../../.storybook/utility'
 
-const labelDefaultInfo = getInfo('Default')
-const designInfo = getInfo('Design')
-const labelThemeGrayInfo = getInfo('Label theme gray')
-const labelThemeDarkGrayInfo = getInfo('Label theme dark gray')
-const labelThemeOrangeInfo = getInfo('Label theme orange')
-const labelOutlineInfo = getInfo('Label outline')
-const labelOutlineGreenInfo = getInfo('Label outline green')
-const stateInfo = getInfo('State')
-const stateThemesInfo = getInfo('State themes')
-const smallStatesInfo = getInfo('Small states')
-const counterInfo = getInfo('Counter')
-const counterInTabsInfo = getInfo('Counter in box')
-const counterInBoxHeadersInfo = getInfo('Counter in Box Headers')
+// regular
+const labelWhiteOnBlueVariantInfo = getInfo('labelWhiteOnBlueVariant')
+const labelWhiteOnDarkGrayVariantInfo = getInfo('labelWhiteOnDarkGrayVariant')
+const labelWhiteOnGreenVariantInfo = getInfo('labelWhiteOnGreenVariant')
+const labelWhiteOnRedVariantInfo = getInfo('labelWhiteOnRedVariant')
+const labelWhiteOnYellowVariantInfo = getInfo('labelWhiteOnYellowVariant')
+const labelWhiteOnPurpleVariantInfo = getInfo('labelWhiteOnPurpleVariant')
 
-storiesOf('Labels/Label', module)
-  .add(labelDefaultInfo.text, () => labelDefault, labelDefaultInfo.parameters)
-  .add(designInfo.text, () => design, designInfo.parameters)
-  .add(labelThemeGrayInfo.text, () => labelThemeGray, labelThemeGrayInfo.parameters)
-  .add(labelThemeDarkGrayInfo.text, () => labelThemeDarkGray, labelThemeDarkGrayInfo.parameters)
-  .add(labelThemeOrangeInfo.text, () => labelThemeOrange, labelThemeOrangeInfo.parameters)
-  .add(labelOutlineInfo.text, () => labelOutline, labelOutlineInfo.parameters)
-  .add(labelOutlineGreenInfo.text, () => labelOutlineGreen, labelOutlineGreenInfo.parameters)
-  .add(stateInfo.text, () => state, stateInfo.parameters)
-  .add(stateThemesInfo.text, () => stateThemes, stateThemesInfo.parameters)
-  .add(smallStatesInfo.text, () => smallStates, smallStatesInfo.parameters)
-  .add(counterInfo.text, () => counter, counterInfo.parameters)
-  .add(counterInTabsInfo.text, () => counterInTabs, counterInTabsInfo.parameters)
-  .add(counterInBoxHeadersInfo.text, () => counterInBoxHeaders, counterInBoxHeadersInfo.parameters)
+// theme
+const themeGrayVariantInfo = getInfo('themeGrayVariant')
+const themeDarkGrayVariantInfo = getInfo('themeDarkGrayVariant')
+const themeOrangeVariantInfo = getInfo('themeOrangeVariant')
+const themeOutlineVariantInfo = getInfo('themeOutlineVariant')
+const themeOutlineGreenVariantInfo = getInfo('themeOutlineGreenVariant')
+
+// state
+const stateDefaultVariantInfo = getInfo('stateDefaultVariant')
+const stateGreenVariantInfo = getInfo('stateGreenVariant')
+const statePurpleVariantInfo = getInfo('statePurpleVariant')
+const stateRedVariantInfo = getInfo('stateRedVariant')
+const stateDefaultSmallVariantInfo = getInfo('stateDefaultSmallVariant')
+const stateGreenSmallVariantInfo = getInfo('stateGreenSmallVariant')
+const statePurpleSmallVariantInfo = getInfo('statePurpleSmallVariant')
+const stateRedSmallVariantInfo = getInfo('stateRedSmallVariant')
+const stateOpenVariantInfo = getInfo('stateOpenVariant')
+const stateClosedVariantInfo = getInfo('stateClosedVariant')
+const stateMergedVariantInfo = getInfo('stateMergedVariant')
+
+// counter
+const counterDefaultVariantInfo = getInfo('counterDefaultVariant')
+const counterGrayVariantInfo = getInfo('counterGrayVariant')
+const counterGrayLightVariantInfo = getInfo('counterGrayLightVariant')
+
+storiesOf('Labels/Regular', module)
+  .add(labelWhiteOnBlueVariantInfo.text, () => labelWhiteOnBlueVariant, labelWhiteOnBlueVariantInfo.parameters)
+  .add(labelWhiteOnDarkGrayVariantInfo.text, () => labelWhiteOnDarkGrayVariant, labelWhiteOnDarkGrayVariantInfo.parameters)
+  .add(labelWhiteOnGreenVariantInfo.text, () => labelWhiteOnGreenVariant, labelWhiteOnGreenVariantInfo.parameters)
+  .add(labelWhiteOnRedVariantInfo.text, () => labelWhiteOnRedVariant, labelWhiteOnRedVariantInfo.parameters)
+  .add(labelWhiteOnYellowVariantInfo.text, () => labelWhiteOnYellowVariant, labelWhiteOnYellowVariantInfo.parameters)
+  .add(labelWhiteOnPurpleVariantInfo.text, () => labelWhiteOnPurpleVariant, labelWhiteOnPurpleVariantInfo.parameters)
+storiesOf('Labels/Theme', module)
+  .add(themeGrayVariantInfo.text, () => themeGrayVariant, themeGrayVariantInfo.parameters)
+  .add(themeDarkGrayVariantInfo.text, () => themeDarkGrayVariant, themeDarkGrayVariantInfo.parameters)
+  .add(themeOrangeVariantInfo.text, () => themeOrangeVariant, themeOrangeVariantInfo.parameters)
+  .add(themeOutlineVariantInfo.text, () => themeOutlineVariant, themeOutlineVariantInfo.parameters)
+  .add(themeOutlineGreenVariantInfo.text, () => themeOutlineGreenVariant, themeOutlineGreenVariantInfo.parameters)
+storiesOf('Labels/State', module)
+  .add(stateDefaultVariantInfo.text, () => stateDefaultVariant, stateDefaultVariantInfo.parameters)
+  .add(stateGreenVariantInfo.text, () => stateGreenVariant, stateGreenVariantInfo.parameters)
+  .add(statePurpleVariantInfo.text, () => statePurpleVariant, statePurpleVariantInfo.parameters)
+  .add(stateRedVariantInfo.text, () => stateRedVariant, stateRedVariantInfo.parameters)
+  .add(stateDefaultSmallVariantInfo.text, () => stateDefaultSmallVariant, stateDefaultSmallVariantInfo.parameters)
+  .add(stateGreenSmallVariantInfo.text, () => stateGreenSmallVariant, stateGreenSmallVariantInfo.parameters)
+  .add(statePurpleSmallVariantInfo.text, () => statePurpleSmallVariant, statePurpleSmallVariantInfo.parameters)
+  .add(stateRedSmallVariantInfo.text, () => stateRedSmallVariant, stateRedSmallVariantInfo.parameters)
+  .add(stateOpenVariantInfo.text, () => stateOpenVariant, stateOpenVariantInfo.parameters)
+  .add(stateClosedVariantInfo.text, () => stateClosedVariant, stateClosedVariantInfo.parameters)
+  .add(stateMergedVariantInfo.text, () => stateMergedVariant, stateMergedVariantInfo.parameters)
+storiesOf('Labels/Counter', module)
+  .add(counterDefaultVariantInfo.text, () => counterDefaultVariant, counterDefaultVariantInfo.parameters)
+  .add(counterGrayVariantInfo.text, () => counterGrayVariant, counterGrayVariantInfo.parameters)
+  .add(counterGrayLightVariantInfo.text, () => counterGrayLightVariant, counterGrayLightVariantInfo.parameters)

@@ -23,6 +23,7 @@
     "component-library"
   ],
   "scripts": {
+    "build-for-explorer-watch": "nodemon --watch lib/Label/Label.js --watch webpack.config.js --watch webpack.parts.js --exec \"webpack --env production\"",
     "build": "webpack --env production",
     "release": "npm publish",
     "uninstall-packages": "rm -rf node_modules package-lock.json",
@@ -43,6 +44,8 @@
   },
   "devDependencies": {
     "babel-core": "7.0.0-bridge.0",
-    "jest": "23.6.0"
+    "jest": "23.6.0",
+    "nodemon": "1.18.7",
+    "webpack": "4.27.1"
   }
 }

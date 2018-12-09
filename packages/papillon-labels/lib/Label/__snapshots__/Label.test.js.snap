@@ -1,311 +1,289 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Label /> Snaphot must match counter 1`] = `
-<div>
-  <span
-    className="Counter mr-1"
-  >
-     
-    16
-  </span>
-  <span
-    className="Counter Counter--gray mr-1"
-  >
-     
-    32
-  </span>
-  <span
-    className="Counter Counter--gray-light"
-  >
-     
-    64
-  </span>
-</div>
-`;
-
-exports[`<Label /> Snaphot must match counterInBoxHeaders 1`] = `
-<div
-  className="Box"
->
-  <div
-    className="Box-header"
-  >
-    <h3
-      className="Box-title"
-    >
-      Box title
-      <span
-        className="Counter Counter--gray ml-1"
-      >
-         
-        3
-      </span>
-    </h3>
-  </div>
-  <ul>
-    <li
-      className="Box-row"
-    >
-      Box row one
-    </li>
-    <li
-      className="Box-row"
-    >
-      Box row two
-    </li>
-    <li
-      className="Box-row"
-    >
-      Box row three
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`<Label /> Snaphot must match counterInTabs 1`] = `
-<div
-  className="tabnav"
->
-  <nav
-    aria-label="Foo bar"
-    className="tabnav-tabs"
-  >
-    <a
-      aria-current="page"
-      className="tabnav-tab selected"
-      href="#url"
-    >
-      Foo tab
-      <span
-        className="Counter"
-      >
-         
-        23
-      </span>
-    </a>
-    <a
-      className="tabnav-tab ml-1"
-      href="#url"
-    >
-      Bar tab
-    </a>
-  </nav>
-</div>
-`;
-
-exports[`<Label /> Snaphot must match design 1`] = `
+exports[`<Label /> Snaphot counter must match counterDefaultVariant 1`] = `
 <span
-  className="Label bg-blue ml-1"
+  className="Counter"
 >
    
-  design label
+  33
 </span>
 `;
 
-exports[`<Label /> Snaphot must match labelDefault 1`] = `
+exports[`<Label /> Snaphot counter must match counterGrayLightVariant 1`] = `
 <span
-  className="Label bg-blue"
+  className="Counter Counter--gray-light"
 >
    
-  default label
+  77
 </span>
 `;
 
-exports[`<Label /> Snaphot must match labelOutline 1`] = `
+exports[`<Label /> Snaphot counter must match counterGrayVariant 1`] = `
 <span
-  className="Label Label--outline"
+  className="Counter Counter--gray"
 >
    
-  outlined label
+  55
 </span>
 `;
 
-exports[`<Label /> Snaphot must match labelOutlineGreen 1`] = `
+exports[`<Label /> Snaphot regular must match labelWhiteOnBlueVariant 1`] = `
 <span
-  className="Label Label--outline Label--outline-green"
+  className="Label text-white bg-blue"
 >
    
-  green outlined label
+  papillon regular label
 </span>
 `;
 
-exports[`<Label /> Snaphot must match labelThemeDarkGray 1`] = `
+exports[`<Label /> Snaphot regular must match labelWhiteOnDarkGrayVariant 1`] = `
 <span
-  className="Label Label--gray-darker"
+  className="Label text-white bg-gray-dark"
 >
    
-  dark gray label
+  papillon regular label
 </span>
 `;
 
-exports[`<Label /> Snaphot must match labelThemeGray 1`] = `
+exports[`<Label /> Snaphot regular must match labelWhiteOnGreenVariant 1`] = `
 <span
-  className="Label Label--gray"
+  className="Label text-white bg-green"
 >
    
-  gray label
+  papillon regular label
 </span>
 `;
 
-exports[`<Label /> Snaphot must match labelThemeOrange 1`] = `
+exports[`<Label /> Snaphot regular must match labelWhiteOnPurpleVariant 1`] = `
 <span
-  className="Label Label--orange"
+  className="Label text-white bg-purple"
 >
    
-  orange label
+  papillon regular label
 </span>
 `;
 
-exports[`<Label /> Snaphot must match smallStates 1`] = `
-<div>
-  <span
-    className="State State--green State--small mr-1"
-  >
-    <svg
-      aria-hidden="true"
-      className="octicon"
-      height={16}
-      role="img"
-      style={
-        Object {
-          "display": "inline-block",
-          "fill": "currentColor",
-          "userSelect": "none",
-          "verticalAlign": "text-bottom",
-        }
+exports[`<Label /> Snaphot regular must match labelWhiteOnRedVariant 1`] = `
+<span
+  className="Label text-white bg-red"
+>
+   
+  papillon regular label
+</span>
+`;
+
+exports[`<Label /> Snaphot regular must match labelWhiteOnYellowVariant 1`] = `
+<span
+  className="Label text-white bg-yellow"
+>
+   
+  papillon regular label
+</span>
+`;
+
+exports[`<Label /> Snaphot state must match stateClosedVariant 1`] = `
+<span
+  className="State State--red"
+>
+  <svg
+    aria-hidden="true"
+    className="octicon"
+    height={16}
+    role="img"
+    style={
+      Object {
+        "display": "inline-block",
+        "fill": "currentColor",
+        "userSelect": "none",
+        "verticalAlign": "text-bottom",
       }
-      viewBox="0 0 14 16"
-      width={14}
-    >
-      <path
-        d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"
-        fillRule="evenodd"
-      />
-    </svg>
-     
-    Open
-  </span>
-  <span
-    className="State State--red State--small"
+    }
+    viewBox="0 0 12 16"
+    width={12}
   >
-    <svg
-      aria-hidden="true"
-      className="octicon"
-      height={16}
-      role="img"
-      style={
-        Object {
-          "display": "inline-block",
-          "fill": "currentColor",
-          "userSelect": "none",
-          "verticalAlign": "text-bottom",
-        }
-      }
-      viewBox="0 0 16 16"
-      width={16}
-    >
-      <path
-        d="M7 10h2v2H7v-2zm2-6H7v5h2V4zm1.5 1.5l-1 1L12 9l4-4.5-1-1L12 7l-1.5-1.5zM8 13.7A5.71 5.71 0 0 1 2.3 8c0-3.14 2.56-5.7 5.7-5.7 1.83 0 3.45.88 4.5 2.2l.92-.92A6.947 6.947 0 0 0 8 1C4.14 1 1 4.14 1 8s3.14 7 7 7 7-3.14 7-7l-1.52 1.52c-.66 2.41-2.86 4.19-5.48 4.19v-.01z"
-        fillRule="evenodd"
-      />
-    </svg>
-     
-    Closed
-  </span>
-</div>
+    <path
+      d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
+      fillRule="evenodd"
+    />
+  </svg>
+   
+  papillon state label
+</span>
 `;
 
-exports[`<Label /> Snaphot must match state 1`] = `
+exports[`<Label /> Snaphot state must match stateDefaultSmallVariant 1`] = `
+<span
+  className="State State--small"
+>
+   
+  papillon state label
+</span>
+`;
+
+exports[`<Label /> Snaphot state must match stateDefaultVariant 1`] = `
 <span
   className="State"
 >
    
-  Default
+  papillon state label
 </span>
 `;
 
-exports[`<Label /> Snaphot must match stateThemes 1`] = `
-<div>
-  <span
-    className="State State--green mr-1"
-  >
-    <svg
-      aria-hidden="true"
-      className="octicon"
-      height={16}
-      role="img"
-      style={
-        Object {
-          "display": "inline-block",
-          "fill": "currentColor",
-          "userSelect": "none",
-          "verticalAlign": "text-bottom",
-        }
+exports[`<Label /> Snaphot state must match stateGreenSmallVariant 1`] = `
+<span
+  className="State State--green State--small"
+>
+   
+  papillon state label
+</span>
+`;
+
+exports[`<Label /> Snaphot state must match stateGreenVariant 1`] = `
+<span
+  className="State State--green"
+>
+   
+  papillon state label
+</span>
+`;
+
+exports[`<Label /> Snaphot state must match stateMergedVariant 1`] = `
+<span
+  className="State State--purple"
+>
+  <svg
+    aria-hidden="true"
+    className="octicon"
+    height={16}
+    role="img"
+    style={
+      Object {
+        "display": "inline-block",
+        "fill": "currentColor",
+        "userSelect": "none",
+        "verticalAlign": "text-bottom",
       }
-      viewBox="0 0 12 16"
-      width={12}
-    >
-      <path
-        d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
-        fillRule="evenodd"
-      />
-    </svg>
-     
-    Open
-  </span>
-  <span
-    className="State State--red mr-1"
+    }
+    viewBox="0 0 12 16"
+    width={12}
   >
-    <svg
-      aria-hidden="true"
-      className="octicon"
-      height={16}
-      role="img"
-      style={
-        Object {
-          "display": "inline-block",
-          "fill": "currentColor",
-          "userSelect": "none",
-          "verticalAlign": "text-bottom",
-        }
+    <path
+      d="M10 7c-.73 0-1.38.41-1.73 1.02V8C7.22 7.98 6 7.64 5.14 6.98c-.75-.58-1.5-1.61-1.89-2.44A1.993 1.993 0 0 0 2 .99C.89.99 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2a1.993 1.993 0 0 0 1-3.72V7.67c.67.7 1.44 1.27 2.3 1.69.86.42 2.03.63 2.97.64v-.02c.36.61 1 1.02 1.73 1.02 1.11 0 2-.89 2-2 0-1.11-.89-2-2-2zm-6.8 6c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm8 6c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
+      fillRule="evenodd"
+    />
+  </svg>
+   
+  papillon state label
+</span>
+`;
+
+exports[`<Label /> Snaphot state must match stateOpenVariant 1`] = `
+<span
+  className="State State--green"
+>
+  <svg
+    aria-hidden="true"
+    className="octicon"
+    height={16}
+    role="img"
+    style={
+      Object {
+        "display": "inline-block",
+        "fill": "currentColor",
+        "userSelect": "none",
+        "verticalAlign": "text-bottom",
       }
-      viewBox="0 0 12 16"
-      width={12}
-    >
-      <path
-        d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
-        fillRule="evenodd"
-      />
-    </svg>
-     
-    Closed
-  </span>
-  <span
-    className="State State--purple"
+    }
+    viewBox="0 0 12 16"
+    width={12}
   >
-    <svg
-      aria-hidden="true"
-      className="octicon"
-      height={16}
-      role="img"
-      style={
-        Object {
-          "display": "inline-block",
-          "fill": "currentColor",
-          "userSelect": "none",
-          "verticalAlign": "text-bottom",
-        }
-      }
-      viewBox="0 0 12 16"
-      width={12}
-    >
-      <path
-        d="M10 7c-.73 0-1.38.41-1.73 1.02V8C7.22 7.98 6 7.64 5.14 6.98c-.75-.58-1.5-1.61-1.89-2.44A1.993 1.993 0 0 0 2 .99C.89.99 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2a1.993 1.993 0 0 0 1-3.72V7.67c.67.7 1.44 1.27 2.3 1.69.86.42 2.03.63 2.97.64v-.02c.36.61 1 1.02 1.73 1.02 1.11 0 2-.89 2-2 0-1.11-.89-2-2-2zm-6.8 6c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm8 6c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
-        fillRule="evenodd"
-      />
-    </svg>
-     
-    Merged
-  </span>
-</div>
+    <path
+      d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
+      fillRule="evenodd"
+    />
+  </svg>
+   
+  papillon state label
+</span>
+`;
+
+exports[`<Label /> Snaphot state must match statePurpleSmallVariant 1`] = `
+<span
+  className="State State--small State--purple"
+>
+   
+  papillon state label
+</span>
+`;
+
+exports[`<Label /> Snaphot state must match statePurpleVariant 1`] = `
+<span
+  className="State State--purple"
+>
+   
+  papillon state label
+</span>
+`;
+
+exports[`<Label /> Snaphot state must match stateRedSmallVariant 1`] = `
+<span
+  className="State State--small State--red"
+>
+   
+  papillon state label
+</span>
+`;
+
+exports[`<Label /> Snaphot state must match stateRedVariant 1`] = `
+<span
+  className="State State--red"
+>
+   
+  papillon state label
+</span>
+`;
+
+exports[`<Label /> Snaphot theme must match themeDarkGrayVariant 1`] = `
+<span
+  className="Label Label--gray-darker"
+>
+   
+  papillon theme label
+</span>
+`;
+
+exports[`<Label /> Snaphot theme must match themeGrayVariant 1`] = `
+<span
+  className="Label Label--gray"
+>
+   
+  papillon theme label
+</span>
+`;
+
+exports[`<Label /> Snaphot theme must match themeOrangeVariant 1`] = `
+<span
+  className="Label Label--orange"
+>
+   
+  papillon theme label
+</span>
+`;
+
+exports[`<Label /> Snaphot theme must match themeOutlineGreenVariant 1`] = `
+<span
+  className="Label Label--outline Label--outline-green"
+>
+   
+  papillon theme label
+</span>
+`;
+
+exports[`<Label /> Snaphot theme must match themeOutlineVariant 1`] = `
+<span
+  className="Label Label--outline"
+>
+   
+  papillon theme label
+</span>
 `;
