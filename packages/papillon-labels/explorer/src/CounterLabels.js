@@ -9,17 +9,17 @@ const CounterLabels = () => (
 
     <h3 className="pl-2"><span role="img" aria-label="moyai"> 🐝 </span>default</h3>
     <div className="pl-6">
-      <Label variant="counter">16</Label>
+      <Label variant="counter-default">16</Label>
     </div>
 
     <h3 className="pl-2"><span role="img" aria-label="moyai"> 🐝 </span>gray</h3>
     <div className="pl-6">
-      <Label variant="counter" className="Counter--gray">32</Label>
+      <Label variant="counter-gray">32</Label>
     </div>
 
     <h3 className="pl-2"><span role="img" aria-label="moyai"> 🐝 </span>gray light</h3>
     <div className="pl-6">
-      <Label variant="counter" className="Counter--gray-light">32</Label>
+      <Label variant="counter-gray-light">32</Label>
     </div>
 
     <h3 className="pl-2"><span role="img" aria-label="moyai"> 🐝 </span>in tabs</h3>
@@ -28,7 +28,7 @@ const CounterLabels = () => (
         <nav className="tabnav-tabs" aria-label="Foo bar">
           <a href="#url" className="tabnav-tab selected" aria-current="page">
             Foo tab
-            <Label variant="counter">23</Label>
+            <Label variant="counter-default">23</Label>
           </a>
           <a href="#url" className="tabnav-tab ml-1">
             Bar tab
@@ -43,7 +43,7 @@ const CounterLabels = () => (
         <div className="Box-header">
           <h3 className="Box-title">
             Box title
-            <Label variant="counter" className="Counter--gray ml-1">3</Label>
+            <Label variant="counter-default">3</Label>
           </h3>
         </div>
         <ul>
