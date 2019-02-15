@@ -39,7 +39,7 @@
     "ci": "npm-run-all lint build test"
   },
   "dependencies": {
-    "primer": "10.10.2"
+    "primer": "11.0.0"
   },
   "devDependencies": {
     "babel-core": "7.0.0-bridge.0",
