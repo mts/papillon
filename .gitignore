@@ -6,3 +6,6 @@ node_modules
 lerna-debug.log
 
 package-lock.json
+
+papillon.sublime-project
+papillon.sublime-workspace
