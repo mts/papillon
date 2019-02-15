@@ -4,3 +4,5 @@ node_modules
 .npmrc
 .storybook-static
 lerna-debug.log
+
+package-lock.json
