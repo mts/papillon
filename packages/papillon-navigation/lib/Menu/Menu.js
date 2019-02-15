@@ -12,7 +12,9 @@ const Menu = ({ aria, heading, items, selectedIndex }) => {
   return (
     <nav className="menu" aria-label={label} aria-labelledby={labelledby}>
       {!isEmptyObject(heading) && (
-        <span className="menu-heading" id="menu-heading">{title}</span>
+        <span className="menu-heading" id="menu-heading">
+          {title}
+        </span>
       )}
       {items.map((item, index) => {
         const { href, text, icon, html } = item
@@ -27,13 +29,7 @@ const Menu = ({ aria, heading, items, selectedIndex }) => {
         }
 
         return (
-          <MenuItem
-            key={generate()}
-            className="selected"
-            aria={aria}
-            href={href}
-            icon={icon}
-          >
+          <MenuItem key={generate()} className="selected" aria={aria} href={href} icon={icon}>
             {html || null}
             {text}
           </MenuItem>
@@ -55,14 +51,15 @@ Menu.propTypes = {
   heading: shape({
     text: string,
   }),
-  items: arrayOf(shape({
-    href: string,
-    text: string,
-    icon: string,
-    html: node,
-  })).isRequired,
+  items: arrayOf(
+    shape({
+      href: string,
+      text: string,
+      icon: string,
+      html: node,
+    }),
+  ).isRequired,
   selectedIndex: number.isRequired,
 }
 
 export default Menu
-

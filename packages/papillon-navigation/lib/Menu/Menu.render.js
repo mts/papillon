@@ -1,8 +1,6 @@
 import React from 'react'
 
-const Menu = process.env.NODE_ENV === 'develop'
-  ? require('./Menu').default
-  : require('../../build/papillon-navigation').Menu;
+const Menu = process.env.NODE_ENV === 'develop' ? require('./Menu').default : require('../../build/papillon-navigation').Menu
 
 const menu = (() => {
   const aria = {
@@ -17,13 +15,7 @@ const menu = (() => {
     { href: '#url', text: 'Notifications' },
   ]
 
-  return (
-    <Menu
-      aria={aria}
-      items={items}
-      selectedIndex={0}
-    />
-  )
+  return <Menu aria={aria} items={items} selectedIndex={0} />
 })()
 
 const menuWithIconAvatarCounter = (() => {
@@ -33,18 +25,9 @@ const menuWithIconAvatarCounter = (() => {
   }
 
   const items = [
-    { href: '#url',
-      text: 'Account',
-      icon: 'tools',
-    },
-    { href: '#url',
-      text: 'Profile',
-      icon: 'person',
-    },
-    { href: '#url',
-      text: 'Emails',
-      icon: 'mail',
-    },
+    { href: '#url', text: 'Account', icon: 'tools' },
+    { href: '#url', text: 'Profile', icon: 'person' },
+    { href: '#url', text: 'Emails', icon: 'mail' },
     {
       href: '#url',
       text: 'Notifications',
@@ -53,13 +36,7 @@ const menuWithIconAvatarCounter = (() => {
     },
   ]
 
-  return (
-    <Menu
-      aria={aria}
-      items={items}
-      selectedIndex={0}
-    />
-  )
+  return <Menu aria={aria} items={items} selectedIndex={0} />
 })()
 
 const menuWithHeading = (() => {
@@ -80,18 +57,7 @@ const menuWithHeading = (() => {
     { href: '#url', text: 'Notifications' },
   ]
 
-  return (
-    <Menu
-      aria={aria}
-      heading={heading}
-      items={items}
-      selectedIndex={0}
-    />
-  )
+  return <Menu aria={aria} heading={heading} items={items} selectedIndex={0} />
 })()
 
-export {
-  menu,
-  menuWithIconAvatarCounter,
-  menuWithHeading,
-}
+export { menu, menuWithIconAvatarCounter, menuWithHeading }

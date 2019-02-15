@@ -28,10 +28,12 @@ const Breadcrumb = ({ items, selectedIndex }) => (
 )
 
 Breadcrumb.propTypes = {
-  items: arrayOf(shape({
-    href: string,
-    text: string,
-  })).isRequired,
+  items: arrayOf(
+    shape({
+      href: string,
+      text: string,
+    }),
+  ).isRequired,
   selectedIndex: number.isRequired,
 }
 

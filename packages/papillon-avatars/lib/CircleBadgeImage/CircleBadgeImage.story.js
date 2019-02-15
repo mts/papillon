@@ -1,11 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { withNotes } from '@storybook/addon-notes'
-import {
-  circleBadgeSmallImage,
-  circleBadgeMediumImage,
-  circleBadgeLargeImage,
-} from './CircleBadgeImage.render'
+import { circleBadgeSmallImage, circleBadgeMediumImage, circleBadgeLargeImage } from './CircleBadgeImage.render'
 import { getInfo } from '../../../../.storybook/utility'
 
 const circleBadgeSmallImageInfo = getInfo('CircleBadge-small-Image')

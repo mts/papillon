@@ -8,7 +8,7 @@ const MenuItem = ({ className, aria, href, icon, children }) => {
   if (isEmptyObject(aria)) {
     return (
       <a className="menu-item" href={href}>
-        {icon ? <Octicon size='small' icon={getIconByName(icon)} /> : null}
+        {icon ? <Octicon size="small" icon={getIconByName(icon)} /> : null}
         <span className={cx({ 'ml-1': icon !== '' })}>{children}</span>
       </a>
     )
@@ -16,7 +16,7 @@ const MenuItem = ({ className, aria, href, icon, children }) => {
 
   return (
     <a className={`menu-item ${className}`.trim()} href={href} aria-current={aria.current}>
-      {icon ? <Octicon size='small' icon={getIconByName(icon)} /> : null}
+      {icon ? <Octicon size="small" icon={getIconByName(icon)} /> : null}
       <span className={cx({ 'ml-1': icon !== '' })}>{children}</span>
     </a>
   )

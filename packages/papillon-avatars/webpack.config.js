@@ -1,19 +1,14 @@
-const path = require("path")
-const merge = require("webpack-merge")
-const glob = require("glob")
-const parts = require("./webpack.parts")
+const path = require('path')
+const merge = require('webpack-merge')
+const glob = require('glob')
+const parts = require('./webpack.parts')
 
 const PATHS = {
-  app: path.join(__dirname, "lib"),
-  build: path.join(__dirname, "build"),
+  app: path.join(__dirname, 'lib'),
+  build: path.join(__dirname, 'build'),
 }
 
-const commonConfig = merge([
-  parts.entry(),
-  parts.output(),
-  parts.plugins(),
-  parts.loadJavaScript({ include: PATHS.app }),
-])
+const commonConfig = merge([parts.entry(), parts.output(), parts.plugins(), parts.loadJavaScript({ include: PATHS.app })])
 
 const developmentConfig = merge([
   parts.devServer({
@@ -30,7 +25,7 @@ const productionConfig = merge([
   parts.loadCSS(),
 
   parts.extractCSS({
-    use: ["css-loader", parts.autoprefix()],
+    use: ['css-loader', parts.autoprefix()],
   }),
 
   parts.purifyCSS({
@@ -47,7 +42,7 @@ const productionConfig = merge([
 ])
 
 module.exports = mode => {
-  if (mode === "production") {
+  if (mode === 'production') {
     return merge(commonConfig, productionConfig, { mode })
   }
 

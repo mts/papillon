@@ -3,11 +3,7 @@ import { string, node } from 'prop-types'
 import 'primer/index.scss'
 
 const CircleBadge = ({ size, className, children }) => (
-  <a
-    className={`CircleBadge CircleBadge--${size} ${className}`.trim()}
-    title="title"
-    href="href"
-  >
+  <a className={`CircleBadge CircleBadge--${size} ${className}`.trim()} title="title" href="href">
     {children}
   </a>
 )

@@ -5,35 +5,21 @@ import 'primer/index.scss'
 const Button = ({ variant, className, children, onClick }) => {
   if (variant === 'button') {
     return (
-      <button
-        className={`btn ${className}`.trim()}
-        type="button"
-        onClick={onClick}
-        disabled={className.includes('disabled')}
-      >
+      <button className={`btn ${className}`.trim()} type="button" onClick={onClick} disabled={className.includes('disabled')}>
         {children}
       </button>
     )
-  } if (variant === 'link') {
+  }
+  if (variant === 'link') {
     return (
-      <a
-        className={`btn ${className}`.trim()}
-        href="#url"
-        role="button"
-        onClick={onClick}
-        disabled={className.includes('disabled')}
-      >
+      <a className={`btn ${className}`.trim()} href="#url" role="button" onClick={onClick} disabled={className.includes('disabled')}>
         {children}
       </a>
     )
-  } if (variant === 'button-link') {
+  }
+  if (variant === 'button-link') {
     return (
-      <button
-        type="button"
-        className="btn-link"
-        onClick={onClick}
-        disabled={className.includes('disabled')}
-      >
+      <button type="button" className="btn-link" onClick={onClick} disabled={className.includes('disabled')}>
         {children}
       </button>
     )
