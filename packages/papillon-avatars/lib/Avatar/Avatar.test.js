@@ -1,11 +1,4 @@
-import {
-  avatar,
-  avatarSmall,
-  avatarStackMore,
-  avatarStackThreePlus,
-  avatarStackTwo,
-  avatarStackRight,
-} from './Avatar.render'
+import { avatar, avatarSmall, avatarStackMore, avatarStackThreePlus, avatarStackTwo, avatarStackRight } from './Avatar.render'
 
 describe('<Avatar />', () => {
   describe('Snaphot', () => {

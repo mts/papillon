@@ -3,11 +3,7 @@ import ReactDOM from 'react-dom'
 // import Breadcrumb from 'papillon-breadcrumb'
 import Breadcrumb from '../../build/papillon-breadcrumb'
 
-const items = [
-  { href: '/business', text: 'Business' },
-  { href: '/business/customer', text: 'Customers' },
-  { href: '', text: 'MailChimp' },
-]
+const items = [{ href: '/business', text: 'Business' }, { href: '/business/customer', text: 'Customers' }, { href: '', text: 'MailChimp' }]
 
 ReactDOM.render(
   <div>

@@ -1,17 +1,9 @@
 import React from 'react'
 
-const Breadcrumb = process.env.NODE_ENV === 'develop'
-  ? require('./Breadcrumb').default
-  : require('../../build/papillon-breadcrumb').default;
+const Breadcrumb = process.env.NODE_ENV === 'develop' ? require('./Breadcrumb').default : require('../../build/papillon-breadcrumb').default
 
-const items = [
-  { href: '/business', text: 'Business' },
-  { href: '/business/customer', text: 'Customers' },
-  { href: '', text: 'MailChimp' },
-]
+const items = [{ href: '/business', text: 'Business' }, { href: '/business/customer', text: 'Customers' }, { href: '', text: 'MailChimp' }]
 
-const breadcrumb = (
-  <Breadcrumb items={items} selectedIndex={2} />
-)
+const breadcrumb = <Breadcrumb items={items} selectedIndex={2} />
 
 export default breadcrumb

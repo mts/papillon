@@ -7,17 +7,12 @@ import Octicon, { getIconByName } from '@githubprimer/octicons-react'
 // ```html title="UnderlineNav with Counter"
 
 const UnderlineNavItem = ({ className, href, role, title, icon, counter, children }) => (
-    <a
-      href={href}
-      role={role}
-      title={title}
-      className={`UnderlineNav-item ${className}`.trim()}
-    >
-      {icon ? <Octicon className='UnderlineNav-octicon mr-1' size='small' icon={getIconByName(icon)} /> : null}
-      {children}
-      {counter ? <span className='ml-1'>{counter}</span> : null}
-    </a>
-  )
+  <a href={href} role={role} title={title} className={`UnderlineNav-item ${className}`.trim()}>
+    {icon ? <Octicon className="UnderlineNav-octicon mr-1" size="small" icon={getIconByName(icon)} /> : null}
+    {children}
+    {counter ? <span className="ml-1">{counter}</span> : null}
+  </a>
+)
 
 UnderlineNavItem.defaultProps = {
   className: '',

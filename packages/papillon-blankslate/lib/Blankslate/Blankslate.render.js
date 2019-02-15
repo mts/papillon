@@ -1,8 +1,6 @@
 import React from 'react'
 
-const Blankslate = process.env.NODE_ENV === 'develop'
-  ? require('./Blankslate').default
-  : require('../../build/papillon-blankslate').default;
+const Blankslate = process.env.NODE_ENV === 'develop' ? require('./Blankslate').default : require('../../build/papillon-blankslate').default
 
 const blankslate = (
   <Blankslate>
@@ -53,12 +51,4 @@ const blankslateCleanBackground = (
   </Blankslate>
 )
 
-export {
-  blankslate,
-  blankslateIcon,
-  blankslateNarrow,
-  blankslateCapped,
-  blankslateSpacious,
-  blankslateLarge,
-  blankslateCleanBackground,
-}
+export { blankslate, blankslateIcon, blankslateNarrow, blankslateCapped, blankslateSpacious, blankslateLarge, blankslateCleanBackground }

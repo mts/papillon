@@ -2,13 +2,7 @@ import React from 'react'
 import { string } from 'prop-types'
 import 'primer/index.scss'
 
-const CircleBadgeImage = ({ src, className, alt }) => (
-  <img
-    src={src}
-    className={`CircleBadge-icon ${className}`.trim()}
-    alt={alt}
-  />
-)
+const CircleBadgeImage = ({ src, className, alt }) => <img src={src} className={`CircleBadge-icon ${className}`.trim()} alt={alt} />
 
 CircleBadgeImage.defaultProps = {
   className: '',
