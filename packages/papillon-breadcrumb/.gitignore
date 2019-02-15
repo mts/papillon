@@ -1,5 +1,5 @@
 node_modules
 build
 .npmrc
-
 package-lock.json
+.DS_Store
