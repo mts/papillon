@@ -42,7 +42,7 @@
     "primer": "11.0.0"
   },
   "devDependencies": {
-    "babel-core": "7.0.0-bridge.0",
-    "jest": "23.6.0"
+    "babel-core": "6.26.3",
+    "jest": "24.1.0"
   }
 }
