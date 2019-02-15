@@ -1,5 +1,7 @@
 package-lock.json
 node_modules
+.storybook
+.storybook-static
 
 packages/papillon-alerts/package-lock.json
 packages/papillon-alerts/build
