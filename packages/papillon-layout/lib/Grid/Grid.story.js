@@ -6,5 +6,4 @@ import { getInfo } from '../../../../.storybook/utility'
 
 const gridInfo = getInfo('Grid')
 
-storiesOf('Layout/Grid', module)
-  .add(gridInfo.text, () => grid, gridInfo.parameters)
+storiesOf('Layout/Grid', module).add(gridInfo.text, () => grid, gridInfo.parameters)

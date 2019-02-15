@@ -1,11 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { withNotes } from '@storybook/addon-notes'
-import {
-  circleBadgeSmallIcon,
-  circleBadgeMediumIcon,
-  circleBadgeLargeIcon,
-} from './CircleBadgeIcon.render'
+import { circleBadgeSmallIcon, circleBadgeMediumIcon, circleBadgeLargeIcon } from './CircleBadgeIcon.render'
 import { getInfo } from '../../../../.storybook/utility'
 
 const circleBadgeSmallIconInfo = getInfo('CircleBadge-small-icon')

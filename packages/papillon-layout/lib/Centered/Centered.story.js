@@ -6,5 +6,4 @@ import { getInfo } from '../../../../.storybook/utility'
 
 const centeredInfo = getInfo('Centered')
 
-storiesOf('Layout/Centered', module)
-  .add(centeredInfo.text, () => centered, centeredInfo.parameters)
+storiesOf('Layout/Centered', module).add(centeredInfo.text, () => centered, centeredInfo.parameters)

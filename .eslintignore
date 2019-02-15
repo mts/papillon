@@ -2,55 +2,55 @@ node_modules/*
 .storybook/*
 .storybook-static/*
 
+packages/papillon-alerts/build/*
 packages/papillon-alerts/node_modules/*
-packages/papillon-alerts/lib/*
-packages/papillon-alerts/webpack-babel-sample/node_modules/*
+packages/papillon-alerts/explorer/node_modules/*
 
+packages/papillon-avatars/build/*
 packages/papillon-avatars/node_modules/*
-packages/papillon-avatars/lib/*
 
+packages/papillon-base/build/*
 packages/papillon-base/node_modules/*
-packages/papillon-base/lib/*
 
+packages/papillon-blankslate/build/*
 packages/papillon-blankslate/node_modules/*
-packages/papillon-blankslate/lib/*
-packages/papillon-blankslate/webpack-babel-sample/node_modules/*
+packages/papillon-blankslate/explorer/node_modules/*
 
+packages/papillon-box/build/*
 packages/papillon-box/node_modules/*
-packages/papillon-box/lib/*
 
+packages/papillon-breadcrumb/build/*
 packages/papillon-breadcrumb/node_modules/*
-packages/papillon-breadcrumb/lib/*
-packages/papillon-breadcrumb/webpack-babel-sample/node_modules/*
+packages/papillon-breadcrumb/explorer/node_modules/*
 
+packages/papillon-buttons/build/*
 packages/papillon-buttons/node_modules/*
-packages/papillon-buttons/lib/*
-packages/papillon-buttons/webpack-babel-sample/node_modules/*
+packages/papillon-buttons/explorer/node_modules/*
 
+packages/papillon-core/build/*
 packages/papillon-core/node_modules/*
-packages/papillon-core/lib/*
 
+packages/papillon-labels/build/*
 packages/papillon-labels/node_modules/*
-packages/papillon-labels/lib/*
-packages/papillon-labels/webpack-babel-sample/node_modules/*
+packages/papillon-labels/explorer/node_modules/*
 
+packages/papillon-layout/build/*
 packages/papillon-layout/node_modules/*
-packages/papillon-layout/lib/*
 
+packages/papillon-navigation/build/*
 packages/papillon-navigation/node_modules/*
-packages/papillon-navigation/lib/*
 
+packages/papillon-prime/build/*
 packages/papillon-prime/node_modules/*
-packages/papillon-prime/lib/*
 
+packages/papillon-product/build/*
 packages/papillon-product/node_modules/*
-packages/papillon-product/lib/*
 
+packages/papillon-support/build/*
 packages/papillon-support/node_modules/*
-packages/papillon-support/lib/*
 
+packages/papillon-tooltips/build/*
 packages/papillon-tooltips/node_modules/*
-packages/papillon-tooltips/lib/*
 
+packages/papillon-utilities/build/*
 packages/papillon-utilities/node_modules/*
-packages/papillon-utilities/lib/*

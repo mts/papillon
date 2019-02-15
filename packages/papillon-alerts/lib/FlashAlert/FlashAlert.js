@@ -5,7 +5,11 @@ import 'primer/index.scss'
 
 const FlashAlert = ({ className, children, icon }) => (
   <div className={`flash ${className}`.trim()}>
-    {icon ? <span className="mr-3"><Octicon size='small' icon={getIconByName(icon)} /></span> : null}
+    {icon ? (
+      <span className="mr-3">
+        <Octicon size="small" icon={getIconByName(icon)} />
+      </span>
+    ) : null}
     {children}
   </div>
 )

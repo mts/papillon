@@ -1,8 +1,4 @@
-import {
-  circleBadgeSmallIcon,
-  circleBadgeMediumIcon,
-  circleBadgeLargeIcon,
-} from './CircleBadgeIcon.render'
+import { circleBadgeSmallIcon, circleBadgeMediumIcon, circleBadgeLargeIcon } from './CircleBadgeIcon.render'
 
 describe('<Avatar />', () => {
   describe('Snaphot', () => {

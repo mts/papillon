@@ -6,7 +6,7 @@ import 'primer/index.scss'
 const CircleBadgeDashedConnection = ({ children }) => (
   <div className="DashedConnection">
     <ul className="d-flex list-style-none flex-justify-between" aria-label="A sample GitHub workflow">
-      {children.map((child) => (
+      {children.map(child => (
         <li key={generate()} className="CircleBadge CircleBadge--small" aria-label="GitHub">
           {child}
         </li>

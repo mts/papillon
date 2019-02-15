@@ -1,11 +1,3 @@
-import {
-  Centered,
-  Container,
-  Grid,
-} from './lib'
+import { Centered, Container, Grid } from './lib'
 
-export {
-  Centered,
-  Container,
-  Grid,
-}
+export { Centered, Container, Grid }

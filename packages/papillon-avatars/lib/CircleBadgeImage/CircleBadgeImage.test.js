@@ -1,8 +1,4 @@
-import {
-  circleBadgeSmallImage,
-  circleBadgeMediumImage,
-  circleBadgeLargeImage,
-} from './CircleBadgeImage.render'
+import { circleBadgeSmallImage, circleBadgeMediumImage, circleBadgeLargeImage } from './CircleBadgeImage.render'
 
 describe('<Avatar />', () => {
   describe('Snaphot', () => {

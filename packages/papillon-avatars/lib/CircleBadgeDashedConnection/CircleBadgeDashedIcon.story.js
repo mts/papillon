@@ -6,5 +6,8 @@ import { getInfo } from '../../../../.storybook/utility'
 
 const circleBadgeDashedConnectionInfo = getInfo('Flash messages')
 
-storiesOf('Avatars/CircleBadgeDashedIcon', module)
-  .add(circleBadgeDashedConnectionInfo.text, () => circleBadgeDashedConnection, circleBadgeDashedConnectionInfo.parameters)
+storiesOf('Avatars/CircleBadgeDashedIcon', module).add(
+  circleBadgeDashedConnectionInfo.text,
+  () => circleBadgeDashedConnection,
+  circleBadgeDashedConnectionInfo.parameters,
+)

@@ -6,11 +6,12 @@ import 'primer/index.scss'
 
 const Blankslate = ({ className, children, icons }) => (
   <div className={`blankslate ${className}`.trim()}>
-    {icons && icons.map((icon) => (
-      <span key={generate()} className="blankslate-icon">
-        <Octicon size='small' icon={getIconByName(icon)} />
-      </span>
-    ))}
+    {icons &&
+      icons.map(icon => (
+        <span key={generate()} className="blankslate-icon">
+          <Octicon size="small" icon={getIconByName(icon)} />
+        </span>
+      ))}
     {children}
   </div>
 )

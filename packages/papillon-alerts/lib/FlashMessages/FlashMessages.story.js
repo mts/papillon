@@ -6,5 +6,4 @@ import { getInfo } from '../../../../.storybook/utility'
 
 const flashMessagesInfo = getInfo('Flash messages')
 
-storiesOf('Alerts/FlashMessages', module)
-  .add(flashMessagesInfo.text, () => flashMessages, flashMessagesInfo.parameters)
+storiesOf('Alerts/FlashMessages', module).add(flashMessagesInfo.text, () => flashMessages, flashMessagesInfo.parameters)

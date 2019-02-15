@@ -1,14 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { withNotes } from '@storybook/addon-notes'
-import {
-  avatar,
-  avatarSmall,
-  avatarStackMore,
-  avatarStackThreePlus,
-  avatarStackTwo,
-  avatarStackRight,
-} from './Avatar.render'
+import { avatar, avatarSmall, avatarStackMore, avatarStackThreePlus, avatarStackTwo, avatarStackRight } from './Avatar.render'
 import { getInfo } from '../../../../.storybook/utility'
 
 const avatarInfo = getInfo('avatar')

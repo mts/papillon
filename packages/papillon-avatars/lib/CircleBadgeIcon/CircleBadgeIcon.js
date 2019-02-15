@@ -4,11 +4,7 @@ import Octicon, { getIconByName } from '@githubprimer/octicons-react'
 import 'primer/index.scss'
 
 const CircleBadgeIcon = ({ className, icon }) => (
-  <Octicon
-    icon={getIconByName(icon)}
-    scale={1}
-    className={`CircleBadge-icon ${className}`.trim()}
-  />
+  <Octicon icon={getIconByName(icon)} scale={1} className={`CircleBadge-icon ${className}`.trim()} />
 )
 
 CircleBadgeIcon.defaultProps = {
