@@ -17,7 +17,17 @@
     "design-system",
     "component-library"
   ],
+  "scripts": {
+    "uninstall-packages": "rm -rf node_modules package-lock.json",
+    "install-packages": "npm i",
+    "reinstall-packages": "npm-run-all uninstall-packages install-packages",
+    "npm-update": "npm update",
+    "uninstall-primer": "npm un -S @primer/css",
+    "install-primer": "npm i -S @primer/css",
+    "reinstall-primer": "npm-run-all uninstall-primer install-primer",
+    "test": "echo \"No test specified\" && exit 0"
+  },
   "dependencies": {
-    "primer": "^11.0.0"
+    "@primer/css": "^12.0.0"
   }
 }
