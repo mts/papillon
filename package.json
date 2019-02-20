@@ -7,6 +7,7 @@
     "uninstall-packages": "lerna run uninstall-packages --stream",
     "install-packages": "lerna run install-packages --stream",
     "reinstall-packages": "lerna run reinstall-packages --stream",
+    "npm-update": "lerna run npm-update",
     "uninstall-primer": "lerna run uninstall-primer --stream",
     "install-primer": "lerna run install-primer --stream",
     "reinstall-primer": "lerna run reinstall-primer --stream",

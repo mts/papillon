@@ -28,8 +28,9 @@
     "uninstall-packages": "rm -rf node_modules package-lock.json",
     "install-packages": "npm i",
     "reinstall-packages": "npm-run-all uninstall-packages install-packages",
-    "uninstall-primer": "npm un -S primer",
-    "install-primer": "npm i -S primer",
+    "npm-update": "npm update",
+    "uninstall-primer": "npm un -S @primer/css",
+    "install-primer": "npm i -S @primer/css",
     "reinstall-primer": "npm-run-all uninstall-primer install-primer",
     "test": "jest -u --config jest.config.json --no-cache --silent --runInBand",
     "lint": "npm-run-all lint:scss lint:js",
@@ -38,9 +39,7 @@
     "lint:staged": "lint-staged",
     "ci": "npm-run-all lint build test"
   },
-  "dependencies": {
-    "primer": "^11.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-core": "^7.0.0-bridge.0",
     "jest": "^24.1.0"
