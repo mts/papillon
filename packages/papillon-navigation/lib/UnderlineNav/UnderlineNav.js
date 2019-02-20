@@ -2,7 +2,8 @@ import React from 'react'
 import { generate } from 'shortid'
 import { arrayOf, shape, string, number, node } from 'prop-types'
 import UnderlineNavItem from '../UnderlineNavItem'
-import 'primer/index.scss'
+import '@primer/css/navigation/index.scss'
+import '@primer/css/core/index.scss'
 
 const UnderlineNav = ({ className, aria, items, action, selectedIndex }) => {
   const { label } = aria
@@ -16,14 +17,16 @@ const UnderlineNav = ({ className, aria, items, action, selectedIndex }) => {
 
           if (index !== selectedIndex) {
             return (
-              <UnderlineNavItem key={generate()} href={href} role={role} title={title} icon={icon} counter={counter}>
+              <UnderlineNavItem key={generate()} href={href} role={role} title={title}
+icon={icon} counter={counter}>
                 {text}
               </UnderlineNavItem>
             )
           }
 
           return (
-            <UnderlineNavItem key={generate()} href={href} role={role} title={title} icon={icon} counter={counter} className="selected">
+            <UnderlineNavItem key={generate()} href={href} role={role} title={title}
+icon={icon} counter={counter} className="selected">
               {text}
             </UnderlineNavItem>
           )

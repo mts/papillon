@@ -1,18 +1,11 @@
 {
   "testRegex": ".test\\.js$",
-  "roots": [
-    "<rootDir>"
-  ],
+  "roots": ["<rootDir>"],
   "transform": {
     "^.+\\.(js)$": "babel-jest"
   },
-  "collectCoverageFrom": [
-    "packages/**/*.js",
-    "!packages/**/*.test.js",
-    "!packages/**/*.story.js",
-    "!packages/**/*.render.js"
-  ],
-  "setupTestFrameworkScriptFile": "<rootDir>/jest.config.js",
+  "collectCoverageFrom": ["packages/**/*.js", "!packages/**/*.test.js", "!packages/**/*.story.js", "!packages/**/*.render.js"],
+  "setupFilesAfterEnv": ["<rootDir>/jest.config.js"],
   "moduleNameMapper": {
     "\\.(css|less|scss)$": "identity-obj-proxy"
   },

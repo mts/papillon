@@ -1,6 +1,7 @@
 import React from 'react'
 import { string, node, oneOf, func } from 'prop-types'
-import 'primer/index.scss'
+import '@primer/css/buttons/index.scss'
+import '@primer/css/core/index.scss'
 
 const Button = ({ variant, className, children, onClick }) => {
   if (variant === 'button') {
@@ -12,7 +13,8 @@ const Button = ({ variant, className, children, onClick }) => {
   }
   if (variant === 'link') {
     return (
-      <a className={`btn ${className}`.trim()} href="#url" role="button" onClick={onClick} disabled={className.includes('disabled')}>
+      <a className={`btn ${className}`.trim()} href="#url" role="button" onClick={onClick}
+disabled={className.includes('disabled')}>
         {children}
       </a>
     )
