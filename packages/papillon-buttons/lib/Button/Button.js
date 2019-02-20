@@ -1,6 +1,7 @@
 import React from 'react'
 import { string, node, oneOf, func } from 'prop-types'
 import '@primer/css/buttons/index.scss'
+import '@primer/css/utilities/index.scss'
 
 const Button = ({ variant, className, children, onClick }) => {
   if (variant === 'button') {

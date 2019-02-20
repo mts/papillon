@@ -1,6 +1,7 @@
 import React from 'react'
 import { string, node } from 'prop-types'
 import '@primer/css/layout/index.scss'
+import '@primer/css/utilities/index.scss'
 
 const Container = ({ className, children }) => <div className={`container ${className}`.trim()}>{children}</div>
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { node } from 'prop-types'
 import '@primer/css/alerts/index.scss'
+import '@primer/css/utilities/index.scss'
 
 const FlashMessages = ({ children }) => <div className="flash-messages">{children}</div>
 

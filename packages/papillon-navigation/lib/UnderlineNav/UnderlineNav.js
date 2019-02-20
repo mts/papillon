@@ -3,6 +3,7 @@ import { generate } from 'shortid'
 import { arrayOf, shape, string, number, node } from 'prop-types'
 import UnderlineNavItem from '../UnderlineNavItem'
 import '@primer/css/navigation/index.scss'
+import '@primer/css/utilities/index.scss'
 
 const UnderlineNav = ({ className, aria, items, action, selectedIndex }) => {
   const { label } = aria
