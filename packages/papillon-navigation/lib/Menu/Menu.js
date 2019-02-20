@@ -3,7 +3,7 @@ import { generate } from 'shortid'
 import { arrayOf, shape, string, number, node } from 'prop-types'
 import MenuItem from '../MenuItem'
 import { isEmptyObject } from '../utility'
-import 'primer/index.scss'
+import '@primer/css/navigation/index.scss'
 
 const Menu = ({ aria, heading, items, selectedIndex }) => {
   const { label, labelledby } = aria
@@ -29,7 +29,8 @@ const Menu = ({ aria, heading, items, selectedIndex }) => {
         }
 
         return (
-          <MenuItem key={generate()} className="selected" aria={aria} href={href} icon={icon}>
+          <MenuItem key={generate()} className="selected" aria={aria} href={href}
+icon={icon}>
             {html || null}
             {text}
           </MenuItem>
