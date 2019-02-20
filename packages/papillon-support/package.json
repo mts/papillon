@@ -24,7 +24,8 @@
     "npm-update": "npm update",
     "uninstall-primer": "npm un -S @primer/css",
     "install-primer": "npm i -S @primer/css",
-    "reinstall-primer": "npm-run-all uninstall-primer install-primer"
+    "reinstall-primer": "npm-run-all uninstall-primer install-primer",
+    "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
     "@primer/css": "^12.0.0"
