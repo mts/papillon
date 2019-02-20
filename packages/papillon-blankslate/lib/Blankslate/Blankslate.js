@@ -3,7 +3,7 @@ import { generate } from 'shortid'
 import { string, node, arrayOf } from 'prop-types'
 import Octicon, { getIconByName } from '@githubprimer/octicons-react'
 import '@primer/css/blankslate/index.scss'
-import '@primer/css/utilities/index.scss'
+import '@primer/css/core/index.scss'
 
 const Blankslate = ({ className, children, icons }) => (
   <div className={`blankslate ${className}`.trim()}>

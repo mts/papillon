@@ -1,8 +1,8 @@
 import React from 'react'
 import { generate } from 'shortid'
 import { arrayOf, shape, string, number } from 'prop-types'
-import '@primer/css/breadcrumb/index.scss'
-import '@primer/css/utilities/index.scss'
+import '@primer/css/index.scss'
+import '@primer/css/core/index.scss'
 
 const Breadcrumb = ({ items, selectedIndex }) => (
   <nav aria-label="Breadcrumb">

@@ -1,7 +1,7 @@
 import React from 'react'
 import { string, node } from 'prop-types'
 import '@primer/css/avatars/index.scss'
-import '@primer/css/utilities/index.scss'
+import '@primer/css/core/index.scss'
 
 const CircleBadge = ({ size, className, children }) => (
   <a className={`CircleBadge CircleBadge--${size} ${className}`.trim()} title="title" href="href">

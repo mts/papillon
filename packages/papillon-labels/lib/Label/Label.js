@@ -3,7 +3,7 @@ import { string, oneOf, node } from 'prop-types'
 import Octicon, { getIconByName } from '@githubprimer/octicons-react'
 import cx from 'classnames'
 import '@primer/css/labels/index.scss'
-import '@primer/css/utilities/index.scss'
+import '@primer/css/core/index.scss'
 import {
   label,
   state,
