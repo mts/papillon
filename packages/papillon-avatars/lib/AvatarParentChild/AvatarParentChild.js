@@ -1,6 +1,6 @@
 import React from 'react'
 import { string, node } from 'prop-types'
-import 'primer/index.scss'
+import '@primer/css/avatars/index.scss'
 
 const AvatarParentChild = ({ className, children }) => <div className={`avatar-parent-child ${className}`.trim()}>{children}</div>
 
