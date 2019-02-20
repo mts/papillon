@@ -4,6 +4,9 @@
   "description": "Papillon Utilities react components for Primer Utilities",
   "homepage": "https://github.com/mts/papillon",
   "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-utilities",
+  "main": "lib/papillon-utilities.js",
+  "license": "MIT",
+  "author": "MTS",
   "keywords": [
     "utilities",
     "papillon",
@@ -14,11 +17,17 @@
     "design-system",
     "component-library"
   ],
-  "main": "lib/papillon-utilities.js",
-  "license": "MIT",
-  "author": "MTS",
+  "scripts": {
+    "uninstall-packages": "rm -rf node_modules package-lock.json",
+    "install-packages": "npm i",
+    "reinstall-packages": "npm-run-all uninstall-packages install-packages",
+    "npm-update": "npm update",
+    "uninstall-primer": "npm un -S @primer/css",
+    "install-primer": "npm i -S @primer/css",
+    "reinstall-primer": "npm-run-all uninstall-primer install-primer"
+  },
   "dependencies": {
-    "primer": "^11.0.0"
+    "@primer/css": "^12.0.0"
   },
   "gitHead": "e6d990e7545978926a0b663ff5ceca2ccaacfc53"
 }
