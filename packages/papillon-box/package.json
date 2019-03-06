@@ -1,6 +1,6 @@
 {
   "name": "papillon-box",
-  "version": "1.0.45",
+  "version": "1.0.46",
   "description": "Papillon Box React components for Primer Box",
   "homepage": "https://github.com/mts/papillon",
   "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-box",
@@ -28,6 +28,6 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@primer/css": "^12.0.0"
+    "@primer/css": "^12.1.0"
   }
 }
