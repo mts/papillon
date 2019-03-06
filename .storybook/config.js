@@ -12,8 +12,9 @@ const setup = () => {
     options: {
       brandTitle: `Papillon v${version}`,
       brandUrl: 'https://github.com/mts/papillon',
-      showPanel: true,
-      panelPosition: 'right'
+      showNav: true,
+      showPanel: false,
+      sidebarAnimations: false
     }
   })
 
