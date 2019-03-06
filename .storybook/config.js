@@ -20,7 +20,7 @@ const setup = () => {
       showNav: true,
       showPanel: false,
       sidebarAnimations: false
-    },
+    }
   })
 
   addDecorator(story => (
