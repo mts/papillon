@@ -1,21 +1,21 @@
 import React from 'react'
-import { configure, addDecorator } from '@storybook/react';
+import { configure, addDecorator, addParameters } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info'
 import { withNotes } from '@storybook/addon-notes'
-import { withOptions } from '@storybook/addon-options';
 // import '../packages/papillon/index.scss';
 import { version } from '../lerna.json';
 
 const setup = () => {
   addDecorator(withInfo);
   addDecorator(withNotes);
-  addDecorator(
-    withOptions({
-      name: `Papillon v${version}`,
-      url: 'https://github.com/mts/papillon',
-      showAddonPanel: true,
-      addonPanelInRight: true
-    }))
+  addParameters({
+    options: {
+      brandTitle: `Papillon v${version}`,
+      brandUrl: 'https://github.com/mts/papillon',
+      showPanel: true,
+      panelPosition: 'right'
+    }
+  })
 
   addDecorator(story => (
     <div className='p-4'>
