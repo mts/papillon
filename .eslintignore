@@ -1,5 +1,4 @@
 node_modules/*
-.storybook/*
 .storybook-static/*
 
 packages/papillon-alerts/build/*

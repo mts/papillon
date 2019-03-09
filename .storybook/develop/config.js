@@ -1,5 +1,3 @@
-import setup from '../config';
+import setup from '../config'
 
-setup();
-
-
+setup()
