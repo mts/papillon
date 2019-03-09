@@ -1,4 +1,5 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import { version } from '../lerna.json'
 
-storiesOf('Welcome', module).add('to Papillon 🎉', () => <h1>Welcome to Papillon</h1>)
+storiesOf('Welcome', module).add('to Papillon 🎉', () => <h1>Welcome to {`Papillon v${version}`}</h1>)
