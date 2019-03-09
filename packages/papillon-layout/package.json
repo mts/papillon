@@ -1,6 +1,6 @@
 {
   "name": "papillon-layout",
-  "version": "1.0.46",
+  "version": "1.0.47",
   "description": "Papillon Layout React components for Primer Layout",
   "homepage": "https://github.com/mts/papillon",
   "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-layout",
@@ -40,10 +40,10 @@
     "ci": "npm-run-all lint build test"
   },
   "dependencies": {
-    "@primer/css": "^12.1.0"
+    "@primer/css": "^12.1.1"
   },
   "devDependencies": {
     "babel-core": "^7.0.0-bridge.0",
-    "jest": "^24.1.0"
+    "jest": "^24.3.1"
   }
 }

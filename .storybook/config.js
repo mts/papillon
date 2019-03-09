@@ -14,27 +14,24 @@ const setup = () => {
       theme: create({
         base: 'light',
         brandTitle: `Papillon v${version}`,
-        brandUrl: 'https://github.com/mts/papillon'
+        brandUrl: 'https://github.com/mts/papillon',
       }),
       isFullscreen: false,
       showNav: true,
       showPanel: false,
-      sidebarAnimations: false
-    }
+      sidebarAnimations: false,
+    },
   })
 
-  addDecorator(story => (
-    <div className='p-4'>
-      {story()}
-    </div>
-  ))
+  addDecorator(story => <div className="p-4">{story()}</div>)
 
   const contexts = [require.context('../packages', true, /story*\.js$/)]
 
   const loadStories = () => {
     require('./welcomeStory')
     contexts.forEach(context => {
-      context.keys()
+      context
+        .keys()
         .filter(key => !key.includes('node_modules'))
         .forEach(context)
     })
@@ -46,4 +43,3 @@ const setup = () => {
 setup()
 
 export default setup
-
