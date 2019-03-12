@@ -4,8 +4,7 @@ import '@primer/css/avatars/index.scss'
 import '@primer/css/core/index.scss'
 
 const Avatar = ({ className, alt, src, width, height }) => (
-  <img className={`avatar ${className}`.trim()} alt={alt} src={src} width={width}
-height={height} />
+  <img className={`avatar ${className}`.trim()} alt={alt} src={src} width={width} height={height} />
 )
 
 Avatar.defaultProps = {

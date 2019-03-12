@@ -52,7 +52,7 @@ exports.loadJavaScript = ({ include, exclude } = {}) => ({
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         include,
         exclude,
 
@@ -188,4 +188,10 @@ exports.minifyCSS = ({ options }) => ({
       canPrint: false,
     }),
   ],
+})
+
+exports.resolve = () => ({
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
 })

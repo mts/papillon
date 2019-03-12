@@ -13,8 +13,7 @@ const Button = ({ variant, className, children, onClick }) => {
   }
   if (variant === 'link') {
     return (
-      <a className={`btn ${className}`.trim()} href="#url" role="button" onClick={onClick}
-disabled={className.includes('disabled')}>
+      <a className={`btn ${className}`.trim()} href="#url" role="button" onClick={onClick} disabled={className.includes('disabled')}>
         {children}
       </a>
     )

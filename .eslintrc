@@ -13,7 +13,7 @@
       }
     ],
     "import/named": 2,
-    "react/jsx-filename-extension": [2, { "extensions": [".js"] }],
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }],
     "react/jsx-max-props-per-line": [2, { "maximum": 4, "when": "always" }],
     "object-curly-spacing": 2,
     "comma-dangle": 2,
