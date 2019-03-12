@@ -113,7 +113,7 @@ exports.loadCSS = ({ include, exclude } = {}) => ({
               //   require("precss"),
               // ]),
               // ### cssnext
-              plugins: () => [require('postcss-cssnext')()],
+              plugins: () => [require('postcss-preset-env')()],
             },
           },
         ],
