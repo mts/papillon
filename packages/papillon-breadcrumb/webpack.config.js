@@ -8,7 +8,7 @@ const PATHS = {
   build: path.join(__dirname, 'build'),
 }
 
-const commonConfig = merge([parts.entry(), parts.output(), parts.plugins(), parts.loadJavaScript({ include: PATHS.app })])
+const commonConfig = merge([parts.entry(), parts.output(), parts.plugins(), parts.loadJavaScript({ include: PATHS.app }), parts.resolve()])
 
 const developmentConfig = merge([
   parts.devServer({
