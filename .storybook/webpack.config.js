@@ -7,9 +7,7 @@ module.exports = ({ config, mode }) => {
     config.plugins = config.plugins.filter(plugin => plugin.constructor.name !== 'UglifyJsPlugin')
   }
 
-  const rules = config.module.rules
-
-  rules.push({
+  config.module.rules.push({
     test: /\.scss$/,
     loaders: [
       'style-loader',
@@ -17,7 +15,7 @@ module.exports = ({ config, mode }) => {
       {
         loader: 'postcss-loader',
         options: {
-          plugins: () => [require('postcss-cssnext')()],
+          plugins: () => [require('postcss-preset-env')()],
         },
       },
       {

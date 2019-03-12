@@ -52,7 +52,7 @@ exports.loadJavaScript = ({ include, exclude } = {}) => ({
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         include,
         exclude,
 
@@ -113,7 +113,7 @@ exports.loadCSS = ({ include, exclude } = {}) => ({
               //   require("precss"),
               // ]),
               // ### cssnext
-              plugins: () => [require('postcss-cssnext')()],
+              plugins: () => [require('postcss-preset-env')()],
             },
           },
         ],
@@ -188,4 +188,10 @@ exports.minifyCSS = ({ options }) => ({
       canPrint: false,
     }),
   ],
+})
+
+exports.resolve = () => ({
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
 })
