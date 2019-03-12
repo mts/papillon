@@ -3,12 +3,10 @@ import { configure, addDecorator, addParameters } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { withNotes } from '@storybook/addon-notes'
 import { create } from '@storybook/theming'
-// import '../packages/papillon/index.scss'
 import { version } from '../lerna.json'
 
 const setup = () => {
   addDecorator(withInfo)
-  addDecorator(withNotes)
   addParameters({
     options: {
       theme: create({
