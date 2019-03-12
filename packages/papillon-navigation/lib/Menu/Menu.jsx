@@ -30,8 +30,7 @@ const Menu = ({ aria, heading, items, selectedIndex }) => {
         }
 
         return (
-          <MenuItem key={generate()} className="selected" aria={aria} href={href}
-icon={icon}>
+          <MenuItem key={generate()} className="selected" aria={aria} href={href} icon={icon}>
             {html || null}
             {text}
           </MenuItem>
