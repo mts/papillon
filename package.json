@@ -16,7 +16,7 @@
     "build-storybook-develop": "NODE_ENV=develop build-storybook -c .storybook/develop -o .storybook-static",
     "build-storybook-release": "NODE_ENV=release build-storybook -c .storybook/release -o .storybook-static",
     "deploy-storybook": "gh-pages -d .storybook-static",
-    "test": "lerna exec --concurrency 1 -- npm run test",
+    "test": "jest -u --no-cache --silent --runInBand",
     "prettier-js-init": "npx prettier --write \"**/*.js\"",
     "pretty-quick": "pretty-quick",
     "lint": "lerna run --stream lint",
