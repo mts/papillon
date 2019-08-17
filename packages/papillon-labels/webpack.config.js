@@ -18,7 +18,7 @@ const developmentConfig = merge([
 ])
 
 const productionConfig = merge([
-  parts.clean(PATHS.build),
+  parts.clean(),
   parts.attachRevision(),
   parts.minifyJavaScript(),
 
