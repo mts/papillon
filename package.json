@@ -26,7 +26,7 @@
     "test": "jest -u --no-cache --silent --runInBand",
     "build": "lerna run ci --stream",
     "cd": "npm-run-all build-storybook-develop build-storybook-release",
-    "ci-cd": "npm-run-all ci cd"
+    "ci:cd": "npm-run-all ci cd"
   },
   "repository": {
     "type": "git",
