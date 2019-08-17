@@ -33,7 +33,6 @@
     "uninstall-primer": "npm un -S @primer/css",
     "install-primer": "npm i -S @primer/css",
     "reinstall-primer": "npm-run-all uninstall-primer install-primer",
-    "test": "jest -u --config jest.config.json --no-cache --silent --runInBand",
     "lint": "npm-run-all lint:scss lint:js",
     "lint:scss": "echo \"No files matching the pattern lib/*.scss\" && exit 0",
     "lint:js": "eslint lib/*.js --fix",
@@ -44,8 +43,6 @@
     "@primer/css": "^12.6.0"
   },
   "devDependencies": {
-    "babel-core": "^7.0.0-bridge.0",
-    "jest": "^24.9.0",
     "nodemon": "^1.19.1"
   }
 }
