@@ -1,7 +1,7 @@
 /* eslint global-require: 0 */
 
 const webpack = require('webpack')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const GitRevisionPlugin = require('git-revision-webpack-plugin')
 const UglifyWebpackPlugin = require('uglifyjs-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
@@ -73,8 +73,8 @@ exports.loadJavaScript = ({ include, exclude } = {}) => ({
   },
 })
 
-exports.clean = pluginPath => ({
-  plugins: [new CleanWebpackPlugin([pluginPath])],
+exports.clean = () => ({
+  plugins: [new CleanWebpackPlugin()],
 })
 
 exports.attachRevision = () => ({
