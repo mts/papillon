@@ -21,7 +21,7 @@
     "pretty-quick": "pretty-quick",
     "lint": "lerna run --stream lint",
     "lint-fix": "lerna run --parallel stream-fix",
-    "ci": "lerna run ci --stream",
+    "ci": "lerna run ci --stream && npm run test",
     "cd": "npm-run-all build-storybook-develop build-storybook-release",
     "ci-cd": "npm-run-all ci cd"
   },
