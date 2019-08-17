@@ -36,7 +36,7 @@
     "lint:scss": "echo \"No files matching the pattern lib/*.scss\" && exit 0",
     "lint:js": "eslint lib/*.js --fix",
     "lint:staged": "lint-staged",
-    "ci": "npm-run-all lint build test"
+    "ci": "npm-run-all lint build"
   },
   "dependencies": {
     "@primer/css": "^12.6.0"
