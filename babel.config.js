@@ -5,6 +5,5 @@ module.exports = {
     '@babel/plugin-syntax-dynamic-import',
     '@babel/plugin-transform-runtime',
     '@babel/plugin-transform-spread',
-    '@babel/plugin-proposal-object-rest-spread',
   ],
 }
