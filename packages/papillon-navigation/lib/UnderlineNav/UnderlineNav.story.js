@@ -1,6 +1,4 @@
 import { storiesOf } from '@storybook/react'
-import { withInfo } from '@storybook/addon-info'
-import { withNotes } from '@storybook/addon-notes'
 import {
   underlineNav,
   underlineNavActions,

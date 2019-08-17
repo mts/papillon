@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Octicon, { getIconByName } from '@githubprimer/octicons-react'
-// import { FlashAlert, FlashMessages } from 'papillon-alerts'
-import { FlashAlert, FlashMessages } from '../../build/papillon-alerts'
+import { FlashAlert, FlashMessages } from 'papillon-alerts'
+// import { FlashAlert, FlashMessages } from '../../build/papillon-alerts'
 
 ReactDOM.render(
   <div>

@@ -1,6 +1,6 @@
 {
   "name": "papillon-prime",
-  "version": "1.0.47",
+  "version": "1.0.49",
   "description": "Papillon Prime React components for Primer Prime",
   "homepage": "https://github.com/mts/papillon",
   "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-prime",
@@ -24,10 +24,9 @@
     "npm-update": "npm update",
     "uninstall-primer": "npm un -S @primer/css",
     "install-primer": "npm i -S @primer/css",
-    "reinstall-primer": "npm-run-all uninstall-primer install-primer",
-    "test": "echo \"No test specified\" && exit 0"
+    "reinstall-primer": "npm-run-all uninstall-primer install-primer"
   },
   "dependencies": {
-    "@primer/css": "^12.1.1"
+    "@primer/css": "^12.6.0"
   }
 }

@@ -1,6 +1,4 @@
 import { storiesOf } from '@storybook/react'
-import { withInfo } from '@storybook/addon-info'
-import { withNotes } from '@storybook/addon-notes'
 import { circleBadgeSmallIcon, circleBadgeMediumIcon, circleBadgeLargeIcon } from './CircleBadgeIcon.render'
 import { getInfo } from '../../../../.storybook/utility'
 

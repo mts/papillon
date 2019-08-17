@@ -4,6 +4,7 @@ import { withInfo } from '@storybook/addon-info'
 import { withNotes } from '@storybook/addon-notes'
 import { create } from '@storybook/theming'
 import { version } from '../lerna.json'
+import logo from './logo.png'
 
 const setup = () => {
   addDecorator(withInfo)
@@ -13,6 +14,7 @@ const setup = () => {
         base: 'light',
         brandTitle: `Papillon v${version}`,
         brandUrl: 'https://github.com/mts/papillon',
+        brandImage: logo,
       }),
       isFullscreen: false,
       showNav: true,
