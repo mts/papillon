@@ -18,7 +18,7 @@
     "ci": "npm-run-all lint:format test build",
     "lint:format": "npm-run-all lint format",
     "lint": "npm-run-all lint:js:jsx lint:scss",
-    "lint:js:jsx": "eslint --ext .js packages/**/lib/**/*.{js,jsx} --fix",
+    "lint:js:jsx": "eslint --ext .js --ext .jsx packages/**/lib/**/*.{js,jsx} --fix",
     "lint:scss": "echo \"No files matching the pattern packages/**/lib/**/*.scss\" && exit 0",
     "format": "npm-run-all format:js:jsx format:scss",
     "format:js:jsx": "prettier --write \"packages/**/lib/**/*.{js,jsx}\"",
