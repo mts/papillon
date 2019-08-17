@@ -28,6 +28,6 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@primer/css": "^12.1.1"
+    "@primer/css": "^12.6.0"
   }
 }
