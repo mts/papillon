@@ -24,6 +24,7 @@
     "format:js:jsx": "prettier --write \"packages/**/lib/**/*.{js,jsx}\"",
     "format:scss": "echo \"No files matching the pattern packages/**/lib/**/*.scss\" && exit 0",
     "test": "jest -u --no-cache --silent --runInBand",
+    "test:coverage": "jest --coverage --silent",
     "build": "lerna run ci --stream",
     "cd": "npm-run-all build-storybook-develop build-storybook-release",
     "ci:cd": "npm-run-all ci cd"

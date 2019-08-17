@@ -1,5 +1,6 @@
 node_modules/*
 .storybook-static/*
+coverage
 
 packages/papillon-alerts/build/*
 packages/papillon-alerts/node_modules/*

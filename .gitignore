@@ -4,6 +4,7 @@ node_modules
 .npmrc
 .storybook-static
 lerna-debug.log
+coverage
 
 package-lock.json
 
