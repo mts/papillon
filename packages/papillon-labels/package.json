@@ -33,11 +33,7 @@
     "uninstall-primer": "npm un -S @primer/css",
     "install-primer": "npm i -S @primer/css",
     "reinstall-primer": "npm-run-all uninstall-primer install-primer",
-    "lint": "npm-run-all lint:scss lint:js",
-    "lint:scss": "echo \"No files matching the pattern lib/*.scss\" && exit 0",
-    "lint:js": "eslint lib/*.js --fix",
-    "lint:staged": "lint-staged",
-    "ci": "npm-run-all lint build"
+    "ci": "npm-run-all build"
   },
   "dependencies": {
     "@primer/css": "^12.6.0"
