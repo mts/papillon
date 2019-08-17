@@ -37,26 +37,9 @@
     "url": "https://github.com/mts/papillon/issues"
   },
   "homepage": "https://github.com/mts/papillon/#readme",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "pre-commit": [
     "lint:staged"
   ],
-  "lint-staged": {
-    "*.js": [
-      "pretty-quick",
-      "eslint --fix",
-      "git add"
-    ],
-    "*.scss": [
-      "pretty-quick",
-      "stylelint --syntax=scss --fix",
-      "git add"
-    ]
-  },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
