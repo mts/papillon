@@ -21,7 +21,9 @@ module.exports = ({ config, mode }) => {
       {
         loader: 'sass-loader',
         options: {
-          includePaths: [modulesPath],
+          sassOptions: {
+            includePaths: [modulesPath],
+          },
         },
       },
     ],
