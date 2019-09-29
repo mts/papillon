@@ -1,7 +1,10 @@
 import React from 'react'
 import { themeGray, themeDarkGray, themeOrange, themeOutline, themeOutlineGreen } from './Label.variant'
 
-const Label = process.env.NODE_ENV === 'develop' ? require('./Label').default : require('../../build/papillon-labels').default
+const Label =
+  process.env.NODE_ENV === 'develop' || process.env.NODE_ENV === 'test'
+    ? require('./Label').default
+    : require('../../build/papillon-labels').default
 
 const themeGrayVariant = <Label variant={themeGray}>papillon theme label</Label>
 
