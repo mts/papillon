@@ -63,8 +63,7 @@ exports.loadJavaScript = ({ include, exclude } = {}) => ({
             plugins: [
               '@babel/plugin-proposal-class-properties',
               '@babel/plugin-syntax-dynamic-import',
-              '@babel/plugin-transform-runtime',
-              '@babel/plugin-transform-spread',
+              '@babel/plugin-proposal-object-rest-spread',
             ],
           },
         },

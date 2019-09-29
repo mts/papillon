@@ -32,11 +32,10 @@
     "npm-update": "npm update",
     "uninstall-primer": "npm un -S @primer/css",
     "install-primer": "npm i -S @primer/css",
-    "reinstall-primer": "npm-run-all uninstall-primer install-primer",
-    "ci": "npm-run-all build"
+    "reinstall-primer": "npm-run-all uninstall-primer install-primer"
   },
   "dependencies": {
-    "@primer/css": "^12.6.0"
+    "@primer/css": "^13.0.1"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
