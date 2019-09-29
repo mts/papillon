@@ -15,7 +15,7 @@
     <img alt="" src="https://img.shields.io/travis/mts/papillon.svg?logo=travis">
   </a>
 
-  <a aria-label="codecov coverage" href="https://codecov.io/gh/mts/papillon">
+  <a aria-label="coverage" href="https://codecov.io/gh/mts/papillon">
     <img src="https://codecov.io/gh/mts/papillon/branch/master/graph/badge.svg" />
   </a>
 
