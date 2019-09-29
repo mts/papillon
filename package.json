@@ -12,10 +12,11 @@
     "reinstall-primer": "lerna run reinstall-primer --stream",
     "start-storybook-develop": "NODE_ENV=develop start-storybook -p 3003 -c ./.storybook/develop",
     "start-storybook-release": "NODE_ENV=release start-storybook -p 5005 -c ./.storybook/release",
-    "build-storybook-develop": "NODE_ENV=develop build-storybook -c .storybook/develop -o .storybook-static",
-    "build-storybook-release": "NODE_ENV=release build-storybook -c .storybook/release -o .storybook-static",
-    "deploy-storybook": "gh-pages -d .storybook-static",
-    "ci": "npm-run-all lint:format test build",
+    "build-storybook-develop": "NODE_ENV=develop build-storybook -c .storybook/develop -o .storybook-static-develop",
+    "build-storybook-release": "NODE_ENV=release build-storybook -c .storybook/release -o .storybook-static-release",
+    "deploy-storybook-develop": "gh-pages -d .storybook-static-develop",
+    "deploy-storybook-release": "gh-pages -d .storybook-static-release",
+    "bootstrap": "npm-run-all lint:format test build build-storybook-develop build-storybook-release",
     "lint:format": "npm-run-all lint format",
     "lint": "npm-run-all lint:js:jsx lint:scss",
     "lint:js:jsx": "eslint --ext .js --ext .jsx packages/**/lib/**/*.{js,jsx} --fix",
@@ -25,9 +26,7 @@
     "format:scss": "echo \"No files matching the pattern packages/**/lib/**/*.scss\" && exit 0",
     "test": "jest -u --no-cache --silent --runInBand",
     "test:coverage": "jest --coverage --silent",
-    "build": "lerna run ci --stream",
-    "cd": "npm-run-all build-storybook-develop build-storybook-release",
-    "ci:cd": "npm-run-all ci cd"
+    "build": "lerna run build --stream"
   },
   "repository": {
     "type": "git",
