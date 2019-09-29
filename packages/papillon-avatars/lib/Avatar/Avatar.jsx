@@ -1,22 +1,12 @@
 import React from 'react'
-import { string, number } from 'prop-types'
+import { propTypes, defaultProps } from './Avatar.props'
 import '@primer/css/avatars/index.scss'
 import '@primer/css/core/index.scss'
 
-const Avatar = ({ className, alt, src, width, height }) => (
+export const Avatar = ({ className, alt, src, width, height }) => (
   <img className={`avatar ${className}`.trim()} alt={alt} src={src} width={width} height={height} />
 )
 
-Avatar.defaultProps = {
-  className: '',
-}
+Avatar.propTypes = propTypes
 
-Avatar.propTypes = {
-  className: string,
-  alt: string.isRequired,
-  src: string.isRequired,
-  width: number.isRequired,
-  height: number.isRequired,
-}
-
-export default Avatar
+Avatar.defaultProps = defaultProps

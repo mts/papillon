@@ -153,7 +153,7 @@ $ npm install --save papillon-buttons
 ### Import
 
 ```javascript
-import Button from 'papillon-buttons'
+import { Button } from 'papillon-buttons'
 ```
 
 ### Use Button
@@ -189,7 +189,7 @@ $ npm install --save papillon-blankslate
 ### Import
 
 ```javascript
-import Blankslate from 'papillon-blankslate'
+import { Blankslate } from 'papillon-blankslate'
 ```
 
 ### Use Blankslate
@@ -228,7 +228,7 @@ $ npm install --save papillon-labels
 ### Import
 
 ```javascript
-import Label from 'papillon-labels'
+import { Label } from 'papillon-labels'
 ```
 
 ### Use Label
@@ -264,7 +264,7 @@ $ npm install --save papillon-breadcrumb
 ### Import
 
 ```javascript
-import BreadCrumb from 'papillon-breadcrumb'
+import { BreadCrumb } from 'papillon-breadcrumb'
 ```
 
 ### Use BreadCrumb

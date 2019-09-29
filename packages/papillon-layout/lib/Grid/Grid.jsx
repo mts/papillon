@@ -4,7 +4,7 @@ import '@primer/css/core/index.scss'
 
 // mts ~ block-blue does not exist
 
-const Grid = () => (
+export const Grid = () => (
   <div className="container">
     <div className="columns mb-1">
       <div className="one-fifth column block-blue p-3 border">.one-fifth</div>
@@ -27,5 +27,3 @@ const Grid = () => (
     </div>
   </div>
 )
-
-export default Grid

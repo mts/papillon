@@ -1,12 +1,12 @@
 import React from 'react'
 import { generate } from 'shortid'
-import { arrayOf, shape, string, number, node } from 'prop-types'
-import MenuItem from '../MenuItem'
-import { isEmptyObject } from '../utility'
+import { propTypes, defaultProps } from './Menu.props'
+import { MenuItem } from '../MenuItem'
+import { isEmptyObject } from '../library'
 import '@primer/css/navigation/index.scss'
 import '@primer/css/core/index.scss'
 
-const Menu = ({ aria, heading, items, selectedIndex }) => {
+export const Menu = ({ aria, heading, items, selectedIndex }) => {
   const { label, labelledby } = aria
   const { title } = heading
 
@@ -40,27 +40,6 @@ const Menu = ({ aria, heading, items, selectedIndex }) => {
   )
 }
 
-Menu.defaultProps = {
-  heading: {},
-}
+Menu.propTypes = propTypes
 
-Menu.propTypes = {
-  aria: shape({
-    label: string,
-    current: string,
-  }).isRequired,
-  heading: shape({
-    text: string,
-  }),
-  items: arrayOf(
-    shape({
-      href: string,
-      text: string,
-      icon: string,
-      html: node,
-    }),
-  ).isRequired,
-  selectedIndex: number.isRequired,
-}
-
-export default Menu
+Menu.defaultProps = defaultProps

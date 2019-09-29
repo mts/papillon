@@ -1,3 +1,3 @@
-import Blankslate from './lib'
+import { Blankslate } from './lib'
 
-export default Blankslate
+export { Blankslate }

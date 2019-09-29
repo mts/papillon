@@ -1,3 +1,3 @@
-import UnderlineNavItem from './UnderlineNavItem'
+import { UnderlineNavItem } from './UnderlineNavItem'
 
-export default UnderlineNavItem
+export { UnderlineNavItem }

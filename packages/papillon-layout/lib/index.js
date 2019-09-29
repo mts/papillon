@@ -1,5 +1,5 @@
-import Centered from './Centered'
-import Container from './Container'
-import Grid from './Grid'
+import { Centered } from './Centered'
+import { Container } from './Container'
+import { Grid } from './Grid'
 
 export { Centered, Container, Grid }

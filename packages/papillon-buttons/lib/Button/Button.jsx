@@ -1,9 +1,9 @@
 import React from 'react'
-import { string, node, oneOf, func } from 'prop-types'
+import { propTypes, defaultProps } from './Button.props'
 import '@primer/css/buttons/index.scss'
 import '@primer/css/core/index.scss'
 
-const Button = ({ variant, className, children, onClick }) => {
+export const Button = ({ variant, className, children, onClick }) => {
   if (variant === 'button') {
     return (
       <button className={`btn ${className}`.trim()} type="button" onClick={onClick} disabled={className.includes('disabled')}>
@@ -29,16 +29,6 @@ const Button = ({ variant, className, children, onClick }) => {
   return null
 }
 
-Button.defaultProps = {
-  className: '',
-  onClick: () => {},
-}
+Button.propTypes = propTypes
 
-Button.propTypes = {
-  variant: oneOf(['button', 'link', 'button-link']).isRequired,
-  className: string,
-  children: node.isRequired,
-  onClick: func,
-}
-
-export default Button
+Button.defaultProps = defaultProps

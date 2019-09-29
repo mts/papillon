@@ -1,7 +1,7 @@
 import React from 'react'
-import { string, oneOf, node } from 'prop-types'
 import Octicon, { getIconByName } from '@githubprimer/octicons-react'
 import cx from 'classnames'
+import { propTypes, defaultProps } from './Label.props'
 import '@primer/css/labels/index.scss'
 import '@primer/css/core/index.scss'
 import {
@@ -33,7 +33,6 @@ import {
   counterDefault,
   counterGray,
   counterGrayLight,
-  variants,
 } from './Label.variant'
 
 const getLabel = (variant, className, children, icon) => (
@@ -51,7 +50,7 @@ const getLabel = (variant, className, children, icon) => (
   </span>
 )
 
-const Label = ({ variant, className, children, icon }) => {
+export const Label = ({ variant, className, children, icon }) => {
   if (variant === label || variant === state || variant === counter) {
     return getLabel(variant, className, children, icon)
   }
@@ -115,16 +114,6 @@ const Label = ({ variant, className, children, icon }) => {
   }
 }
 
-Label.defaultProps = {
-  className: '',
-  icon: '',
-}
+Label.propTypes = propTypes
 
-Label.propTypes = {
-  variant: oneOf(variants).isRequired,
-  className: string,
-  children: node.isRequired,
-  icon: string,
-}
-
-export default Label
+Label.defaultProps = defaultProps

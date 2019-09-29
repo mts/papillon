@@ -1,6 +1,6 @@
 {
   "name": "papillon-labels",
-  "version": "1.0.49",
+  "version": "1.0.50",
   "description": "Papillon Labels React components for Primer Labels",
   "homepage": "https://github.com/mts/papillon",
   "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-labels",
