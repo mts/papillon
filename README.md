@@ -19,10 +19,6 @@
     <img src="https://codecov.io/gh/mts/papillon/branch/master/graph/badge.svg" />
   </a>
 
-  <a aria-label="codecov coverage" href="https://travis-ci.org/mts/papillon">
-    <img alt="" src="https://codecov.io/github/mts/papillon">
-  </a>
-
   <a aria-label="downloads" href="http://npm-stat.com/charts.html?package=papillon-prime&from=2018-10-13">
     <img alt="" src="https://img.shields.io/npm/dm/papillon-prime.svg">
   </a>
