@@ -13,7 +13,7 @@ module.exports = {
     '!packages/**/index.js',
     '!packages/**/*.test.js',
     '!packages/**/*.story.js',
-    '!packages/**/*.render.js',
+    '!packages/**/*.render*.js',
     '!packages/**/build/**',
     '!packages/**/explorer/**',
     '!packages/**/node_modules/**',
@@ -26,10 +26,10 @@ module.exports = {
   moduleFileExtensions: ['js', 'jsx'],
   coverageThreshold: {
     global: {
-      statements: 80,
-      branches: 54,
-      functions: 88,
-      lines: 80,
+      statements: 98,
+      branches: 96,
+      functions: 96,
+      lines: 98,
     },
   },
 }
