@@ -1,4 +1,4 @@
-import container from './Container.render'
+import { container } from './Container.int.render'
 
 describe('<Layout />', () => {
   describe('Snaphot', () => {

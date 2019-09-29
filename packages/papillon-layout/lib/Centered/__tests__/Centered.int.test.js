@@ -1,4 +1,4 @@
-import centered from './Centered.render'
+import { centered } from './Centered.int.render'
 
 describe('<Layout />', () => {
   describe('Snaphot', () => {

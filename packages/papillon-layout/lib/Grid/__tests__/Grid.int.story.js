@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react'
-import grid from './Grid.render'
-import { getInfo } from '../../../../.storybook/library'
+import { grid } from './Grid.int.render'
+import { getInfo } from '../../../../../.storybook/library'
 
 const gridInfo = getInfo('Grid')
 

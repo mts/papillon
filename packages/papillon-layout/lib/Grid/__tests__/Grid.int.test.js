@@ -1,4 +1,4 @@
-import grid from './Grid.render'
+import { grid } from './Grid.int.render'
 
 describe('<Layout />', () => {
   describe('Snaphot', () => {

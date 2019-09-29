@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react'
-import container from './Container.render'
-import { getInfo } from '../../../../.storybook/library'
+import { container } from './Container.int.render'
+import { getInfo } from '../../../../../.storybook/library'
 
 const containerInfo = getInfo('Container')
 
