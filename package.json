@@ -25,7 +25,7 @@
     "format:js:jsx": "prettier --write \"packages/**/lib/**/*.{js,jsx}\"",
     "format:scss": "echo \"No files matching the pattern packages/**/lib/**/*.scss\" && exit 0",
     "test": "jest -u --no-cache --silent --runInBand --coverage",
-    "report-coverage": "codecov --token=c3f92083-19d7-4252-89e5-90658cbfd3e3",
+    "report-coverage": "codecov",
     "build": "lerna run build --stream"
   },
   "repository": {

@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="300px" src="/logo.png">
+  <img width="300px" src="logo.png">
 </p>
 
 <h1 align="center">Papillon Components</h1>
@@ -13,6 +13,10 @@
 
   <a aria-label="travis build" href="https://travis-ci.org/mts/papillon">
     <img alt="" src="https://img.shields.io/travis/mts/papillon.svg?logo=travis">
+  </a>
+
+  <a aria-label="codecov coverage" href="https://codecov.io/gh/mts/papillon">
+    <img src="https://codecov.io/gh/mts/papillon/branch/master/graph/badge.svg" />
   </a>
 
   <a aria-label="codecov coverage" href="https://travis-ci.org/mts/papillon">
