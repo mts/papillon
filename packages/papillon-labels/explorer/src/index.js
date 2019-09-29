@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import RegularLabels from './RegularLabels'
-import ThemeLabels from './ThemeLabels'
-import StateLabels from './StateLabels'
-import CounterLabels from './CounterLabels'
+import { RegularLabels } from './RegularLabels'
+import { ThemeLabels } from './ThemeLabels'
+import { StateLabels } from './StateLabels'
+import { CounterLabels } from './CounterLabels'
 
 ReactDOM.render(
   <div>
