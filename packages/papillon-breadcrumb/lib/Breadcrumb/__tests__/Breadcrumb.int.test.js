@@ -1,4 +1,4 @@
-import breadcrumb from './Breadcrumb.render'
+import { breadcrumb } from './Breadcrumb.int.render'
 
 describe('<Breadcrumb />', () => {
   describe('Snaphot', () => {

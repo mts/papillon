@@ -1,10 +1,10 @@
 import React from 'react'
 import { generate } from 'shortid'
-import { arrayOf, shape, string, number } from 'prop-types'
+import { propTypes } from './Breadcrumb.props'
 import '@primer/css/index.scss'
 import '@primer/css/core/index.scss'
 
-const Breadcrumb = ({ items, selectedIndex }) => (
+export const Breadcrumb = ({ items, selectedIndex }) => (
   <nav aria-label="Breadcrumb">
     <ol>
       {items.map((item, index) => {
@@ -28,14 +28,4 @@ const Breadcrumb = ({ items, selectedIndex }) => (
   </nav>
 )
 
-Breadcrumb.propTypes = {
-  items: arrayOf(
-    shape({
-      href: string,
-      text: string,
-    }),
-  ).isRequired,
-  selectedIndex: number.isRequired,
-}
-
-export default Breadcrumb
+Breadcrumb.propTypes = propTypes
