@@ -15,6 +15,10 @@
     <img alt="" src="https://img.shields.io/travis/mts/papillon.svg?logo=travis">
   </a>
 
+  <a aria-label="codecov coverage" href="https://travis-ci.org/mts/papillon">
+    <img alt="" src="https://codecov.io/github/mts/papillon">
+  </a>
+
   <a aria-label="downloads" href="http://npm-stat.com/charts.html?package=papillon-prime&from=2018-10-13">
     <img alt="" src="https://img.shields.io/npm/dm/papillon-prime.svg">
   </a>
@@ -43,8 +47,8 @@
 <details>
 <summary>View contents</summary>
 
-* [`FlashAlert`](#flashalert)
-* [`FlashMessages`](#flashmessages)
+- [`FlashAlert`](#flashalert)
+- [`FlashMessages`](#flashmessages)
 
 </details>
 
@@ -53,7 +57,7 @@
 <details>
 <summary>View contents</summary>
 
-* [`Button`](#button)
+- [`Button`](#button)
 
 </details>
 
@@ -62,7 +66,7 @@
 <details>
 <summary>View contents</summary>
 
-* [`Blankslate`](#blankslate)
+- [`Blankslate`](#blankslate)
 
 </details>
 
@@ -71,7 +75,7 @@
 <details>
 <summary>View contents</summary>
 
-* [`Label`](#label)
+- [`Label`](#label)
 
 </details>
 
@@ -80,7 +84,7 @@
 <details>
 <summary>View contents</summary>
 
-* [`Breadcrumb`](#breadcrumb)
+- [`Breadcrumb`](#breadcrumb)
 
 </details>
 
@@ -95,11 +99,13 @@ $ npm install --save papillon-alerts
 ```
 
 ### Import
+
 ```javascript
-import { FlashAlert, FlashMessages } from 'papillon-alerts';
+import { FlashAlert, FlashMessages } from 'papillon-alerts'
 ```
 
 ### Use FlashAlert
+
 ```html
 <FlashAlert>
   Flash message goes here.
@@ -107,6 +113,7 @@ import { FlashAlert, FlashMessages } from 'papillon-alerts';
 ```
 
 ### Use FlashMessages
+
 ```html
 <FlashMessages>
   <FlashAlert>
@@ -116,12 +123,15 @@ import { FlashAlert, FlashMessages } from 'papillon-alerts';
 ```
 
 ### Use all
+
 Find more flavours of FlashAlert and FlashMessages [here](https://github.com/mts/papillon/tree/master/packages/papillon-alerts)
 
 ### Explorer
+
 Check out how to use Papillon Alerts with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-alerts/explorer)
 
 ### NPM
+
 Get the latest papillon-alerts [here](https://www.npmjs.com/package/papillon-alerts)
 
 <br>[⬆ Back to top](#table-of-contents)
@@ -137,22 +147,27 @@ $ npm install --save papillon-buttons
 ```
 
 ### Import
+
 ```javascript
-import Button from 'papillon-buttons';
+import Button from 'papillon-buttons'
 ```
 
 ### Use Button
+
 ```html
 <Button variant="button" onClick={() => {}}>Button</Button>
 ```
 
 ### Use all
+
 Find more flavours of Button [here](https://github.com/mts/papillon/tree/master/packages/papillon-buttons)
 
 ### Explorer
+
 Check out how to use Papillon Buttons with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-buttons/explorer)
 
 ### NPM
+
 Get the latest papillon-buttons [here](https://www.npmjs.com/package/papillon-buttons)
 
 <br>[⬆ Back to top](#table-of-contents)
@@ -168,25 +183,30 @@ $ npm install --save papillon-blankslate
 ```
 
 ### Import
+
 ```javascript
-import Blankslate from 'papillon-blankslate';
+import Blankslate from 'papillon-blankslate'
 ```
 
 ### Use Blankslate
+
 ```html
-  <Blankslate>
-    <h3>This is a blank slate</h3>
-    <p>Use it to provide information when no dynamic content exists.</p>
-  </Blankslate>
+<Blankslate>
+  <h3>This is a blank slate</h3>
+  <p>Use it to provide information when no dynamic content exists.</p>
+</Blankslate>
 ```
 
 ### Use all
+
 Find more flavours of Blankslate [here](https://github.com/mts/papillon/tree/master/packages/papillon-blankslate)
 
 ### Explorer
+
 Check out how to use Papillon Blankslate with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-blankslate/explorer)
 
 ### NPM
+
 Get the latest papillon-blankslate [here](https://www.npmjs.com/package/papillon-blankslate)
 
 <br>[⬆ Back to top](#table-of-contents)
@@ -202,22 +222,27 @@ $ npm install --save papillon-labels
 ```
 
 ### Import
+
 ```javascript
-import Label from 'papillon-labels';
+import Label from 'papillon-labels'
 ```
 
 ### Use Label
+
 ```html
-  <Label variant="label" className="bg-blue">default label</Label>
+<label variant="label" className="bg-blue">default label</label>
 ```
 
 ### Use all
+
 Find more flavours of Label [here](https://github.com/mts/papillon/tree/master/packages/papillon-labels)
 
 ### Explorer
+
 Check out how to use Papillon Labels with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-labels/explorer)
 
 ### NPM
+
 Get the latest papillon-labels [here](https://www.npmjs.com/package/papillon-labels)
 
 <br>[⬆ Back to top](#table-of-contents)
@@ -233,30 +258,31 @@ $ npm install --save papillon-breadcrumb
 ```
 
 ### Import
+
 ```javascript
-import BreadCrumb from 'papillon-breadcrumb';
+import BreadCrumb from 'papillon-breadcrumb'
 ```
 
 ### Use BreadCrumb
+
 ```javascript
-const items = [
-  { href: '/business', text: 'Business' },
-  { href: '/business/customer', text: 'Customers' },
-  { href: '', text: 'MailChimp' },
-];
+const items = [{ href: '/business', text: 'Business' }, { href: '/business/customer', text: 'Customers' }, { href: '', text: 'MailChimp' }]
 ```
 
 ```html
-  <Breadcrumb items={items} selectedIndex={2} />
+<Breadcrumb items="{items}" selectedIndex="{2}" />
 ```
 
 ### Use all
+
 Find more flavours of BreadCrumb [here](https://github.com/mts/papillon/tree/master/packages/papillon-breadcrumb)
 
 ### Explorer
+
 Check out how to use Papillon BreadCrumb with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-breadcrumb/explorer)
 
 ### NPM
+
 Get the latest papillon-breadcrumb [here](https://www.npmjs.com/package/papillon-breadcrumb)
 
 <br>[⬆ Back to top](#table-of-contents)

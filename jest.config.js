@@ -4,6 +4,9 @@ module.exports = {
   transform: {
     '^.+\\.jsx?$': 'babel-jest',
   },
+  coverageDirectory: './coverage/',
+  collectCoverage: true,
+  coverageReporters: ['lcov', 'text'],
   collectCoverageFrom: [
     '!**/.storybook/**',
     '!**/.storybook-static/**',

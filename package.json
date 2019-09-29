@@ -16,7 +16,7 @@
     "build-storybook-release": "NODE_ENV=release build-storybook -c .storybook/release -o .storybook-static-release",
     "deploy-storybook-develop": "gh-pages -d .storybook-static-develop",
     "deploy-storybook-release": "gh-pages -d .storybook-static-release",
-    "bootstrap": "npm-run-all build build-storybook-develop build-storybook-release lint:format test",
+    "bootstrap": "npm-run-all build build-storybook-develop build-storybook-release lint:format test report-coverage",
     "lint:format": "npm-run-all lint format",
     "lint": "npm-run-all lint:js:jsx lint:scss",
     "lint:js:jsx": "eslint --ext .js --ext .jsx packages/**/lib/**/*.{js,jsx} --fix",
@@ -24,8 +24,8 @@
     "format": "npm-run-all format:js:jsx format:scss",
     "format:js:jsx": "prettier --write \"packages/**/lib/**/*.{js,jsx}\"",
     "format:scss": "echo \"No files matching the pattern packages/**/lib/**/*.scss\" && exit 0",
-    "test": "jest -u --no-cache --silent --runInBand",
-    "test:coverage": "jest --coverage --silent",
+    "test": "jest -u --no-cache --silent --runInBand --coverage",
+    "report-coverage": "codecov --token=c3f92083-19d7-4252-89e5-90658cbfd3e3",
     "build": "lerna run build --stream"
   },
   "repository": {
@@ -62,6 +62,7 @@
     "babel-loader": "^8.0.6",
     "classnames": "^2.2.6",
     "clean-webpack-plugin": "^3.0.0",
+    "codecov": "^3.6.1",
     "css-loader": "^3.2.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
