@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react'
 import flashMessages from './FlashMessages.render'
-import { getInfo } from '../../../../.storybook/utility'
+import { getInfo } from '../../../../.storybook/library'
 
 const flashMessagesInfo = getInfo('Flash messages')
 

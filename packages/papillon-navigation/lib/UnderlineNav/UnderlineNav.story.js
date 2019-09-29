@@ -6,7 +6,7 @@ import {
   underlineNavRightWithActions,
   underlineNavWithCounter,
 } from './UnderlineNav.render'
-import { getInfo } from '../../../../.storybook/utility'
+import { getInfo } from '../../../../.storybook/library'
 
 const underlineNavInfo = getInfo('UnderlineNav')
 const underlineNavActionsInfo = getInfo('UnderlineNav-actions')

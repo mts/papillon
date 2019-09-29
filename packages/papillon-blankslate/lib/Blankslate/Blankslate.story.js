@@ -8,7 +8,7 @@ import {
   blankslateLarge,
   blankslateCleanBackground,
 } from './Blankslate.render'
-import { getInfo } from '../../../../.storybook/utility'
+import { getInfo } from '../../../../.storybook/library'
 
 const blankslateInfo = getInfo('blankslate')
 const blankslateIconInfo = getInfo('blankslate-icon')

@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react'
 import centered from './Centered.render'
-import { getInfo } from '../../../../.storybook/utility'
+import { getInfo } from '../../../../.storybook/library'
 
 const centeredInfo = getInfo('Centered')
 

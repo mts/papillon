@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react'
 import circleBadgeDashedConnection from './CircleBadgeDashedIcon.render'
-import { getInfo } from '../../../../.storybook/utility'
+import { getInfo } from '../../../../.storybook/library'
 
 const circleBadgeDashedConnectionInfo = getInfo('Flash messages')
 

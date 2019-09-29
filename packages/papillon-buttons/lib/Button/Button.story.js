@@ -12,7 +12,7 @@ import {
   btnLarge,
   btnLink,
 } from './Button.render'
-import { getInfo } from '../../../../.storybook/utility'
+import { getInfo } from '../../../../.storybook/library'
 
 const btnInfo = getInfo('btn')
 const linkInfo = getInfo('link')
