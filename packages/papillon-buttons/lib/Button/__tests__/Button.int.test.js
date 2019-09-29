@@ -10,7 +10,7 @@ import {
   btnPurple,
   btnLarge,
   btnLink,
-} from './Button.render'
+} from './Button.int.render'
 
 describe('<Button />', () => {
   describe('Snaphot', () => {

@@ -3,10 +3,10 @@ import { action } from '@storybook/addon-actions'
 
 const Button =
   process.env.NODE_ENV === 'develop' || process.env.NODE_ENV === 'test'
-    ? require('./Button').default
-    : require('../../build/papillon-buttons').default
+    ? require('../Button').Button
+    : require('../../../build/papillon-buttons').Button
 
-const btn = (
+export const btn = (
   <div>
     <Button variant="button" onClick={action('button-click')}>
       Button
@@ -14,7 +14,7 @@ const btn = (
   </div>
 )
 
-const link = (
+export const link = (
   <div>
     <Button variant="link" onClick={action('button-click')}>
       Button
@@ -22,7 +22,7 @@ const link = (
   </div>
 )
 
-const btnSmall = (
+export const btnSmall = (
   <div className="f3 p-4">
     <Button variant="link" className="btn-sm btn-purple mr-6" onClick={action('button-click')}>
       Small link button
@@ -33,7 +33,7 @@ const btnSmall = (
   </div>
 )
 
-const btnPrimary = (
+export const btnPrimary = (
   <div className="p-4 d-flex flex-justify-between">
     <Button variant="button" className="btn-primary" onClick={action('button-click')}>
       Button
@@ -53,7 +53,7 @@ const btnPrimary = (
   </div>
 )
 
-const btnSecondary = (
+export const btnSecondary = (
   <div className="p-4 d-flex flex-justify-between">
     <Button variant="button" className="btn-secondary" onClick={action('button-click')}>
       Button
@@ -73,7 +73,7 @@ const btnSecondary = (
   </div>
 )
 
-const btnDanger = (
+export const btnDanger = (
   <div className="p-4 d-flex flex-justify-between">
     <Button variant="button" className="btn-danger" onClick={action('button-click')}>
       Button
@@ -93,7 +93,7 @@ const btnDanger = (
   </div>
 )
 
-const btnOutline = (
+export const btnOutline = (
   <div className="p-4 d-flex flex-justify-between">
     <Button variant="button" className="btn-outline" onClick={action('button-click')}>
       Button
@@ -113,7 +113,7 @@ const btnOutline = (
   </div>
 )
 
-const btnBlue = (
+export const btnBlue = (
   <div className="p-4 d-flex flex-justify-between">
     <Button variant="button" className="btn-blue" onClick={action('button-click')}>
       Button
@@ -133,7 +133,7 @@ const btnBlue = (
   </div>
 )
 
-const btnPurple = (
+export const btnPurple = (
   <div className="p-4 d-flex flex-justify-between">
     <Button variant="button" className="btn-purple" onClick={action('button-click')}>
       Button
@@ -153,7 +153,7 @@ const btnPurple = (
   </div>
 )
 
-const btnLarge = (
+export const btnLarge = (
   // mts ~ btn-outline-blue does not exist
   <div className="f3 p-4">
     <Button variant="link" className="btn-large btn-purple mr-6" onClick={action('button-click')}>
@@ -165,12 +165,10 @@ const btnLarge = (
   </div>
 )
 
-const btnLink = (
+export const btnLink = (
   <div className="p-4 d-flex flex-justify-between">
     <Button variant="button-link" onClick={action('button-click')}>
       Button Link
     </Button>
   </div>
 )
-
-export { btn, link, btnSmall, btnPrimary, btnSecondary, btnDanger, btnOutline, btnBlue, btnPurple, btnLarge, btnLink }

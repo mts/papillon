@@ -11,8 +11,8 @@ import {
   btnPurple,
   btnLarge,
   btnLink,
-} from './Button.render'
-import { getInfo } from '../../../../.storybook/library'
+} from './Button.int.render'
+import { getInfo } from '../../../../../.storybook/library'
 
 const btnInfo = getInfo('btn')
 const linkInfo = getInfo('link')
