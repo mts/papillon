@@ -2,56 +2,54 @@ import React from 'react'
 
 const Blankslate =
   process.env.NODE_ENV === 'develop' || process.env.NODE_ENV === 'test'
-    ? require('./Blankslate').default
-    : require('../../build/papillon-blankslate').default
+    ? require('../Blankslate').Blankslate
+    : require('../../../build/papillon-blankslate').Blankslate
 
-const blankslate = (
+export const blankslate = (
   <Blankslate>
     <h3>This is a blank slate</h3>
     <p>Use it to provide information when no dynamic content exists.</p>
   </Blankslate>
 )
 
-const blankslateIcon = (
+export const blankslateIcon = (
   <Blankslate icons={['git-commit', 'tag', 'git-branch']}>
     <h3>This is a blank slate</h3>
     <p>Use it to provide information when no dynamic content exists.</p>
   </Blankslate>
 )
 
-const blankslateNarrow = (
+export const blankslateNarrow = (
   <Blankslate className="blankslate-narrow">
     <h3>This is a blank slate</h3>
     <p>Use it to provide information when no dynamic content exists.</p>
   </Blankslate>
 )
 
-const blankslateCapped = (
+export const blankslateCapped = (
   <Blankslate className="blankslate-capped">
     <h3>This is a blank slate</h3>
     <p>Use it to provide information when no dynamic content exists.</p>
   </Blankslate>
 )
 
-const blankslateSpacious = (
+export const blankslateSpacious = (
   <Blankslate className="blankslate-spacious">
     <h3>This is a blank slate</h3>
     <p>Use it to provide information when no dynamic content exists.</p>
   </Blankslate>
 )
 
-const blankslateLarge = (
+export const blankslateLarge = (
   <Blankslate className="blankslate-large">
     <h3>This is a blank slate</h3>
     <p>Use it to provide information when no dynamic content exists.</p>
   </Blankslate>
 )
 
-const blankslateCleanBackground = (
+export const blankslateCleanBackground = (
   <Blankslate className="blankslate-clean-background">
     <h3>This is a blank slate</h3>
     <p>Use it to provide information when no dynamic content exists.</p>
   </Blankslate>
 )
-
-export { blankslate, blankslateIcon, blankslateNarrow, blankslateCapped, blankslateSpacious, blankslateLarge, blankslateCleanBackground }

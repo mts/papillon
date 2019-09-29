@@ -6,7 +6,7 @@ import {
   blankslateSpacious,
   blankslateLarge,
   blankslateCleanBackground,
-} from './Blankslate.render'
+} from './Blankslate.int.render'
 
 describe('<Blankslate />', () => {
   describe('Snaphot', () => {
