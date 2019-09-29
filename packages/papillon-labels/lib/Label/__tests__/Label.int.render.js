@@ -5,7 +5,7 @@ export {
   labelWhiteOnRedVariant,
   labelWhiteOnYellowVariant,
   labelWhiteOnPurpleVariant,
-} from './Label.render.regular'
+} from './Label.int.render.regular'
 
 export {
   themeGrayVariant,
@@ -13,7 +13,7 @@ export {
   themeOrangeVariant,
   themeOutlineVariant,
   themeOutlineGreenVariant,
-} from './Label.render.theme'
+} from './Label.int.render.theme'
 
 export {
   stateDefaultVariant,
@@ -27,6 +27,6 @@ export {
   stateOpenVariant,
   stateClosedVariant,
   stateMergedVariant,
-} from './Label.render.state'
+} from './Label.int.render.state'
 
-export { counterDefaultVariant, counterGrayVariant, counterGrayLightVariant } from './Label.render.counter'
+export { counterDefaultVariant, counterGrayVariant, counterGrayLightVariant } from './Label.int.render.counter'

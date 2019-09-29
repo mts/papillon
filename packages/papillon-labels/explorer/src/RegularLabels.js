@@ -1,8 +1,8 @@
 import React from 'react'
-import Label from 'papillon-labels'
+import { Label } from 'papillon-labels'
 // import Label from '../../build/papillon-labels'
 
-const RegularLabels = () => (
+export const RegularLabels = () => (
   <div>
     <h2 className="p-2">
       <span role="img" aria-label="moyai">
@@ -79,5 +79,3 @@ const RegularLabels = () => (
     </div>
   </div>
 )
-
-export default RegularLabels

@@ -29,8 +29,8 @@ import {
   counterDefaultVariant,
   counterGrayVariant,
   counterGrayLightVariant,
-} from './Label.render'
-import { getInfo } from '../../../../.storybook/library'
+} from './Label.int.render'
+import { getInfo } from '../../../../../.storybook/library'
 
 // regular
 const labelWhiteOnBlueVariantInfo = getInfo('labelWhiteOnBlueVariant')

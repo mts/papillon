@@ -28,7 +28,7 @@ import {
   counterDefaultVariant,
   counterGrayVariant,
   counterGrayLightVariant,
-} from './Label.render'
+} from './Label.int.render'
 
 describe('<Label />', () => {
   describe('Snaphot', () => {

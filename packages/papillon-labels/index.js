@@ -1,3 +1,3 @@
-import Label from './lib'
+import { Label } from './lib'
 
-export default Label
+export { Label }
