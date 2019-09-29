@@ -1,4 +1,4 @@
-import flashMessages from './FlashMessages.render'
+import { flashMessages } from './FlashMessages.int.render'
 
 describe('<FlashMessages />', () => {
   describe('Snaphot', () => {

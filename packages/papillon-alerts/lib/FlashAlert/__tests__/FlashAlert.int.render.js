@@ -4,16 +4,16 @@ import { action } from '@storybook/addon-actions'
 
 const FlashAlert =
   process.env.NODE_ENV === 'develop' || process.env.NODE_ENV === 'test'
-    ? require('./FlashAlert').default
-    : require('../../build/papillon-alerts').FlashAlert
+    ? require('../FlashAlert').FlashAlert
+    : require('../../../build/papillon-alerts').FlashAlert
 
-const flashAlertDefault = (
+export const flashAlertDefault = (
   <div className="p-4">
     <FlashAlert>Flash message goes here.</FlashAlert>
   </div>
 )
 
-const multipleParagraphs = (
+export const multipleParagraphs = (
   <div className="p-4">
     <FlashAlert>
       <p>
@@ -25,31 +25,31 @@ const multipleParagraphs = (
   </div>
 )
 
-const flashWarn = (
+export const flashWarn = (
   <div className="p-4">
     <FlashAlert className="flash-warn">Flash message goes here.</FlashAlert>
   </div>
 )
 
-const flashError = (
+export const flashError = (
   <div className="p-4">
     <FlashAlert className="flash-error">Flash message goes here.</FlashAlert>
   </div>
 )
 
-const flashSuccess = (
+export const flashSuccess = (
   <div className="p-4">
     <FlashAlert className="flash-success">Flash message goes here.</FlashAlert>
   </div>
 )
 
-const flashIcon = (
+export const flashIcon = (
   <div className="p-4">
     <FlashAlert icon="alert">Flash message with an icon goes here.</FlashAlert>
   </div>
 )
 
-const withDismiss = (
+export const withDismiss = (
   // mts ~ js-flash-close does not exist
   <div className="p-4">
     <FlashAlert>
@@ -61,7 +61,7 @@ const withDismiss = (
   </div>
 )
 
-const withActionButton = (
+export const withActionButton = (
   <div className="p-4">
     <FlashAlert>
       <button type="submit" className="btn btn-sm primary flash-action" onClick={action('withAction-button-click')}>
@@ -72,22 +72,10 @@ const withActionButton = (
   </div>
 )
 
-const fullWidthFlash = (
+export const fullWidthFlash = (
   <div className="p-4">
     <div className="container-lg">
       <FlashAlert className="flash-full">Full width flash message.</FlashAlert>
     </div>
   </div>
 )
-
-export {
-  flashAlertDefault,
-  multipleParagraphs,
-  flashWarn,
-  flashError,
-  flashSuccess,
-  flashIcon,
-  withDismiss,
-  withActionButton,
-  fullWidthFlash,
-}

@@ -8,7 +8,7 @@ import {
   withDismiss,
   withActionButton,
   fullWidthFlash,
-} from './FlashAlert.render'
+} from './FlashAlert.int.render'
 
 describe('<FlashAlert />', () => {
   describe('Snaphot', () => {

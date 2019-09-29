@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/react'
-import { getInfo } from '../../../../.storybook/utility'
+import { getInfo } from '../../../../../.storybook/library'
 import {
   flashAlertDefault,
   multipleParagraphs,
@@ -10,7 +10,7 @@ import {
   withDismiss,
   withActionButton,
   fullWidthFlash,
-} from './FlashAlert.render'
+} from './FlashAlert.int.render'
 
 const flashAlertDefaultInfo = getInfo('Default')
 const multipleParagraphsInfo = getInfo('Multiple paragraphs')
