@@ -1,11 +1,11 @@
 import React from 'react'
 import { generate } from 'shortid'
-import { arrayOf, shape, string, number, node } from 'prop-types'
-import UnderlineNavItem from '../UnderlineNavItem'
+import { propTypes, defaultProps } from './UnderlineNav.props'
+import { UnderlineNavItem } from '../UnderlineNavItem'
 import '@primer/css/navigation/index.scss'
 import '@primer/css/core/index.scss'
 
-const UnderlineNav = ({ className, aria, items, action, selectedIndex }) => {
+export const UnderlineNav = ({ className, aria, items, action, selectedIndex }) => {
   const { label } = aria
 
   return (
@@ -35,30 +35,6 @@ const UnderlineNav = ({ className, aria, items, action, selectedIndex }) => {
   )
 }
 
-UnderlineNav.defaultProps = {
-  aria: {
-    label: '',
-  },
-  className: '',
-  action: React.ReactNode,
-}
+UnderlineNav.propTypes = propTypes
 
-UnderlineNav.propTypes = {
-  aria: shape({
-    label: string,
-  }),
-  className: string,
-  items: arrayOf(
-    shape({
-      href: string,
-      role: string,
-      title: string,
-      text: string,
-      icon: string,
-    }),
-  ).isRequired,
-  action: node,
-  selectedIndex: number.isRequired,
-}
-
-export default UnderlineNav
+UnderlineNav.defaultProps = defaultProps

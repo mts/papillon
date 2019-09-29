@@ -4,7 +4,7 @@ import {
   underlineNavRight,
   underlineNavRightWithActions,
   underlineNavWithCounter,
-} from './UnderlineNav.render'
+} from './UnderlineNav.int.render'
 
 describe('<Navigation />', () => {
   describe('Snaphot', () => {

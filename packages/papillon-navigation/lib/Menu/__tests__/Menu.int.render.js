@@ -2,10 +2,10 @@ import React from 'react'
 
 const Menu =
   process.env.NODE_ENV === 'develop' || process.env.NODE_ENV === 'test'
-    ? require('./Menu').default
-    : require('../../build/papillon-navigation').Menu
+    ? require('../Menu').Menu
+    : require('../../../build/papillon-navigation').Menu
 
-const menu = (() => {
+export const menu = (() => {
   const aria = {
     label: 'Person settings',
     current: 'page',
@@ -21,7 +21,7 @@ const menu = (() => {
   return <Menu aria={aria} items={items} selectedIndex={0} />
 })()
 
-const menuWithIconAvatarCounter = (() => {
+export const menuWithIconAvatarCounter = (() => {
   const aria = {
     label: 'Person settings',
     current: 'page',
@@ -42,7 +42,7 @@ const menuWithIconAvatarCounter = (() => {
   return <Menu aria={aria} items={items} selectedIndex={0} />
 })()
 
-const menuWithHeading = (() => {
+export const menuWithHeading = (() => {
   const aria = {
     label: 'Person settings',
     current: 'page',
@@ -62,5 +62,3 @@ const menuWithHeading = (() => {
 
   return <Menu aria={aria} heading={heading} items={items} selectedIndex={0} />
 })()
-
-export { menu, menuWithIconAvatarCounter, menuWithHeading }

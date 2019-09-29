@@ -1,4 +1,4 @@
-import { menu, menuWithIconAvatarCounter, menuWithHeading } from './Menu.render'
+import { menu, menuWithIconAvatarCounter, menuWithHeading } from './Menu.int.render'
 
 describe('<Navigation />', () => {
   describe('Snaphot', () => {

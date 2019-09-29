@@ -2,8 +2,8 @@ import React from 'react'
 
 const UnderlineNav =
   process.env.NODE_ENV === 'develop' || process.env.NODE_ENV === 'test'
-    ? require('./UnderlineNav').default
-    : require('../../build/papillon-navigation').UnderlineNav
+    ? require('../UnderlineNav').UnderlineNav
+    : require('../../../build/papillon-navigation').UnderlineNav
 
 const aria = {
   label: 'Foo bar',
@@ -35,16 +35,14 @@ const underlineNavAction = (
   </div>
 )
 
-const underlineNav = <UnderlineNav items={items} selectedIndex={0} />
+export const underlineNav = <UnderlineNav items={items} selectedIndex={0} />
 
-const underlineNavActions = <UnderlineNav aria={aria} items={items} action={underlineNavAction} selectedIndex={0} />
+export const underlineNavActions = <UnderlineNav aria={aria} items={items} action={underlineNavAction} selectedIndex={0} />
 
-const underlineNavRight = <UnderlineNav className="UnderlineNav--right" items={items} selectedIndex={0} />
+export const underlineNavRight = <UnderlineNav className="UnderlineNav--right" items={items} selectedIndex={0} />
 
-const underlineNavRightWithActions = (
+export const underlineNavRightWithActions = (
   <UnderlineNav aria={aria} className="UnderlineNav--right" items={items} action={underlineNavAction} selectedIndex={0} />
 )
 
-const underlineNavWithCounter = <UnderlineNav aria={aria} items={itemsWithIcons} selectedIndex={0} />
-
-export { underlineNav, underlineNavActions, underlineNavRight, underlineNavRightWithActions, underlineNavWithCounter }
+export const underlineNavWithCounter = <UnderlineNav aria={aria} items={itemsWithIcons} selectedIndex={0} />
