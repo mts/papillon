@@ -6,7 +6,7 @@ import { create } from '@storybook/theming'
 import { version } from '../lerna.json'
 import logo from './logo.png'
 
-const setup = () => {
+export const setup = () => {
   addDecorator(withInfo)
   addParameters({
     options: {
@@ -39,7 +39,3 @@ const setup = () => {
 
   configure(loadStories, module)
 }
-
-setup()
-
-export default setup
