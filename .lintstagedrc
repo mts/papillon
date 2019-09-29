@@ -1,7 +1,8 @@
 {
-  "src/**/*.{js,jsx}": [
-    "eslint --ext .js packages/**/lib/**/*.{js,jsx} --fix",
+  "packages/**/lib/**/*.{js,jsx}": [
+    "eslint --ext .js --ext .jsx packages/**/lib/**/*.{js,jsx} --fix",
     "prettier --write \"packages/**/lib/**/*.{js,jsx}\"",
-    "git add"
+    "git add",
+    "jest --bail findRelatedTests --passWithNoTests --runInBand"
   ]
 }

@@ -1,8 +1,48 @@
 {
-  "extends": ["airbnb", "prettier", "prettier/react"],
   "parser": "babel-eslint",
-  "plugins": ["react", "jsx-a11y"],
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["react", "jsx-a11y", "jest", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:jest/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "commonjs": true,
+    "mocha": true,
+    "jasmine": true,
+    "jest": true,
+    "amd": true
+  },
+  "globals": {
+    "jsdom": true,
+    "document": false,
+    "expect": false,
+    "jest": false,
+    "renderShallow": false,
+    "renderMount": false
+  },
+   "settings": {
+    "react": {
+      "version": "16.10.1"
+    }
+  },
   "rules": {
+    "prettier/prettier": "error",
     "import/no-extraneous-dependencies": [
       0,
       {
@@ -14,37 +54,8 @@
     ],
     "import/named": 2,
     "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }],
-    "react/jsx-max-props-per-line": [2, { "maximum": 4, "when": "always" }],
     "object-curly-spacing": 2,
     "comma-dangle": 2,
     "semi": ["error", "never"]
-  },
-  "env": {
-    "es6": true,
-    "node": true,
-    "browser": true,
-    "commonjs": true,
-    "mocha": true,
-    "jasmine": true,
-    "jest": true
-  },
-  "globals": {
-    "document": false,
-    "expect": false,
-    "jest": false,
-    "renderShallow": false,
-    "renderMount": false
-  },
-   "settings": {
-    "react": {
-      "version": "16.8.2"
-    }
-  },
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 2018,
-    "sourceType": "module"
   }
 }

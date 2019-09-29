@@ -1,10 +1,12 @@
 import React from 'react'
 
 const CircleBadgeImage =
-  process.env.NODE_ENV === 'develop' ? require('../CircleBadgeImage').default : require('../../build/papillon-avatars').CircleBadgeImage
+  process.env.NODE_ENV === 'develop' || process.env.NODE_ENV === 'test'
+    ? require('../CircleBadgeImage').default
+    : require('../../build/papillon-avatars').CircleBadgeImage
 
 const CircleBadgeDashedConnection =
-  process.env.NODE_ENV === 'develop'
+  process.env.NODE_ENV === 'develop' || process.env.NODE_ENV === 'test'
     ? require('./CircleBadgeDashedConnection').default
     : require('../../build/papillon-avatars').CircleBadgeDashedConnection
 

@@ -2,7 +2,10 @@ import React from 'react'
 import Octicon, { getIconByName } from '@githubprimer/octicons-react'
 import { action } from '@storybook/addon-actions'
 
-const FlashAlert = process.env.NODE_ENV === 'develop' ? require('./FlashAlert').default : require('../../build/papillon-alerts').FlashAlert
+const FlashAlert =
+  process.env.NODE_ENV === 'develop' || process.env.NODE_ENV === 'test'
+    ? require('./FlashAlert').default
+    : require('../../build/papillon-alerts').FlashAlert
 
 const flashAlertDefault = (
   <div className="p-4">

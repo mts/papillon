@@ -8,7 +8,10 @@ import {
   labelWhiteOnPurple,
 } from './Label.variant'
 
-const Label = process.env.NODE_ENV === 'develop' ? require('./Label').default : require('../../build/papillon-labels').default
+const Label =
+  process.env.NODE_ENV === 'develop' || process.env.NODE_ENV === 'test'
+    ? require('./Label').default
+    : require('../../build/papillon-labels').default
 
 const labelWhiteOnBlueVariant = <Label variant={labelWhiteOnBlue}>papillon regular label</Label>
 

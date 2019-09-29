@@ -1,7 +1,25 @@
+# MacOS
+.DS_Store
+
+# Sublime Text
+app.sublime-project
+app.sublime-workspace
+
+# Storybook
+.storybook-static-develop
+.storybook-static-release
+
+# Test
+coverage
+
+# NPM Papillon
+.npmrc
+npm-debug.log
+lerna-debug.log
 package-lock.json
 node_modules
-.storybook-static
 
+# NPM Papillon Package
 packages/papillon-alerts/package-lock.json
 packages/papillon-alerts/build
 packages/papillon-alerts/node_modules
@@ -71,6 +89,11 @@ packages/papillon-support/package-lock.json
 packages/papillon-support/build
 packages/papillon-support/node_modules
 packages/papillon-support/explorer/node_modules
+
+packages/papillon-tooltips/package-lock.json
+packages/papillon-tooltips/build
+packages/papillon-tooltips/node_modules
+packages/papillon-tooltips/explorer/node_modules
 
 packages/papillon-utilities/package-lock.json
 packages/papillon-utilities/build
