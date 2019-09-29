@@ -1,3 +1,3 @@
-import Button from './lib'
+import { Button } from './lib'
 
-export default Button
+export { Button }

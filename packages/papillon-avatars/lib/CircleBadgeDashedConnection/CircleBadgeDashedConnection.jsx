@@ -1,10 +1,10 @@
 import React from 'react'
 import { generate } from 'shortid'
-import { node } from 'prop-types'
+import { propTypes } from './CircleBadgeDashedConnection.props'
 import '@primer/css/avatars/index.scss'
 import '@primer/css/core/index.scss'
 
-const CircleBadgeDashedConnection = ({ children }) => (
+export const CircleBadgeDashedConnection = ({ children }) => (
   <div className="DashedConnection">
     <ul className="d-flex list-style-none flex-justify-between" aria-label="A sample GitHub workflow">
       {children.map(child => (
@@ -16,8 +16,4 @@ const CircleBadgeDashedConnection = ({ children }) => (
   </div>
 )
 
-CircleBadgeDashedConnection.propTypes = {
-  children: node.isRequired,
-}
-
-export default CircleBadgeDashedConnection
+CircleBadgeDashedConnection.propTypes = propTypes

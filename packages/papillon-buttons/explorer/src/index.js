@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Button from 'papillon-buttons'
-// import Button from '../../build/papillon-buttons'
+import { Button } from 'papillon-buttons'
+// import { Button } from '../../build/papillon-buttons'
 
 ReactDOM.render(
   <div>

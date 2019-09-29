@@ -1,17 +1,10 @@
 import React from 'react'
-import { string, node } from 'prop-types'
+import { propTypes, defaultProps } from './AvatarParentChild.props'
 import '@primer/css/avatars/index.scss'
 import '@primer/css/core/index.scss'
 
-const AvatarParentChild = ({ className, children }) => <div className={`avatar-parent-child ${className}`.trim()}>{children}</div>
+export const AvatarParentChild = ({ className, children }) => <div className={`avatar-parent-child ${className}`.trim()}>{children}</div>
 
-AvatarParentChild.defaultProps = {
-  className: '',
-}
+AvatarParentChild.propTypes = propTypes
 
-AvatarParentChild.propTypes = {
-  className: string,
-  children: node.isRequired,
-}
-
-export default AvatarParentChild
+AvatarParentChild.defaultProps = defaultProps

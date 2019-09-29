@@ -1,6 +1,6 @@
 {
   "name": "papillon-core",
-  "version": "1.0.49",
+  "version": "1.0.50",
   "description": "Papillon Core React components for Primer Core",
   "homepage": "https://github.com/mts/papillon",
   "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-core",

@@ -1,10 +1,10 @@
 import React from 'react'
-import { string, node } from 'prop-types'
 import Octicon, { getIconByName } from '@githubprimer/octicons-react'
+import { propTypes, defaultProps } from './FlashAlert.props'
 import '@primer/css/alerts/index.scss'
 import '@primer/css/core/index.scss'
 
-const FlashAlert = ({ className, children, icon }) => (
+export const FlashAlert = ({ className, children, icon }) => (
   <div className={`flash ${className}`.trim()}>
     {icon ? (
       <span className="mr-3">
@@ -15,15 +15,6 @@ const FlashAlert = ({ className, children, icon }) => (
   </div>
 )
 
-FlashAlert.defaultProps = {
-  className: '',
-  icon: '',
-}
+FlashAlert.propTypes = propTypes
 
-FlashAlert.propTypes = {
-  className: string,
-  children: node.isRequired,
-  icon: string,
-}
-
-export default FlashAlert
+FlashAlert.defaultProps = defaultProps
