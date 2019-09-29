@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react'
-import { circleBadgeSmallImage, circleBadgeMediumImage, circleBadgeLargeImage } from './CircleBadgeImage.render'
-import { getInfo } from '../../../../.storybook/library'
+import { circleBadgeSmallImage, circleBadgeMediumImage, circleBadgeLargeImage } from './CircleBadgeImage.int.render'
+import { getInfo } from '../../../../../.storybook/library'
 
 const circleBadgeSmallImageInfo = getInfo('CircleBadge-small-Image')
 const circleBadgeMediumImageInfo = getInfo('CircleBadge-medium-Image')

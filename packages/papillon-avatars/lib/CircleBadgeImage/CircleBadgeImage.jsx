@@ -1,18 +1,10 @@
 import React from 'react'
-import { string } from 'prop-types'
+import { propTypes, defaultProps } from './CircleBadgeImage.props'
 import '@primer/css/avatars/index.scss'
 import '@primer/css/core/index.scss'
 
-const CircleBadgeImage = ({ src, className, alt }) => <img src={src} className={`CircleBadge-icon ${className}`.trim()} alt={alt} />
+export const CircleBadgeImage = ({ src, className, alt }) => <img src={src} className={`CircleBadge-icon ${className}`.trim()} alt={alt} />
 
-CircleBadgeImage.defaultProps = {
-  className: '',
-}
+CircleBadgeImage.propTypes = propTypes
 
-CircleBadgeImage.propTypes = {
-  src: string.isRequired,
-  className: string,
-  alt: string.isRequired,
-}
-
-export default CircleBadgeImage
+CircleBadgeImage.defaultProps = defaultProps

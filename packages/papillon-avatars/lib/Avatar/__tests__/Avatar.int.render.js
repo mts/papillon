@@ -2,16 +2,16 @@ import React from 'react'
 
 const Avatar =
   process.env.NODE_ENV === 'develop' || process.env.NODE_ENV === 'test'
-    ? require('./Avatar').default
-    : require('../../build/papillon-avatars').Avatar
+    ? require('../Avatar').Avatar
+    : require('../../../build/papillon-avatars').Avatar
 
 const srcAvatar = 'https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png'
 
-const avatar = <Avatar alt="basic" src={srcAvatar} width={72} height={72} />
+export const avatar = <Avatar alt="basic" src={srcAvatar} width={72} height={72} />
 
-const avatarSmall = <Avatar className="avatar-small" alt="small" src={srcAvatar} width={32} height={32} />
+export const avatarSmall = <Avatar className="avatar-small" alt="small" src={srcAvatar} width={32} height={32} />
 
-const avatarStackMore = (
+export const avatarStackMore = (
   <div className="AvatarStack AvatarStack--three-plus">
     <div
       className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1"
@@ -27,7 +27,7 @@ const avatarStackMore = (
   </div>
 )
 
-const avatarStackThreePlus = (
+export const avatarStackThreePlus = (
   <div className="AvatarStack AvatarStack--three-plus">
     <div className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat, octocat, and octocat">
       <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
@@ -39,7 +39,7 @@ const avatarStackThreePlus = (
 
 const href = 'https://github.com/mts/papillon/tree/master/packages/papillon-avatars/Avatar'
 
-const avatarStackTwo = (
+export const avatarStackTwo = (
   <div className="AvatarStack AvatarStack--two">
     <div className="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="octocat and octocat">
       <a href={href} className="avatar">
@@ -52,7 +52,7 @@ const avatarStackTwo = (
   </div>
 )
 
-const avatarStackRight = (
+export const avatarStackRight = (
   <div className="AvatarStack AvatarStack--three-plus AvatarStack--right">
     <div className="AvatarStack-body tooltipped tooltipped-sw tooltipped-align-right-1" aria-label="octocat, octocat, and octocat">
       <Avatar alt="@octocat" src={srcAvatar} width={20} height={20} />
@@ -61,5 +61,3 @@ const avatarStackRight = (
     </div>
   </div>
 )
-
-export { avatar, avatarSmall, avatarStackMore, avatarStackThreePlus, avatarStackTwo, avatarStackRight }

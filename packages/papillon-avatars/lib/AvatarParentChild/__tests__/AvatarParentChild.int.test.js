@@ -1,4 +1,4 @@
-import avatarParentChild from './AvatarParentChild.render'
+import { avatarParentChild } from './AvatarParentChild.int.render'
 
 describe('<Avatar />', () => {
   describe('Snaphot', () => {

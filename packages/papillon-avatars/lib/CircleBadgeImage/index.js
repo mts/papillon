@@ -1,3 +1,3 @@
-import CircleBadgeImage from './CircleBadgeImage'
+import { CircleBadgeImage } from './CircleBadgeImage'
 
-export default CircleBadgeImage
+export { CircleBadgeImage }

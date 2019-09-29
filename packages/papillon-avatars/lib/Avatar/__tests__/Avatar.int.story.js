@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react'
-import { avatar, avatarSmall, avatarStackMore, avatarStackThreePlus, avatarStackTwo, avatarStackRight } from './Avatar.render'
-import { getInfo } from '../../../../.storybook/library'
+import { avatar, avatarSmall, avatarStackMore, avatarStackThreePlus, avatarStackTwo, avatarStackRight } from './Avatar.int.render'
+import { getInfo } from '../../../../../.storybook/library'
 
 const avatarInfo = getInfo('avatar')
 const avatarSmallInfo = getInfo('avatar-small')

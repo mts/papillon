@@ -1,4 +1,4 @@
-import circleBadgeDashedConnection from './CircleBadgeDashedIcon.render'
+import { circleBadgeDashedConnection } from './CircleBadgeDashedIcon.int.render'
 
 describe('<Avatar />', () => {
   describe('Snaphot', () => {
