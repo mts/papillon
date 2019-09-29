@@ -6,7 +6,8 @@ app.sublime-project
 app.sublime-workspace
 
 # Storybook
-.storybook-static
+.storybook-static-develop
+.storybook-static-release
 
 # Test
 coverage
