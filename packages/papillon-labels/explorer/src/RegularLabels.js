@@ -1,6 +1,6 @@
 import React from 'react'
-// import { Label } from 'papillon-labels'
-import { Label, variants } from '../../build/papillon-labels'
+import { Label } from 'papillon-labels'
+// import { Label, variants } from '../../build/papillon-labels'
 
 export const RegularLabels = () => {
   const {
