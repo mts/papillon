@@ -79,7 +79,7 @@ export const Label = ({ variant, className, children, icon }) => {
     case stateDefaultSmall:
       return getLabel(state, 'State--small', children, icon)
     case stateGreenSmall:
-      return getLabel(state, 'State--green State--small', children, icon)
+      return getLabel(state, 'State--small State--green', children, icon)
     case statePurpleSmall:
       return getLabel(state, 'State--small State--purple', children, icon)
     case stateRedSmall:
