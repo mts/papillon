@@ -73,7 +73,7 @@ export const CounterLabels = () => {
           <nav className="tabnav-tabs" aria-label="Foo bar">
             <a href="#url" className="tabnav-tab selected" aria-current="page">
               Foo tab
-              <Label variant="counter-default">23</Label>
+              <Label variant={counterDefault}>23</Label>
             </a>
             <a href="#url" className="tabnav-tab ml-1">
               Bar tab
@@ -94,7 +94,7 @@ export const CounterLabels = () => {
           <div className="Box-header">
             <h3 className="Box-title">
               Box title
-              <Label variant="counter-default">3</Label>
+              <Label variant={counterDefault}>3</Label>
             </h3>
           </div>
           <ul>
