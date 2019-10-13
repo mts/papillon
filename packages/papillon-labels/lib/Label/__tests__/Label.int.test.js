@@ -14,6 +14,7 @@ import {
   themeOutlineVariant,
   themeOutlineGreenVariant,
   // state
+  stateVariant,
   stateDefaultVariant,
   stateGreenVariant,
   statePurpleVariant,
@@ -87,6 +88,10 @@ describe('<Label />', () => {
     })
 
     describe('state', () => {
+      test('must match stateVariant', () => {
+        expect(global.renderToJSON(stateVariant)).toMatchSnapshot()
+      })
+
       test('must match stateDefaultVariant', () => {
         expect(global.renderToJSON(stateDefaultVariant)).toMatchSnapshot()
       })

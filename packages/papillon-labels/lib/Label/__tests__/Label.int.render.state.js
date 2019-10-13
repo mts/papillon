@@ -7,6 +7,7 @@ const Label =
     : require('../../../build/papillon-labels').Label
 
 const {
+  state,
   stateDefault,
   stateGreen,
   statePurple,
@@ -19,6 +20,12 @@ const {
   stateClosed,
   stateMerged,
 } = variants
+
+export const stateVariant = (
+  <Label variant={state} className="text-yellow bg-white">
+    papillon state label
+  </Label>
+)
 
 export const stateDefaultVariant = <Label variant={stateDefault}>papillon state label</Label>
 

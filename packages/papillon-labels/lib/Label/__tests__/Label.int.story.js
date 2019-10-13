@@ -15,6 +15,7 @@ import {
   themeOutlineVariant,
   themeOutlineGreenVariant,
   // state
+  stateVariant,
   stateDefaultVariant,
   stateGreenVariant,
   statePurpleVariant,
@@ -51,6 +52,7 @@ const themeOutlineVariantInfo = getInfo('themeOutlineVariant')
 const themeOutlineGreenVariantInfo = getInfo('themeOutlineGreenVariant')
 
 // state
+const stateVariantInfo = getInfo('stateVariant')
 const stateDefaultVariantInfo = getInfo('stateDefaultVariant')
 const stateGreenVariantInfo = getInfo('stateGreenVariant')
 const statePurpleVariantInfo = getInfo('statePurpleVariant')
@@ -84,6 +86,7 @@ storiesOf('Labels/Theme', module)
   .add(themeOutlineVariantInfo.text, () => themeOutlineVariant, themeOutlineVariantInfo.parameters)
   .add(themeOutlineGreenVariantInfo.text, () => themeOutlineGreenVariant, themeOutlineGreenVariantInfo.parameters)
 storiesOf('Labels/State', module)
+  .add(stateVariantInfo.text, () => stateVariant, stateVariantInfo.parameters)
   .add(stateDefaultVariantInfo.text, () => stateDefaultVariant, stateDefaultVariantInfo.parameters)
   .add(stateGreenVariantInfo.text, () => stateGreenVariant, stateGreenVariantInfo.parameters)
   .add(statePurpleVariantInfo.text, () => statePurpleVariant, statePurpleVariantInfo.parameters)

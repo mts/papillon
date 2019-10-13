@@ -17,6 +17,7 @@ export {
 } from './Label.int.render.theme'
 
 export {
+  stateVariant,
   stateDefaultVariant,
   stateGreenVariant,
   statePurpleVariant,

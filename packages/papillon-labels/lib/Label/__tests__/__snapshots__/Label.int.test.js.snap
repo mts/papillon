@@ -261,6 +261,15 @@ exports[`<Label /> Snaphot state must match stateRedVariant 1`] = `
 </span>
 `;
 
+exports[`<Label /> Snaphot state must match stateVariant 1`] = `
+<span
+  className="State text-yellow bg-white"
+>
+   
+  papillon state label
+</span>
+`;
+
 exports[`<Label /> Snaphot theme must match themeDarkGrayVariant 1`] = `
 <span
   className="Label Label--gray-darker"
