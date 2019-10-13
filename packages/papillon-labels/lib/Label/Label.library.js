@@ -33,17 +33,21 @@ export const variants = {
   counterGrayLight: 'counter-gray-light',
 }
 
-export const getLabel = (variant, className, children, icon) => (
-  <span
-    className={cx(
-      {
-        Label: variant === 'label',
-        State: variant === 'state',
-        Counter: variant === 'counter',
-      },
-      className,
-    )}
-  >
-    {icon ? <Octicon size="small" icon={getIconByName(icon)} /> : null} {children}
-  </span>
-)
+export const getLabel = (variant, className, children, icon) => {
+  const { label, state, counter } = variants
+
+  return (
+    <span
+      className={cx(
+        {
+          Label: variant === label,
+          State: variant === state,
+          Counter: variant === counter,
+        },
+        className,
+      )}
+    >
+      {icon ? <Octicon size="small" icon={getIconByName(icon)} /> : null} {children}
+    </span>
+  )
+}
