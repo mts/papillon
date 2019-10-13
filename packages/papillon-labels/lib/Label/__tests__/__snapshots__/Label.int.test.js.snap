@@ -27,6 +27,24 @@ exports[`<Label /> Snaphot counter must match counterGrayVariant 1`] = `
 </span>
 `;
 
+exports[`<Label /> Snaphot counter must match counterVariant 1`] = `
+<span
+  className="Counter text-blue"
+>
+   
+  11
+</span>
+`;
+
+exports[`<Label /> Snaphot regular must match labelVariant 1`] = `
+<span
+  className="Label text-gray"
+>
+   
+  papillon regular label
+</span>
+`;
+
 exports[`<Label /> Snaphot regular must match labelWhiteOnBlueVariant 1`] = `
 <span
   className="Label text-white bg-blue"
@@ -131,7 +149,7 @@ exports[`<Label /> Snaphot state must match stateDefaultVariant 1`] = `
 
 exports[`<Label /> Snaphot state must match stateGreenSmallVariant 1`] = `
 <span
-  className="State State--green State--small"
+  className="State State--small State--green"
 >
    
   papillon state label
@@ -243,6 +261,15 @@ exports[`<Label /> Snaphot state must match stateRedVariant 1`] = `
 </span>
 `;
 
+exports[`<Label /> Snaphot state must match stateVariant 1`] = `
+<span
+  className="State text-yellow bg-white"
+>
+   
+  papillon state label
+</span>
+`;
+
 exports[`<Label /> Snaphot theme must match themeDarkGrayVariant 1`] = `
 <span
   className="Label Label--gray-darker"
@@ -282,6 +309,15 @@ exports[`<Label /> Snaphot theme must match themeOutlineGreenVariant 1`] = `
 exports[`<Label /> Snaphot theme must match themeOutlineVariant 1`] = `
 <span
   className="Label Label--outline"
+>
+   
+  papillon theme label
+</span>
+`;
+
+exports[`<Label /> Snaphot theme must match themeVariant 1`] = `
+<span
+  className="Label text-pink"
 >
    
   papillon theme label

@@ -1,5 +1,6 @@
 import {
   // regular
+  labelVariant,
   labelWhiteOnBlueVariant,
   labelWhiteOnDarkGrayVariant,
   labelWhiteOnGreenVariant,
@@ -7,12 +8,14 @@ import {
   labelWhiteOnYellowVariant,
   labelWhiteOnPurpleVariant,
   // theme
+  themeVariant,
   themeGrayVariant,
   themeDarkGrayVariant,
   themeOrangeVariant,
   themeOutlineVariant,
   themeOutlineGreenVariant,
   // state
+  stateVariant,
   stateDefaultVariant,
   stateGreenVariant,
   statePurpleVariant,
@@ -25,6 +28,7 @@ import {
   stateClosedVariant,
   stateMergedVariant,
   // counter
+  counterVariant,
   counterDefaultVariant,
   counterGrayVariant,
   counterGrayLightVariant,
@@ -33,6 +37,10 @@ import {
 describe('<Label />', () => {
   describe('Snaphot', () => {
     describe('regular', () => {
+      test('must match labelVariant', () => {
+        expect(global.renderToJSON(labelVariant)).toMatchSnapshot()
+      })
+
       test('must match labelWhiteOnBlueVariant', () => {
         expect(global.renderToJSON(labelWhiteOnBlueVariant)).toMatchSnapshot()
       })
@@ -59,6 +67,10 @@ describe('<Label />', () => {
     })
 
     describe('theme', () => {
+      test('must match themeVariant', () => {
+        expect(global.renderToJSON(themeVariant)).toMatchSnapshot()
+      })
+
       test('must match themeGrayVariant', () => {
         expect(global.renderToJSON(themeGrayVariant)).toMatchSnapshot()
       })
@@ -81,6 +93,10 @@ describe('<Label />', () => {
     })
 
     describe('state', () => {
+      test('must match stateVariant', () => {
+        expect(global.renderToJSON(stateVariant)).toMatchSnapshot()
+      })
+
       test('must match stateDefaultVariant', () => {
         expect(global.renderToJSON(stateDefaultVariant)).toMatchSnapshot()
       })
@@ -127,6 +143,10 @@ describe('<Label />', () => {
     })
 
     describe('counter', () => {
+      test('must match counterVariant', () => {
+        expect(global.renderToJSON(counterVariant)).toMatchSnapshot()
+      })
+
       test('must match counterDefaultVariant', () => {
         expect(global.renderToJSON(counterDefaultVariant)).toMatchSnapshot()
       })

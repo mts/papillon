@@ -1,3 +1,2 @@
-import { Label } from './Label'
-
-export { Label }
+export { Label } from './Label'
+export { variants } from './Label.library'
