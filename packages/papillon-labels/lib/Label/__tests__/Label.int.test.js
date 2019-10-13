@@ -8,6 +8,7 @@ import {
   labelWhiteOnYellowVariant,
   labelWhiteOnPurpleVariant,
   // theme
+  themeVariant,
   themeGrayVariant,
   themeDarkGrayVariant,
   themeOrangeVariant,
@@ -66,6 +67,10 @@ describe('<Label />', () => {
     })
 
     describe('theme', () => {
+      test('must match themeVariant', () => {
+        expect(global.renderToJSON(themeVariant)).toMatchSnapshot()
+      })
+
       test('must match themeGrayVariant', () => {
         expect(global.renderToJSON(themeGrayVariant)).toMatchSnapshot()
       })

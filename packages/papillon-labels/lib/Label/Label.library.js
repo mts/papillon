@@ -10,6 +10,7 @@ export const variants = {
   labelWhiteOnRed: 'label-white-on-red',
   labelWhiteOnYellow: 'label-white-on-yellow',
   labelWhiteOnPurple: 'label-white-on-purple',
+  theme: 'theme',
   themeGray: 'theme-gray',
   themeDarkGray: 'theme-dark-gray',
   themeOrange: 'theme-orange',
@@ -34,13 +35,13 @@ export const variants = {
 }
 
 export const getLabel = (variant, className, children, icon) => {
-  const { label, state, counter } = variants
+  const { label, theme, state, counter } = variants
 
   return (
     <span
       className={cx(
         {
-          Label: variant === label,
+          Label: variant === label || variant === theme,
           State: variant === state,
           Counter: variant === counter,
         },

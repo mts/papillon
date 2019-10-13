@@ -12,6 +12,7 @@ export const Label = ({ variant, className, children, icon }) => {
     labelWhiteOnRed,
     labelWhiteOnYellow,
     labelWhiteOnPurple,
+    theme,
     themeGray,
     themeDarkGray,
     themeOrange,
@@ -52,6 +53,8 @@ export const Label = ({ variant, className, children, icon }) => {
     case labelWhiteOnPurple:
       return getLabel(label, 'text-white bg-purple', children, icon)
     // Theme
+    case theme:
+      return getLabel(label, className, children, icon)
     case themeGray:
       return getLabel(label, 'Label--gray', children, icon)
     case themeDarkGray:

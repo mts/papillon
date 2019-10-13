@@ -9,6 +9,7 @@ import {
   labelWhiteOnYellowVariant,
   labelWhiteOnPurpleVariant,
   // theme
+  themeVariant,
   themeGrayVariant,
   themeDarkGrayVariant,
   themeOrangeVariant,
@@ -45,6 +46,7 @@ const labelWhiteOnYellowVariantInfo = getInfo('labelWhiteOnYellowVariant')
 const labelWhiteOnPurpleVariantInfo = getInfo('labelWhiteOnPurpleVariant')
 
 // theme
+const themeVariantInfo = getInfo('themeVariant')
 const themeGrayVariantInfo = getInfo('themeGrayVariant')
 const themeDarkGrayVariantInfo = getInfo('themeDarkGrayVariant')
 const themeOrangeVariantInfo = getInfo('themeOrangeVariant')
@@ -80,6 +82,7 @@ storiesOf('Labels/Regular', module)
   .add(labelWhiteOnYellowVariantInfo.text, () => labelWhiteOnYellowVariant, labelWhiteOnYellowVariantInfo.parameters)
   .add(labelWhiteOnPurpleVariantInfo.text, () => labelWhiteOnPurpleVariant, labelWhiteOnPurpleVariantInfo.parameters)
 storiesOf('Labels/Theme', module)
+  .add(themeVariantInfo.text, () => themeVariant, themeVariantInfo.parameters)
   .add(themeGrayVariantInfo.text, () => themeGrayVariant, themeGrayVariantInfo.parameters)
   .add(themeDarkGrayVariantInfo.text, () => themeDarkGrayVariant, themeDarkGrayVariantInfo.parameters)
   .add(themeOrangeVariantInfo.text, () => themeOrangeVariant, themeOrangeVariantInfo.parameters)

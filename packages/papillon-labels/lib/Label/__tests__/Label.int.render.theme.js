@@ -6,7 +6,13 @@ const Label =
     ? require('../Label').Label
     : require('../../../build/papillon-labels').Label
 
-const { themeGray, themeDarkGray, themeOrange, themeOutline, themeOutlineGreen } = variants
+const { theme, themeGray, themeDarkGray, themeOrange, themeOutline, themeOutlineGreen } = variants
+
+export const themeVariant = (
+  <Label variant={theme} className="text-pink">
+    papillon theme label
+  </Label>
+)
 
 export const themeGrayVariant = <Label variant={themeGray}>papillon theme label</Label>
 

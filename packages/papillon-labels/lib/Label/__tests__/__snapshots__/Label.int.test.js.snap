@@ -314,3 +314,12 @@ exports[`<Label /> Snaphot theme must match themeOutlineVariant 1`] = `
   papillon theme label
 </span>
 `;
+
+exports[`<Label /> Snaphot theme must match themeVariant 1`] = `
+<span
+  className="Label text-pink"
+>
+   
+  papillon theme label
+</span>
+`;

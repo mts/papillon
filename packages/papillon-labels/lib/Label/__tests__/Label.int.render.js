@@ -9,6 +9,7 @@ export {
 } from './Label.int.render.regular'
 
 export {
+  themeVariant,
   themeGrayVariant,
   themeDarkGrayVariant,
   themeOrangeVariant,
