@@ -26,6 +26,7 @@ import {
   stateClosedVariant,
   stateMergedVariant,
   // counter
+  counterVariant,
   counterDefaultVariant,
   counterGrayVariant,
   counterGrayLightVariant,
@@ -132,6 +133,10 @@ describe('<Label />', () => {
     })
 
     describe('counter', () => {
+      test('must match counterVariant', () => {
+        expect(global.renderToJSON(counterVariant)).toMatchSnapshot()
+      })
+
       test('must match counterDefaultVariant', () => {
         expect(global.renderToJSON(counterDefaultVariant)).toMatchSnapshot()
       })

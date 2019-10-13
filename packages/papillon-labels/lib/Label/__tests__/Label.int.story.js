@@ -27,6 +27,7 @@ import {
   stateClosedVariant,
   stateMergedVariant,
   // counter
+  counterVariant,
   counterDefaultVariant,
   counterGrayVariant,
   counterGrayLightVariant,
@@ -63,6 +64,7 @@ const stateClosedVariantInfo = getInfo('stateClosedVariant')
 const stateMergedVariantInfo = getInfo('stateMergedVariant')
 
 // counter
+const counterVariantInfo = getInfo('counterVariant')
 const counterDefaultVariantInfo = getInfo('counterDefaultVariant')
 const counterGrayVariantInfo = getInfo('counterGrayVariant')
 const counterGrayLightVariantInfo = getInfo('counterGrayLightVariant')
@@ -94,6 +96,7 @@ storiesOf('Labels/State', module)
   .add(stateClosedVariantInfo.text, () => stateClosedVariant, stateClosedVariantInfo.parameters)
   .add(stateMergedVariantInfo.text, () => stateMergedVariant, stateMergedVariantInfo.parameters)
 storiesOf('Labels/Counter', module)
+  .add(counterVariantInfo.text, () => counterVariant, counterVariantInfo.parameters)
   .add(counterDefaultVariantInfo.text, () => counterDefaultVariant, counterDefaultVariantInfo.parameters)
   .add(counterGrayVariantInfo.text, () => counterGrayVariant, counterGrayVariantInfo.parameters)
   .add(counterGrayLightVariantInfo.text, () => counterGrayLightVariant, counterGrayLightVariantInfo.parameters)

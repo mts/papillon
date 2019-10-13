@@ -6,12 +6,16 @@ const Label =
     ? require('../Label').Label
     : require('../../../build/papillon-labels').Label
 
-const { counterDefault, counterGray, counterGrayLight } = variants
+const { counter, counterDefault, counterGray, counterGrayLight } = variants
 
-const counterDefaultVariant = <Label variant={counterDefault}>33</Label>
+export const counterVariant = (
+  <Label variant={counter} className="text-blue">
+    11
+  </Label>
+)
 
-const counterGrayVariant = <Label variant={counterGray}>55</Label>
+export const counterDefaultVariant = <Label variant={counterDefault}>33</Label>
 
-const counterGrayLightVariant = <Label variant={counterGrayLight}>77</Label>
+export const counterGrayVariant = <Label variant={counterGray}>55</Label>
 
-export { counterDefaultVariant, counterGrayVariant, counterGrayLightVariant }
+export const counterGrayLightVariant = <Label variant={counterGrayLight}>77</Label>

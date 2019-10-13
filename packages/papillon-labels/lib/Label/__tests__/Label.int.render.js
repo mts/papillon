@@ -30,4 +30,4 @@ export {
   stateMergedVariant,
 } from './Label.int.render.state'
 
-export { counterDefaultVariant, counterGrayVariant, counterGrayLightVariant } from './Label.int.render.counter'
+export { counterVariant, counterDefaultVariant, counterGrayVariant, counterGrayLightVariant } from './Label.int.render.counter'
