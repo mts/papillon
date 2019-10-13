@@ -1,7 +1,8 @@
 # Papillon Buttons
 
-[![travis build](https://img.shields.io/travis/mts/papillon.svg?style=flat-square)](https://travis-ci.org/mts/papillon)
 [![version](https://img.shields.io/npm/v/papillon-buttons.svg?style=flat-square)](http://npm.im/papillon-buttons)
+[![travis build](https://img.shields.io/travis/mts/papillon.svg?style=flat-square)](https://travis-ci.org/mts/papillon)
+[![codecov coverage](https://codecov.io/gh/mts/papillon/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/mts/papillon/branch/master)
 [![downloads](https://img.shields.io/npm/dm/papillon-buttons.svg?style=flat-square)](http://npm-stat.com/charts.html?package=papillon-buttons&from=2018-10-13)
 [![MIT License](https://img.shields.io/npm/l/papillon-buttons.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
@@ -24,9 +25,11 @@ $ npm install --save papillon-buttons
 ```
 
 ## Explorer
+
 Check out how to use Papillon Buttons with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-buttons/explorer)
 
 ## NPM
+
 Get the latest papillon-buttons [here](https://www.npmjs.com/package/papillon-buttons)
 
 ## Usage
@@ -34,7 +37,7 @@ Get the latest papillon-buttons [here](https://www.npmjs.com/package/papillon-bu
 You can import it like this.
 
 ```javascript
-import Button from 'papillon-buttons';
+import Button from 'papillon-buttons'
 ```
 
 ## Documentation
@@ -52,7 +55,7 @@ When using a `<button>` element, **always specify a `type`**. When using a `<a>`
 ```
 
 ```html
-  <Button variant="link">Button</Button>
+<button variant="link">Button</button>
 ```
 
 You can find them in different sizes: the default `.btn`, the smaller `.btn-sm` and the larger `.btn-large`.
@@ -69,7 +72,7 @@ You can find them in different sizes: the default `.btn`, the smaller `.btn-sm` 
 
 ### Primary button
 
-Primary buttons are green and are used to indicate the *primary* action on a page. When you need your buttons to stand out, use `.btn.btn-primary`. You can use it with both button sizes—just add `.btn-primary`.
+Primary buttons are green and are used to indicate the _primary_ action on a page. When you need your buttons to stand out, use `.btn.btn-primary`. You can use it with both button sizes—just add `.btn-primary`.
 
 ```html
   <Button variant="button" className="btn-primary" onClick={() => {}}>Button</Button>
@@ -136,7 +139,7 @@ Outline buttons downplay an action as they appear like boxy links. Just add `.bt
 ### Button Link
 
 ```html
-  <Button variant="button-link">Button Link</Button>
+<button variant="button-link">Button Link</button>
 ```
 
 ## License
@@ -148,4 +151,3 @@ Outline buttons downplay an action as they appear like boxy links. Just add `.bt
 [npm]: https://www.npmjs.com/package/papillon-buttons
 [install-npm]: https://docs.npmjs.com/getting-started/installing-node
 [react]: https://github.com/facebook/react
-
