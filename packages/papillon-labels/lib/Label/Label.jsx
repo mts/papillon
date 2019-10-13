@@ -38,7 +38,7 @@ export const Label = ({ variant, className, children, icon }) => {
   switch (variant) {
     // Label
     case label:
-      return getLabel(variant, className, children, icon)
+      return getLabel(label, className, children, icon)
     case labelWhiteOnBlue:
       return getLabel(label, 'text-white bg-blue', children, icon)
     case labelWhiteOnDarkGray:
@@ -64,7 +64,7 @@ export const Label = ({ variant, className, children, icon }) => {
       return getLabel(label, 'Label--outline Label--outline-green', children, icon)
     // State
     case state:
-      return getLabel(variant, className, children, icon)
+      return getLabel(state, className, children, icon)
     case stateDefault:
       return getLabel(state, '', children, icon)
     case stateGreen:
@@ -89,7 +89,7 @@ export const Label = ({ variant, className, children, icon }) => {
       return getLabel(state, 'State--purple', children, 'git-merge')
     // Counter
     case counter:
-      return getLabel(variant, className, children, icon)
+      return getLabel(counter, className, children, icon)
     case counterDefault:
       return getLabel(counter, '', children, icon)
     case counterGray:
