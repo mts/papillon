@@ -1,17 +1,23 @@
 import React from 'react'
-import {
+
+const { Label, variants } =
+  process.env.NODE_ENV === 'develop' || process.env.NODE_ENV === 'test' ? require('../index') : require('../../../build/papillon-labels')
+
+const {
+  label,
   labelWhiteOnBlue,
   labelWhiteOnDarkGray,
   labelWhiteOnDarkGreen,
   labelWhiteOnRed,
   labelWhiteOnYellow,
   labelWhiteOnPurple,
-} from '../Label.variant'
+} = variants
 
-const Label =
-  process.env.NODE_ENV === 'develop' || process.env.NODE_ENV === 'test'
-    ? require('../Label').Label
-    : require('../../../build/papillon-labels').Label
+export const labelVariant = (
+  <Label variant={label} className="text-gray">
+    papillon regular label
+  </Label>
+)
 
 export const labelWhiteOnBlueVariant = <Label variant={labelWhiteOnBlue}>papillon regular label</Label>
 
