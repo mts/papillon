@@ -1,8 +1,8 @@
 import { string, oneOf, node } from 'prop-types'
-import { variants } from './Label.variant'
+import { variants } from './Label.library'
 
 export const propTypes = {
-  variant: oneOf(variants).isRequired,
+  variant: oneOf(Object.values(variants)).isRequired,
   className: string,
   children: node.isRequired,
   icon: string,
