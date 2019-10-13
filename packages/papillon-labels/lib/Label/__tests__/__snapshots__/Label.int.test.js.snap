@@ -27,6 +27,24 @@ exports[`<Label /> Snaphot counter must match counterGrayVariant 1`] = `
 </span>
 `;
 
+exports[`<Label /> Snaphot counter must match counterVariant 1`] = `
+<span
+  className="Counter text-blue"
+>
+   
+  11
+</span>
+`;
+
+exports[`<Label /> Snaphot regular must match labelVariant 1`] = `
+<span
+  className="Label text-gray"
+>
+   
+  papillon regular label
+</span>
+`;
+
 exports[`<Label /> Snaphot regular must match labelWhiteOnBlueVariant 1`] = `
 <span
   className="Label text-white bg-blue"

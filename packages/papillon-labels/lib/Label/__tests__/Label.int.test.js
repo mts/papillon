@@ -1,5 +1,6 @@
 import {
   // regular
+  labelVariant,
   labelWhiteOnBlueVariant,
   labelWhiteOnDarkGrayVariant,
   labelWhiteOnGreenVariant,
@@ -33,6 +34,10 @@ import {
 describe('<Label />', () => {
   describe('Snaphot', () => {
     describe('regular', () => {
+      test('must match labelVariant', () => {
+        expect(global.renderToJSON(labelVariant)).toMatchSnapshot()
+      })
+
       test('must match labelWhiteOnBlueVariant', () => {
         expect(global.renderToJSON(labelWhiteOnBlueVariant)).toMatchSnapshot()
       })

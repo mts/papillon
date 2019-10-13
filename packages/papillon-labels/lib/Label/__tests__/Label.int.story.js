@@ -1,6 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import {
   // regular
+  labelVariant,
   labelWhiteOnBlueVariant,
   labelWhiteOnDarkGrayVariant,
   labelWhiteOnGreenVariant,
@@ -33,6 +34,7 @@ import {
 import { getInfo } from '../../../../../.storybook/library'
 
 // regular
+const labelVariantInfo = getInfo('labelVariant')
 const labelWhiteOnBlueVariantInfo = getInfo('labelWhiteOnBlueVariant')
 const labelWhiteOnDarkGrayVariantInfo = getInfo('labelWhiteOnDarkGrayVariant')
 const labelWhiteOnGreenVariantInfo = getInfo('labelWhiteOnGreenVariant')
@@ -66,6 +68,7 @@ const counterGrayVariantInfo = getInfo('counterGrayVariant')
 const counterGrayLightVariantInfo = getInfo('counterGrayLightVariant')
 
 storiesOf('Labels/Regular', module)
+  .add(labelVariantInfo.text, () => labelVariant, labelVariantInfo.parameters)
   .add(labelWhiteOnBlueVariantInfo.text, () => labelWhiteOnBlueVariant, labelWhiteOnBlueVariantInfo.parameters)
   .add(labelWhiteOnDarkGrayVariantInfo.text, () => labelWhiteOnDarkGrayVariant, labelWhiteOnDarkGrayVariantInfo.parameters)
   .add(labelWhiteOnGreenVariantInfo.text, () => labelWhiteOnGreenVariant, labelWhiteOnGreenVariantInfo.parameters)

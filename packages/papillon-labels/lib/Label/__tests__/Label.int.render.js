@@ -1,4 +1,5 @@
 export {
+  labelVariant,
   labelWhiteOnBlueVariant,
   labelWhiteOnDarkGrayVariant,
   labelWhiteOnGreenVariant,
