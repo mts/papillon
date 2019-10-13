@@ -1,10 +1,12 @@
 import React from 'react'
-import { themeGray, themeDarkGray, themeOrange, themeOutline, themeOutlineGreen } from '../Label.variant'
+import { variants } from '../Label.library'
 
 const Label =
   process.env.NODE_ENV === 'develop' || process.env.NODE_ENV === 'test'
     ? require('../Label').Label
     : require('../../../build/papillon-labels').Label
+
+const { themeGray, themeDarkGray, themeOrange, themeOutline, themeOutlineGreen } = variants
 
 export const themeGrayVariant = <Label variant={themeGray}>papillon theme label</Label>
 

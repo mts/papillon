@@ -1,10 +1,12 @@
 import React from 'react'
-import { counterDefault, counterGray, counterGrayLight } from '../Label.variant'
+import { variants } from '../Label.library'
 
 const Label =
   process.env.NODE_ENV === 'develop' || process.env.NODE_ENV === 'test'
     ? require('../Label').Label
     : require('../../../build/papillon-labels').Label
+
+const { counterDefault, counterGray, counterGrayLight } = variants
 
 const counterDefaultVariant = <Label variant={counterDefault}>33</Label>
 

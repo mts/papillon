@@ -1,5 +1,12 @@
 import React from 'react'
-import {
+import { variants } from '../Label.library'
+
+const Label =
+  process.env.NODE_ENV === 'develop' || process.env.NODE_ENV === 'test'
+    ? require('../Label').Label
+    : require('../../../build/papillon-labels').Label
+
+const {
   stateDefault,
   stateGreen,
   statePurple,
@@ -11,12 +18,7 @@ import {
   stateOpen,
   stateClosed,
   stateMerged,
-} from '../Label.variant'
-
-const Label =
-  process.env.NODE_ENV === 'develop' || process.env.NODE_ENV === 'test'
-    ? require('../Label').Label
-    : require('../../../build/papillon-labels').Label
+} = variants
 
 export const stateDefaultVariant = <Label variant={stateDefault}>papillon state label</Label>
 
