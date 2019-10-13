@@ -149,7 +149,7 @@ exports[`<Label /> Snaphot state must match stateDefaultVariant 1`] = `
 
 exports[`<Label /> Snaphot state must match stateGreenSmallVariant 1`] = `
 <span
-  className="State State--green State--small"
+  className="State State--small State--green"
 >
    
   papillon state label
