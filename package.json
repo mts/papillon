@@ -1,5 +1,12 @@
 {
   "name": "papillon",
+  "description": "React components for the Primer Design System",
+  "homepage": "https://github.com/mts/papillon/#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mts/papillon.git"
+  },
   "scripts": {
     "release": "lerna publish",
     "uninstall-packages": "lerna run uninstall-packages --stream",
@@ -27,17 +34,6 @@
     "report-coverage": "codecov",
     "build": "lerna run build --stream"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mts/papillon.git"
-  },
-  "bugs": {
-    "url": "https://github.com/mts/papillon/issues"
-  },
-  "homepage": "https://github.com/mts/papillon/#readme",
-  "pre-commit": [
-    "lint:staged"
-  ],
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
