@@ -9,5 +9,6 @@ module.exports = {
     '@babel/plugin-transform-classes',
     '@babel/plugin-transform-runtime',
     '@babel/plugin-transform-spread',
+    'syntax-async-functions',
   ],
 }
