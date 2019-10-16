@@ -1,3 +1,1 @@
-import { UnderlineNav } from './UnderlineNav'
-
-export { UnderlineNav }
+export { UnderlineNav } from './UnderlineNav'
