@@ -1,3 +1,1 @@
-import { AvatarParentChild } from './AvatarParentChild'
-
-export { AvatarParentChild }
+export { AvatarParentChild } from './AvatarParentChild'
