@@ -1,0 +1,42 @@
+{
+  "name": "papillon-avatars-explorer",
+  "version": "1.0.0",
+  "description": "papillon-avatars explorer",
+  "homepage": "https://github.com/mts/papillon",
+  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-avatars/explorer",
+  "keywords": [
+    "avatars",
+    "papillon",
+    "primer",
+    "css",
+    "react",
+    "github",
+    "design-system",
+    "component-library",
+    "papillon-avatars",
+    "webpack",
+    "babel"
+  ],
+  "main": "index.js",
+  "license": "MIT",
+  "author": "MTS",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "papillon-avatars": "^1.0.51",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "babel-loader": "^8.0.6",
+    "react-hot-loader": "^4.12.17",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
