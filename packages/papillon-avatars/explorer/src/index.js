@@ -83,37 +83,44 @@ ReactDOM.render(
         </div>
       </div>
       <div className="col-6">
-        <h3 className="pl-4">CircleBadgeIcon Small</h3>
+        <h3 className="pl-4">CircleBadgeIcon small</h3>
         <div className="p-4">
           <CircleBadge size="small" className="bg-yellow" title="Zap this!" href="#small">
             <CircleBadgeIcon className="text-white" icon="zap" />
           </CircleBadge>
         </div>
 
-        <h3 className="pl-4">CircleBadgeIcon Medium</h3>
+        <h3 className="pl-4">CircleBadgeIcon medium</h3>
         <div className="p-4">
           <CircleBadge size="medium" className="bg-gray-dark" title="Zap this!" href="#medium">
             <CircleBadgeIcon className="text-white" icon="zap" />
           </CircleBadge>
         </div>
 
-        <h3 className="pl-4">CircleBadgeIcon Large</h3>
+        <h3 className="pl-4">CircleBadgeIcon large</h3>
         <div className="p-4">
           <CircleBadge size="large" className="bg-gray-dark" title="Zap this!" href="#large">
             <CircleBadgeIcon className="text-white" icon="zap" />
           </CircleBadge>
         </div>
 
-        <h3 className="pl-4">CircleBadgeImage Small</h3>
+        <h3 className="pl-4">CircleBadgeImage small</h3>
         <div className="p-4">
-          <CircleBadge size="small" className="float-left mr-2" title="Travis CI" href="#small">
+          <CircleBadge size="small" className="d-inline-flex mr-2" title="Travis CI" href="#small">
             <CircleBadgeImage src={srcCircleBadge} alt="" />
           </CircleBadge>
         </div>
 
-        <h3 className="pl-4">CircleBadgeImage Medium</h3>
+        <h3 className="pl-4">CircleBadgeImage medium</h3>
         <div className="p-4">
-          <CircleBadge size="medium" className="float-left mr-2" title="Travis CI" href="#medium">
+          <CircleBadge size="medium" className="d-inline-flex mr-2" title="Travis CI" href="#medium">
+            <CircleBadgeImage src={srcCircleBadge} alt="" />
+          </CircleBadge>
+        </div>
+
+        <h3 className="pl-4">CircleBadgeImage large</h3>
+        <div className="p-4">
+          <CircleBadge size="large" className="d-inline-flex mr-2" title="Travis CI" href="#large">
             <CircleBadgeImage src={srcCircleBadge} alt="" />
           </CircleBadge>
         </div>
