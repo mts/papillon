@@ -2,7 +2,7 @@
 
 exports[`<Layout /> Snaphot must match container 1`] = `
 <div
-  className="container border"
+  className="border container"
 >
   Container
 </div>
