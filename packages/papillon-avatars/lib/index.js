@@ -1,5 +1,4 @@
 export { Avatar } from './Avatar'
-export { AvatarParentChild } from './AvatarParentChild'
 export { CircleBadge } from './CircleBadge'
 export { CircleBadgeDashedConnection } from './CircleBadgeDashedConnection'
 export { CircleBadgeIcon } from './CircleBadgeIcon'
