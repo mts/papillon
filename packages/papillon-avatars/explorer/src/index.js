@@ -16,6 +16,14 @@ ReactDOM.render(
     <div className="p-4">
       <Avatar className="avatar-small" alt="small" src={srcAvatar} width={32} height={32} />
     </div>
+
+    <h3 className="pl-4">ParentChild</h3>
+    <div className="p-4">
+      <div className="avatar-parent-child float-left">
+        <Avatar alt="parent" src={srcAvatar} width={48} height={48} />
+        <Avatar className="avatar-child" alt="child" src={srcAvatar} width={20} height={20} />
+      </div>
+    </div>
   </div>,
   document.getElementById('app'),
 )
