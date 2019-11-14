@@ -124,6 +124,15 @@ ReactDOM.render(
             <CircleBadgeImage src={srcCircleBadge} alt="" />
           </CircleBadge>
         </div>
+
+        <h3 className="pl-4">CircleBadgeDashedConnection</h3>
+        <div className="p-4">
+          <CircleBadgeDashedConnection>
+            <CircleBadgeImage src={srcCircleBadge} alt="" />
+            <CircleBadgeImage src={srcCircleBadge} alt="" />
+            <CircleBadgeImage src={srcCircleBadge} alt="" />
+          </CircleBadgeDashedConnection>
+        </div>
       </div>
     </div>
   </div>,
