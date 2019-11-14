@@ -35,9 +35,9 @@
     "reinstall-primer": "npm-run-all uninstall-primer install-primer"
   },
   "dependencies": {
-    "@primer/css": "^13.0.1"
+    "@primer/css": "^13.2.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.4"
   }
 }
