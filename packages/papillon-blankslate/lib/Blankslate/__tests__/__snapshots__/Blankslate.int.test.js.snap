@@ -15,7 +15,7 @@ exports[`<Blankslate /> Snaphot must match blankslate 1`] = `
 
 exports[`<Blankslate /> Snaphot must match blankslateCapped 1`] = `
 <div
-  className="blankslate blankslate-capped"
+  className="blankslate-capped blankslate"
 >
   <h3>
     This is a blank slate
@@ -28,7 +28,7 @@ exports[`<Blankslate /> Snaphot must match blankslateCapped 1`] = `
 
 exports[`<Blankslate /> Snaphot must match blankslateCleanBackground 1`] = `
 <div
-  className="blankslate blankslate-clean-background"
+  className="blankslate-clean-background blankslate"
 >
   <h3>
     This is a blank slate
@@ -129,7 +129,7 @@ exports[`<Blankslate /> Snaphot must match blankslateIcon 1`] = `
 
 exports[`<Blankslate /> Snaphot must match blankslateLarge 1`] = `
 <div
-  className="blankslate blankslate-large"
+  className="blankslate-large blankslate"
 >
   <h3>
     This is a blank slate
@@ -142,7 +142,7 @@ exports[`<Blankslate /> Snaphot must match blankslateLarge 1`] = `
 
 exports[`<Blankslate /> Snaphot must match blankslateNarrow 1`] = `
 <div
-  className="blankslate blankslate-narrow"
+  className="blankslate-narrow blankslate"
 >
   <h3>
     This is a blank slate
@@ -155,7 +155,7 @@ exports[`<Blankslate /> Snaphot must match blankslateNarrow 1`] = `
 
 exports[`<Blankslate /> Snaphot must match blankslateSpacious 1`] = `
 <div
-  className="blankslate blankslate-spacious"
+  className="blankslate-spacious blankslate"
 >
   <h3>
     This is a blank slate

@@ -1,4 +1,2 @@
-import { FlashAlert } from './FlashAlert'
-import { FlashMessages } from './FlashMessages'
-
-export { FlashAlert, FlashMessages }
+export { FlashAlert } from './FlashAlert'
+export { FlashMessages } from './FlashMessages'

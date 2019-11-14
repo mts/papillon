@@ -2,13 +2,13 @@
 
 exports[`<Avatar /> Snaphot must match circleBadgeLargeIcon 1`] = `
 <a
-  className="CircleBadge CircleBadge--large bg-gray-dark"
+  className="bg-gray-dark CircleBadge CircleBadge--large"
   href="href"
   title="title"
 >
   <svg
     aria-hidden="true"
-    className="CircleBadge-icon text-white"
+    className="text-white CircleBadge-icon"
     height={16}
     role="img"
     style={
@@ -32,13 +32,13 @@ exports[`<Avatar /> Snaphot must match circleBadgeLargeIcon 1`] = `
 
 exports[`<Avatar /> Snaphot must match circleBadgeMediumIcon 1`] = `
 <a
-  className="CircleBadge CircleBadge--medium bg-gray-dark"
+  className="bg-gray-dark CircleBadge CircleBadge--medium"
   href="href"
   title="title"
 >
   <svg
     aria-hidden="true"
-    className="CircleBadge-icon text-white"
+    className="text-white CircleBadge-icon"
     height={16}
     role="img"
     style={
@@ -62,13 +62,13 @@ exports[`<Avatar /> Snaphot must match circleBadgeMediumIcon 1`] = `
 
 exports[`<Avatar /> Snaphot must match circleBadgeSmallIcon 1`] = `
 <a
-  className="CircleBadge CircleBadge--small bg-yellow"
+  className="bg-yellow CircleBadge CircleBadge--small"
   href="href"
   title="title"
 >
   <svg
     aria-hidden="true"
-    className="CircleBadge-icon text-white"
+    className="text-white CircleBadge-icon"
     height={16}
     role="img"
     style={

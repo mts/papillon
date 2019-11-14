@@ -1,3 +1,1 @@
-import { Breadcrumb } from './lib'
-
-export { Breadcrumb }
+export { Breadcrumb } from './lib'

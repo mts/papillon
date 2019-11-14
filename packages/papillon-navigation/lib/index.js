@@ -1,4 +1,2 @@
-import { Menu } from './Menu'
-import { UnderlineNav } from './UnderlineNav'
-
-export { Menu, UnderlineNav }
+export { Menu } from './Menu'
+export { UnderlineNav } from './UnderlineNav'

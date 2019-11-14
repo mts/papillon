@@ -1,11 +1,11 @@
 {
-  "name": "papillon-labels-explorer",
+  "name": "papillon-avatars-explorer",
   "version": "1.0.0",
-  "description": "papillon-labels explorer",
+  "description": "papillon-avatars explorer",
   "homepage": "https://github.com/mts/papillon",
-  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-labels/explorer",
+  "repository": "https://github.com/mts/papillon/tree/master/packages/papillon-avatars/explorer",
   "keywords": [
-    "labels",
+    "avatars",
     "papillon",
     "primer",
     "css",
@@ -13,7 +13,7 @@
     "github",
     "design-system",
     "component-library",
-    "papillon-labels",
+    "papillon-avatars",
     "webpack",
     "babel"
   ],
@@ -25,7 +25,7 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "papillon-labels": "^1.0.51",
+    "papillon-avatars": "^1.0.51",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   },

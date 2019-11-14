@@ -9,7 +9,7 @@ exports[`<Navigation /> Snaphot must match underlineNav 1`] = `
     className="UnderlineNav-body"
   >
     <a
-      className="UnderlineNav-item selected"
+      className="selected UnderlineNav-item"
       href="#url"
       role="tab"
       title="Item 1"
@@ -53,7 +53,7 @@ exports[`<Navigation /> Snaphot must match underlineNavActions 1`] = `
     className="UnderlineNav-body"
   >
     <a
-      className="UnderlineNav-item selected"
+      className="selected UnderlineNav-item"
       href="#url"
       role="tab"
       title="Item 1"
@@ -101,13 +101,13 @@ exports[`<Navigation /> Snaphot must match underlineNavActions 1`] = `
 exports[`<Navigation /> Snaphot must match underlineNavRight 1`] = `
 <nav
   aria-label=""
-  className="UnderlineNav UnderlineNav--right"
+  className="UnderlineNav--right UnderlineNav"
 >
   <div
     className="UnderlineNav-body"
   >
     <a
-      className="UnderlineNav-item selected"
+      className="selected UnderlineNav-item"
       href="#url"
       role="tab"
       title="Item 1"
@@ -145,7 +145,7 @@ exports[`<Navigation /> Snaphot must match underlineNavRight 1`] = `
 exports[`<Navigation /> Snaphot must match underlineNavRightWithActions 1`] = `
 <nav
   aria-label="Foo bar"
-  className="UnderlineNav UnderlineNav--right"
+  className="UnderlineNav--right UnderlineNav"
 >
   <div
     className="UnderlineNav-actions"
@@ -161,7 +161,7 @@ exports[`<Navigation /> Snaphot must match underlineNavRightWithActions 1`] = `
     className="UnderlineNav-body"
   >
     <a
-      className="UnderlineNav-item selected"
+      className="selected UnderlineNav-item"
       href="#url"
       role="tab"
       title="Item 1"
@@ -205,7 +205,7 @@ exports[`<Navigation /> Snaphot must match underlineNavWithCounter 1`] = `
     className="UnderlineNav-body"
   >
     <a
-      className="UnderlineNav-item selected"
+      className="selected UnderlineNav-item"
       href="#url"
       role="tab"
       title="Item 1"

@@ -1,7 +1,8 @@
 # Papillon Blankslate
 
-[![travis build](https://img.shields.io/travis/mts/papillon.svg?style=flat-square)](https://travis-ci.org/mts/papillon)
 [![version](https://img.shields.io/npm/v/papillon-blankslate.svg?style=flat-square)](http://npm.im/papillon-blankslate)
+[![travis build](https://img.shields.io/travis/mts/papillon.svg?style=flat-square)](https://travis-ci.org/mts/papillon)
+[![codecov coverage](https://codecov.io/gh/mts/papillon/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/mts/papillon/branch/master)
 [![downloads](https://img.shields.io/npm/dm/papillon-blankslate.svg?style=flat-square)](http://npm-stat.com/charts.html?package=papillon-blankslate&from=2018-10-13)
 [![MIT License](https://img.shields.io/npm/l/papillon-blankslate.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
@@ -24,9 +25,11 @@ $ npm install --save papillon-blankslate
 ```
 
 ## Explorer
+
 Check out how to use Papillon Blankslate with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-blankslate/explorer)
 
 ## NPM
+
 Get the latest papillon-blankslate [here](https://www.npmjs.com/package/papillon-blankslate)
 
 ## Usage
@@ -34,7 +37,7 @@ Get the latest papillon-blankslate [here](https://www.npmjs.com/package/papillon
 You can import it like this.
 
 ```javascript
-import Blankslate from 'papillon-blankslate';
+import Blankslate from 'papillon-blankslate'
 ```
 
 ## Documentation
@@ -46,10 +49,10 @@ Blankslates are for when there is a lack of content within a page or section. Us
 Wrap some content in the outer `.blankslate` wrapper to give it the blankslate appearance.
 
 ```html
-  <Blankslate>
-    <h3>This is a blank slate</h3>
-    <p>Use it to provide information when no dynamic content exists.</p>
-  </Blankslate>
+<Blankslate>
+  <h3>This is a blank slate</h3>
+  <p>Use it to provide information when no dynamic content exists.</p>
+</Blankslate>
 ```
 
 ### With Octicons
@@ -72,10 +75,10 @@ Add an additional optional class to the `.blankslate` to change its appearance.
 Narrows the blankslate container to not occupy the entire available width.
 
 ```html
-  <Blankslate className="blankslate-narrow">
-    <h3>This is a blank slate</h3>
-    <p>Use it to provide information when no dynamic content exists.</p>
-  </Blankslate>
+<Blankslate className="blankslate-narrow">
+  <h3>This is a blank slate</h3>
+  <p>Use it to provide information when no dynamic content exists.</p>
+</Blankslate>
 ```
 
 ### Capped
@@ -83,10 +86,10 @@ Narrows the blankslate container to not occupy the entire available width.
 Removes the `border-radius` on the top corners.
 
 ```html
-  <Blankslate className="blankslate-capped">
-    <h3>This is a blank slate</h3>
-    <p>Use it to provide information when no dynamic content exists.</p>
-  </Blankslate>
+<Blankslate className="blankslate-capped">
+  <h3>This is a blank slate</h3>
+  <p>Use it to provide information when no dynamic content exists.</p>
+</Blankslate>
 ```
 
 ### Spacious
@@ -94,10 +97,10 @@ Removes the `border-radius` on the top corners.
 Significantly increases the vertical padding.
 
 ```html
-  <Blankslate className="blankslate-spacious">
-    <h3>This is a blank slate</h3>
-    <p>Use it to provide information when no dynamic content exists.</p>
-  </Blankslate>
+<Blankslate className="blankslate-spacious">
+  <h3>This is a blank slate</h3>
+  <p>Use it to provide information when no dynamic content exists.</p>
+</Blankslate>
 ```
 
 ### Large
@@ -105,10 +108,10 @@ Significantly increases the vertical padding.
 Increases the size of the text in the blankslate
 
 ```html
-  <Blankslate className="blankslate-large">
-    <h3>This is a blank slate</h3>
-    <p>Use it to provide information when no dynamic content exists.</p>
-  </Blankslate>
+<Blankslate className="blankslate-large">
+  <h3>This is a blank slate</h3>
+  <p>Use it to provide information when no dynamic content exists.</p>
+</Blankslate>
 ```
 
 ### No background
@@ -116,10 +119,10 @@ Increases the size of the text in the blankslate
 Removes the `background-color` and `border`.
 
 ```html
-  <Blankslate className="blankslate-clean-background">
-    <h3>This is a blank slate</h3>
-    <p>Use it to provide information when no dynamic content exists.</p>
-  </Blankslate>
+<Blankslate className="blankslate-clean-background">
+  <h3>This is a blank slate</h3>
+  <p>Use it to provide information when no dynamic content exists.</p>
+</Blankslate>
 ```
 
 ## License
@@ -131,4 +134,3 @@ Removes the `background-color` and `border`.
 [npm]: https://www.npmjs.com/package/papillon-blankslate
 [install-npm]: https://docs.npmjs.com/getting-started/installing-node
 [react]: https://github.com/facebook/react
-

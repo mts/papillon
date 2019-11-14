@@ -1,4 +1,5 @@
 import React from 'react'
+import cx from 'classnames'
 import { generate } from 'shortid'
 import { propTypes, defaultProps } from './UnderlineNav.props'
 import { UnderlineNavItem } from '../UnderlineNavItem'
@@ -9,7 +10,7 @@ export const UnderlineNav = ({ className, aria, items, action, selectedIndex }) 
   const { label } = aria
 
   return (
-    <nav className={`UnderlineNav ${className}`.trim()} aria-label={label}>
+    <nav className={cx(className, 'UnderlineNav')} aria-label={label}>
       {className.includes('UnderlineNav--right') && action ? action : null}
       <div className="UnderlineNav-body">
         {items.map((item, index) => {

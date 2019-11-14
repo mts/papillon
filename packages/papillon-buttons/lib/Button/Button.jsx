@@ -1,4 +1,5 @@
 import React from 'react'
+import cx from 'classnames'
 import { propTypes, defaultProps } from './Button.props'
 import '@primer/css/buttons/index.scss'
 import '@primer/css/core/index.scss'
@@ -6,14 +7,14 @@ import '@primer/css/core/index.scss'
 export const Button = ({ variant, className, children, onClick }) => {
   if (variant === 'button') {
     return (
-      <button className={`btn ${className}`.trim()} type="button" onClick={onClick} disabled={className.includes('disabled')}>
+      <button className={cx(className, 'btn')} type="button" onClick={onClick} disabled={className.includes('disabled')}>
         {children}
       </button>
     )
   }
   if (variant === 'link') {
     return (
-      <a className={`btn ${className}`.trim()} href="#url" role="button" onClick={onClick} disabled={className.includes('disabled')}>
+      <a className={cx(className, 'btn')} href="#url" role="button" onClick={onClick} disabled={className.includes('disabled')}>
         {children}
       </a>
     )

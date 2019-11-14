@@ -1,3 +1,1 @@
-import { FlashAlert } from './FlashAlert'
-
-export { FlashAlert }
+export { FlashAlert } from './FlashAlert'
