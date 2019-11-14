@@ -2,7 +2,7 @@
 
 exports[`<Avatar /> Snaphot must match circleBadgeLargeImage 1`] = `
 <a
-  className="CircleBadge CircleBadge--large float-left mr-2"
+  className="float-left mr-2 CircleBadge CircleBadge--large"
   href="href"
   title="title"
 >
@@ -16,7 +16,7 @@ exports[`<Avatar /> Snaphot must match circleBadgeLargeImage 1`] = `
 
 exports[`<Avatar /> Snaphot must match circleBadgeMediumImage 1`] = `
 <a
-  className="CircleBadge CircleBadge--medium float-left mr-2"
+  className="float-left mr-2 CircleBadge CircleBadge--medium"
   href="href"
   title="title"
 >
@@ -30,7 +30,7 @@ exports[`<Avatar /> Snaphot must match circleBadgeMediumImage 1`] = `
 
 exports[`<Avatar /> Snaphot must match circleBadgeSmallImage 1`] = `
 <a
-  className="CircleBadge CircleBadge--small float-left mr-2"
+  className="float-left mr-2 CircleBadge CircleBadge--small"
   href="href"
   title="title"
 >
