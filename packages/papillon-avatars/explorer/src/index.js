@@ -110,6 +110,13 @@ ReactDOM.render(
             <CircleBadgeImage src={srcCircleBadge} alt="" />
           </CircleBadge>
         </div>
+
+        <h3 className="pl-4">CircleBadgeImage Medium</h3>
+        <div className="p-4">
+          <CircleBadge size="medium" className="float-left mr-2" title="Travis CI" href="#medium">
+            <CircleBadgeImage src={srcCircleBadge} alt="" />
+          </CircleBadge>
+        </div>
       </div>
     </div>
   </div>,
