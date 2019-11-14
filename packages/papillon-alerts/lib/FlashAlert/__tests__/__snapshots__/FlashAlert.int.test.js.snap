@@ -17,7 +17,7 @@ exports[`<FlashAlert /> Snaphot must match flashError 1`] = `
   className="p-4"
 >
   <div
-    className="flash flash-error"
+    className="flash-error flash"
   >
     Flash message goes here.
   </div>
@@ -66,7 +66,7 @@ exports[`<FlashAlert /> Snaphot must match flashSuccess 1`] = `
   className="p-4"
 >
   <div
-    className="flash flash-success"
+    className="flash-success flash"
   >
     Flash message goes here.
   </div>
@@ -78,7 +78,7 @@ exports[`<FlashAlert /> Snaphot must match flashWarn 1`] = `
   className="p-4"
 >
   <div
-    className="flash flash-warn"
+    className="flash-warn flash"
   >
     Flash message goes here.
   </div>
@@ -93,7 +93,7 @@ exports[`<FlashAlert /> Snaphot must match fullWidthFlash 1`] = `
     className="container-lg"
   >
     <div
-      className="flash flash-full"
+      className="flash-full flash"
     >
       Full width flash message.
     </div>
