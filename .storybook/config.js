@@ -25,7 +25,7 @@ export const setup = () => {
 
   addDecorator(story => <div className="p-4">{story()}</div>)
 
-  const contexts = [require.context('../packages/client/src', true, /story*\.js$/)]
+  const contexts = [require.context('../packages', true, /story*\.js$/)]
 
   const loadStories = () => {
     require('./welcomeStory')
