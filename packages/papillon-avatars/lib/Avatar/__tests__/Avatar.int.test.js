@@ -1,4 +1,12 @@
-import { avatar, avatarSmall, avatarStackMore, avatarStackThreePlus, avatarStackTwo, avatarStackRight } from './Avatar.int.render'
+import {
+  avatar,
+  avatarSmall,
+  avatarParentChild,
+  avatarStackMore,
+  avatarStackThreePlus,
+  avatarStackTwo,
+  avatarStackRight,
+} from './Avatar.int.render'
 
 describe('<Avatar />', () => {
   describe('Snaphot', () => {
@@ -8,6 +16,10 @@ describe('<Avatar />', () => {
 
     test('must match avatarSmall', () => {
       expect(global.renderToJSON(avatarSmall)).toMatchSnapshot()
+    })
+
+    test('must match avatarParentChild', () => {
+      expect(global.renderToJSON(avatarParentChild)).toMatchSnapshot()
     })
 
     test('must match avatarStackMore', () => {

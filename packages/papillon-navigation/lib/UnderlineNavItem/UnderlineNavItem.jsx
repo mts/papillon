@@ -1,4 +1,5 @@
 import React from 'react'
+import cx from 'classnames'
 import Octicon, { getIconByName } from '@githubprimer/octicons-react'
 import { propTypes, defaultProps } from './UnderlineNavItem.props'
 
@@ -7,7 +8,7 @@ import { propTypes, defaultProps } from './UnderlineNavItem.props'
 // ```html title="UnderlineNav with Counter"
 
 export const UnderlineNavItem = ({ className, href, role, title, icon, counter, children }) => (
-  <a href={href} role={role} title={title} className={`UnderlineNav-item ${className}`.trim()}>
+  <a href={href} role={role} title={title} className={cx(className, 'UnderlineNav-item')}>
     {icon ? <Octicon className="UnderlineNav-octicon mr-1" size="small" icon={getIconByName(icon)} /> : null}
     {children}
     {counter ? <span className="ml-1">{counter}</span> : null}

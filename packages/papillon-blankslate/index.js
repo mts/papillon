@@ -1,3 +1,1 @@
-import { Blankslate } from './lib'
-
-export { Blankslate }
+export { Blankslate } from './lib'

@@ -1,3 +1,1 @@
-import { CircleBadgeIcon } from './CircleBadgeIcon'
-
-export { CircleBadgeIcon }
+export { CircleBadgeIcon } from './CircleBadgeIcon'

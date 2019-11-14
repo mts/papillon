@@ -1,7 +1,8 @@
 # Papillon Alerts
 
-[![travis build](https://img.shields.io/travis/mts/papillon.svg?style=flat-square)](https://travis-ci.org/mts/papillon)
 [![version](https://img.shields.io/npm/v/papillon-alerts.svg?style=flat-square)](http://npm.im/papillon-alerts)
+[![travis build](https://img.shields.io/travis/mts/papillon.svg?style=flat-square)](https://travis-ci.org/mts/papillon)
+[![codecov coverage](https://codecov.io/gh/mts/papillon/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/mts/papillon/branch/master)
 [![downloads](https://img.shields.io/npm/dm/papillon-alerts.svg?style=flat-square)](http://npm-stat.com/charts.html?package=papillon-alerts&from=2018-10-13)
 [![MIT License](https://img.shields.io/npm/l/papillon-alerts.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
@@ -24,9 +25,11 @@ $ npm install --save papillon-alerts
 ```
 
 ## Explorer
+
 Check out how to use Papillon Alerts with React 16, Webpack 4 and Babel 7 [here](https://github.com/mts/papillon/tree/master/packages/papillon-alerts/explorer)
 
 ## NPM
+
 Get the latest papillon-alerts [here](https://www.npmjs.com/package/papillon-alerts)
 
 ## Usage
@@ -34,7 +37,7 @@ Get the latest papillon-alerts [here](https://www.npmjs.com/package/papillon-ale
 You can import it like this.
 
 ```javascript
-import { FlashAlert, FlashMessages } from 'papillon-alerts';
+import { FlashAlert, FlashMessages } from 'papillon-alerts'
 ```
 
 ## Documentation
@@ -55,19 +58,22 @@ You can put multiple paragraphs of text in a flash message—the last paragraph'
 
 ```html
 <FlashAlert>
-  <p>This is a longer flash message in it&apos;s own paragraph. It ends up looking something like this. If we keep adding more text, it&apos;ll eventually wrap to a new line.</p>
+  <p>
+    This is a longer flash message in it&apos;s own paragraph. It ends up looking something like this. If we keep adding more text,
+    it&apos;ll eventually wrap to a new line.
+  </p>
   <p>And this is another paragraph.</p>
 </FlashAlert>
 ```
 
-Should the need arise, you can quickly space out your flash message from surrounding content with a `.flash-messages` wrapper. *Note the extra top and bottom margin in the example below.*
+Should the need arise, you can quickly space out your flash message from surrounding content with a `.flash-messages` wrapper. _Note the extra top and bottom margin in the example below._
 
 ```html
-  <FlashMessages>
-    <FlashAlert>
-      Flash message goes here.
-    </FlashAlert>
-  </FlashMessages>
+<FlashMessages>
+  <FlashAlert>
+    Flash message goes here.
+  </FlashAlert>
+</FlashMessages>
 ```
 
 ### Variations
@@ -153,4 +159,3 @@ A flash message that is full width and removes border and border radius.
 [npm]: https://www.npmjs.com/package/papillon-alerts
 [install-npm]: https://docs.npmjs.com/getting-started/installing-node
 [react]: https://github.com/facebook/react
-

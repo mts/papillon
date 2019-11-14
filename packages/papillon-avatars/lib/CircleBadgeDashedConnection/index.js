@@ -1,3 +1,1 @@
-import { CircleBadgeDashedConnection } from './CircleBadgeDashedConnection'
-
-export { CircleBadgeDashedConnection }
+export { CircleBadgeDashedConnection } from './CircleBadgeDashedConnection'

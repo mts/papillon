@@ -1,3 +1,1 @@
-import { Button } from './lib'
-
-export { Button }
+export { Button } from './lib'

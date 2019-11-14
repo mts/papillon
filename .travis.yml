@@ -5,7 +5,7 @@ cache:
 notifications:
   email: false
 node_js:
-  - '10'
+  - '12.12.0'
 before_script:
   - npm install
   - npm run install-packages

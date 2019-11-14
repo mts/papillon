@@ -18,7 +18,7 @@ exports[`<Button /> Snaphot must match btnBlue 1`] = `
   className="p-4 d-flex flex-justify-between"
 >
   <button
-    className="btn btn-blue"
+    className="btn-blue btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -26,7 +26,7 @@ exports[`<Button /> Snaphot must match btnBlue 1`] = `
     Button
   </button>
   <button
-    className="btn btn-blue hover"
+    className="btn-blue hover btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -34,7 +34,7 @@ exports[`<Button /> Snaphot must match btnBlue 1`] = `
     hover
   </button>
   <button
-    className="btn btn-blue focus"
+    className="btn-blue focus btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -42,7 +42,7 @@ exports[`<Button /> Snaphot must match btnBlue 1`] = `
     focus
   </button>
   <button
-    className="btn btn-blue selected"
+    className="btn-blue selected btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -50,7 +50,7 @@ exports[`<Button /> Snaphot must match btnBlue 1`] = `
     selected
   </button>
   <button
-    className="btn btn-blue disabled"
+    className="btn-blue disabled btn"
     disabled={true}
     onClick={[Function]}
     type="button"
@@ -65,7 +65,7 @@ exports[`<Button /> Snaphot must match btnDanger 1`] = `
   className="p-4 d-flex flex-justify-between"
 >
   <button
-    className="btn btn-danger"
+    className="btn-danger btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -73,7 +73,7 @@ exports[`<Button /> Snaphot must match btnDanger 1`] = `
     Button
   </button>
   <button
-    className="btn btn-danger hover"
+    className="btn-danger hover btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -81,7 +81,7 @@ exports[`<Button /> Snaphot must match btnDanger 1`] = `
     hover
   </button>
   <button
-    className="btn btn-danger focus"
+    className="btn-danger focus btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -89,7 +89,7 @@ exports[`<Button /> Snaphot must match btnDanger 1`] = `
     focus
   </button>
   <button
-    className="btn btn-danger selected"
+    className="btn-danger selected btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -97,7 +97,7 @@ exports[`<Button /> Snaphot must match btnDanger 1`] = `
     selected
   </button>
   <button
-    className="btn btn-danger disabled"
+    className="btn-danger disabled btn"
     disabled={true}
     onClick={[Function]}
     type="button"
@@ -112,7 +112,7 @@ exports[`<Button /> Snaphot must match btnLarge 1`] = `
   className="f3 p-4"
 >
   <a
-    className="btn btn-large btn-purple mr-6"
+    className="btn-large btn-purple mr-6 btn"
     disabled={false}
     href="#url"
     onClick={[Function]}
@@ -121,7 +121,7 @@ exports[`<Button /> Snaphot must match btnLarge 1`] = `
     Large link button
   </a>
   <button
-    className="btn btn-large btn-outline-blue"
+    className="btn-large btn-outline-blue btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -151,7 +151,7 @@ exports[`<Button /> Snaphot must match btnOutline 1`] = `
   className="p-4 d-flex flex-justify-between"
 >
   <button
-    className="btn btn-outline"
+    className="btn-outline btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -159,7 +159,7 @@ exports[`<Button /> Snaphot must match btnOutline 1`] = `
     Button
   </button>
   <button
-    className="btn btn-outline hover"
+    className="btn-outline hover btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -167,7 +167,7 @@ exports[`<Button /> Snaphot must match btnOutline 1`] = `
     hover
   </button>
   <button
-    className="btn btn-outline focus"
+    className="btn-outline focus btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -175,7 +175,7 @@ exports[`<Button /> Snaphot must match btnOutline 1`] = `
     focus
   </button>
   <button
-    className="btn btn-outline selected"
+    className="btn-outline selected btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -183,7 +183,7 @@ exports[`<Button /> Snaphot must match btnOutline 1`] = `
     selected
   </button>
   <button
-    className="btn btn-outline disabled"
+    className="btn-outline disabled btn"
     disabled={true}
     onClick={[Function]}
     type="button"
@@ -198,7 +198,7 @@ exports[`<Button /> Snaphot must match btnPrimary 1`] = `
   className="p-4 d-flex flex-justify-between"
 >
   <button
-    className="btn btn-primary"
+    className="btn-primary btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -206,7 +206,7 @@ exports[`<Button /> Snaphot must match btnPrimary 1`] = `
     Button
   </button>
   <button
-    className="btn btn-primary hover"
+    className="btn-primary hover btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -214,7 +214,7 @@ exports[`<Button /> Snaphot must match btnPrimary 1`] = `
     hover
   </button>
   <button
-    className="btn btn-primary focus"
+    className="btn-primary focus btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -222,7 +222,7 @@ exports[`<Button /> Snaphot must match btnPrimary 1`] = `
     focus
   </button>
   <button
-    className="btn btn-primary selected"
+    className="btn-primary selected btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -230,7 +230,7 @@ exports[`<Button /> Snaphot must match btnPrimary 1`] = `
     selected
   </button>
   <button
-    className="btn btn-primary disabled"
+    className="btn-primary disabled btn"
     disabled={true}
     onClick={[Function]}
     type="button"
@@ -245,7 +245,7 @@ exports[`<Button /> Snaphot must match btnPurple 1`] = `
   className="p-4 d-flex flex-justify-between"
 >
   <button
-    className="btn btn-purple"
+    className="btn-purple btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -253,7 +253,7 @@ exports[`<Button /> Snaphot must match btnPurple 1`] = `
     Button
   </button>
   <button
-    className="btn btn-purple hover"
+    className="btn-purple hover btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -261,7 +261,7 @@ exports[`<Button /> Snaphot must match btnPurple 1`] = `
     hover
   </button>
   <button
-    className="btn btn-purple focus"
+    className="btn-purple focus btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -269,7 +269,7 @@ exports[`<Button /> Snaphot must match btnPurple 1`] = `
     focus
   </button>
   <button
-    className="btn btn-purple selected"
+    className="btn-purple selected btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -277,7 +277,7 @@ exports[`<Button /> Snaphot must match btnPurple 1`] = `
     selected
   </button>
   <button
-    className="btn btn-purple disabled"
+    className="btn-purple disabled btn"
     disabled={true}
     onClick={[Function]}
     type="button"
@@ -292,7 +292,7 @@ exports[`<Button /> Snaphot must match btnSecondary 1`] = `
   className="p-4 d-flex flex-justify-between"
 >
   <button
-    className="btn btn-secondary"
+    className="btn-secondary btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -300,7 +300,7 @@ exports[`<Button /> Snaphot must match btnSecondary 1`] = `
     Button
   </button>
   <button
-    className="btn btn-secondary hover"
+    className="btn-secondary hover btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -308,7 +308,7 @@ exports[`<Button /> Snaphot must match btnSecondary 1`] = `
     hover
   </button>
   <button
-    className="btn btn-secondary focus"
+    className="btn-secondary focus btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -316,7 +316,7 @@ exports[`<Button /> Snaphot must match btnSecondary 1`] = `
     focus
   </button>
   <button
-    className="btn btn-secondary selected"
+    className="btn-secondary selected btn"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -324,7 +324,7 @@ exports[`<Button /> Snaphot must match btnSecondary 1`] = `
     selected
   </button>
   <button
-    className="btn btn-secondary disabled"
+    className="btn-secondary disabled btn"
     disabled={true}
     onClick={[Function]}
     type="button"
@@ -339,7 +339,7 @@ exports[`<Button /> Snaphot must match btnSmall 1`] = `
   className="f3 p-4"
 >
   <a
-    className="btn btn-sm btn-purple mr-6"
+    className="btn-sm btn-purple mr-6 btn"
     disabled={false}
     href="#url"
     onClick={[Function]}
@@ -348,7 +348,7 @@ exports[`<Button /> Snaphot must match btnSmall 1`] = `
     Small link button
   </a>
   <button
-    className="btn btn-sm btn-outline-blue"
+    className="btn-sm btn-outline-blue btn"
     disabled={false}
     onClick={[Function]}
     type="button"

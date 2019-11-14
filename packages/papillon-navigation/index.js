@@ -1,3 +1,1 @@
-import { Menu, UnderlineNav } from './lib'
-
-export { Menu, UnderlineNav }
+export { Menu, UnderlineNav } from './lib'

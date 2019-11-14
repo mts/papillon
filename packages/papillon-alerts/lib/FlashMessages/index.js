@@ -1,3 +1,1 @@
-import { FlashMessages } from './FlashMessages'
-
-export { FlashMessages }
+export { FlashMessages } from './FlashMessages'
