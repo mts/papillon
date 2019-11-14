@@ -22,7 +22,7 @@ ReactDOM.render(
 
         <h3 className="pl-4">AvatarParentChild</h3>
         <div className="p-4">
-          <div className="avatar-parent-child">
+          <div className="avatar-parent-child d-inline-flex">
             <Avatar alt="parent" src={srcAvatar} width={48} height={48} />
             <Avatar className="avatar-child" alt="child" src={srcAvatar} width={20} height={20} />
           </div>
@@ -81,7 +81,21 @@ ReactDOM.render(
           </div>
         </div>
       </div>
-      <div className="col-6">under construction</div>
+      <div className="col-6">
+        <h3 className="pl-4">CircleBadgeIcon Small</h3>
+        <div className="p-4">
+          <CircleBadge size="small" className="bg-yellow" title="Zap this!" href="#small">
+            <CircleBadgeIcon className="text-white" icon="zap" />
+          </CircleBadge>
+        </div>
+
+        <h3 className="pl-4">CircleBadgeIcon Medium</h3>
+        <div className="p-4">
+          <CircleBadge size="medium" className="bg-gray-dark" title="Zap this!" href="#medium">
+            <CircleBadgeIcon className="text-white" icon="zap" />
+          </CircleBadge>
+        </div>
+      </div>
     </div>
   </div>,
   document.getElementById('app'),
