@@ -95,6 +95,13 @@ ReactDOM.render(
             <CircleBadgeIcon className="text-white" icon="zap" />
           </CircleBadge>
         </div>
+
+        <h3 className="pl-4">CircleBadgeIcon Large</h3>
+        <div className="p-4">
+          <CircleBadge size="large" className="bg-gray-dark" title="Zap this!" href="#large">
+            <CircleBadgeIcon className="text-white" icon="zap" />
+          </CircleBadge>
+        </div>
       </div>
     </div>
   </div>,
