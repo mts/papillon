@@ -25,7 +25,7 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "papillon-breadcrumb": "^1.0.51",
+    "papillon-breadcrumb": "^1.0.52",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   },
