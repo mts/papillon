@@ -12,7 +12,7 @@ exports[`<Avatar /> Snaphot must match avatar 1`] = `
 
 exports[`<Avatar /> Snaphot must match avatarParentChild 1`] = `
 <div
-  className="avatar-parent-child float-left"
+  className="avatar-parent-child d-inline-flex"
 >
   <img
     alt="parent"
