@@ -11,6 +11,11 @@ ReactDOM.render(
     <div className="p-4">
       <Avatar alt="basic" src={srcAvatar} width={72} height={72} />
     </div>
+
+    <h3 className="pl-4">Small</h3>
+    <div className="p-4">
+      <Avatar className="avatar-small" alt="small" src={srcAvatar} width={32} height={32} />
+    </div>
   </div>,
   document.getElementById('app'),
 )
