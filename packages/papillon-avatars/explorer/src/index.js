@@ -5,6 +5,7 @@ import { Avatar, CircleBadge, CircleBadgeDashedConnection, CircleBadgeIcon, Circ
 
 const srcAvatar = 'https://user-images.githubusercontent.com/334891/29999089-2837c968-9009-11e7-92c1-6a7540a594d5.png'
 const href = 'https://github.com/mts/papillon/tree/master/packages/papillon-avatars/Avatar'
+const srcCircleBadge = 'https://user-images.githubusercontent.com/334891/30004619-adc8ca86-90a0-11e7-8ccc-2322261d2ab1.png'
 
 ReactDOM.render(
   <div>
@@ -100,6 +101,13 @@ ReactDOM.render(
         <div className="p-4">
           <CircleBadge size="large" className="bg-gray-dark" title="Zap this!" href="#large">
             <CircleBadgeIcon className="text-white" icon="zap" />
+          </CircleBadge>
+        </div>
+
+        <h3 className="pl-4">CircleBadgeImage Small</h3>
+        <div className="p-4">
+          <CircleBadge size="small" className="float-left mr-2" title="Travis CI" href="#small">
+            <CircleBadgeImage src={srcCircleBadge} alt="" />
           </CircleBadge>
         </div>
       </div>
