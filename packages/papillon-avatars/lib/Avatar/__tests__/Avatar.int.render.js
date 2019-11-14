@@ -12,7 +12,7 @@ export const avatar = <Avatar alt="basic" src={srcAvatar} width={72} height={72}
 export const avatarSmall = <Avatar className="avatar-small" alt="small" src={srcAvatar} width={32} height={32} />
 
 export const avatarParentChild = (
-  <div className="avatar-parent-child">
+  <div className="avatar-parent-child d-inline-flex">
     <Avatar alt="parent" src={srcAvatar} width={48} height={48} />
     <Avatar className="avatar-child" alt="child" src={srcAvatar} width={20} height={20} />
   </div>
